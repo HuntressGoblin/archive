@@ -33,6 +33,21 @@
   display: none !important;
 }
 
+/* Remove all callout icons and spacing */
+.callout .callout-icon {
+  display: none !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Adjust title/content so it fills the space normally */
+.callout .callout-title,
+.callout .callout-content {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
 /* =========================================
    TIAMAT THEME (NO ICON)
    ========================================= */

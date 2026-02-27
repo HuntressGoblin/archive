@@ -1,1 +1,9 @@
-{}
+{
+  "enabledCssSnippets": [
+    "Charactertemplate",
+    "NPCtemplates",
+    "Partygridthemes",
+    "Quoteboxes",
+    "Styles"
+  ]
+}

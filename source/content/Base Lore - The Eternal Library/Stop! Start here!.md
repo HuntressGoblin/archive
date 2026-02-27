@@ -1,0 +1,1 @@
+Hi, a little personal note from the person making this herself! This is just a disclaimer that I do not own a vast majority of art on this page! Yes, there is even some that are AI-generated. All credit goes to the creators of such! 

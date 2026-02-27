@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Istoria, Lady of Ink"
             }
           }
         ]
@@ -170,8 +170,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b77831b90dd9f87b",
+  "active": "2d8837e6263008e3",
   "lastOpenFiles": [
+    "Base Lore - The Eternal Library/The Cluster Galaxy.md",
+    "Base Lore - The Eternal Library/Stop! Start here!.md",
+    "Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
+    "index.md",
     "Z - Pictures/Whatavoice.png",
     "Z - Pictures/Thispoorguy.png",
     "Z - Pictures/Thisguyvanished.png",
@@ -182,12 +186,10 @@
     "Z - Pictures/Roundesttable.png",
     "Z - Pictures/Rarghwebreathefire.png",
     "Z - Pictures/Rabbitgirl.png",
-    "Z - Pictures/Marcelpicture1.png",
     "Z - Pictures/Diomeades Eldwynair.md",
     "Z - Pictures",
     "category-folder/Some note.md",
     "category-folder/index.md",
-    "index.md",
     "category-folder"
   ]
 }

@@ -1,0 +1,197 @@
+.callout[data-callout="galaxy"] {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.7),
+    rgba(37, 99, 235, 0.25),
+    rgba(109, 40, 217, 0.25)
+  );
+  border: 1px solid rgba(47, 17, 118, 0.5);
+  border-radius: 18px;
+  padding: 18px;
+  font-style: italic;
+  box-shadow:
+    0 0 25px rgba(59, 130, 246, 0.15),
+    0 0 35px rgba(168, 85, 247, 0.15);
+
+  /* Callout-specific settings */
+  --callout-icon: lucide-book-marked;
+  
+}
+
+.callout[data-callout="galaxy"] {
+  --callout-color: 140, 90, 255;
+  --callout-icon: lucide-book-marked;
+}
+
+.callout[data-callout="galaxy"] .callout-title {
+  color: var(--text-normal);
+}
+
+.callout[data-callout="galaxy"] .callout-icon svg {
+  color: white !important;
+  stroke: white !important;
+}
+
+
+.callout[data-callout="galaxy"] .callout-title {
+  color: var(--text-normal);
+}
+
+/* Above is the galaxy theme. */
+
+/* --- TIAMAT CALLOUT THEME (Soft & Readable) --- */
+
+.callout[data-callout="tiamat"] {
+  /* Very subtle, low-opacity warm gradient */
+  background: linear-gradient(
+    135deg,
+    rgba(139, 35, 35, 0.08),  /* Soft crimson */
+    rgba(30, 30, 30, 0.05),   /* Faint charcoal */
+    rgba(212, 175, 55, 0.05)  /* Faint gold */
+  );
+  
+  /* Muted antique gold border */
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 18px;
+  
+  /* Removed the heavy outer glow for a cleaner look */
+  box-shadow: none;
+
+  /* Callout-specific settings */
+  --callout-icon: lucide-crown;
+}
+
+.callout[data-callout="tiamat"] {
+  /* Soft Gold for the native Obsidian callout accents */
+  --callout-color: 212, 175, 55;
+}
+
+.callout[data-callout="tiamat"] .callout-title {
+  color: #d4af37; /* Antique gold instead of harsh, bright yellow */
+  font-weight: bold;
+  /* Removed uppercase for a more natural reading experience */
+}
+
+.callout[data-callout="tiamat"] .callout-icon svg {
+  color: #d4af37 !important;
+  stroke: #d4af37 !important;
+  /* Removed the blurry drop-shadow filter */
+}
+
+/* Content area now seamlessly inherits your default text settings */
+.callout[data-callout="tiamat"] .callout-content {
+  line-height: 1.6;
+}
+
+/* =========================================
+   AVERNUS DOSSIER PANEL (SUBTLE - NO EMBERS)
+   Use for: Race, Gender, Age, Alignment, etc.
+   ========================================= */
+
+.avernus-dossier {
+  width: 100%;
+  margin: 25px 0;
+  padding: 22px 26px;
+
+  border-radius: 12px;
+  position: relative;
+
+  /* Much softer background than main banner */
+  background: linear-gradient(
+    135deg,
+    rgba(25, 0, 0, 0.9),
+    rgba(55, 8, 8, 0.88),
+    rgba(20, 0, 0, 0.92)
+  );
+
+  border: 1px solid rgba(255, 90, 70, 0.25);
+
+  /* Subtle glow only (toned down) */
+  box-shadow:
+    0 0 18px rgba(255, 60, 40, 0.18),
+    inset 0 0 25px rgba(255, 40, 0, 0.05);
+}
+
+/* Header for the section (ex: "Dossier") */
+.avernus-dossier-header {
+  font-size: 1.1em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #ffb3a6;
+
+  border-bottom: 1px solid rgba(255, 90, 70, 0.35);
+  padding-bottom: 8px;
+
+  text-shadow: 0 0 8px rgba(255, 80, 60, 0.35);
+}
+
+/* Grid layout for stats */
+.avernus-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px 24px;
+}
+
+/* Individual stat block */
+.avernus-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label (Race, Gender, etc.) */
+.avernus-stat-label {
+  font-size: 0.75em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 150, 130, 0.7);
+  margin-bottom: 3px;
+}
+
+/* Value (Angel, Female, Lawful Evil, etc.) */
+.avernus-stat-value {
+  font-size: 1em;
+  color: #ffd8cf;
+
+  text-shadow: 0 0 6px rgba(255, 80, 60, 0.15);
+}
+
+/* Trailblazer Theme Callout - Standard Font Edition */
+.callout[data-callout="trailblazer"] {
+  background: linear-gradient(
+    135deg,
+    rgba(38, 28, 20, 0.95), /* Deep Leather */
+    rgba(78, 54, 36, 0.6)    /* Warm Oak / Earth */
+  );
+  border: 1.5px solid rgba(184, 134, 11, 0.4); /* Brass Border */
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4);
+
+  /* Icon and Base Color */
+  --callout-icon: lucide-compass;
+  --callout-color: 218, 165, 32; /* Goldenrod/Brass */
+}
+
+/* Title Styling - No Caps, Default Font */
+.callout[data-callout="trailblazer"] .callout-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: none; /* Keeps your casing natural */
+  color: #ffca3a; /* Bright Gold "Ink" */
+  letter-spacing: 0.02em;
+}
+
+/* Body Content */
+.callout[data-callout="trailblazer"] .callout-content {
+  color: #dcc8ae; /* Faded Parchment White */
+  line-height: 1.5;
+}
+
+/* Icon Styling */
+.callout[data-callout="trailblazer"] .callout-icon svg {
+  color: #daa520 !important;
+  stroke: #daa520 !important;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.6));
+}

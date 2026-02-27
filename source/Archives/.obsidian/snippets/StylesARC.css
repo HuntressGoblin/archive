@@ -1,3 +1,6 @@
+/* =========================================
+   GALAXY THEME (NO ICON)
+   ========================================= */
 .callout[data-callout="galaxy"] {
   background: linear-gradient(
     135deg,
@@ -13,75 +16,108 @@
     0 0 25px rgba(59, 130, 246, 0.15),
     0 0 35px rgba(168, 85, 247, 0.15);
 
-  /* Callout-specific settings */
-  --callout-icon: lucide-book-marked;
-  
+  /* Explicitly remove icon */
+  --callout-icon: none;
 }
 
 .callout[data-callout="galaxy"] {
   --callout-color: 140, 90, 255;
-  --callout-icon: lucide-book-marked;
 }
 
 .callout[data-callout="galaxy"] .callout-title {
   color: var(--text-normal);
 }
 
-.callout[data-callout="galaxy"] .callout-icon svg {
-  color: white !important;
-  stroke: white !important;
+/* Remove icon styling completely */
+.callout[data-callout="galaxy"] .callout-icon {
+  display: none !important;
 }
 
-
-.callout[data-callout="galaxy"] .callout-title {
-  color: var(--text-normal);
+/* Remove all callout icons and spacing */
+.callout .callout-icon {
+  display: none !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Above is the galaxy theme. */
+/* Adjust title/content so it fills the space normally */
+.callout .callout-title,
+.callout .callout-content {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
 
-/* --- TIAMAT CALLOUT THEME (Soft & Readable) --- */
-
+/* =========================================
+   TIAMAT THEME (NO ICON)
+   ========================================= */
 .callout[data-callout="tiamat"] {
-  /* Very subtle, low-opacity warm gradient */
   background: linear-gradient(
     135deg,
-    rgba(139, 35, 35, 0.08),  /* Soft crimson */
-    rgba(30, 30, 30, 0.05),   /* Faint charcoal */
-    rgba(212, 175, 55, 0.05)  /* Faint gold */
+    rgba(139, 35, 35, 0.08),
+    rgba(30, 30, 30, 0.05),
+    rgba(212, 175, 55, 0.05)
   );
-  
-  /* Muted antique gold border */
   border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 12px;
   padding: 18px;
-  
-  /* Removed the heavy outer glow for a cleaner look */
   box-shadow: none;
 
-  /* Callout-specific settings */
-  --callout-icon: lucide-crown;
+  /* Remove icon */
+  --callout-icon: none;
 }
 
 .callout[data-callout="tiamat"] {
-  /* Soft Gold for the native Obsidian callout accents */
   --callout-color: 212, 175, 55;
 }
 
 .callout[data-callout="tiamat"] .callout-title {
-  color: #d4af37; /* Antique gold instead of harsh, bright yellow */
+  color: #d4af37;
   font-weight: bold;
-  /* Removed uppercase for a more natural reading experience */
 }
 
-.callout[data-callout="tiamat"] .callout-icon svg {
-  color: #d4af37 !important;
-  stroke: #d4af37 !important;
-  /* Removed the blurry drop-shadow filter */
+.callout[data-callout="tiamat"] .callout-icon {
+  display: none !important;
 }
 
-/* Content area now seamlessly inherits your default text settings */
 .callout[data-callout="tiamat"] .callout-content {
   line-height: 1.6;
+}
+
+/* =========================================
+   TRAILBLAZER THEME (NO ICON)
+   ========================================= */
+.callout[data-callout="trailblazer"] {
+  background: linear-gradient(
+    135deg,
+    rgba(38, 28, 20, 0.95),
+    rgba(78, 54, 36, 0.6)
+  );
+  border: 1.5px solid rgba(184, 134, 11, 0.4);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4);
+
+  /* Remove icon */
+  --callout-icon: none;
+  --callout-color: 218, 165, 32;
+}
+
+.callout[data-callout="trailblazer"] .callout-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: none;
+  color: #ffca3a;
+  letter-spacing: 0.02em;
+}
+
+.callout[data-callout="trailblazer"] .callout-content {
+  color: #dcc8ae;
+  line-height: 1.5;
+}
+
+.callout[data-callout="trailblazer"] .callout-icon {
+  display: none !important;
 }
 
 /* =========================================

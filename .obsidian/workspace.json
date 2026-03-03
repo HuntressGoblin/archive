@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Base Lore - The Eternal Library/Stop! Start here!.md",
+                "file": "source/content/category-folder/Some note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stop! Start here!"
+              "title": "Some note"
             }
           }
         ]
@@ -186,6 +186,24 @@
   },
   "active": "51b0f23028237bab",
   "lastOpenFiles": [
+    "source/content/DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",
+    "source/content/DnD - Archive of Artimis/Tome of Divinity",
+    "source/content/DnD - Archive of Artimis",
+    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/Stop! Start here!.md",
+    "source/content/Base Lore - The Eternal Library",
+    "source/DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",
+    "source/DnD - Archive of Artimis/Tome of Divinity",
+    "source/DnD - Archive of Artimis",
+    "source/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "source/Base Lore - The Eternal Library/Stop! Start here!.md",
+    "source/Base Lore - The Eternal Library",
+    "DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",
+    "DnD - Archive of Artimis/Tome of Divinity",
+    "DnD - Archive of Artimis",
+    "Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "Base Lore - The Eternal Library/Stop! Start here!.md",
+    "Base Lore - The Eternal Library",
     "source/content/category-folder/Some note.md",
     "Z - Pictures/Thumbnailimage1.png",
     "Z - Pictures/Titlepagestuff.png",
@@ -198,16 +216,8 @@
     "Z - Pictures/Seasonofghoststhumbnail.png",
     "Z - Pictures/Rarghwebreathefire.png",
     "Z - Pictures",
-    "DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",
-    "DnD - Archive of Artimis/Tome of Divinity",
-    "DnD - Archive of Artimis",
-    "Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
-    "Base Lore - The Eternal Library/Stop! Start here!.md",
-    "Base Lore - The Eternal Library",
     "source/content/category-folder/index.md",
     "source/content/index.md",
-    "source/content/category-folder",
-    "New folder",
     "source/docs/advanced/architecture.md",
     "source/docs/advanced/paths.md",
     "source/docs/advanced/making plugins.md",
@@ -215,21 +225,12 @@
     "source/docs/advanced/creating components.md",
     "Z - Pictures/Diomeades Eldwynair.md",
     "Base Lore - The Eternal Library/Z - Pictures/Diomeades Eldwynair.md",
-    "Base Lore - The Eternal Library/Z - Pictures",
     "Base Lore - The Eternal Library/What is the Eternal Library.md",
     "Base Lore - The Eternal Library/The Cluster Galaxy.md",
     "Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
     "source/README.md",
     "README.md",
     "DnD - Archive of Artimis/World of Artimis/Characters/Powerful Figures/Zariel, Archdevil of Avernus.md",
-    "DnD - Archive of Artimis/World of Artimis/Characters/Powerful Figures/What Does it Mean to be Powerful.md",
-    "DnD - Archive of Artimis/World of Artimis/Characters/Regular Characters",
-    "DnD - Archive of Artimis/World of Artimis/Characters/Powerful Figures",
-    "DnD - Archive of Artimis/World of Artimis/Characters/Divine Figures",
-    "DnD - Archive of Artimis/Tome of Tyranny/Tyranny Heroes/Traxis.md",
-    "DnD - Archive of Artimis/Tome of Tyranny/Tyranny Heroes/Marcel Voltaire.md",
-    "DnD - Archive of Artimis/Tome of Tyranny/Tyranny Heroes/Kalis.md",
-    "DnD - Archive of Artimis/Tome of Tyranny/Tyranny Heroes/Drougma Tarak.md",
-    "DnD - Archive of Artimis/Tome of Tyranny/Tyranny Heroes/Diomeades Eldwynair.md"
+    "DnD - Archive of Artimis/World of Artimis/Characters/Powerful Figures/What Does it Mean to be Powerful.md"
   ]
 }

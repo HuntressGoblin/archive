@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
+                "file": "source/content/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Istoria, Lady of Ink"
+              "title": "index"
             }
           }
         ]
@@ -184,17 +184,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "51b0f23028237bab",
+  "active": "5f3fe0eab5f79cec",
   "lastOpenFiles": [
-    "source/content/Base Lore - The Eternal Library/Stop! Start here!.md",
-    "source/content/Z - Pictures/Constantinepic.png",
-    "source/content/Z - Pictures/Drougmapic1.png",
-    "source/content/Z - Pictures/FinallyIfoundthis.png",
-    "source/content/Z - Pictures/Ibelieveinyourconquestlittledude.png",
-    "source/content/Z - Pictures/Diopicture1.png",
-    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
     "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
+    "source/content/category-folder/index.md",
+    "source/content/category-folder/Some note.md",
+    "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
+    "source/content/Base Lore - The Eternal Library/Stop! Start here!.md",
+    "source/content/Z - Pictures/Heresheis.png",
+    "source/content/Z - Pictures/Marcelpicture1.png",
+    "source/content/Z - Pictures/Whatavoice.png",
+    "source/content/Z - Pictures/Thispoorguy.png",
+    "source/content/Z - Pictures/Thisguyvanished.png",
+    "source/content/Z - Pictures/Thegodspirefalls.png",
+    "source/content/Z - Pictures/Starrysky.png",
+    "source/content/Z - Pictures/Littlefella.png",
+    "source/content/Z - Pictures/Rabbitgirl.png",
+    "source/content/Z - Pictures/Rarghwebreathefire.png",
+    "source/content/index.md",
     "README.md"
   ]
 }

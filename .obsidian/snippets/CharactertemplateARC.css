@@ -290,3 +290,128 @@
   color: #b87333; /* Strong bronze drop cap */
   margin-right: 8px;
 }
+
+/* === ISTORIA PORTRAIT — MATCHED TO PAGE BOXES === */
+
+.inky-goddess-portrait {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.inky-goddess-frame {
+  position: relative;
+  width: 260px;
+  aspect-ratio: 3 / 4;
+  border-radius: 22px;
+  overflow: hidden;
+
+  /* MATCHED BOX GRADIENT */
+  background: linear-gradient(
+    135deg,
+    #1c1f3f 0%,
+    #2a1f5a 40%,
+    #3b2370 100%
+  );
+
+  border: 1px solid rgba(120, 110, 255, 0.35);
+
+  /* Soft cosmic glow (like your panels) */
+  box-shadow:
+    0 0 25px rgba(80, 70, 200, 0.35),
+    0 0 60px rgba(60, 40, 150, 0.25);
+}
+
+/* Soft inner depth */
+.inky-goddess-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(140, 130, 255, 0.15),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* Image styling */
+.inky-goddess-frame img {
+  position: absolute;
+  inset: 12px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  object-fit: cover;
+  border-radius: 16px;
+
+  filter:
+    saturate(1.1)
+    contrast(1.05)
+    drop-shadow(0 0 10px rgba(100, 90, 255, 0.35));
+}
+
+/* Centering Container */
+.purple-divine-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+/* The Diamond Frame */
+.purple-divine-diamond {
+  position: relative;
+  width: 260px;
+  aspect-ratio: 1 / 1;
+
+  /* Diamond shape */
+  transform: rotate(45deg);
+  overflow: hidden;
+
+  /* MATCHED BOX GRADIENT */
+  background: linear-gradient(
+    135deg,
+    #1c1f3f 0%,
+    #2a1f5a 40%,
+    #3b2370 100%
+  );
+
+  border: 1px solid rgba(120, 110, 255, 0.35);
+
+  /* Soft cosmic glow */
+  box-shadow:
+    0 0 25px rgba(80, 70, 200, 0.35),
+    0 0 60px rgba(60, 40, 150, 0.25);
+}
+
+/* Soft inner divine glow */
+.purple-divine-diamond::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(140, 130, 255, 0.18),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+.purple-divine-diamond img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /* Keep image upright */
+  transform: rotate(-45deg) scale(1.5);
+
+  filter:
+    saturate(1.1)
+    contrast(1.05)
+    drop-shadow(0 0 12px rgba(100, 90, 255, 0.35));
+}

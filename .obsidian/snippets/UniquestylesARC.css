@@ -1,0 +1,94 @@
+/* === ISTORIA WHISPERING TOMES — FIXED STACKING === */
+
+.istoria-tome-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.istoria-tome {
+  position: relative;
+  width: 170px;
+  aspect-ratio: 2 / 3;
+  border-radius: 18px;
+  overflow: visible; /* IMPORTANT */
+  cursor: pointer;
+
+  background: linear-gradient(
+    135deg,
+    #1c1f3f 0%,
+    #2a1f5a 40%,
+    #3b2370 100%
+  );
+
+  border: 1px solid rgba(120, 110, 255, 0.35);
+
+  box-shadow:
+    0 0 20px rgba(80, 70, 200, 0.25),
+    0 0 40px rgba(60, 40, 150, 0.15);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  z-index: 1; /* base layer */
+}
+
+/* 👇 This is the fix */
+.istoria-tome:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow:
+    0 0 35px rgba(110, 100, 255, 0.45),
+    0 0 70px rgba(60, 40, 150, 0.3);
+
+  z-index: 999; /* force above siblings */
+}
+
+.istoria-tome img {
+  position: absolute;
+  inset: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* === Tooltip === */
+
+.tome-tooltip {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 220px;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #1c1f3f 0%,
+    #2a1f5a 40%,
+    #3b2370 100%
+  );
+
+  border: 1px solid rgba(120, 110, 255, 0.35);
+
+  box-shadow:
+    0 0 25px rgba(80, 70, 200, 0.3);
+
+  color: #ddd;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.4;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+
+  z-index: 1000; /* higher than everything */
+}
+
+.istoria-tome:hover .tome-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

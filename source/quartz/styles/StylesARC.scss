@@ -1,6 +1,8 @@
 /* =========================================
-   GALAXY NO TITLE - FINAL FIX
+   UNIVERSAL GALAXY STYLE - OBSIDIAN & QUARTZ
    ========================================= */
+
+/* 1. The Main Container */
 .callout[data-callout="galaxy-no-title"] {
   background: linear-gradient(
     135deg,
@@ -8,31 +10,37 @@
     rgba(37, 99, 235, 0.3), 
     rgba(109, 40, 217, 0.3)
   ) !important;
-  border: 1px solid rgba(140, 90, 255, 0.5);
-  border-radius: 18px;
-  padding: 18px;
-  box-shadow:
-    0 0 25px rgba(59, 130, 246, 0.15),
-    0 0 35px rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(140, 90, 255, 0.5) !important;
+  border-radius: 18px !important;
+  padding: 18px !important;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.15), 0 0 35px rgba(168, 85, 247, 0.15) !important;
+  display: block !important;
 }
 
-/* Hide the title area entirely */
+/* 2. Hide the Title Bar (Icon + Text) */
 .callout[data-callout="galaxy-no-title"] .callout-title {
   display: none !important;
 }
 
-/* Force the content area to display and stay white */
+/* 3. Force Content Visibility & Color */
 .callout[data-callout="galaxy-no-title"] .callout-content {
   display: block !important;
   color: #ffffff !important;
-  font-style: italic;
-  line-height: 1.6;
+  font-style: italic !important;
+  opacity: 1 !important;
 }
 
-/* Ensure all paragraphs inside are white */
+/* 4. Ensure paragraphs inside don't inherit theme colors */
 .callout[data-callout="galaxy-no-title"] .callout-content p {
   color: #ffffff !important;
-  margin: 0;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
+
+/* 5. Link Visibility for Dark Backgrounds */
+.callout[data-callout="galaxy-no-title"] a {
+  color: #93c5fd !important;
+  text-decoration: underline !important;
 }
 
 /* =========================================

@@ -6,6 +6,23 @@
 
 
 <div class="istoria-tome-row">
+  <div class="istoria-tome" style="display: grid; place-items: center; position: relative;">
+    
+    <img src="Thegodspirefalls.png" 
+         style="width: calc(100% - 20px); 
+                height: calc(100% - 20px); 
+                object-fit: cover; 
+                border-radius: 12px; 
+                display: block; 
+                margin: 0 !important;">
+    <div class="tome-tooltip">
+      Enter your tooltip text here.
+    </div>
+  </div>
+</div>
+
+
+<div class="istoria-tome-row">
   <div class="istoria-tome">
       <img src="Thegodspirefalls.png" alt="DivinityPic">
       <div class="tome-tooltip">Tome of Divinity</div>

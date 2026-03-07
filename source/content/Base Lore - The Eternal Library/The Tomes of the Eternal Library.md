@@ -4,23 +4,12 @@
 
 **The tomes of the Eternal Library are divided into Archives. These Archives occupy various planets all centered within the "Cluster Galaxy." The ink merely writes what was always meant to be. Even with every mistake, things are guided back in place. The various tomes are noted below.**
 
-
 <div class="istoria-tome-row">
-  <div class="istoria-tome" style="display: grid; place-items: center; position: relative;">
-    
-    <img src="Thegodspirefalls.png" 
-         style="width: calc(100% - 20px); 
-                height: calc(100% - 20px); 
-                object-fit: cover; 
-                border-radius: 12px; 
-                display: block; 
-                margin: 0 !important;">
-    <div class="tome-tooltip">
-      Enter your tooltip text here.
-    </div>
-  </div>
+  <a class="istoria-tome" href="#">
+    <img src="Thegodspirefalls.png" alt="DivinityPic">
+    <div class="tome-tooltip">Tome of Divinity</div>
+  </a>
 </div>
-
 
 <div class="istoria-tome-row">
   <div class="istoria-tome">

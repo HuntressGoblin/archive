@@ -16,7 +16,7 @@
   border-radius: 18px;
   overflow: visible;
   cursor: pointer;
-  box-sizing: border-box; /* Ensures border doesn't push the inner content */
+  box-sizing: border-box;
 
   background: linear-gradient(
     135deg,
@@ -26,59 +26,88 @@
   );
 
   border: 1px solid rgba(120, 110, 255, 0.35);
+
   box-shadow:
     0 0 20px rgba(80, 70, 200, 0.25),
     0 0 40px rgba(60, 40, 150, 0.15);
 
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+
   z-index: 1;
 }
 
 .istoria-tome:hover {
   transform: translateY(-10px) scale(1.04);
+
   box-shadow:
     0 0 35px rgba(110, 100, 255, 0.45),
     0 0 70px rgba(60, 40, 150, 0.3);
+
   z-index: 999;
 }
 
-/* Updated Image Centering Logic */
+/* === Image Centering (Quartz-safe) === */
+
 .istoria-tome img {
   position: absolute;
-  /* Centering from the midpoint is more reliable than using inset */
+
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  
+  transform: translate(-50%, -50%);
+
   width: calc(100% - 20px);
   height: calc(100% - 20px);
+
   object-fit: cover;
+  object-position: center;
+
   border-radius: 12px;
-  
-  display: block; /* Removes the bottom gap caused by inline-block defaults */
+
+  display: block;
   margin: 0;
-  max-width: none; /* Prevents site-wide img{max-width: 100%} from shrinking it */
+
+  max-width: none;
+  max-height: none;
+
+  pointer-events: none;
 }
 
 /* === Tooltip === */
+
 .tome-tooltip {
   position: absolute;
+
   bottom: -110px;
   left: 50%;
+
   transform: translateX(-50%) translateY(10px);
+
   width: 220px;
   padding: 0.9rem 1rem;
+
   border-radius: 14px;
-  background: linear-gradient(135deg, #1c1f3f 0%, #2a1f5a 40%, #3b2370 100%);
+
+  background: linear-gradient(
+    135deg,
+    #1c1f3f 0%,
+    #2a1f5a 40%,
+    #3b2370 100%
+  );
+
   border: 1px solid rgba(120, 110, 255, 0.35);
+
   box-shadow: 0 0 25px rgba(80, 70, 200, 0.3);
+
   color: #ddd;
   font-size: 0.85rem;
   text-align: center;
   line-height: 1.4;
+
   opacity: 0;
   pointer-events: none;
+
   transition: opacity 0.25s ease, transform 0.25s ease;
+
   z-index: 1000;
 }
 

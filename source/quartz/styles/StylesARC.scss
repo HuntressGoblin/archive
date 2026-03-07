@@ -1,52 +1,44 @@
 /* =========================================
-   GALAXY THEME (NO ICON) - FULL OVERRIDE
+   GALAXY NO TITLE - VISIBILITY FIX
    ========================================= */
-.callout[data-callout="galaxy"] {
+.callout[data-callout="galaxy-no-title"] {
   background: linear-gradient(
     135deg,
-    rgba(15, 23, 42, 0.8),
-    rgba(37, 99, 235, 0.3),
+    rgba(15, 23, 42, 0.9), 
+    rgba(37, 99, 235, 0.3), 
     rgba(109, 40, 217, 0.3)
-  );
-  border: 1px solid rgba(140, 90, 255, 0.4);
+  ) !important;
+  border: 1px solid rgba(140, 90, 255, 0.5);
   border-radius: 18px;
   padding: 18px;
-  font-style: italic;
   box-shadow:
     0 0 25px rgba(59, 130, 246, 0.15),
     0 0 35px rgba(168, 85, 247, 0.15);
-
-  /* Set base variables to white */
-  --callout-icon: none;
-  --callout-title-color: #ffffff;
-  --callout-content-color: #ffffff;
+  
+  /* Ensure the container expands to fit text */
+  height: auto;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* 1. Force the Title (The word "Galaxy") to White */
-.callout[data-callout="galaxy"] .callout-title,
-.callout[data-callout="galaxy"] .callout-title-inner,
-.callout[data-callout="galaxy"] .callout-title-text {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  font-weight: bold;
-}
-
-/* 2. Force the Body Content to White */
-.callout[data-callout="galaxy"] .callout-content,
-.callout[data-callout="galaxy"] .callout-content p {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-/* 3. Completely hide the icon space */
-.callout[data-callout="galaxy"] .callout-icon {
+/* 1. Completely remove the title element so it doesn't block the body */
+.callout[data-callout="galaxy-no-title"] .callout-title {
   display: none !important;
 }
 
-/* 4. Ensure links inside the callout are still visible (Optional) */
-.callout[data-callout="galaxy"] a {
-  color: #93c5fd !important; /* A light blue for links */
-  text-decoration: underline;
+/* 2. Force the content area to be visible and white */
+.callout[data-callout="galaxy-no-title"] .callout-content {
+  display: block !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-style: italic;
+}
+
+/* 3. Ensure all paragraph tags inside are also forced to white */
+.callout[data-callout="galaxy-no-title"] .callout-content p {
+  color: #ffffff !important;
+  margin: 0;
 }
 
 /* =========================================

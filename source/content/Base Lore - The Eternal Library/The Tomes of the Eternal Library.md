@@ -10,7 +10,7 @@
   <div class="istoria-tome">
       <img src="Thegodspirefalls.png" alt="DivinityPic">
       <div class="tome-tooltip">Tome of Divinity</div>
-    </a>
+    
   </div>
   <div class="istoria-tome">
       <img src="Finalepic.png" alt="ElementsPic">

@@ -1,4 +1,4 @@
-/* === ISTORIA WHISPERING TOMES — FIXED STACKING === */
+/* === ISTORIA WHISPERING TOMES — STABILIZED (QUARTZ SAFE) === */
 
 .istoria-tome-row {
   display: flex;
@@ -14,8 +14,9 @@
   width: 170px;
   aspect-ratio: 2 / 3;
   border-radius: 18px;
-  overflow: visible; /* IMPORTANT */
+  overflow: hidden; /* Keeps image inside frame */
   cursor: pointer;
+  box-sizing: border-box;
 
   background: linear-gradient(
     135deg,
@@ -31,37 +32,47 @@
     0 0 40px rgba(60, 40, 150, 0.15);
 
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-  z-index: 1; /* base layer */
+  z-index: 1;
 }
 
-/* 👇 This is the fix */
 .istoria-tome:hover {
   transform: translateY(-10px) scale(1.04);
+
   box-shadow:
     0 0 35px rgba(110, 100, 255, 0.45),
     0 0 70px rgba(60, 40, 150, 0.3);
 
-  z-index: 999; /* force above siblings */
+  z-index: 999;
 }
+
+/* === IMAGE CENTERING (QUARTZ SAFE) === */
 
 .istoria-tome img {
-  position: absolute;
-  inset: 10px;
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
+  width: 100%;
+  height: 100%;
+
   object-fit: cover;
+  object-position: center;
+
   border-radius: 12px;
+
+  display: block;
+  margin: 0;
+
+  max-width: none; /* overrides Quartz global img rule */
 }
 
-/* === Tooltip === */
+/* === TOOLTIP === */
 
 .tome-tooltip {
   position: absolute;
   bottom: -110px;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
+
   width: 220px;
   padding: 0.9rem 1rem;
+
   border-radius: 14px;
 
   background: linear-gradient(
@@ -73,8 +84,7 @@
 
   border: 1px solid rgba(120, 110, 255, 0.35);
 
-  box-shadow:
-    0 0 25px rgba(80, 70, 200, 0.3);
+  box-shadow: 0 0 25px rgba(80, 70, 200, 0.3);
 
   color: #ddd;
   font-size: 0.85rem;
@@ -83,9 +93,10 @@
 
   opacity: 0;
   pointer-events: none;
+
   transition: opacity 0.25s ease, transform 0.25s ease;
 
-  z-index: 1000; /* higher than everything */
+  z-index: 1000;
 }
 
 .istoria-tome:hover .tome-tooltip {

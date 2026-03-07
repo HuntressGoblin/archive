@@ -1,5 +1,5 @@
 /* =========================================
-   GALAXY THEME (NO ICON)
+    GALAXY THEME (NO ICON) - FIXED
    ========================================= */
 .callout[data-callout="galaxy"] {
   background: linear-gradient(
@@ -16,21 +16,27 @@
     0 0 25px rgba(59, 130, 246, 0.15),
     0 0 35px rgba(168, 85, 247, 0.15);
 
-  /* Explicitly remove icon */
+  /* Force the text color for the entire container */
+  color: #ffffff !important; 
   --callout-icon: none;
-}
-
-.callout[data-callout="galaxy"] {
   --callout-color: 140, 90, 255;
 }
 
-.callout[data-callout="galaxy"] .callout-title {
-  color: var(--text-normal);
+/* Specifically target the inner content to override website defaults */
+.callout[data-callout="galaxy"] .callout-content,
+.callout[data-callout="galaxy"] .callout-content p,
+.callout[data-callout="galaxy"] .callout-title-inner {
+  color: #ffffff !important;
 }
 
 /* Remove icon styling completely */
 .callout[data-callout="galaxy"] .callout-icon {
   display: none !important;
+}
+
+/* Ensure title doesn't revert to grey */
+.callout[data-callout="galaxy"] .callout-title {
+  color: #ffffff !important;
 }
 
 /* =========================================

@@ -1,14 +1,14 @@
 /* =========================================
-    GALAXY THEME (NO ICON) - FIXED
+   GALAXY THEME (NO ICON) - FULL OVERRIDE
    ========================================= */
 .callout[data-callout="galaxy"] {
   background: linear-gradient(
     135deg,
-    rgba(15, 23, 42, 0.7),
-    rgba(37, 99, 235, 0.25),
-    rgba(109, 40, 217, 0.25)
+    rgba(15, 23, 42, 0.8),
+    rgba(37, 99, 235, 0.3),
+    rgba(109, 40, 217, 0.3)
   );
-  border: 1px solid rgba(47, 17, 118, 0.5);
+  border: 1px solid rgba(140, 90, 255, 0.4);
   border-radius: 18px;
   padding: 18px;
   font-style: italic;
@@ -16,27 +16,37 @@
     0 0 25px rgba(59, 130, 246, 0.15),
     0 0 35px rgba(168, 85, 247, 0.15);
 
-  /* Force the text color for the entire container */
-  color: #ffffff !important; 
+  /* Set base variables to white */
   --callout-icon: none;
-  --callout-color: 140, 90, 255;
+  --callout-title-color: #ffffff;
+  --callout-content-color: #ffffff;
 }
 
-/* Specifically target the inner content to override website defaults */
-.callout[data-callout="galaxy"] .callout-content,
-.callout[data-callout="galaxy"] .callout-content p,
-.callout[data-callout="galaxy"] .callout-title-inner {
+/* 1. Force the Title (The word "Galaxy") to White */
+.callout[data-callout="galaxy"] .callout-title,
+.callout[data-callout="galaxy"] .callout-title-inner,
+.callout[data-callout="galaxy"] .callout-title-text {
   color: #ffffff !important;
+  opacity: 1 !important;
+  font-weight: bold;
 }
 
-/* Remove icon styling completely */
+/* 2. Force the Body Content to White */
+.callout[data-callout="galaxy"] .callout-content,
+.callout[data-callout="galaxy"] .callout-content p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* 3. Completely hide the icon space */
 .callout[data-callout="galaxy"] .callout-icon {
   display: none !important;
 }
 
-/* Ensure title doesn't revert to grey */
-.callout[data-callout="galaxy"] .callout-title {
-  color: #ffffff !important;
+/* 4. Ensure links inside the callout are still visible (Optional) */
+.callout[data-callout="galaxy"] a {
+  color: #93c5fd !important; /* A light blue for links */
+  text-decoration: underline;
 }
 
 /* =========================================

@@ -1,0 +1,22 @@
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+
+export default (() => {
+  const CustomFooter: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+    const year = new Date().getFullYear()
+
+    return (
+      <footer class={`${displayClass ?? ""}`}>
+        <p>© 2020 - {year} This is a placeholder</p>
+        <ul>
+          <li>
+            <a href="https://lore.enutheta.com" target="_blank" rel="noopener noreferrer">
+              Another placeholder. 
+            </a>
+          </li>
+        </ul>
+      </footer>
+    )
+  }
+
+  return CustomFooter
+}) satisfies QuartzComponentConstructor

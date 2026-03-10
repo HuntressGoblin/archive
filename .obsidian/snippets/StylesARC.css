@@ -454,3 +454,20 @@
     .bookmark-box { padding: 16px 14px; font-size: 0.95rem; }
     .bookmark-box::before { left: 6px; transform: rotate(-3deg); }
 }
+
+/* Make all text black */
+.bookmark-box {
+    color: #000000;
+}
+
+/* Make links black too */
+.bookmark-box a,
+.bookmark-box .internal-link {
+    color: #000000 !important;
+}
+
+/* Keep links black on hover */
+.bookmark-box a:hover,
+.bookmark-box .internal-link:hover {
+    color: #000000 !important;
+}

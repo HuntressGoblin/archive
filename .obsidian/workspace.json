@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/Base Lore - The Eternal Library/Stop! Start here!.md",
+                "file": "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stop! Start here!"
+              "title": "Istoria, Lady of Ink"
             }
           }
         ]
@@ -186,11 +186,29 @@
   },
   "active": "51b0f23028237bab",
   "lastOpenFiles": [
-    "source/content/DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",
-    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
-    "source/content/category-folder/index.md",
-    "source/content/category-folder/Some note.md",
+    "source/quartz/static/og-image.png",
+    "source/quartz/static/wheredidIputthis.png",
+    "source/quartz/static/icon.png",
+    "source/quartz/static/icon (2).png",
+    "source/quartz/static/Biglibrary.png",
     "source/content/Base Lore - The Eternal Library/Stop! Start here!.md",
+    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
+    "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/The Supernova.md",
+    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
+    "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
+    "source/content/index.md",
+    "source/content/Z - Pictures/Abbalon.png",
+    "source/content/Z - Pictures/SOUP.png",
+    "source/quartz/styles/Uniquetext.scss",
+    "source/quartz/styles/Uniquetext.css",
+    "source/content/Z - Pictures/Galaxyswirl 1.png",
+    "source/content/Z - Pictures/Galaxyswirl.png",
+    "source/content/category-folder/Some note.md",
+    "source/content/Base Lore - The Eternal Library",
+    "source/content/category-folder/index.md",
+    "source/content/DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",
     "source/quartz/styles/UniquestylesARC.scss",
     "source/quartz/styles/StylesARC.scss",
     "source/quartz/styles/QuoteboxesARC.scss",
@@ -198,26 +216,14 @@
     "source/quartz/styles/CharactertemplateARC.scss",
     "source/quartz/styles/UniquestylesARC.css",
     "source/quartz/styles/StylesARC.css",
-    "source/quartz/styles/QuoteboxesARC.css",
-    "source/quartz/styles/PartygridthemesARC.css",
-    "source/quartz/styles/CharactertemplateARC.css",
     "source/content/Z - Pictures/Titlepagestuff.png",
     "source/content/Z - Pictures/Thisisdefthecover.png",
-    "source/content/Z - Pictures/Thumbnailimage1.png",
-    "source/content/Z - Pictures/Theradiantcitadelfix.png",
-    "source/content/Z - Pictures/Theroscover.png",
-    "source/content/Z - Pictures/Thegodspirefalls.png",
-    "source/content/Z - Pictures/Starrysky.png",
-    "source/content/Z - Pictures/Technicallynotimport.png",
-    "source/content/Z - Pictures/Seasonofghoststhumbnail.png",
-    "source/content/Z - Pictures/Placeholder.png",
     "source/DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",
     "source/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
     "source/Base Lore - The Eternal Library/Stop! Start here!.md",
     "DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",
     "Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
     "Base Lore - The Eternal Library/Stop! Start here!.md",
-    "source/content/index.md",
     "source/docs/advanced/architecture.md",
     "source/docs/advanced/paths.md",
     "source/docs/advanced/making plugins.md",
@@ -225,11 +231,6 @@
     "source/docs/advanced/creating components.md",
     "Z - Pictures/Diomeades Eldwynair.md",
     "Base Lore - The Eternal Library/Z - Pictures/Diomeades Eldwynair.md",
-    "Base Lore - The Eternal Library/What is the Eternal Library.md",
-    "Base Lore - The Eternal Library/The Cluster Galaxy.md",
-    "Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
-    "source/README.md",
-    "README.md",
-    "DnD - Archive of Artimis/World of Artimis/Characters/Powerful Figures/Zariel, Archdevil of Avernus.md"
+    "Base Lore - The Eternal Library/What is the Eternal Library.md"
   ]
 }

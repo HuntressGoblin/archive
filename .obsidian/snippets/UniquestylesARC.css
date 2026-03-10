@@ -100,3 +100,164 @@
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* =========================================
+   GALAXY OBSERVATORY FRAME (BALANCED GLOW)
+   ========================================= */
+
+.galaxy-image-frame {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* IMAGE */
+
+.galaxy-image-frame img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+
+  clip-path: polygon(
+    10% 0%, 90% 0%,
+    100% 20%, 100% 80%,
+    90% 100%, 10% 100%,
+    0% 80%, 0% 20%
+  );
+
+  border: 2px solid rgba(140,90,255,0.6);
+}
+
+/* SOFT OUTER NEBULA */
+
+.galaxy-image-frame::before {
+
+  content: "";
+  position: absolute;
+
+  inset: -70px;
+
+  background:
+    radial-gradient(circle at 25% 40%, rgba(59,130,246,.35), transparent 60%),
+    radial-gradient(circle at 75% 60%, rgba(168,85,247,.35), transparent 60%),
+    radial-gradient(circle at 50% 15%, rgba(140,90,255,.3), transparent 60%);
+
+  filter: blur(40px);
+
+  opacity: .55;
+
+  z-index: 0;
+}
+
+/* STARFIELD */
+
+.galaxy-image-frame::after {
+
+  content: "";
+  position: absolute;
+
+  inset: -100px;
+
+  background:
+
+    radial-gradient(4px 4px at 15% 30%, white, transparent),
+    radial-gradient(3px 3px at 85% 20%, #93c5fd, transparent),
+    radial-gradient(4px 4px at 70% 75%, white, transparent),
+    radial-gradient(3px 3px at 25% 85%, #c084fc, transparent),
+    radial-gradient(3px 3px at 60% 10%, white, transparent);
+
+  animation: galaxy-twinkle 5s ease-in-out infinite alternate;
+
+  opacity: .85;
+
+  z-index: 1;
+}
+
+/* TWINKLE */
+
+@keyframes galaxy-twinkle {
+
+  0% {
+    transform: scale(1);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+}
+
+/* =========================================
+   MULTI PLANET ORBITS
+   ========================================= */
+
+.orbit{
+  position:absolute;
+  border-radius:50%;
+  pointer-events:none;
+}
+
+/* Orbit sizes */
+
+.orbit1{ inset:-110px; animation:orbit 30s linear infinite; }
+.orbit2{ inset:-140px; animation:orbit 45s linear infinite reverse; }
+.orbit3{ inset:-170px; animation:orbit 60s linear infinite; }
+.orbit4{ inset:-200px; animation:orbit 75s linear infinite reverse; }
+.orbit5{ inset:-230px; animation:orbit 95s linear infinite; }
+
+/* Base planet */
+
+.planet{
+  position:absolute;
+  top:0%;
+  left:50%;
+  border-radius:50%;
+}
+
+/* Planet styles */
+
+.p1{
+  width:14px;
+  height:14px;
+  background:radial-gradient(circle at 30% 30%, #fff, #60a5fa);
+  box-shadow:0 0 8px #93c5fd;
+}
+
+.p2{
+  width:10px;
+  height:10px;
+  background:radial-gradient(circle at 30% 30%, #fff, #c084fc);
+  box-shadow:0 0 6px #c084fc;
+}
+
+.p3{
+  width:12px;
+  height:12px;
+  background:radial-gradient(circle at 30% 30%, #fff, #34d399);
+  box-shadow:0 0 7px #34d399;
+}
+
+.p4{
+  width:9px;
+  height:9px;
+  background:radial-gradient(circle at 30% 30%, #fff, #f472b6);
+  box-shadow:0 0 6px #f472b6;
+}
+
+.p5{
+  width:16px;
+  height:16px;
+  background:radial-gradient(circle at 30% 30%, #fff, #fbbf24);
+  box-shadow:0 0 9px #fbbf24;
+}
+
+/* Orbit animation */
+
+@keyframes orbit{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}

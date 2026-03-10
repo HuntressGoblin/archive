@@ -12,26 +12,30 @@
 :root[saved-theme="dark"],
 :root[data-theme=dark],
 :root[data-theme="dark"] {
-  --light: #0b0f1f !important;        /* deep space */
-  --lightgray: #121a33 !important;    /* cosmic background */
-  --gray: #1e2745 !important;         /* nebula haze */
-  --darkgray: #c8d1ff !important;     /* starlight text */
-  --dark: #eef2ff !important;         /* bright star text */
-  --secondary: #9b7cff !important;    /* nebula purple */
-  --tertiary: #6fd3ff !important;     /* cosmic blue */
+  --light: #0f172a !important;        /* deep space background */
+  --lightgray: #1a2142 !important;    /* galaxy panels */
+  --gray: #222a54 !important;         /* secondary surfaces */
+
+  --darkgray: #c7d2ff !important;     /* softer text */
+  --dark: #ffffff !important;         /* main text */
+
+  --secondary: #2563eb !important;    /* galaxy blue */
+  --tertiary: #6d28d9 !important;     /* nebula purple */
 }
 
 :root[saved-theme=light],
 :root[saved-theme="light"],
 :root[data-theme=light],
 :root[data-theme="light"] {
---light: #0b0f1f !important;        /* deep space */
-  --lightgray: #121a33 !important;    /* cosmic background */
-  --gray: #1e2745 !important;         /* nebula haze */
-  --darkgray: #c8d1ff !important;     /* starlight text */
-  --dark: #eef2ff !important;         /* bright star text */
-  --secondary: #9b7cff !important;    /* nebula purple */
-  --tertiary: #6fd3ff !important;     /* cosmic blue */
+  --light: #1a1f3a !important;        /* slightly brighter cosmic background */
+  --lightgray: #242b52 !important;    /* nebula surface */
+  --gray: #2e3568 !important;         /* raised panels */
+
+  --darkgray: #d6dbff !important;     /* readable soft text */
+  --dark: #ffffff !important;         /* main text */
+
+  --secondary: #3b82f6 !important;    /* brighter galaxy blue */
+  --tertiary: #8b5cf6 !important;     /* brighter nebula purple */
 }
 
 /* Hide the "Created with Quartz" line, keep your links */

@@ -471,3 +471,27 @@
 .bookmark-box .internal-link:hover {
     color: #000000 !important;
 }
+
+/* =========================================
+   FORCE ALL BOOKMARK TEXT BLACK (OBSIDIAN + QUARTZ)
+   ========================================= */
+
+.bookmark-box,
+.bookmark-box * {
+    color: #000000 !important;
+}
+
+/* specifically override Quartz link styling */
+.bookmark-box a,
+.bookmark-box .internal-link,
+.bookmark-box .external-link {
+    color: #000000 !important;
+    text-decoration: underline;
+}
+
+/* keep links black on hover */
+.bookmark-box a:hover,
+.bookmark-box .internal-link:hover,
+.bookmark-box .external-link:hover {
+    color: #000000 !important;
+}

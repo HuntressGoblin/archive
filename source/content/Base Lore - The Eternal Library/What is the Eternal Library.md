@@ -1,9 +1,16 @@
-<div class="callout" data-callout="galaxy-no-title">
-  <div class="callout-title"> <div class="callout-icon"></div>
-    <div class="callout-title-inner">galaxy-no-title</div>
-  </div>
-  <div class="callout-content"> <p>Deep in the fabric of reality, behind every little action and detail, lies something that stretches endlessly for miles. Shelves full of tomes lie neatly organized, containing each small bit of data etched by feather quills and ink. They stretch like massive towers to unknown heights amongst a realm made of nothing... but ink. If you made it here, you either have truly made a deadly mistake and hit your last resort, you've truly gone mad, or enlightenment has decided to reach you.</p>
-  </div>
+
+
+
+<div class="bookmark-box">
+    <h3>Don't look Behind the Ink</h3>
+    <p>Deep in the fabric of reality, behind every little action and detail, lies something that stretches endlessly for miles. Shelves full of tomes lie neatly organized, containing each small bit of data etched by feather quills and ink. They stretch like massive towers to unknown heights amongst a realm made of nothing... but ink. If you made it here, you either have truly made a deadly mistake and hit your last resort, you've truly gone mad, or enlightenment has decided to reach you.</p>
+    <!-- Add ink drops -->
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+    <div class="letterbox-signature">
+    — ???
 </div>
 
 
@@ -27,8 +34,3 @@ Every story is safely stored in the Eternal Library, watched over by a large fig
     <img src="Technicallynotimport.png" alt="Divine Portrait">
   </div>
 </div>
-
-
-<br>
-<br>
-<br>

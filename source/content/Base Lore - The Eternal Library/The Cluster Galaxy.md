@@ -1,3 +1,4 @@
+
 <div class="bookmark-box">
     <h3>Home is Everything</h3>
     <p>The Cluster Galaxy is not simply just another universe. It comes in many different forms, each hidden behind the veil of ink like a bookshelf separating tomes in a library. There are many ways to look at this oddity. There is one truth that remains consistent about it, however. The Cluster Galaxy is not just a universe, it is the home of all. </p>
@@ -6,6 +7,9 @@
     <span class="ink-drop"></span>
     <span class="ink-drop"></span>
     <span class="ink-drop"></span>
+    <div class="letterbox-signature">
+    — ???
+
 </div>
 
 
@@ -24,7 +28,6 @@
 
 > [!galaxy]- Is traveling between each "cluster" possible?
 > Under normal circumstances, no one is able to cross the [[The Ink that Binds|ink]] that separates each world. This extends to divine beings, even. However, it is not impossible. Some say that if you gain just a small bottle of ink, you can hop between each cluster and explore new archives. Just be wary, the [[Istoria, Lady of Ink|Storyteller]] doesn't like intruders, and neither does the world around you. 
-
 
 
 <br>

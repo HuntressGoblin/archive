@@ -1,16 +1,21 @@
 
-<div class="callout" data-callout="galaxy-no-title">
-  <div class="callout-title"> <div class="callout-icon"></div>
-    <div class="callout-title-inner">galaxy-no-title</div>
-  </div>
-  <div class="callout-content"> <p>In the void, there was once nothing. All that remained was an inky black nothingness bundled with potential. They say when the ink shifted, she did too. Istoria is many things, but even she recognizes that she is just another character in a story. Give her a chance, let her open a tome and read you a story.</p>
+<div class="bookmark-box">
+    <h3>Never, yet always</h3>
+    <p>There are several tomes throughout her library. Each is unique and different, fostering life within each sentence and syllable. To read them yourself would be an overwhelming, maddening abyss of writhing ink. To her, it is a story to hold dear for the rest of time itself.</p>
+    <!-- Add ink drops -->
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+    <div class="letterbox-signature">
+    — ???
+</div>
+
+<div class="inky-goddess-portrait">
+  <div class="inky-goddess-frame">
+    <img src="Technicallynotimport.png" alt="Inky Purple Goddess Portrait">
   </div>
 </div>
-<div class="istoria-tome-row">
-  <div class="istoria-tome">
-      <img src="Technicallynotimport.png" alt="IstoryPic">
-      
-  </div>
 
 ---
 

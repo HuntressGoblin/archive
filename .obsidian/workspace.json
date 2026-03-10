@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Istoria, Lady of Ink"
             }
           }
         ]
@@ -186,16 +186,18 @@
   },
   "active": "51b0f23028237bab",
   "lastOpenFiles": [
-    "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
     "source/content/index.md",
-    "source/content/Z - Pictures/Purplelibrary.png",
-    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/index.md",
-    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
+    "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
     "source/content/Base Lore - The Eternal Library/Stop! Start here!.md",
     "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
+    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
     "source/content/Base Lore - The Eternal Library/The Supernova.md",
+    "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library 2.md",
+    "source/content/Z - Pictures/Pictureofprettycrystals.png",
+    "source/content/Z - Pictures/Purplelibrary.png",
+    "source/content/Base Lore - The Eternal Library/index.md",
     "source/content/Base Lore - The Eternal Library/The Cluster Galaxy IMPROVE.md",
     "source/content/category-folder/Some note.md",
     "source/content/category-folder",
@@ -210,7 +212,6 @@
     "source/quartz/styles/Uniquetext.scss",
     "source/quartz/styles/Uniquetext.css",
     "source/content/Z - Pictures/Galaxyswirl 1.png",
-    "source/content/Z - Pictures/Galaxyswirl.png",
     "source/content/Base Lore - The Eternal Library",
     "source/content/category-folder/index.md",
     "source/content/DnD - Archive of Artimis/Tome of Divinity/Journey to Divinity.md",

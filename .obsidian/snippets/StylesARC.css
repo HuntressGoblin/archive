@@ -46,7 +46,6 @@
 /* =========================================
    GALAXY THEME (NO ICON) - FULL OVERRIDE
    ========================================= */
-
 .callout[data-callout="galaxy"] {
   background: linear-gradient(
     135deg,
@@ -62,69 +61,36 @@
     0 0 25px rgba(59, 130, 246, 0.15),
     0 0 35px rgba(168, 85, 247, 0.15);
 
-  /* Base variables */
+  /* Set base variables to white */
   --callout-icon: none;
   --callout-title-color: #ffffff;
   --callout-content-color: #ffffff;
-
-  /* Centering the text block inside the box */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* This pulls the text containers to the horizontal center */
 }
 
-/* =========================================
-   TITLE STYLING
-   ========================================= */
-
+/* 1. Force the Title (The word "Galaxy") to White */
 .callout[data-callout="galaxy"] .callout-title,
 .callout[data-callout="galaxy"] .callout-title-inner,
 .callout[data-callout="galaxy"] .callout-title-text {
   color: #ffffff !important;
   opacity: 1 !important;
   font-weight: bold;
-  text-align: left !important; /* Keeps the sentence reading left-to-right */
 }
 
-.callout[data-callout="galaxy"] .callout-title {
-  justify-content: center; /* Centers the title wrapper */
-  width: 100%;
-}
-
-/* =========================================
-   BODY TEXT
-   ========================================= */
-
-.callout[data-callout="galaxy"] .callout-content {
+/* 2. Force the Body Content to White */
+.callout[data-callout="galaxy"] .callout-content,
+.callout[data-callout="galaxy"] .callout-content p {
   color: #ffffff !important;
   opacity: 1 !important;
-  display: flex;
-  justify-content: center; /* Centers the paragraph block */
-  width: 100%;
 }
 
-.callout[data-callout="galaxy"] .callout-content p {
-  margin: 0;
-  text-align: left !important; /* Keeps the text left-aligned within its centered block */
-}
-
-/* =========================================
-   REMOVE ICON SPACE
-   ========================================= */
-
+/* 3. Completely hide the icon space */
 .callout[data-callout="galaxy"] .callout-icon {
-  display: none !important; /* Cleanest way to remove the gap */
-  width: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  display: none !important;
 }
 
-/* =========================================
-   LINKS INSIDE CALLOUT
-   ========================================= */
-
+/* 4. Ensure links inside the callout are still visible (Optional) */
 .callout[data-callout="galaxy"] a {
-  color: #93c5fd !important;
+  color: #93c5fd !important; /* A light blue for links */
   text-decoration: underline;
 }
 

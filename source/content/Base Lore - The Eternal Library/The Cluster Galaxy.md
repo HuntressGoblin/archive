@@ -1,14 +1,30 @@
-> [!galaxy-no-title]
-> [[The Cluster Galaxy]] is an umbrella term. While all perceive themselves to be located in the Cluster, the truth is that the "Cluster Galaxy" encompasses every world. Each world is hidden behind a great void of [[The Ink that Binds|ink]]. Most would observe this phenomenon as the void, as it stretches on for eternity and seems to be endless. Even if one were able to touch it, this void would have no texture nor any sign of being made of this "ink" in the first place. This [[The Ink that Binds|ink]] acts as a barrier to prevent the words from truly interacting, a way to separate different tomes that come from different archives, and as a safety net to prevent the triggering of the [[The Supernova|Supernova]].
+<div class="bookmark-box">
+    <h3>Home is Everything</h3>
+    <p>The Cluster Galaxy is not simply just another universe. It comes in many different forms, each hidden behind the veil of ink like a bookshelf separating tomes in a library. There are many ways to look at this oddity. There is one truth that remains consistent about it, however. The Cluster Galaxy is not just a universe, it is the home of all. </p>
+    <!-- Add ink drops -->
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+    <span class="ink-drop"></span>
+</div>
 
 
 
-> [!galaxy-titleonly]- Why is it called the "Cluster" Galaxy?
+
+---
+
+[[The Cluster Galaxy]] is an umbrella term. While all perceive themselves to be located in the Cluster, the truth is that the "Cluster Galaxy" encompasses every world. Each world is hidden behind a great void of [[The Ink that Binds|ink]]. Most would observe this phenomenon as the void, as it stretches on for eternity and seems to be endless. Even if one were able to touch it, this void would have no texture nor any sign of being made of this "ink" in the first place. This [[The Ink that Binds|ink]] acts as a barrier to prevent the words from truly interacting, a way to separate different tomes that come from different archives, and as a safety net to prevent the triggering of the [[The Supernova|Supernova]].
+
+---
+
+
+> [!galaxy]- Why is it called the "Cluster" Galaxy?
 > Within each archive, tomes are arranged to where their writing forms "clusters." These clusters form the various aspects of a universe such as planets, characters, plant life, history, and other small pieces that contribute to the world. Therefore, each galaxy is simply a "cluster" of various writings that come together to form one galaxy.
 
 
-> [!galaxy-titleonly]- Is traveling between each "cluster" possible?
+> [!galaxy]- Is traveling between each "cluster" possible?
 > Under normal circumstances, no one is able to cross the [[The Ink that Binds|ink]] that separates each world. This extends to divine beings, even. However, it is not impossible. Some say that if you gain just a small bottle of ink, you can hop between each cluster and explore new archives. Just be wary, the [[Istoria, Lady of Ink|Storyteller]] doesn't like intruders, and neither does the world around you. 
+
 
 
 <br>

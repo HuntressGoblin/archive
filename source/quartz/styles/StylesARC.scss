@@ -386,63 +386,134 @@ div.markdown-rendered details[data-type="lore-drop"] .content {
     font-size: 0.95em;
 }
 
-/* ============================================================
-   GALAXY TITLE ONLY - RAISED TEXT & NORMAL SIZE
-   Usage: > [!galaxy-titleonly] Title Here
-   ============================================================ */
-.callout[data-callout="galaxy-titleonly"] {
-  background: linear-gradient(
-    135deg,
-    rgba(15, 23, 42, 0.9),
-    rgba(37, 99, 235, 0.4),
-    rgba(109, 40, 217, 0.4)
-  );
-  border: 1px solid rgba(140, 90, 255, 0.5);
-  border-radius: 12px;
-  padding: 0; 
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
-  
-  --callout-icon: none;
+/* =========================================
+   INK-STAINED BOOKMARK — MANUSCRIPT WITH DRIPPING INK
+   ========================================= */
+.bookmark-box {
+    position: relative;
+    background:
+        linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%), /* soft parchment */
+        repeating-linear-gradient(90deg, rgba(0,0,0,0.01) 0 1px, transparent 1px 5px); /* fiber texture */
+    border-left: 5px solid #2b1a0f; /* deep ink/charcoal spine */
+    border-radius: 8px;
+    padding: 20px 24px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1c1c1c; /* ink black text */
+    overflow: hidden;
+    box-shadow:
+        inset 0 4px 10px rgba(0,0,0,0.08),
+        0 4px 12px rgba(0,0,0,0.22);
 }
 
-/* 1. The Title Bar (Raised Text & Standard Size) */
-.callout[data-callout="galaxy-titleonly"] .callout-title {
-  color: #ffffff !important;
-  font-weight: bold;
-  font-size: var(--callout-title-size); /* Resets to Obsidian default size */
-  
-  /* POSITIONING: Less top, more bottom to "raise" the text */
-  padding-top: 4px !important;    
-  padding-bottom: 16px !important; 
-  
-  min-height: 40px;
-  display: flex;
-  align-items: flex-start; /* Aligns items to the top instead of center */
+/* top-left folded tab — ink blotch inspired */
+.bookmark-box::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    width: 40px;
+    height: 30px;
+    background: radial-gradient(circle at 30% 30%, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
+    border-radius: 3px 3px 0 0;
+    transform: rotate(-5deg);
+    box-shadow: inset 0 1px 3px rgba(255,255,255,0.05), 0 2px 6px rgba(0,0,0,0.25);
+    clip-path: polygon(0 0, 80% 0, 100% 40%, 100% 100%, 0 100%);
+    pointer-events: none;
+    z-index: 3;
 }
 
-/* Ensure text is strictly white */
-.callout[data-callout="galaxy-titleonly"] .callout-title-inner,
-.callout[data-callout="galaxy-titleonly"] .callout-title-text {
-  color: #ffffff !important;
-  opacity: 1 !important;
+/* ink splatter overlay */
+.bookmark-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(0,0,0,0.08) 0 2px, transparent 2.5px),
+        radial-gradient(circle at 25% 35%, rgba(0,0,0,0.05) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 50% 70%, rgba(0,0,0,0.06) 0 2px, transparent 2.5px),
+        radial-gradient(circle at 70% 15%, rgba(0,0,0,0.04) 0 1.8px, transparent 2.2px),
+        radial-gradient(circle at 85% 60%, rgba(0,0,0,0.03) 0 1.5px, transparent 2px);
+    mix-blend-mode: multiply;
+    opacity: 0.85;
+    z-index: 2;
+    animation: inkDrift 5s ease-in-out infinite alternate;
 }
 
-/* 2. Hide the Icon */
-.callout[data-callout="galaxy-titleonly"] .callout-icon {
-  display: none !important;
+/* slight movement like wet ink settling */
+@keyframes inkDrift {
+    0%   { transform: translate(0,0) rotate(0deg); }
+    100% { transform: translate(1px,-1px) rotate(0.1deg); }
 }
 
-/* 3. The Dropdown Arrow (Aligned to Top) */
-.callout[data-callout="galaxy-titleonly"] .callout-fold {
-  color: #ffffff !important;
-  margin-top: 2px; /* Keeps the arrow level with the raised text */
-  margin-right: 10px;
-  opacity: 1;
+/* links styled like handwritten ink */
+.bookmark-box a,
+.bookmark-box .internal-link {
+    color: #0f0f0f !important;
+    text-decoration: underline dotted;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    text-shadow: 0 0 1px rgba(0,0,0,0.15);
+    transition: color 150ms ease, text-shadow 150ms ease;
 }
 
-/* 4. Body Content (White & Italic) */
-.callout[data-callout="galaxy-titleonly"] .callout-content {
-  color: #ffffff !important;
-  font-style: italic;
-  padding: 12px;
+/* link hover — simulate fresh ink glint */
+.bookmark-box a:hover,
+.bookmark-box .internal-link:hover {
+    color: #1a1a1a !important;
+    text-shadow: 0 0 2px rgba(0,0,0,0.25);
+}
+
+/* optional heading style — elegant script */
+.bookmark-box h3,
+.bookmark-box .caption {
+    font-family: 'Dancing Script', 'Palatino Linotype', serif;
+    color: #1a1a1a;
+    font-variant: small-caps;
+    letter-spacing: 0.03em;
+    margin: 0 0 8px 0;
+}
+
+/* ===============================
+   Animated ink drops
+   =============================== */
+.bookmark-box .ink-drop {
+    position: absolute;
+    top: 0; /* drip begins at the top */
+    width: 4px;
+    height: 4px;
+    background: #1c1c1c;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: drip 2s linear infinite;
+}
+
+/* positions of drops */
+.bookmark-box .ink-drop:nth-child(1) { left: 15%; animation-delay: 0s; }
+.bookmark-box .ink-drop:nth-child(2) { left: 40%; animation-delay: 1s; }
+.bookmark-box .ink-drop:nth-child(3) { left: 65%; animation-delay: 2s; }
+.bookmark-box .ink-drop:nth-child(4) { left: 80%; animation-delay: 1.5s; }
+
+/* drip animation */
+@keyframes drip {
+    0% {
+        transform: translateY(0) scaleY(1);
+        opacity: 0.7;
+    }
+    70% {
+        transform: translateY(35px) scaleY(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(70px) scaleY(1.6);
+        opacity: 0;
+    }
+}
+
+/* responsive tweak */
+@media (max-width: 420px) {
+    .bookmark-box { padding: 16px 14px; font-size: 0.95rem; }
+    .bookmark-box::before { left: 6px; transform: rotate(-3deg); }
 }

@@ -3,11 +3,11 @@
 
 
 
-> [!galaxy]- Why is it called the "Cluster" Galaxy?
+> [!galaxy-titleonly]- Why is it called the "Cluster" Galaxy?
 > Within each archive, tomes are arranged to where their writing forms "clusters." These clusters form the various aspects of a universe such as planets, characters, plant life, history, and other small pieces that contribute to the world. Therefore, each galaxy is simply a "cluster" of various writings that come together to form one galaxy.
 
 
-> [!galaxy]- Is traveling between each "cluster" possible?
+> [!galaxy-titleonly]- Is traveling between each "cluster" possible?
 > Under normal circumstances, no one is able to cross the [[The Ink that Binds|ink]] that separates each world. This extends to divine beings, even. However, it is not impossible. Some say that if you gain just a small bottle of ink, you can hop between each cluster and explore new archives. Just be wary, the [[Istoria, Lady of Ink|Storyteller]] doesn't like intruders, and neither does the world around you. 
 
 

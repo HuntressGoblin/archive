@@ -11,6 +11,23 @@
 > Under normal circumstances, no one is able to cross the [[The Ink that Binds|ink]] that separates each world. This extends to divine beings, even. However, it is not impossible. Some say that if you gain just a small bottle of ink, you can hop between each cluster and explore new archives. Just be wary, the [[Istoria, Lady of Ink|Storyteller]] doesn't like intruders, and neither does the world around you. 
 
 
+<div class="custom-lore-block" data-style="clean-white">
+    <h2 class="lore-header">The Cluster Galaxy</h2>
+    <p class="lore-text">
+        <span class="lore-link">The Cluster Galaxy</span> is an umbrella term. While all perceive themselves to be located in the Cluster, the truth is that the "Cluster Galaxy" encompasses every world. Each world is hidden behind a great void of <span class="ink-highlight">ink</span>.
+    </p>
+    
+    <div class="dropdown-item">
+        <span>Why is it called the "Cluster" Galaxy?</span>
+        <span class="arrow">›</span>
+    </div>
+    
+    <div class="dropdown-item">
+        <span>Is traveling between each "cluster" possible?</span>
+        <span class="arrow">›</span>
+    </div>
+</div>
+
 <br>
 <br>
 

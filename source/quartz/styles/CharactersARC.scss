@@ -1,3 +1,48 @@
+/* --- TIAMAT CALLOUT THEME (Soft & Readable) --- */
+
+.callout[data-callout="tiamat"] {
+  /* Very subtle, low-opacity warm gradient */
+  background: linear-gradient(
+    135deg,
+    rgba(139, 35, 35, 0.08),  /* Soft crimson */
+    rgba(30, 30, 30, 0.05),   /* Faint charcoal */
+    rgba(212, 175, 55, 0.05)  /* Faint gold */
+  );
+  
+  /* Muted antique gold border */
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 18px;
+  
+  /* Removed the heavy outer glow for a cleaner look */
+  box-shadow: none;
+
+  /* Callout-specific settings */
+  --callout-icon: lucide-crown;
+}
+
+.callout[data-callout="tiamat"] {
+  /* Soft Gold for the native Obsidian callout accents */
+  --callout-color: 212, 175, 55;
+}
+
+.callout[data-callout="tiamat"] .callout-title {
+  color: #d4af37; /* Antique gold instead of harsh, bright yellow */
+  font-weight: bold;
+  /* Removed uppercase for a more natural reading experience */
+}
+
+.callout[data-callout="tiamat"] .callout-icon svg {
+  color: #d4af37 !important;
+  stroke: #d4af37 !important;
+  /* Removed the blurry drop-shadow filter */
+}
+
+/* Content area now seamlessly inherits your default text settings */
+.callout[data-callout="tiamat"] .callout-content {
+  line-height: 1.6;
+}
+
 /* --- MARCEL'S GOLD DRAGON REGAL PROFILE --- */
 
 .gold-dragon-profile {
@@ -414,4 +459,291 @@
     saturate(1.1)
     contrast(1.05)
     drop-shadow(0 0 12px rgba(100, 90, 255, 0.35));
+}
+
+/* =========================================
+   ZARIEL — AVERNUS CARD (EMBER + ANIMATED GLOW)
+   Runic elements: DISABLED (per request)
+   ========================================= */
+
+/* Avernus Themed Character Card - FULL WIDTH */
+.avernus-card {
+  width: 100%;
+  max-width: 100%;
+  margin: 30px 0;
+  padding: 50px 0 10px 0;
+
+  border-radius: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Deep Avernus background */
+  background: linear-gradient(
+    180deg,
+    rgba(35, 0, 0, 0.98),
+    rgba(90, 10, 10, 0.96),
+    rgba(20, 0, 0, 0.99)
+  );
+
+  border-top: 2px solid rgba(255, 70, 50, 0.7);
+  border-bottom: 2px solid rgba(255, 70, 50, 0.7);
+
+  /* Animated infernal glow */
+  box-shadow:
+    0 0 35px rgba(255, 60, 40, 0.35),
+    0 0 80px rgba(255, 30, 10, 0.2),
+    inset 0 0 70px rgba(255, 40, 0, 0.12);
+
+  animation: avernusCardGlow 8s ease-in-out infinite;
+}
+
+/* 🔥 Floating Ember Layer (matches quote box style) */
+.avernus-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+
+  background-image:
+    radial-gradient(circle at 15% 80%, rgba(255,120,60,0.6) 1px, transparent 2px),
+    radial-gradient(circle at 75% 65%, rgba(255,80,40,0.5) 1px, transparent 2px),
+    radial-gradient(circle at 40% 25%, rgba(255,140,80,0.45) 1px, transparent 2px),
+    radial-gradient(circle at 85% 15%, rgba(255,90,50,0.4) 1px, transparent 2px);
+
+  animation: emberFloatCard 20s linear infinite;
+}
+
+/* Soft infernal aura overlay */
+.avernus-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 90, 60, 0.18),
+    transparent 65%
+  );
+  pointer-events: none;
+}
+
+/* Animated Glow Pulse */
+@keyframes avernusCardGlow {
+  0% {
+    box-shadow:
+      0 0 30px rgba(255, 60, 40, 0.3),
+      0 0 60px rgba(255, 30, 10, 0.18),
+      inset 0 0 50px rgba(255, 40, 0, 0.08);
+  }
+  50% {
+    box-shadow:
+      0 0 60px rgba(255, 70, 40, 0.55),
+      0 0 120px rgba(255, 30, 10, 0.3),
+      inset 0 0 90px rgba(255, 60, 20, 0.18);
+  }
+  100% {
+    box-shadow:
+      0 0 30px rgba(255, 60, 40, 0.3),
+      0 0 60px rgba(255, 30, 10, 0.18),
+      inset 0 0 50px rgba(255, 40, 0, 0.08);
+  }
+}
+
+/* Ember movement animation */
+@keyframes emberFloatCard {
+  0% {
+    transform: translateY(12px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-12px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 0.25;
+  }
+}
+
+/* Zariel Image */
+.avernus-image {
+  width: 320px;
+  max-width: 92%;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 120, 90, 0.4);
+  box-shadow:
+    0 0 28px rgba(255, 80, 60, 0.45),
+    0 0 70px rgba(255, 30, 10, 0.25);
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Glowing Name */
+.avernus-name {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #ffb3a6;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 2;
+
+  text-shadow:
+    0 0 10px rgba(255, 120, 90, 1),
+    0 0 25px rgba(255, 60, 40, 0.8),
+    0 0 50px rgba(255, 30, 10, 0.65);
+}
+
+/* Side symbols */
+.avernus-symbol {
+  margin: 0 12px;
+  color: #ff6b5a;
+  text-shadow:
+    0 0 12px rgba(255, 60, 40, 1),
+    0 0 28px rgba(255, 30, 10, 0.6);
+}
+
+/* Title section (full-width lower panel feel) */
+.avernus-title {
+  width: 100%;
+  font-size: 1em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 170, 150, 0.95);
+
+  margin-top: 10px;
+  padding: 18px 0 28px 0;
+
+  border-top: 1px solid rgba(255, 90, 70, 0.45);
+  position: relative;
+  z-index: 2;
+
+  text-shadow:
+    0 0 12px rgba(255, 80, 60, 0.5),
+    0 0 25px rgba(255, 40, 20, 0.3);
+}
+
+/* --- TIAMAT PLAYER GRID (Softened Gold) --- */
+
+.tiamat-theme.player-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 10px;
+  background: transparent;
+  border: none;
+}
+
+.tiamat-theme .player-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+  padding: 20px;
+  border-radius: 12px;
+  /* Softened the background colors to be less "noisy" */
+  background: linear-gradient(
+    145deg,
+    rgba(20, 20, 20, 0.8) 0%,
+    rgba(139, 0, 0, 0.15) 25%,
+    rgba(0, 31, 63, 0.1) 50%,
+    rgba(0, 50, 0, 0.1) 75%,
+    rgba(220, 220, 220, 0.05) 100%
+  );
+  /* Changed to Muted Antique Gold */
+  border: 1px solid rgba(211, 175, 55, 0.35); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.tiamat-theme .player-card:hover {
+  transform: translateY(-5px);
+  /* Brighter Antique Gold on hover */
+  border-color: #d4af37;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(211, 175, 55, 0.15);
+}
+
+.tiamat-theme .player-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 8px;
+  object-fit: cover;
+  /* Match the border to Antique Gold */
+  border: 2px solid rgba(211, 175, 55, 0.4);
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.tiamat-theme .player-card:hover img {
+  border-color: #d4af37;
+  transform: scale(1.05);
+}
+
+.tiamat-theme .player-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+  /* Soft Gold text */
+  color: #d4af37;
+  letter-spacing: 0.5px;
+}
+
+.tiamat-theme .character-class {
+  font-size: 0.85rem;
+  /* Uses standard muted text color for better readability */
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Subtle texture overlay */
+.tiamat-theme .player-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 12px 12px;
+  pointer-events: none;
+}
+
+/* ============================= */
+/* Tiamat Standalone Boxes       */
+/* ============================= */
+
+/* Core Tiamat box — Soft Ember & Gold */
+.tiamat-box {
+  background-color: rgba(180, 40, 40, 0.08); /* Very soft, warm red tint */
+  border-left: 4px solid #d4af37; /* Classic, muted gold */
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  border-radius: 6px; /* Restored the slightly rounded corners for softness */
+  box-shadow: none;
+}
+
+/* Darker variant — Smooth Crimson */
+.tiamat-box-dark {
+  background-color: rgba(120, 20, 20, 0.12); /* Muted, deeper red */
+  border-left: 4px solid #8b2525; /* Darker, dried-blood red */
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  border-radius: 6px;
+  box-shadow: none; /* Removed the harsh shadow */
+}
+
+/* Remove extra spacing inside the box */
+.tiamat-box p,
+.tiamat-box-dark p {
+  margin: 0.25em 0;
+}
+
+/* Ensure perfect alignment in normal text width */
+.markdown-rendered .tiamat-box,
+.markdown-rendered .tiamat-box-dark {
+  max-width: 100%;
 }

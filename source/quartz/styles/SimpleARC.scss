@@ -1,0 +1,71 @@
+/* =============================== */
+/* Standalone Gold Box (For Quotes)*/
+/* =============================== */
+
+/* Core yellow box — NOT a callout, no blockquote needed */
+.goldbox {
+  background-color: rgba(218, 165, 32, 0.12); /* Subtle Gold Tint */
+  border-left: 4px solid #b8860b; /* Dark Goldenrod */
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  border-radius: 6px;
+  box-shadow: none; 
+}
+
+/* Optional: darker/richer yellow variant */
+.goldbox-dark {
+  background-color: rgba(184, 134, 11, 0.18); /* Deeper Amber */
+  border-left: 4px solid #8b6508; /* Burnished Gold */
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+/* Remove extra spacing inside the box */
+.goldbox p,
+.goldbox-dark p {
+  margin: 0.25em 0;
+}
+
+/* Make it align perfectly with normal text width */
+.markdown-rendered .goldbox,
+.markdown-rendered .goldbox-dark {
+  max-width: 100%;
+}
+
+/* ============================= */
+/* Standalone Red Box (No Quote) */
+/* ============================= */
+
+/* Core red box — NOT a callout, no blockquote needed */
+.redbox {
+  background-color: rgba(211, 47, 47, 0.12);
+  border-left: 4px solid #892323;
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  border-radius: 6px; /* remove if you want sharp corners */
+  box-shadow: none; /* no glow */
+}
+
+/* Optional: darker variant */
+.redbox-dark {
+  background-color: rgba(137, 35, 35, 0.18);
+  border-left: 4px solid #5e1717;
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+/* Remove extra spacing inside the box */
+.redbox p,
+.redbox-dark p {
+  margin: 0.25em 0;
+}
+
+/* Make it align perfectly with normal text width */
+.markdown-rendered .redbox,
+.markdown-rendered .redbox-dark {
+  max-width: 100%;
+}

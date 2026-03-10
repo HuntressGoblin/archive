@@ -1,4 +1,179 @@
-/* === ISTORIA WHISPERING TOMES — STABILIZED (QUARTZ SAFE) === */
+/* =========================================
+   UNIVERSAL GALAXY STYLE - OBSIDIAN & QUARTZ
+   ========================================= */
+
+/* 1. The Main Container */
+.callout[data-callout="galaxy-no-title"] {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.9), 
+    rgba(37, 99, 235, 0.3), 
+    rgba(109, 40, 217, 0.3)
+  ) !important;
+  border: 1px solid rgba(140, 90, 255, 0.5) !important;
+  border-radius: 18px !important;
+  padding: 18px !important;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.15), 0 0 35px rgba(168, 85, 247, 0.15) !important;
+  display: block !important;
+}
+
+/* 2. Hide the Title Bar (Icon + Text) */
+.callout[data-callout="galaxy-no-title"] .callout-title {
+  display: none !important;
+}
+
+/* 3. Force Content Visibility & Color */
+.callout[data-callout="galaxy-no-title"] .callout-content {
+  display: block !important;
+  color: #ffffff !important;
+  font-style: italic !important;
+  opacity: 1 !important;
+}
+
+/* 4. Ensure paragraphs inside don't inherit theme colors */
+.callout[data-callout="galaxy-no-title"] .callout-content p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
+
+/* 5. Link Visibility for Dark Backgrounds */
+.callout[data-callout="galaxy-no-title"] a {
+  color: #93c5fd !important;
+  text-decoration: underline !important;
+}
+
+/* =========================================
+   GALAXY THEME (NO ICON) - FULL OVERRIDE
+   ========================================= */
+.callout[data-callout="galaxy"] {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.8),
+    rgba(37, 99, 235, 0.3),
+    rgba(109, 40, 217, 0.3)
+  );
+  border: 1px solid rgba(140, 90, 255, 0.4);
+  border-radius: 18px;
+  padding: 18px;
+  font-style: italic;
+  box-shadow:
+    0 0 25px rgba(59, 130, 246, 0.15),
+    0 0 35px rgba(168, 85, 247, 0.15);
+
+  /* Set base variables to white */
+  --callout-icon: none;
+  --callout-title-color: #ffffff;
+  --callout-content-color: #ffffff;
+}
+
+/* 1. Force the Title (The word "Galaxy") to White */
+.callout[data-callout="galaxy"] .callout-title,
+.callout[data-callout="galaxy"] .callout-title-inner,
+.callout[data-callout="galaxy"] .callout-title-text {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-weight: bold;
+}
+
+/* 2. Force the Body Content to White */
+.callout[data-callout="galaxy"] .callout-content,
+.callout[data-callout="galaxy"] .callout-content p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* 3. Completely hide the icon space */
+.callout[data-callout="galaxy"] .callout-icon {
+  display: none !important;
+}
+
+/* 4. Ensure links inside the callout are still visible (Optional) */
+.callout[data-callout="galaxy"] a {
+  color: #93c5fd !important; /* A light blue for links */
+  text-decoration: underline;
+}
+
+/* Grid container Default for Galaxy */
+.player-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Player card matching galaxy theme */
+.player-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.7),
+    rgba(37, 99, 235, 0.25),
+    rgba(109, 40, 217, 0.25)
+  );
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  box-shadow:
+    0 0 25px rgba(59, 130, 246, 0.15),
+    0 0 35px rgba(168, 85, 247, 0.15);
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.player-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow:
+    0 0 35px rgba(59, 130, 246, 0.3),
+    0 0 45px rgba(168, 85, 247, 0.3);
+}
+
+/* Player image */
+.player-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.player-card:hover img {
+  transform: scale(1.1);
+  border-color: rgba(255, 215, 0, 0.8); /* subtle golden highlight */
+}
+
+/* Player name & class */
+.player-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 3px;
+}
+
+.character-class {
+  font-size: 0.85rem;
+  color: #eee;
+  font-style: italic;
+}
+
+/* Grid container */
+.player-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* === GALAXY TOMES — STABILIZED (QUARTZ SAFE) === */
 
 .istoria-tome-row {
   display: flex;

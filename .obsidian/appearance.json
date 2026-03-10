@@ -6,6 +6,13 @@
     "QuoteboxesARC",
     "StylesARC",
     "UniquestylesARC",
-    "Uniquetext"
+    "Uniquetext",
+    "CampaignARC",
+    "CharactersARC",
+    "GalaxyARC",
+    "LibraryARC",
+    "SettingARC",
+    "SimpleARC",
+    "TextsARC"
   ]
 }

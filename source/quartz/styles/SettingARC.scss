@@ -1,0 +1,189 @@
+/* =========================================
+   AVERNUS DOSSIER PANEL (SUBTLE - NO EMBERS)
+   Use for: Race, Gender, Age, Alignment, etc.
+   ========================================= */
+
+.avernus-dossier {
+  width: 100%;
+  margin: 25px 0;
+  padding: 22px 26px;
+
+  border-radius: 12px;
+  position: relative;
+
+  /* Much softer background than main banner */
+  background: linear-gradient(
+    135deg,
+    rgba(25, 0, 0, 0.9),
+    rgba(55, 8, 8, 0.88),
+    rgba(20, 0, 0, 0.92)
+  );
+
+  border: 1px solid rgba(255, 90, 70, 0.25);
+
+  /* Subtle glow only (toned down) */
+  box-shadow:
+    0 0 18px rgba(255, 60, 40, 0.18),
+    inset 0 0 25px rgba(255, 40, 0, 0.05);
+}
+
+/* Header for the section (ex: "Dossier") */
+.avernus-dossier-header {
+  font-size: 1.1em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #ffb3a6;
+
+  border-bottom: 1px solid rgba(255, 90, 70, 0.35);
+  padding-bottom: 8px;
+
+  text-shadow: 0 0 8px rgba(255, 80, 60, 0.35);
+}
+
+/* Grid layout for stats */
+.avernus-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px 24px;
+}
+
+/* Individual stat block */
+.avernus-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label (Race, Gender, etc.) */
+.avernus-stat-label {
+  font-size: 0.75em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 150, 130, 0.7);
+  margin-bottom: 3px;
+}
+
+/* Value (Angel, Female, Lawful Evil, etc.) */
+.avernus-stat-value {
+  font-size: 1em;
+  color: #ffd8cf;
+
+  text-shadow: 0 0 6px rgba(255, 80, 60, 0.15);
+}
+
+/* =========================================
+   AVERNUS QUOTE — EMBERS + GLOW + RUNES
+   Base Class: avernus-quote
+   Optional Class: runic (for angelic corners)
+   ========================================= */
+
+.avernus-quote {
+  width: 100%;
+  margin: 35px 0;
+  padding: 26px 30px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+
+  /* Infernal parchment background */
+  background: linear-gradient(
+    135deg,
+    rgba(25, 0, 0, 0.96),
+    rgba(70, 5, 5, 0.92),
+    rgba(20, 0, 0, 0.98)
+  );
+
+  border-left: 4px solid rgba(255, 90, 70, 0.9);
+
+  /* Base glow */
+  box-shadow:
+    0 0 25px rgba(255, 50, 20, 0.25),
+    0 0 60px rgba(255, 20, 0, 0.15),
+    inset 0 0 35px rgba(255, 60, 20, 0.08);
+
+  /* Animated glow pulse */
+  animation: avernusGlow 6s ease-in-out infinite;
+}
+
+/* 🔥 Animated Glow Pulse */
+@keyframes avernusGlow {
+  0% {
+    box-shadow:
+      0 0 20px rgba(255, 50, 20, 0.2),
+      0 0 40px rgba(255, 20, 0, 0.12),
+      inset 0 0 25px rgba(255, 60, 20, 0.06);
+  }
+  50% {
+    box-shadow:
+      0 0 45px rgba(255, 70, 30, 0.4),
+      0 0 90px rgba(255, 30, 0, 0.25),
+      inset 0 0 55px rgba(255, 80, 30, 0.15);
+  }
+  100% {
+    box-shadow:
+      0 0 20px rgba(255, 50, 20, 0.2),
+      0 0 40px rgba(255, 20, 0, 0.12),
+      inset 0 0 25px rgba(255, 60, 20, 0.06);
+  }
+}
+
+/* ✨ Floating Ember Layer */
+.avernus-quote::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.6;
+
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(255,120,60,0.6) 1px, transparent 2px),
+    radial-gradient(circle at 70% 60%, rgba(255,80,40,0.5) 1px, transparent 2px),
+    radial-gradient(circle at 40% 30%, rgba(255,140,80,0.5) 1px, transparent 2px),
+    radial-gradient(circle at 85% 20%, rgba(255,90,50,0.4) 1px, transparent 2px);
+
+  animation: emberFloat 18s linear infinite;
+}
+
+/* Ember movement animation */
+@keyframes emberFloat {
+  0% {
+    transform: translateY(10px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0.3;
+  }
+}
+
+/* Quote Text */
+.avernus-quote-text {
+  position: relative;
+  font-size: 1.08em;
+  line-height: 1.75;
+  color: #ffd8cf;
+  z-index: 2;
+
+  text-shadow:
+    0 0 6px rgba(255, 120, 90, 0.35),
+    0 0 18px rgba(255, 60, 40, 0.2);
+}
+
+/* Author / Attribution */
+.avernus-quote-author {
+  position: relative;
+  margin-top: 16px;
+  text-align: right;
+  font-size: 0.9em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 170, 150, 0.95);
+  z-index: 2;
+
+  text-shadow:
+    0 0 10px rgba(255, 80, 60, 0.45);
+}

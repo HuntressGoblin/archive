@@ -119,6 +119,23 @@
 }
 
 /* =========================================
+   FORCE REMOVE GALAXY ICON
+   ========================================= */
+
+.callout[data-callout="galaxy"] {
+  --callout-icon: none !important;
+}
+
+.callout[data-callout="galaxy"] .callout-icon {
+  display: none !important;
+}
+
+/* Align title left */
+.callout[data-callout="galaxy"] .callout-title {
+  justify-content: flex-start !important;
+}
+
+/* =========================================
    TIAMAT THEME (NO ICON)
    ========================================= */
 .callout[data-callout="tiamat"] {

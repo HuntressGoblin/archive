@@ -25,11 +25,13 @@
 :root[saved-theme="light"],
 :root[data-theme=light],
 :root[data-theme="light"] {
-  --light: #ede9f6 !important;      /* soft cosmic background */
-  --lightgray: #e4e1f2 !important;  /* subtle panel bg */
-  --darkgray: #4a4f6b !important;   /* muted text */
-  --dark: #2a2f45 !important;       /* main text */
-  --secondary: #6c7ae0 !important;  /* link color */
+--light: #0b0f1f !important;        /* deep space */
+  --lightgray: #121a33 !important;    /* cosmic background */
+  --gray: #1e2745 !important;         /* nebula haze */
+  --darkgray: #c8d1ff !important;     /* starlight text */
+  --dark: #eef2ff !important;         /* bright star text */
+  --secondary: #9b7cff !important;    /* nebula purple */
+  --tertiary: #6fd3ff !important;     /* cosmic blue */
 }
 
 /* Hide the "Created with Quartz" line, keep your links */

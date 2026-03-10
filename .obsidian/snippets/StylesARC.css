@@ -48,16 +48,6 @@
    ========================================= */
 
 .callout[data-callout="galaxy"] {
-  /* --- Centering Logic --- */
-  max-width: 600px;           /* Adjust this to change how wide the box is */
-  width: 95%;                /* Fallback for mobile screens */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;   /* Ensures internal items stay left */
-
-  /* --- Visual Styling --- */
   background: linear-gradient(
     135deg,
     rgba(15, 23, 42, 0.8),
@@ -72,49 +62,58 @@
     0 0 25px rgba(59, 130, 246, 0.15),
     0 0 35px rgba(168, 85, 247, 0.15);
 
-  /* --- Variables --- */
+  /* Base variables */
   --callout-icon: none;
   --callout-title-color: #ffffff;
   --callout-content-color: #ffffff;
+
+  /* Centering the text block inside the box */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This pulls the text containers to the horizontal center */
 }
 
 /* =========================================
    TITLE STYLING
    ========================================= */
 
-.callout[data-callout="galaxy"] .callout-title {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  font-weight: bold;
-  text-align: left !important;
-  justify-content: flex-start;
-  width: 100%; /* Spans the full width of the centered box */
-}
-
+.callout[data-callout="galaxy"] .callout-title,
 .callout[data-callout="galaxy"] .callout-title-inner,
 .callout[data-callout="galaxy"] .callout-title-text {
   color: #ffffff !important;
   opacity: 1 !important;
+  font-weight: bold;
+  text-align: left !important; /* Keeps the sentence reading left-to-right */
+}
+
+.callout[data-callout="galaxy"] .callout-title {
+  justify-content: center; /* Centers the title wrapper */
+  width: 100%;
 }
 
 /* =========================================
-   BODY TEXT & CONTENT
+   BODY TEXT
    ========================================= */
 
-.callout[data-callout="galaxy"] .callout-content,
-.callout[data-callout="galaxy"] .callout-content p {
+.callout[data-callout="galaxy"] .callout-content {
   color: #ffffff !important;
   opacity: 1 !important;
-  text-align: left !important; /* Forces body text left */
-  margin-top: 0;
+  display: flex;
+  justify-content: center; /* Centers the paragraph block */
+  width: 100%;
+}
+
+.callout[data-callout="galaxy"] .callout-content p {
+  margin: 0;
+  text-align: left !important; /* Keeps the text left-aligned within its centered block */
 }
 
 /* =========================================
-   CLEANUP: REMOVE ICON SPACE & DEFAULTS
+   REMOVE ICON SPACE
    ========================================= */
 
 .callout[data-callout="galaxy"] .callout-icon {
-  display: none !important; /* Fully removes the icon element */
+  display: none !important; /* Cleanest way to remove the gap */
   width: 0 !important;
   margin: 0 !important;
   padding: 0 !important;

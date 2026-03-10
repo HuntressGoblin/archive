@@ -67,13 +67,23 @@
   --callout-content-color: #ffffff;
 }
 
-/* 1. Force the Title (The word "Galaxy") to White */
-.callout[data-callout="galaxy"] .callout-title,
-.callout[data-callout="galaxy"] .callout-title-inner,
-.callout[data-callout="galaxy"] .callout-title-text {
+/* 1. Force the Title to be BIGGER, TALLER, and WHITE */
+.callout[data-callout="galaxy"] .callout-title {
   color: #ffffff !important;
   opacity: 1 !important;
   font-weight: bold;
+  
+  /* SIZING UPDATES */
+  font-size: 1.5rem !important;    /* Makes the text significantly larger */
+  padding-top: 25px !important;    /* Increases vertical height at the top */
+  padding-bottom: 25px !important; /* Increases vertical height at the bottom */
+  min-height: 70px;                /* Ensures the bar stays tall even with short text */
+}
+
+/* Ensure the text inside the title stays white */
+.callout[data-callout="galaxy"] .callout-title-inner,
+.callout[data-callout="galaxy"] .callout-title-text {
+  color: #ffffff !important;
 }
 
 /* 2. Force the Body Content to White */
@@ -88,10 +98,17 @@
   display: none !important;
 }
 
-/* 4. Ensure links inside the callout are still visible (Optional) */
+/* 4. Ensure links inside the callout are still visible */
 .callout[data-callout="galaxy"] a {
-  color: #93c5fd !important; /* A light blue for links */
+  color: #93c5fd !important;
   text-decoration: underline;
+}
+
+/* 5. Scale the dropdown arrow to match the bigger text */
+.callout[data-callout="galaxy"] .callout-fold {
+  color: #ffffff !important;
+  transform: scale(1.6); /* Makes the arrow larger */
+  margin-right: 12px;
 }
 
 /* =========================================

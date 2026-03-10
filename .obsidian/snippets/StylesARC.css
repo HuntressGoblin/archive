@@ -48,6 +48,16 @@
    ========================================= */
 
 .callout[data-callout="galaxy"] {
+  /* --- Centering Logic --- */
+  max-width: 600px;           /* Adjust this to change how wide the box is */
+  width: 95%;                /* Fallback for mobile screens */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* Ensures internal items stay left */
+
+  /* --- Visual Styling --- */
   background: linear-gradient(
     135deg,
     rgba(15, 23, 42, 0.8),
@@ -62,7 +72,7 @@
     0 0 25px rgba(59, 130, 246, 0.15),
     0 0 35px rgba(168, 85, 247, 0.15);
 
-  /* Base variables */
+  /* --- Variables --- */
   --callout-icon: none;
   --callout-title-color: #ffffff;
   --callout-content-color: #ffffff;
@@ -72,41 +82,42 @@
    TITLE STYLING
    ========================================= */
 
-.callout[data-callout="galaxy"] .callout-title,
-.callout[data-callout="galaxy"] .callout-title-inner,
-.callout[data-callout="galaxy"] .callout-title-text {
+.callout[data-callout="galaxy"] .callout-title {
   color: #ffffff !important;
   opacity: 1 !important;
   font-weight: bold;
   text-align: left !important;
+  justify-content: flex-start;
+  width: 100%; /* Spans the full width of the centered box */
+}
+
+.callout[data-callout="galaxy"] .callout-title-inner,
+.callout[data-callout="galaxy"] .callout-title-text {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 /* =========================================
-   BODY TEXT
+   BODY TEXT & CONTENT
    ========================================= */
 
 .callout[data-callout="galaxy"] .callout-content,
 .callout[data-callout="galaxy"] .callout-content p {
   color: #ffffff !important;
   opacity: 1 !important;
+  text-align: left !important; /* Forces body text left */
+  margin-top: 0;
 }
 
 /* =========================================
-   REMOVE ICON SPACE
+   CLEANUP: REMOVE ICON SPACE & DEFAULTS
    ========================================= */
 
 .callout[data-callout="galaxy"] .callout-icon {
+  display: none !important; /* Fully removes the icon element */
   width: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-}
-
-/* =========================================
-   ALIGN TITLE ROW LEFT
-   ========================================= */
-
-.callout[data-callout="galaxy"] .callout-title {
-  justify-content: flex-start;
 }
 
 /* =========================================
@@ -116,23 +127,6 @@
 .callout[data-callout="galaxy"] a {
   color: #93c5fd !important;
   text-decoration: underline;
-}
-
-/* =========================================
-   FORCE REMOVE GALAXY ICON
-   ========================================= */
-
-.callout[data-callout="galaxy"] {
-  --callout-icon: none !important;
-}
-
-.callout[data-callout="galaxy"] .callout-icon {
-  display: none !important;
-}
-
-/* Align title left */
-.callout[data-callout="galaxy"] .callout-title {
-  justify-content: flex-start !important;
 }
 
 /* =========================================

@@ -10,7 +10,6 @@
   <div class="istoria-tome">
       <img src="Technicallynotimport.png" alt="IstoryPic">
       
-    </a>
   </div>
 
 ---

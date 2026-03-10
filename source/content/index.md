@@ -13,6 +13,7 @@ title: Welcome to the Eternal Library
     <div class="letterbox-signature">
     — The Domain Master, ???
 </div>
+</div>
 
 ---
 Hi, a little personal note from the person making this herself! This is just a disclaimer that I do not own a vast majority of art on this page! Yes, there is even some that are AI-generated that I grabbed off the web. All credit goes to the creators of whatever is used! 

@@ -9,6 +9,7 @@
     </p> <div class="letterbox-signature">
     — ???
 </div>
+</div>
 
 ---
 Ink makes up everything in [[The Cluster Galaxy|The Cluster Galaxy]] through the use of words. When something is written, ink makes it come to life. To be more accurate, ink is what makes up the writing that forms [[The Tomes of the Eternal Library|the tomes of the Eternal Library]]. This includes anything pertaining to these forms of writing, whether it be the universe, other characters, objects, etc. All beings are made of writing, which is what the ink uses to form the universe. If one were to get their hands on even a small amount of ink, they could create anything their heart desired. Fortunately, such a feat is statistically impossible due to ink being imperceivable, similar to atoms except that even looking at the smallest parts of one's being would reveal no signs of being made from the inky words of a story. 

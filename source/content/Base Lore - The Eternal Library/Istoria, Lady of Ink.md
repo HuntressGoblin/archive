@@ -10,12 +10,15 @@
     <div class="letterbox-signature">
     — ???
 </div>
-
-<div class="inky-goddess-portrait">
-  <div class="inky-goddess-frame">
-    <img src="Technicallynotimport.png" alt="Inky Purple Goddess Portrait">
-  </div>
 </div>
+
+
+<div class="istoria-tome-row">
+  <div class="istoria-tome">
+      <img src="Technicallynotimport.png" alt="IstoryPic">
+    </a>
+  </div>
+
 
 ---
 

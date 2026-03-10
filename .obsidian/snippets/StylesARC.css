@@ -324,7 +324,7 @@
 }
 
 /* ============================================================
-   GALAXY TITLE ONLY - COMPACT & WHITE
+   GALAXY TITLE ONLY - RAISED TEXT & NORMAL SIZE
    Usage: > [!galaxy-titleonly] Title Here
    ============================================================ */
 .callout[data-callout="galaxy-titleonly"] {
@@ -336,22 +336,25 @@
   );
   border: 1px solid rgba(140, 90, 255, 0.5);
   border-radius: 12px;
-  padding: 0; /* Removing outer padding to keep it slim */
+  padding: 0; 
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
   
   --callout-icon: none;
 }
 
-/* 1. The Title Bar (Smaller & White) */
+/* 1. The Title Bar (Raised Text & Standard Size) */
 .callout[data-callout="galaxy-titleonly"] .callout-title {
   color: #ffffff !important;
   font-weight: bold;
-  font-size: 1.1rem;      /* Slightly larger than standard, but not huge */
-  padding-top: 10px;      /* Reduced for a "smaller" feel */
-  padding-bottom: 10px;
-  min-height: 45px;       /* Fixed height for a consistent bar look */
+  font-size: var(--callout-title-size); /* Resets to Obsidian default size */
+  
+  /* POSITIONING: Less top, more bottom to "raise" the text */
+  padding-top: 4px !important;    
+  padding-bottom: 16px !important; 
+  
+  min-height: 40px;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Aligns items to the top instead of center */
 }
 
 /* Ensure text is strictly white */
@@ -366,10 +369,10 @@
   display: none !important;
 }
 
-/* 3. The Dropdown Arrow (Scale down to match smaller text) */
+/* 3. The Dropdown Arrow (Aligned to Top) */
 .callout[data-callout="galaxy-titleonly"] .callout-fold {
   color: #ffffff !important;
-  transform: scale(1.1);
+  margin-top: 2px; /* Keeps the arrow level with the raised text */
   margin-right: 10px;
   opacity: 1;
 }
@@ -378,5 +381,5 @@
 .callout[data-callout="galaxy-titleonly"] .callout-content {
   color: #ffffff !important;
   font-style: italic;
-  padding-top: 10px;
+  padding: 12px;
 }

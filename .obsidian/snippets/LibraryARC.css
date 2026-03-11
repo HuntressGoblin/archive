@@ -164,16 +164,16 @@
   padding: 1.25em 1.5em;
   margin: 1em 0;
   border-radius: 8px;
-  box-shadow: none; /* no glow */
-  font-family: "Georgia", "Times New Roman", serif; /* letter vibe */
+  box-shadow: none;
+  font-family: "Georgia", "Times New Roman", serif;
   line-height: 1.6;
-  color: #2b2b2b;
+  color: #000000; /* Forced to black */
 }
 
 /* Optional: fancy top header (sender/location/date) */
 .letterbox-header {
   font-size: 0.9em;
-  color: #6b5b3e;
+  color: #000000; /* Forced to black */
   margin-bottom: 0.75em;
   border-bottom: 1px solid #c9b68a;
   padding-bottom: 0.5em;
@@ -183,6 +183,7 @@
 /* Body paragraphs spacing */
 .letterbox p {
   margin: 0.6em 0;
+  color: #000000; /* Ensures paragraph text is black */
 }
 
 /* Signature styling */
@@ -190,11 +191,12 @@
   margin-top: 1.25em;
   font-style: italic;
   text-align: right;
-  color: #4a3f2a;
+  color: #000000; /* Forced to black */
 }
 
 /* Optional: slightly darker variant for dramatic letters */
 .letterbox-dark {
   background: #e9dfc3;
   border: 1px solid #b8a574;
+  color: #000000; /* Ensures variant is also black */
 }

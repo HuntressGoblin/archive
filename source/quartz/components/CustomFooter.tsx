@@ -10,7 +10,7 @@ export default (() => {
         <ul>
           <li>
             <a href="https://archive.goblindnd.com/" target="_blank" rel="noopener noreferrer">
-              Another placeholder. 
+              The Eternal Library 
             </a>
           </li>
         </ul>

@@ -886,35 +886,50 @@
   border-left: 4px solid #d4af37; /* antique gold */
   border-radius: 8px;
   padding: 14px;
+  margin: 1em 0; /* Ensures it doesn't crowd adjacent blocks */
 
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  
+  /* FIX 1: Prevent text clipping */
+  overflow: visible !important; 
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
 
   --callout-icon: none;
 }
 
 /* Title styling */
-.callout[data-callout="dragon"] .callout-title,
-.callout[data-callout="dragon"] .callout-title-inner,
-.callout[data-callout="dragon"] .callout-title-text {
+.callout[data-callout="dragon"] .callout-title {
   color: #d4af37 !important;
   font-weight: 700;
   letter-spacing: 0.4px;
+  
+  /* FIX 2: Ensure the title has space to breathe */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(212,175,55,0.25);
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  min-height: 1.5em; 
+}
+
+.callout[data-callout="dragon"] .callout-title-inner,
+.callout[data-callout="dragon"] .callout-title-text {
+  color: #d4af37 !important;
 }
 
 /* Content styling */
 .callout[data-callout="dragon"] .callout-content {
   color: var(--text-normal);
   font-style: italic;
+  
+  /* FIX 3: Force paragraphs to wrap instead of overflowing */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Hide icon space */
 .callout[data-callout="dragon"] .callout-icon {
   display: none;
-}
-
-/* Subtle divider under title */
-.callout[data-callout="dragon"] .callout-title {
-  border-bottom: 1px solid rgba(212,175,55,0.25);
-  padding-bottom: 6px;
-  margin-bottom: 6px;
 }

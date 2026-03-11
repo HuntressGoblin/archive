@@ -795,16 +795,23 @@
   gap: 20px;
 }
 
+/* Force sections under the portrait */
+
+.npc-info {
+  grid-column: 1 / -1;
+}
+
 /* Portrait */
 
 .npc-portrait {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
+  grid-column: 1 / -1; /* THIS centers it across the whole grid */
 }
 
 .npc-portrait img {
-  width: 300px;          /* medium size */
+  width: 300px;
   max-width: 100%;
   border-radius: 10px;
   border: 2px solid rgba(176,120,70,0.8);

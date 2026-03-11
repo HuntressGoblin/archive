@@ -61,26 +61,53 @@
     0 0 25px rgba(59, 130, 246, 0.15),
     0 0 35px rgba(168, 85, 247, 0.15);
 
-  /* Set base variables to white */
   --callout-icon: none;
   --callout-title-color: #ffffff;
   --callout-content-color: #ffffff;
+  
+  /* IMPACTS DROPDOWNS: Ensures the container expands correctly */
+  overflow: hidden;
+  height: auto;
 }
 
-/* 1. Force the Title (The word "Galaxy") to White */
-.callout[data-callout="galaxy"] .callout-title,
-.callout[data-callout="galaxy"] .callout-title-inner,
-.callout[data-callout="galaxy"] .callout-title-text {
+/* 1. Force the Title to White & FIX VERTICAL ALIGNMENT */
+.callout[data-callout="galaxy"] .callout-title {
   color: #ffffff !important;
   opacity: 1 !important;
   font-weight: bold;
+  display: flex !important;
+  align-items: center !important;
+
+  /* MANUAL SLIDER: Increase bottom to move text UP */
+  padding-top: 2px !important;    
+  padding-bottom: 20px !important; 
+  
+  /* IMPACTS DROPDOWNS: Space before content starts when open */
+  margin-bottom: 0px;
+}
+
+/* Force space only when OPEN */
+.callout[data-callout="galaxy"]:not(.is-collapsed) .callout-title {
+  margin-bottom: 16px !important;
+}
+
+.callout[data-callout="galaxy"] .callout-title-inner,
+.callout[data-callout="galaxy"] .callout-title-text {
+  color: #ffffff !important;
+  line-height: 1 !important;
 }
 
 /* 2. Force the Body Content to White */
-.callout[data-callout="galaxy"] .callout-content,
-.callout[data-callout="galaxy"] .callout-content p {
+.callout[data-callout="galaxy"] .callout-content {
   color: #ffffff !important;
   opacity: 1 !important;
+  position: relative !important;
+  display: block;
+}
+
+.callout[data-callout="galaxy"] .callout-content p {
+  color: #ffffff !important;
+  margin-top: 0 !important; /* Prevents text from sagging further */
 }
 
 /* 3. Completely hide the icon space */
@@ -88,13 +115,22 @@
   display: none !important;
 }
 
-/* 4. Ensure links inside the callout are still visible (Optional) */
+/* Fix for the dropdown arrow height */
+.callout[data-callout="galaxy"] .callout-fold {
+  color: #ffffff !important;
+  padding-bottom: 16px; /* Matches the text shift */
+}
+
+/* 4. Links */
 .callout[data-callout="galaxy"] a {
-  color: #93c5fd !important; /* A light blue for links */
+  color: #93c5fd !important;
   text-decoration: underline;
 }
 
-/* Grid container Default for Galaxy */
+/* =========================================
+   GRID & PLAYER CARDS (UNTOUCHED)
+   ========================================= */
+
 .player-grid {
   display: flex;
   flex-wrap: wrap;
@@ -103,7 +139,6 @@
   padding: 10px;
 }
 
-/* Player card matching galaxy theme */
 .player-card {
   display: flex;
   flex-direction: column;
@@ -135,7 +170,6 @@
     0 0 45px rgba(168, 85, 247, 0.3);
 }
 
-/* Player image */
 .player-card img {
   width: 100px;
   height: 100px;
@@ -148,10 +182,9 @@
 
 .player-card:hover img {
   transform: scale(1.1);
-  border-color: rgba(255, 215, 0, 0.8); /* subtle golden highlight */
+  border-color: rgba(255, 215, 0, 0.8);
 }
 
-/* Player name & class */
 .player-name {
   font-weight: bold;
   font-size: 1.1rem;
@@ -162,15 +195,6 @@
   font-size: 0.85rem;
   color: #eee;
   font-style: italic;
-}
-
-/* Grid container */
-.player-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 10px;
 }
 
 /* === GALAXY TOMES — STABILIZED (QUARTZ SAFE) === */

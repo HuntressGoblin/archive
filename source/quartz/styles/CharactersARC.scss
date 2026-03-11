@@ -871,60 +871,59 @@
 }
 
 /* =========================================
-   TIAMAT QUOTE CALLOUT (FORCED STACK)
+   TIAMAT QUOTE CALLOUT (FIXED STACK + COLLAPSIBLE)
    ========================================= */
 
 .callout[data-callout="dragon"] {
-  /* Keep your existing gradient and border */
   background: linear-gradient(145deg, rgba(20, 20, 20, 0.85), rgba(139, 0, 0, 0.08), rgba(0, 31, 63, 0.05), rgba(0, 50, 0, 0.05));
   border-left: 4px solid #d4af37;
   border-radius: 8px;
-  padding: 16px !important;
-  margin-bottom: 2em !important; /* Force space between callouts */
-
-  /* FIX: Force block layout so they cannot overlap */
-  display: block !important;
-  height: auto !important;
-  min-height: min-content !important;
-  overflow: visible !important;
+  padding: 14px !important;
+  margin-bottom: 1.5em !important;
+  
+  /* Remove display: block; let Quartz handle the flex/grid for collapsing */
+  overflow: hidden; 
+  height: auto;
 }
 
-/* Force the Title to occupy its own space */
+/* Fix the Title overlap */
 .callout[data-callout="dragon"] .callout-title {
   color: #d4af37 !important;
   font-weight: 700;
   
-  /* FIX: Ensure the title isn't floating */
-  position: relative !important;
-  display: flex !important; 
-  padding-bottom: 12px !important;
-  margin-bottom: 16px !important; /* The space you wanted */
+  /* Space under the gold line */
   border-bottom: 1px solid rgba(212,175,55,0.25);
+  padding-bottom: 10px !important;
+  
+  /* This margin only exists when the box is open */
+  margin-bottom: 0px; 
 }
 
-/* Force the Content to stay below the title */
+/* THE FIX: Force space only when OPEN */
+.callout[data-callout="dragon"]:not(.is-collapsed) .callout-title {
+  margin-bottom: 16px !important;
+}
+
+/* Fix the Content overlap */
 .callout[data-callout="dragon"] .callout-content {
   color: var(--text-normal);
   font-style: italic;
   
-  /* FIX: Clear all floats and positioning */
+  /* Ensure it behaves like a standard block of text */
   position: relative !important;
-  display: block !important;
-  height: auto !important;
-  overflow: visible !important;
-  
-  /* Ensure paragraphs inside don't mess up the height */
-  margin: 0 !important;
-  padding: 0 !important;
+  display: block; 
+  line-height: 1.6;
 }
 
-/* Ensure the text itself has room */
-.callout[data-callout="dragon"] .callout-content p {
-  margin-bottom: 1em !important;
-  display: block !important;
-}
-
-/* Hide the icon space */
+/* Hide the icon but keep the fold arrow */
 .callout[data-callout="dragon"] .callout-icon {
   display: none !important;
 }
+
+.callout[data-callout="dragon"] .callout-fold {
+  color: #d4af37 !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure paragraphs inside don't

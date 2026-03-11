@@ -901,7 +901,7 @@
   display: flex !important;
   align-items: center !important; 
   padding-top: 4px !important;   /* Pulls the bar up slightly */
-  padding-bottom: 12px !important; /* Space for the divider line */
+  padding-bottom: 20px !important; /* Space for the divider line */
   
   border-bottom: 1px solid rgba(212,175,55,0.25);
   margin-bottom: 0px; 

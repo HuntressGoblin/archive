@@ -747,3 +747,167 @@
 .markdown-rendered .tiamat-box-dark {
   max-width: 100%;
 }
+
+/* ===============================
+   RUNARA NPC TEMPLATE
+   Bronze Dragon Sea Theme
+   =============================== */
+
+.npc-runara {
+  border: 2px solid rgba(176,120,70,0.85);
+  background: linear-gradient(
+    140deg,
+    rgba(20,30,28,0.95),
+    rgba(40,85,75,0.45),
+    rgba(80,55,30,0.35)
+  );
+  border-radius: 14px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px rgba(90,170,140,0.25);
+}
+
+/* Header */
+
+.npc-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.npc-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #d4a46a;
+  letter-spacing: 1px;
+}
+
+.npc-title {
+  font-size: 14px;
+  color: #7fc3a8;
+  opacity: 0.9;
+}
+
+/* Layout */
+
+.npc-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+}
+
+/* Portrait */
+
+.npc-portrait {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.npc-portrait img {
+  width: 300px;          /* medium size */
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(176,120,70,0.8);
+  box-shadow: 0 0 12px rgba(110,190,150,0.35);
+}
+
+
+/* Sections */
+
+.npc-section {
+  margin-bottom: 15px;
+}
+
+.npc-section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #cfa06a;
+  border-bottom: 1px solid rgba(176,120,70,0.6);
+  margin-bottom: 8px;
+  padding-bottom: 3px;
+}
+
+/* Lists */
+
+.npc-info ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.npc-info li {
+  margin-bottom: 4px;
+}
+
+/* Notes */
+
+.npc-notes {
+  margin-top: 15px;
+  color: #cfe6dc;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+  .npc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .npc-portrait {
+    text-align: center;
+  }
+
+  .npc-portrait img {
+    max-width: 220px;
+  }
+
+}
+
+/* =========================================
+   TIAMAT QUOTE CALLOUT (SOFT GOLD THEME)
+   ========================================= */
+
+.callout[data-callout="dragon"] {
+  background: linear-gradient(
+    145deg,
+    rgba(20, 20, 20, 0.85),
+    rgba(139, 0, 0, 0.08),
+    rgba(0, 31, 63, 0.05),
+    rgba(0, 50, 0, 0.05)
+  );
+
+  border-left: 4px solid #d4af37; /* antique gold */
+  border-radius: 8px;
+  padding: 14px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+  --callout-icon: none;
+}
+
+/* Title styling */
+.callout[data-callout="dragon"] .callout-title,
+.callout[data-callout="dragon"] .callout-title-inner,
+.callout[data-callout="dragon"] .callout-title-text {
+  color: #d4af37 !important;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* Content styling */
+.callout[data-callout="dragon"] .callout-content {
+  color: var(--text-normal);
+  font-style: italic;
+}
+
+/* Hide icon space */
+.callout[data-callout="dragon"] .callout-icon {
+  display: none;
+}
+
+/* Subtle divider under title */
+.callout[data-callout="dragon"] .callout-title {
+  border-bottom: 1px solid rgba(212,175,55,0.25);
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}

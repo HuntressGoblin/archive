@@ -22,7 +22,7 @@ Hi, a little personal note from the person making this herself! This is just a d
 It should go without saying, but ***SPOILERS AHEAD!!!!*** Browse at your own risk. Even if you're avoiding your own campaign, you still run the risk of finding out things you shouldn't know.
 
 ---
-With that out of the way, go enjoy! I would recommend checking out "[[The Tomes of the Eternal Library]]" to get started. Things are still under construction, so there may be placeholders. Placeholder links will trace back to [[Journey to Divinity]]! Once again, ***SPOILERS AHEAD!!!!*** I'd recommend refreshing your cache if anything appears odd or if you haven't visited in a couple of days! This is the main way to see new material that has been added.
+With that out of the way, go enjoy! I would recommend checking out "[[The Tomes of the Eternal Library]] to get started. Things are still under construction, so there may be placeholders. Once again, ***SPOILERS AHEAD!!!!*** I'd recommend refreshing your cache if anything appears odd or if you haven't visited in a couple of days! This is the main way to see new material that has been added.
 
 ---
 

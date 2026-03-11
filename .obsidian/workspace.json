@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/DnD - Archive of Artimis/Tome of Tyranny/Rise of Tyranny.md",
-                "mode": "preview",
+                "file": "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Elder Runara.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rise of Tyranny"
+              "title": "Elder Runara"
             }
           }
         ]
@@ -186,10 +186,10 @@
   },
   "active": "51b0f23028237bab",
   "lastOpenFiles": [
+    "source/content/DnD - Archive of Artimis/Tome of Tyranny/Rise of Tyranny.md",
     "Pasted image 20260311003245.png",
     "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Elder Runara.md",
     "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
-    "source/content/DnD - Archive of Artimis/Tome of Tyranny/Rise of Tyranny.md",
     "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Aidron.md",
     "source/content/Z - Pictures/Finalepic.png",
     "source/content/Z - Pictures/Thisguyvanished.png",
@@ -219,7 +219,6 @@
     "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
     "source/content/Base Lore - The Eternal Library/Stop! Start here!.md",
     "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library 2.md",
-    "source/content/Z - Pictures/Pictureofprettycrystals.png",
     "source/content/Base Lore - The Eternal Library/index.md",
     "source/content/Base Lore - The Eternal Library/The Cluster Galaxy IMPROVE.md",
     "source/content/category-folder/Some note.md",

@@ -11,6 +11,7 @@
 <div class="npc-portrait">
 <img src="Runara.png">
 </div>
+<br>
 
 <div class="npc-info">
 

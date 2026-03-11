@@ -21,6 +21,7 @@
 <div class="markdown-rendered">
 
 **Race:** Human
+<br>
 **Location:** [[Dragon's Rest]]  
 **Alignment:** Lawful Good  
 **Role:** Leader of Dragon's Rest and guardian of [[Stormwreck Isle]]

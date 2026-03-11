@@ -1,4 +1,5 @@
 <div class="npc-runara">
+</div>
 
 <div class="npc-header">
   <div class="npc-name">Elder Runara</div>

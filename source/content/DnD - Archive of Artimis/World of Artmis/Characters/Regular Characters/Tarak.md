@@ -3,7 +3,7 @@
 
 <div class="npc-header">
   <div class="npc-name">NPC Name</div>
-  <div class="npc-title">Title</div>
+  <div class="npc-title"></div>
 </div>
 
 <div class="npc-grid">

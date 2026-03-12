@@ -187,3 +187,121 @@
   text-shadow:
     0 0 10px rgba(255, 80, 60, 0.45);
 }
+
+/* ===============================
+   DRAGON'S REST NPC TEMPLATE
+   Cozy Cove / Seaside Haven Theme
+   =============================== */
+
+.npc-dragonsrest {
+  border: 2px solid rgba(160,120,70,0.85);
+  background: linear-gradient(
+    140deg,
+    rgba(28,34,40,0.95),   /* night cove */
+    rgba(60,90,105,0.40),  /* sea mist */
+    rgba(120,85,55,0.30)   /* warm tavern wood */
+  );
+  border-radius: 14px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 18px rgba(120,170,200,0.25);
+}
+
+/* Header */
+
+.npc-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.npc-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e0c08a; /* lantern gold */
+  letter-spacing: 1px;
+}
+
+.npc-title {
+  font-size: 14px;
+  color: #9fd0c5; /* seafoam */
+  opacity: 0.9;
+}
+
+/* Layout */
+
+.npc-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+}
+
+/* Portrait */
+
+.npc-portrait {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.npc-portrait img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(170,130,75,0.85);
+  box-shadow: 
+    0 0 10px rgba(255,200,120,0.25),
+    0 0 15px rgba(110,170,200,0.25);
+}
+
+/* Sections */
+
+.npc-section {
+  margin-bottom: 15px;
+}
+
+.npc-section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d8b57a;
+  border-bottom: 1px solid rgba(170,130,75,0.6);
+  margin-bottom: 8px;
+  padding-bottom: 3px;
+}
+
+/* Lists */
+
+.npc-info ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.npc-info li {
+  margin-bottom: 4px;
+  color: #d8e7ea;
+}
+
+/* Notes */
+
+.npc-notes {
+  margin-top: 15px;
+  color: #cfe6dc;
+  font-style: italic;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+  .npc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .npc-portrait {
+    text-align: center;
+  }
+
+  .npc-portrait img {
+    max-width: 220px;
+  }
+
+}

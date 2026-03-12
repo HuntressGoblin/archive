@@ -20,11 +20,11 @@
 
 <div class="markdown-rendered">
 
-**Race:** Human
+**Race:** Human.
 <br>
-**Location:** [[Dragon's Rest]]  
-**Alignment:** Lawful Good  
-**Role:** Leader of Dragon's Rest and guardian of [[Stormwreck Isle]]
+**Location:** [[Dragon's Rest]].  
+**Alignment:** Lawful Good. 
+**Role:** Leader of Dragon's Rest and guardian of [[Stormwreck Isle]].
 
 </div>
 </div>
@@ -34,10 +34,10 @@
 
 <div class="markdown-rendered">
 
-- Calm and wise  
-- Never quick to anger  
-- Protective of the innocent and those under her care  
-- Deeply devoted to peace
+- Calm and wise.  
+- Never quick to anger.  
+- Protective of the innocent and those under her care.  
+- Deeply devoted to peace.
 - ???
 
 </div>
@@ -78,8 +78,7 @@
 
 <div class="markdown-rendered">
 
-Runara is the guardian of [[Dragon's Rest]] on [[Stormwreck Isle]].  
-She resides there with the residents of the island, teaching a lifestyle focused on respecting others and maintaining peace. Her watchful eye prevents [[Stormwreck Isle]] from being misused by evil forces.
+Runara is the guardian of [[Dragon's Rest]] on [[Stormwreck Isle]]. She has streaks of gray in her hair and her eyes portray a sense of wisdom. She resides there with the residents of the island, teaching a lifestyle focused on respecting others and maintaining peace. Her watchful eye prevents [[Stormwreck Isle]] from being misused by evil forces.
 
 </div>
 

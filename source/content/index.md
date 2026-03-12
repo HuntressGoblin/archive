@@ -44,6 +44,24 @@ With that out of the way, go enjoy! I would recommend checking out "[[The Tomes 
 
 ---
 
+Honorable Mentions of other people's awesome websites!
+
+[Stensin: Enutheta](https://wiki.enutheta.com/)
+
+[Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
+
+---
+
+
+
+
+
+
+
+
+
+
+
 
 <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">
   Anything in here that you don't want documented or shown? Feel free to reach out and ping me! I'll gladly remove it!

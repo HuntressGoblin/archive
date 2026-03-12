@@ -943,3 +943,121 @@
 .callout[data-callout="dragon"] .callout-content > p:first-child {
   margin-top: 0 !important;
 }
+
+/* ===============================
+   KOBOLD GANG NPC TEMPLATE
+   Red Dragon Kobold Theme
+   =============================== */
+
+.npc-koboldgang {
+  border: 2px solid rgba(200,70,50,0.85);
+  background: linear-gradient(
+    140deg,
+    rgba(35,20,20,0.95),   /* deep cave shadow */
+    rgba(90,30,25,0.45),   /* ember glow */
+    rgba(120,40,30,0.35)   /* red dragon warmth */
+  );
+  border-radius: 14px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 18px rgba(220,80,60,0.30);
+}
+
+/* Header */
+
+.npc-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.npc-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff9a6a; /* fiery kobold orange */
+  letter-spacing: 1px;
+}
+
+.npc-title {
+  font-size: 14px;
+  color: #ff7b5c; /* ember red */
+  opacity: 0.9;
+}
+
+/* Layout */
+
+.npc-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+}
+
+/* Portrait */
+
+.npc-portrait {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.npc-portrait img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(210,80,60,0.9);
+  box-shadow: 
+    0 0 10px rgba(255,120,90,0.35),
+    0 0 16px rgba(170,40,30,0.45);
+}
+
+/* Sections */
+
+.npc-section {
+  margin-bottom: 15px;
+}
+
+.npc-section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff946b;
+  border-bottom: 1px solid rgba(210,80,60,0.6);
+  margin-bottom: 8px;
+  padding-bottom: 3px;
+}
+
+/* Lists */
+
+.npc-info ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.npc-info li {
+  margin-bottom: 4px;
+  color: #f2c5b7; /* warm cave light */
+}
+
+/* Notes */
+
+.npc-notes {
+  margin-top: 15px;
+  color: #ffd6c8;
+  font-style: italic;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+  .npc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .npc-portrait {
+    text-align: center;
+  }
+
+  .npc-portrait img {
+    max-width: 220px;
+  }
+
+}

@@ -51,7 +51,7 @@ Honorable Mentions of other people's awesome websites!
 [Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
 
 ---
-**LAST UPDATE:** 3/12/2026 6:50 PM
+**LAST UPDATE:** 3/12/2026 6:50 PM CST
 
 ---
 

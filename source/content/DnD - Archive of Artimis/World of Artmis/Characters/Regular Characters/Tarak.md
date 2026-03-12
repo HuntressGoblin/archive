@@ -2,7 +2,7 @@
 </div>
 
 <div class="npc-header">
-  <div class="npc-name">NPC Name</div>
+  <div class="npc-name">Tarak</div>
   <div class="npc-title"></div>
 </div>
 

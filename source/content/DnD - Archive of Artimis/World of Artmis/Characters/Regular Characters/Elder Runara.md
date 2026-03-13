@@ -44,9 +44,6 @@
 
 </div>
 
-<p style="text-align: center; font-size: 0.85em; color: #8a8fae;">Connections</p>
-</div>
-</div>
 [[Tarak]]
 [[Kobolds of Dragon's Rest]]
 [[Stormwreck Isle]]

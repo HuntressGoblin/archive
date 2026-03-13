@@ -70,80 +70,65 @@
   max-width: 100%;
 }
 
-/* ============================================================
-   FOOTNOTE-ONE THEME
-   Works for: Obsidian, GitHub Preview, and Quartz 4.0
-   ============================================================ */
-
-/* 1. MAIN CONTAINER: Strip the box and add the top divider */
-div.callout[data-callout="footnote-one"] {
-    --callout-icon: none !important;
-    background-color: transparent !important;
-    background: transparent !important;
+/* Container for the clean footnote */
+details.footnote-one-clean {
+    display: block;
     border: none !important;
-    /* Uses Obsidian divider color or Quartz lightgray fallback */
     border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
-    border-radius: 0 !important;
-    padding: 12px 0 0 0 !important;
     margin-top: 40px !important;
-    box-shadow: none !important;
-}
-
-/* 2. ICON REMOVAL: Specifically targets the pencil and SVGs */
-div.callout[data-callout="footnote-one"] .callout-icon,
-div.callout[data-callout="footnote-one"] .callout-icon svg,
-div.callout[data-callout="footnote-one"] svg {
-    display: none !important;
-}
-
-/* 3. TITLE/SUMMARY: Style the "Connections" label */
-div.callout[data-callout="footnote-one"] .callout-title,
-div.callout[data-callout="footnote-one"] summary {
-    background-color: transparent !important;
+    padding-top: 10px !important;
     background: transparent !important;
-    padding: 0 !important;
-    margin-bottom: 5px !important;
-    /* Muted text color with italic footnote style */
-    color: var(--text-muted, var(--gray)) !important;
-    font-style: italic !important;
-    font-weight: normal !important;
-    font-size: 0.85em !important;
 }
 
-/* 4. THE ARROW (FOLD ICON): Make it subtle */
-div.callout[data-callout="footnote-one"] .callout-fold,
-div.callout[data-callout="footnote-one"] .fold-icon svg {
-    color: var(--text-faint, var(--gray)) !important;
+/* The clickable header (Connections) */
+details.footnote-one-clean summary {
+    list-style: none; /* Hide default arrow */
+    cursor: pointer;
+    font-size: 0.85em !important;
+    font-style: italic;
+    color: var(--text-muted, var(--gray)) !important;
+    outline: none;
+    user-select: none;
+}
+
+/* Custom indicator (The triangle) */
+details.footnote-one-clean summary::before {
+    content: "▼ ";
+    font-size: 0.7em;
+    font-style: normal;
+    margin-right: 4px;
     opacity: 0.6;
-    padding-right: 8px !important;
 }
 
-/* 5. CONTENT AREA: Clean list styling */
-div.callout[data-callout="footnote-one"] .callout-content {
-    padding: 0 !important;
-    margin: 0 !important;
-    line-height: 1.6 !important;
-    color: var(--text-muted, var(--gray)) !important;
+details.footnote-one-clean:not([open]) summary::before {
+    content: "▶ ";
+}
+
+/* Hide the native browser arrow in Chrome/Safari */
+details.footnote-one-clean summary::-webkit-details-marker {
+    display: none;
+}
+
+/* The Links Area */
+details.footnote-one-clean {
     font-size: 0.85em !important;
+    line-height: 1.6;
+    color: var(--text-muted, var(--gray));
 }
 
-/* 6. LINKS: Remove Quartz "Pills" and style as text */
-div.callout[data-callout="footnote-one"] .callout-content a,
-div.callout[data-callout="footnote-one"] .callout-content a.internal,
-div.callout[data-callout="footnote-one"] .internal-link {
-    background-color: transparent !important;
+/* Link Styling - Strips Quartz "Pills" */
+details.footnote-one-clean a, 
+details.footnote-one-clean .internal-link {
     background: transparent !important;
+    background-color: transparent !important;
     padding: 0 !important;
     border: none !important;
-    border-radius: 0 !important;
-    /* Uses accent color or Quartz secondary fallback */
     color: var(--text-accent, var(--secondary)) !important;
     text-decoration: none !important;
 }
 
-/* 7. LINK HOVER: Visual feedback */
-div.callout[data-callout="footnote-one"] .callout-content a:hover,
-div.callout[data-callout="footnote-one"] .internal-link:hover {
+details.footnote-one-clean a:hover,
+details.footnote-one-clean .internal-link:hover {
     text-decoration: underline !important;
-    opacity: 1 !important;
+    opacity: 1;
 }

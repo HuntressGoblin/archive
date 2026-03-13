@@ -44,9 +44,7 @@
 
 </div>
 
-> [!footnote-one]- Connections
-> [[Stormwreck Isle]], [[Aidron]], [[Rise of Tyranny|Yang Gang]], [[Dragon's Rest]], [[Diomeades Eldwynair]].
-
-
-> [!footnote-one]- Connections
-> [[Tarak]], [[Kobolds of Dragon's Rest]]
+<details class="footnote-one-clean" open>
+  <summary>Connections</summary>
+[[Tarak]], [[Kobolds of Dragon's Rest]]
+</details>

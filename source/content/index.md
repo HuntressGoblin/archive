@@ -56,6 +56,10 @@ Honorable Mentions of other people's awesome websites!
 - Changed [[Elder Runara]].
 - Deleted NPC profiles for alterations to match new, fancier NPC format.
 - Added footnotes to preserve web connections. 
+
+IN-PROGRESS/BUGS: 
+- All of the connections at the bottom of each page refuse to work with a format outside of the default quartz one. I'll search for a way to fix them, but for now, they'll be default since I really can't find a way to change it without destroying links like [[Elder Runara|these]] which unfortunately don't link to the web anymore. 
+
 ---
 
 

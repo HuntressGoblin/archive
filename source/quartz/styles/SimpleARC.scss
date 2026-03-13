@@ -70,80 +70,68 @@
   max-width: 100%;
 }
 
-/* ============================================================
-   FOOTNOTE-ONE THEME
-   Works for: Obsidian, GitHub Preview, and Quartz 4.0
-   ============================================================ */
+/* FOOTNOTE DESIGN - PAGE STYLE */
 
-/* 1. MAIN CONTAINER: Strip the box and add the top divider */
-div.callout[data-callout="footnote-one"] {
-    --callout-icon: none !important;
-    background-color: transparent !important;
-    background: transparent !important;
-    border: none !important;
-    /* Uses Obsidian divider color or Quartz lightgray fallback */
-    border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
-    border-radius: 0 !important;
-    padding: 12px 0 0 0 !important;
-    margin-top: 40px !important;
-    box-shadow: none !important;
+/* Main Container: Created to look like a sheet of paper */
+.callout[data-callout="footnote-one"] {
+    background-color: var(--light) !important; /* Standard Quartz/Obsidian page background */
+    border: 1px solid var(--lightgray) !important; 
+    border-radius: 4px !important;
+    padding: 20px !important;
+    margin-top: 50px !important;
+    
+    /* This creates the 'paper' lift effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    
+    /* Ensure it doesn't span the full width if you want it centered/compact */
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* 2. ICON REMOVAL: Specifically targets the pencil and SVGs */
-div.callout[data-callout="footnote-one"] .callout-icon,
-div.callout[data-callout="footnote-one"] .callout-icon svg,
-div.callout[data-callout="footnote-one"] svg {
+/* ⬇️ REMOVES THE PENCIL ⬇️ */
+.callout[data-callout="footnote-one"] .callout-icon,
+.callout[data-callout="footnote-one"] svg {
     display: none !important;
 }
 
-/* 3. TITLE/SUMMARY: Style the "Connections" label */
-div.callout[data-callout="footnote-one"] .callout-title,
-div.callout[data-callout="footnote-one"] summary {
-    background-color: transparent !important;
+/* Header styling */
+.callout[data-callout="footnote-one"] summary {
+    padding: 0 0 10px 0 !important;
     background: transparent !important;
-    padding: 0 !important;
-    margin-bottom: 5px !important;
-    /* Muted text color with italic footnote style */
-    color: var(--text-muted, var(--gray)) !important;
-    font-style: italic !important;
-    font-weight: normal !important;
-    font-size: 0.85em !important;
+    border-bottom: 1px solid var(--lightgray) !important; /* Divider inside the page */
+    margin-bottom: 15px !important;
 }
 
-/* 4. THE ARROW (FOLD ICON): Make it subtle */
-div.callout[data-callout="footnote-one"] .callout-fold,
-div.callout[data-callout="footnote-one"] .fold-icon svg {
-    color: var(--text-faint, var(--gray)) !important;
-    opacity: 0.6;
-    padding-right: 8px !important;
+.callout[data-callout="footnote-one"] .callout-title {
+    color: var(--dark) !important; /* Stronger text for the page 'header' */
+    font-family: var(--bodyFont);
+    font-variant: small-caps; /* Gives it a formal document look */
+    font-weight: 600 !important;
+    font-size: 1em !important;
+    letter-spacing: 1px;
 }
 
-/* 5. CONTENT AREA: Clean list styling */
-div.callout[data-callout="footnote-one"] .callout-content {
-    padding: 0 !important;
-    margin: 0 !important;
+/* Content Area */
+.callout[data-callout="footnote-one"] .callout-content {
+    padding: 5px 0 0 0 !important;
+    font-size: 0.9em !important;
+    color: var(--darkgray) !important;
     line-height: 1.6 !important;
-    color: var(--text-muted, var(--gray)) !important;
-    font-size: 0.85em !important;
 }
 
-/* 6. LINKS: Remove Quartz "Pills" and style as text */
-div.callout[data-callout="footnote-one"] .callout-content a,
-div.callout[data-callout="footnote-one"] .callout-content a.internal,
-div.callout[data-callout="footnote-one"] .internal-link {
-    background-color: transparent !important;
+/* Link Styling - Removing pills to look like typed text */
+.callout[data-callout="footnote-one"] a,
+.callout[data-callout="footnote-one"] .internal-link {
+    color: var(--secondary) !important;
+    text-decoration: none !important;
     background: transparent !important;
     padding: 0 !important;
-    border: none !important;
-    border-radius: 0 !important;
-    /* Uses accent color or Quartz secondary fallback */
-    color: var(--text-accent, var(--secondary)) !important;
-    text-decoration: none !important;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease;
 }
 
-/* 7. LINK HOVER: Visual feedback */
-div.callout[data-callout="footnote-one"] .callout-content a:hover,
-div.callout[data-callout="footnote-one"] .internal-link:hover {
-    text-decoration: underline !important;
-    opacity: 1 !important;
+.callout[data-callout="footnote-one"] a:hover {
+    opacity: 1;
+    border-bottom: 1px solid var(--secondary);
 }

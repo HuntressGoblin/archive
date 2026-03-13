@@ -70,65 +70,68 @@
   max-width: 100%;
 }
 
-/* Container for the clean footnote */
-details.footnote-one-clean {
-    display: block;
-    border: none !important;
-    border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
-    margin-top: 40px !important;
-    padding-top: 10px !important;
+//* FOOTNOTE DESIGN - PAGE STYLE */
+
+/* Main Container: Created to look like a sheet of paper */
+.callout[data-callout="footnote-one"] {
+    background-color: var(--light) !important; /* Standard Quartz/Obsidian page background */
+    border: 1px solid var(--lightgray) !important; 
+    border-radius: 4px !important;
+    padding: 20px !important;
+    margin-top: 50px !important;
+    
+    /* This creates the 'paper' lift effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    
+    /* Ensure it doesn't span the full width if you want it centered/compact */
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ⬇️ REMOVES THE PENCIL ⬇️ */
+.callout[data-callout="footnote-one"] .callout-icon,
+.callout[data-callout="footnote-one"] svg {
+    display: none !important;
+}
+
+/* Header styling */
+.callout[data-callout="footnote-one"] summary {
+    padding: 0 0 10px 0 !important;
     background: transparent !important;
+    border-bottom: 1px solid var(--lightgray) !important; /* Divider inside the page */
+    margin-bottom: 15px !important;
 }
 
-/* The clickable header (Connections) */
-details.footnote-one-clean summary {
-    list-style: none; /* Hide default arrow */
-    cursor: pointer;
-    font-size: 0.85em !important;
-    font-style: italic;
-    color: var(--text-muted, var(--gray)) !important;
-    outline: none;
-    user-select: none;
+.callout[data-callout="footnote-one"] .callout-title {
+    color: var(--dark) !important; /* Stronger text for the page 'header' */
+    font-family: var(--bodyFont);
+    font-variant: small-caps; /* Gives it a formal document look */
+    font-weight: 600 !important;
+    font-size: 1em !important;
+    letter-spacing: 1px;
 }
 
-/* Custom indicator (The triangle) */
-details.footnote-one-clean summary::before {
-    content: "▼ ";
-    font-size: 0.7em;
-    font-style: normal;
-    margin-right: 4px;
-    opacity: 0.6;
+/* Content Area */
+.callout[data-callout="footnote-one"] .callout-content {
+    padding: 5px 0 0 0 !important;
+    font-size: 0.9em !important;
+    color: var(--darkgray) !important;
+    line-height: 1.6 !important;
 }
 
-details.footnote-one-clean:not([open]) summary::before {
-    content: "▶ ";
-}
-
-/* Hide the native browser arrow in Chrome/Safari */
-details.footnote-one-clean summary::-webkit-details-marker {
-    display: none;
-}
-
-/* The Links Area */
-details.footnote-one-clean {
-    font-size: 0.85em !important;
-    line-height: 1.6;
-    color: var(--text-muted, var(--gray));
-}
-
-/* Link Styling - Strips Quartz "Pills" */
-details.footnote-one-clean a, 
-details.footnote-one-clean .internal-link {
-    background: transparent !important;
-    background-color: transparent !important;
-    padding: 0 !important;
-    border: none !important;
-    color: var(--text-accent, var(--secondary)) !important;
+/* Link Styling - Removing pills to look like typed text */
+.callout[data-callout="footnote-one"] a,
+.callout[data-callout="footnote-one"] .internal-link {
+    color: var(--secondary) !important;
     text-decoration: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease;
 }
 
-details.footnote-one-clean a:hover,
-details.footnote-one-clean .internal-link:hover {
-    text-decoration: underline !important;
+.callout[data-callout="footnote-one"] a:hover {
     opacity: 1;
+    border-bottom: 1px solid var(--secondary);
 }

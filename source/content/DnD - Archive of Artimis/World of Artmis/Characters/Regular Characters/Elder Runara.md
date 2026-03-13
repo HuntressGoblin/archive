@@ -1,103 +1,47 @@
 <div class="npc-runara">
-</div>
-
-<div class="npc-header">
-  <div class="npc-name">Elder Runara</div>
-  <div class="npc-title">Teacher of Peace</div>
-</div>
-
-<div class="npc-grid">
-
-<div class="npc-portrait">
-<img src="Runara.png">
-</div>
-<br>
-
-<div class="npc-info">
-
-<div class="npc-section">
-<div class="npc-section-title">Basic Info</div>
-
-<div class="markdown-rendered">
-
-**Race:** Human.
-<br>
-**Location:** [[Dragon's Rest]].  
-**Alignment:** Lawful Good. 
-**Role:** Leader of Dragon's Rest and guardian of [[Stormwreck Isle]].
-
-</div>
-</div>
-
-<div class="npc-section">
-<div class="npc-section-title">Personality</div>
-
-<div class="markdown-rendered">
-
-- Calm and wise.  
-- Never quick to anger.  
-- Protective of the innocent and those under her care.  
-- Deeply devoted to peace.
-- ???
-
-</div>
-</div>
-
-<div class="npc-section">
-<div class="npc-section-title">Secrets</div>
-
-<div class="markdown-rendered">
-
-- ??? 
-- ???  
-- ???  
+  <div class="npc-header">
+    <div class="npc-name">Elder Runara</div>
+    <div class="npc-title">Defender of Peace</div>
+  </div>
+  <div class="npc-portrait">
+    <img src="Runara.png" alt="Elder Runara">
+  </div>
+  <div class="npc-sections">
+    <div class="npc-section">
+      <div class="npc-section-title">Basic Info</div>
+      <ul>
+        <li>Race: Human</li>
+        <li>Location: <a class="internal-link" href="Dragon's Rest">Dragon's Rest</a></li>
+        <li>Alignment: Lawful Good</li>
+        <li>Role: Leader of <a class="internal-link" href="Dragon's Rest">Dragon's Rest</a> & Guardian of <a class="internal-link" href="Stormwreck Isle">Stormwreck Isle</a></li>
+      </ul>
+    </div>
+    <div class="npc-section">
+      <div class="npc-section-title">Personality</div>
+      <ul>
+        <li>Calm and wise; never quick to anger.</li>
+        <li>Protective of the innocent and those under her care.</li>
+        <li>Deeply devoted to peace.</li>
+        <li>???</li>
+      </ul>
+    </div>
+    <div class="npc-section">
+      <div class="npc-section-title">Secrets</div>
+      <ul>
+        <li>???</li>
+        <li>???</li>
+        <li>???</li>
+      </ul>
+    </div>
+    <div class="npc-section">
+      <div class="npc-section-title">Bonds</div>
+      <ul>
+        <li><a class="internal-link" href="Aidron">Aidron</a>: A bold little wyrmling, but Runara can understand where that passion may come from. Sometimes when we care so much about something, it can make us do things that hurt us and keep us trapped...</li>
+        <li><a class="internal-link" href="Rise of Tyranny">Yang Gang</a>: Runara found these individuals to be, while a little eccentric, brave with good hearts to match. She hopes that <a class="internal-link" href="Diomeades Eldwynair">Diomeades Eldwynair</a> remains on the right path.
+        <li><a class="internal-link" href="Dragon's Rest">Residents of Dragon's Rest</a>: Runara regards all who live in Dragon's Rest as under her care. To her, it is important they stay safe.</li>
+      </ul>
+    </div>
 
 </div>
-</div>
-
-</div>
-</div>
-
-<div class="npc-section">
-<div class="npc-section-title">Bonds</div>
-
-<div class="markdown-rendered">
-
-- [[Aidron]] - A bold little wyrmling, but Runara can understand where that passion may come from. Sometimes when we care so much about something, it can make us do things that hurt us and keep us trapped...
-- [[Rise of Tyranny|Yang Gang]] - Runara found these individuals to be, while a little eccentric, brave with good hearts to match. She hopes that [[Diomeades Eldwynair]] remains on the right path.
-- [[Dragon's Rest|All of those who reside in Dragon's Rest]] - Runara regards all who live in [[Dragon's Rest]] as under her care. To her, it is important they stay safe.
-
-</div>
-</div>
-
-</div>
-</div>
-<div class="npc-section npc-notes">
-
-<div class="npc-section-title">Summary</div>
-
-<div class="markdown-rendered">
-
-Runara is the guardian of [[Dragon's Rest]] on [[Stormwreck Isle]]. She has streaks of gray in her hair and her eyes portray a sense of wisdom. She resides there with the residents of the island, teaching a lifestyle focused on respecting others and maintaining peace. Her watchful eye prevents [[Stormwreck Isle]] from being misused by evil forces.
-
-</div>
-
-</div>
-
-<div class="npc-section npc-notes">
-
-<div class="npc-section-title">Backstory</div>
-
-<div class="markdown-rendered">
-
-???
-
-</div>
-
-</div>
-
-</div>
-
-<div class="npc-runara">
 
 

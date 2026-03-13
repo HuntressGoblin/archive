@@ -750,124 +750,263 @@
 
 /* ===============================
    RUNARA NPC TEMPLATE
-   Bronze Dragon Sea Theme
-   =============================== */
+   "Bronze Reef" Exalted Edition
+   Portrait-Spawner Version
+   ============================== */
 
 .npc-runara {
-  border: 2px solid rgba(176,120,70,0.85);
-  background: linear-gradient(
-    140deg,
-    rgba(20,30,28,0.95),
-    rgba(40,85,75,0.45),
-    rgba(80,55,30,0.35)
-  );
-  border-radius: 14px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 0 20px rgba(90,170,140,0.25);
-}
-
-/* Header */
-
-.npc-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.npc-name {
-  font-size: 28px;
-  font-weight: 700;
-  color: #d4a46a;
-  letter-spacing: 1px;
-}
-
-.npc-title {
-  font-size: 14px;
-  color: #7fc3a8;
-  opacity: 0.9;
-}
-
-/* Layout */
-
-.npc-grid {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 20px;
-}
-
-/* Force sections under the portrait */
-
-.npc-info {
-  grid-column: 1 / -1;
-}
-
-/* Portrait */
-
-.npc-portrait {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-  grid-column: 1 / -1; /* THIS centers it across the whole grid */
-}
-
-.npc-portrait img {
-  width: 300px;
-  max-width: 100%;
-  border-radius: 10px;
-  border: 2px solid rgba(176,120,70,0.8);
-  box-shadow: 0 0 12px rgba(110,190,150,0.35);
-}
-
-
-/* Sections */
-
-.npc-section {
-  margin-bottom: 15px;
-}
-
-.npc-section-title {
-  font-size: 16px;
-  font-weight: bold;
-  color: #cfa06a;
-  border-bottom: 1px solid rgba(176,120,70,0.6);
-  margin-bottom: 8px;
-  padding-bottom: 3px;
-}
-
-/* Lists */
-
-.npc-info ul {
-  padding-left: 18px;
-  margin: 0;
-}
-
-.npc-info li {
-  margin-bottom: 4px;
-}
-
-/* Notes */
-
-.npc-notes {
-  margin-top: 15px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 30px 0;
   color: #cfe6dc;
 }
 
-/* Responsive */
+/* --- The Bronze Reef Header --- */
+
+.npc-header {
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* Small floating bubble/pearl above the name */
+.npc-header::before {
+  content: "⚪";
+  display: block;
+  font-size: 14px;
+  color: #d4a46a;
+  margin-bottom: 5px;
+  text-shadow: 0 0 10px rgba(212, 164, 106, 0.6);
+  animation: wave-float 3s infinite ease-in-out;
+}
+
+.npc-name {
+  font-size: 32px;
+  font-weight: 800;
+  color: #d4a46a;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  
+  /* Bronze Shimmer Animation - Warning Fixed */
+  background: linear-gradient(to right, #d4a46a 20%, #fffceb 50%, #d4a46a 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+/* Wavy Bronze Wing Dividers */
+.npc-name::before, .npc-name::after {
+  content: "";
+  height: 10px;
+  width: 70px;
+  background: #d4a46a;
+  mask-image: radial-gradient(circle at 50% 100%, transparent 4px, black 5px);
+  -webkit-mask-image: radial-gradient(circle at 50% 100%, transparent 4px, black 5px);
+  mask-size: 15px 20px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.npc-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7fc3a8;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: wave-float 4s infinite ease-in-out;
+}
+
+@keyframes wave-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.npc-title::before, .npc-title::after {
+  content: "◦"; 
+  margin: 0 10px;
+  color: #d4a46a;
+}
+
+/* --- Ornate Altar Portrait & External Bubble Spawner --- */
+
+.npc-portrait {
+  text-align: center;
+  margin-bottom: 50px; /* Extra space for bubbles to float into */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bubble Stream 1 (Left) */
+.npc-portrait::before {
+  content: "◦";
+  position: absolute;
+  /* Start hidden behind the image */
+  bottom: 20px;
+  left: 25%;
+  color: rgba(212, 164, 106, 0.6);
+  font-size: 20px;
+  z-index: 1; 
+  text-shadow: -15px 40px 0 rgba(127, 195, 168, 0.4), 
+               -30px 90px 0 rgba(212, 164, 106, 0.2);
+  animation: float-up-out 6s infinite ease-in;
+  pointer-events: none;
+}
+
+/* Bubble Stream 2 (Right) */
+.npc-portrait::after {
+  content: "◦";
+  position: absolute;
+  bottom: 20px;
+  right: 25%;
+  color: rgba(212, 164, 106, 0.6);
+  font-size: 20px;
+  z-index: 1;
+  text-shadow: 15px 50px 0 rgba(212, 164, 106, 0.3), 
+               30px 100px 0 rgba(127, 195, 168, 0.4);
+  animation: float-up-out 8s infinite ease-in;
+  animation-delay: 2s;
+  pointer-events: none;
+}
+
+@keyframes float-up-out {
+  0% { 
+    transform: translateY(0) scale(0.5); 
+    opacity: 0; 
+  }
+  20% { 
+    opacity: 1; 
+  }
+  100% { 
+    /* Floats high above the portrait towards the header */
+    transform: translateY(-350px) scale(1.8); 
+    opacity: 0; 
+  }
+}
+
+.npc-portrait img {
+  width: 280px;
+  max-width: 90%;
+  height: auto;
+  /* Fixed "Shrine" shape that doesn't morph like a bubble */
+  border-radius: 150px 150px 20px 20px; 
+  border: 3px solid #d4a46a;
+  padding: 5px;
+  background: rgba(20, 30, 28, 0.9);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  
+  /* Sits firmly on top of the spawning bubbles */
+  position: relative;
+  z-index: 5; 
+  transition: transform 0.3s ease;
+}
+
+.npc-portrait img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(212, 164, 106, 0.3);
+}
+
+/* --- Reef-Style Bronze Sections --- */
+
+.npc-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.npc-section {
+  background: linear-gradient(
+    140deg,
+    rgba(22, 34, 32, 0.98),
+    rgba(45, 95, 85, 0.5),
+    rgba(90, 65, 35, 0.3)
+  );
+  border: 1px solid rgba(212, 164, 106, 0.4);
+  border-left: 5px solid #d4a46a;
+  border-radius: 25px 8px 30px 5px; 
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.npc-section:hover {
+  transform: translateX(5px);
+  border-color: #d4a46a;
+}
+
+.npc-section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fffceb;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #d4a46a, rgba(212, 164, 106, 0)) 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.npc-section-title::before {
+  content: "◈";
+  color: #d4a46a;
+  font-size: 14px;
+}
+
+.npc-section ul {
+  padding-left: 20px;
+  list-style-type: "◦";
+}
+
+.npc-section li {
+  margin-bottom: 8px;
+  color: #cfe6dc;
+  line-height: 1.6;
+}
+
+.npc-section li::marker {
+  color: #d4a46a;
+}
+
+/* --- Aquatic Wavy Links --- */
+
+.npc-runara a {
+  color: #7fc3a8;
+  text-decoration: underline wavy rgba(212, 164, 106, 0.3);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.npc-runara a:hover {
+  color: #fffceb;
+  text-decoration-color: #d4a46a;
+}
+
+/* --- Mobile Fixes --- */
 
 @media (max-width: 700px) {
-
-  .npc-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .npc-portrait {
-    text-align: center;
-  }
-
-  .npc-portrait img {
-    max-width: 220px;
-  }
-
+  .npc-name { font-size: 24px; letter-spacing: 2px; }
+  .npc-name::before, .npc-name::after { width: 40px; }
+  .npc-section { border-radius: 15px; }
+  .npc-portrait::before { left: 20%; }
+  .npc-portrait::after { right: 20%; }
 }
 
 /* =========================================

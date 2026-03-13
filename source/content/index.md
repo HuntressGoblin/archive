@@ -51,10 +51,11 @@ Honorable Mentions of other people's awesome websites!
 [Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
 
 ---
-**LAST UPDATE:** 3/13/2026 2:03 PM CST
+**LAST UPDATE:** 3/13/2026 11:51 PM CST
 
 - Changed [[Elder Runara]].
-- Deleted NPC profiles for alterations to match new, fancier NPC format. 
+- Deleted NPC profiles for alterations to match new, fancier NPC format.
+- Added footnotes to preserve web connections. 
 ---
 
 

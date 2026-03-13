@@ -72,51 +72,51 @@
 
 /*FOOTNOTE DESIGN*/
 
-/* High-specificity override for Obsidian */
-.markdown-source-view.mod-cm6 .callout[data-callout="footnote-one"],
-.markdown-rendered .callout[data-callout="footnote-one"] {
+/* FORCE THE FOOTNOTE THEME */
+div.callout[data-callout="footnote-one"] {
     --callout-icon: none !important;
     background-color: transparent !important;
+    background: none !important;
     border: none !important;
-    border-top: 1px solid var(--hr-color) !important;
+    border-top: 1px solid var(--hr-color, #444) !important;
     border-radius: 0 !important;
-    padding: 12px 0 0 0 !important;
+    padding: 15px 0 0 0 !important;
     margin-top: 40px !important;
     box-shadow: none !important;
 }
 
-/* Hide the Pencil Icon */
-.callout[data-callout="footnote-one"] .callout-icon {
+/* KILL THE PENCIL ICON */
+div.callout[data-callout="footnote-one"] .callout-icon,
+div.callout[data-callout="footnote-one"] svg {
     display: none !important;
 }
 
-/* Style the Title */
-.callout[data-callout="footnote-one"] .callout-title {
-    color: var(--text-muted) !important;
+/* STYLE THE TITLE (CONNECTIONS) */
+div.callout[data-callout="footnote-one"] .callout-title {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 5px !important;
+    color: var(--text-muted, #888) !important;
     font-style: italic !important;
     font-weight: normal !important;
+    font-size: 0.85em !important;
+}
+
+/* NORMALIZE THE LINKS (KILL THE PILLS) */
+div.callout[data-callout="footnote-one"] .callout-content a,
+div.callout[data-callout="footnote-one"] .callout-content .internal-link {
+    background: transparent !important;
+    background-color: transparent !important;
     padding: 0 !important;
-    margin-bottom: 4px !important;
-    opacity: 0.7 !important;
-}
-
-/* Fix the fold icon (arrow) color */
-.callout[data-callout="footnote-one"] .callout-fold {
-    color: var(--text-faint) !important;
-    padding-right: 6px !important;
-}
-
-/* Style the list content */
-.callout[data-callout="footnote-one"] .callout-content {
-    padding: 0 !important;
-    line-height: 1.6 !important;
-    color: var(--text-muted) !important;
-    font-size: 0.82em !important;
-}
-
-/* Ensure links look like normal text */
-.callout[data-callout="footnote-one"] .internal-link {
-    color: var(--text-accent) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: var(--text-accent, #9d7dfa) !important;
     text-decoration: none !important;
-    opacity: 0.85 !important;
+    font-size: 1em !important;
+}
+
+/* FOLD ICON (THE ARROW) */
+div.callout[data-callout="footnote-one"] .callout-fold {
+    color: var(--text-faint, #666) !important;
+    padding-right: 8px !important;
 }

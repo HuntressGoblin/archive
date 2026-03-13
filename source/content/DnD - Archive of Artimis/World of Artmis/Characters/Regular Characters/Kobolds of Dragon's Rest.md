@@ -29,7 +29,6 @@
 	<li> Myla is a winged kobold tinkerer. Her wings were injured by sturges, which she refers to as "hungry, icky, blood-sucking, bat-things." Runara helped her recover. Myla now spends her time experimenting with inventions, alchemy, and magic.
 	<li> Rix is pious and tends to the temple, acting as Runara’s assistant. She adores puns. </li>
 	<li> Zark is rude and fond of colorful insults. His favorites are “Eat my sword, bugbear breath!” and “Your father was a gas spore!” He is indifferent toward visitors. </li>
-	  
     </div>
   </div>
 

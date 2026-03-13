@@ -44,4 +44,15 @@
 
 </div>
 
+---
+<p style="text-align: center; font-size: 0.85em; color: #8a8fae;">Connections</p>
+---
+[[Tarak]]
+[[Kobolds of Dragon's Rest]]
+[[Stormwreck Isle]]
+[[Varnoth]]
+[[Aidron]]
+[[Rise of Tyranny|Yang Gang]]
+[[Dragon's Rest]]
+[[Diomeades Eldwynair]]
 

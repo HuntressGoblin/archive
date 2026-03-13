@@ -189,119 +189,131 @@
 }
 
 /* ===============================
-   DRAGON'S REST NPC TEMPLATE
-   Cozy Cove / Seaside Haven Theme
-   =============================== */
+   DRAGRnpc TEMPLATE
+   "Bronze Reef" Resident Edition
+   ============================== */
 
-.npc-dragonsrest {
-  border: 2px solid rgba(160,120,70,0.85);
-  background: linear-gradient(
-    140deg,
-    rgba(28,34,40,0.95),   /* night cove */
-    rgba(60,90,105,0.40),  /* sea mist */
-    rgba(120,85,55,0.30)   /* warm tavern wood */
-  );
-  border-radius: 14px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 0 18px rgba(120,170,200,0.25);
-}
-
-/* Header */
-
-.npc-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.npc-name {
-  font-size: 28px;
-  font-weight: 700;
-  color: #e0c08a; /* lantern gold */
-  letter-spacing: 1px;
-}
-
-.npc-title {
-  font-size: 14px;
-  color: #9fd0c5; /* seafoam */
-  opacity: 0.9;
-}
-
-/* Layout */
-
-.npc-grid {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 20px;
-}
-
-/* Portrait */
-
-.npc-portrait {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-.npc-portrait img {
-  width: 300px;
-  max-width: 100%;
-  border-radius: 10px;
-  border: 2px solid rgba(170,130,75,0.85);
-  box-shadow: 
-    0 0 10px rgba(255,200,120,0.25),
-    0 0 15px rgba(110,170,200,0.25);
-}
-
-/* Sections */
-
-.npc-section {
-  margin-bottom: 15px;
-}
-
-.npc-section-title {
-  font-size: 16px;
-  font-weight: bold;
-  color: #d8b57a;
-  border-bottom: 1px solid rgba(170,130,75,0.6);
-  margin-bottom: 8px;
-  padding-bottom: 3px;
-}
-
-/* Lists */
-
-.npc-info ul {
-  padding-left: 18px;
-  margin: 0;
-}
-
-.npc-info li {
-  margin-bottom: 4px;
-  color: #d8e7ea;
-}
-
-/* Notes */
-
-.npc-notes {
-  margin-top: 15px;
+.DRAGRnpc {
+  max-width: 800px;
+  margin: 30px auto;
   color: #cfe6dc;
-  font-style: italic;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
-/* Responsive */
+/* --- Floating Header with Symmetrical Lines --- */
+.DRAGR-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-@media (max-width: 700px) {
+.DRAGR-name {
+  font-size: 32px;
+  font-weight: 800;
+  color: #d4a46a;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  
+  /* Flex setup for side lines */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between lines and text */
 
-  .npc-grid {
-    grid-template-columns: 1fr;
-  }
+  /* Bronze Shimmer */
+  background: linear-gradient(to right, #d4a46a 20%, #fffceb 50%, #d4a46a 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+}
 
-  .npc-portrait {
-    text-align: center;
-  }
+/* The Left and Right Lines */
+.DRAGR-name::before,
+.DRAGR-name::after {
+  content: "";
+  height: 1px;
+  flex: 1; /* Makes lines fill available space */
+  max-width: 100px; /* Limits how long the lines get */
+  background: linear-gradient(to var(--dir, right), transparent, #d4a46a);
+  opacity: 0.6;
+}
 
-  .npc-portrait img {
-    max-width: 220px;
-  }
+/* Flip the gradient for the right side line */
+.DRAGR-name::after {
+  --dir: left;
+}
 
+.DRAGR-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7fc3a8;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+/* --- Portrait --- */
+.DRAGR-portrait {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.DRAGR-portrait img {
+  width: 350px; 
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #d4a46a;
+  padding: 6px;
+  background: rgba(20, 30, 28, 0.7);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* --- Section Label Box --- */
+.DRAGR-label {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(22, 34, 32, 0.98), rgba(45, 95, 85, 0.4));
+  border-left: 5px solid #d4a46a;
+  border-radius: 0 15px 15px 0;
+  padding: 8px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fffceb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.DRAGR-section {
+  margin-bottom: 35px;
+}
+
+.DRAGR-content {
+  font-size: 17px;
+  line-height: 1.8;
+  padding-left: 15px;
+}
+
+/* List Styles */
+.DRAGR-content ul {
+  list-style-type: "◦";
+  padding-left: 20px;
+}
+
+.DRAGR-content li::marker {
+  color: #d4a46a;
+}
+
+/* Links */
+.DRAGRnpc a {
+  color: #7fc3a8;
+  text-decoration: underline wavy rgba(212, 164, 106, 0.3);
+  font-weight: 600;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
 }

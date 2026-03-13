@@ -72,51 +72,54 @@
 
 /*FOOTNOTE DESIGN*/
 
-/* FORCE THE FOOTNOTE THEME */
+/* Target the specific footnote-one callout */
 div.callout[data-callout="footnote-one"] {
     --callout-icon: none !important;
     background-color: transparent !important;
-    background: none !important;
+    background: transparent !important;
     border: none !important;
-    border-top: 1px solid var(--hr-color, #444) !important;
+    border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
     border-radius: 0 !important;
-    padding: 15px 0 0 0 !important;
-    margin-top: 40px !important;
+    padding: 10px 0 0 0 !important;
+    margin-top: 30px !important;
     box-shadow: none !important;
 }
 
-/* KILL THE PENCIL ICON */
+/* 1. REMOVE THE PENCIL (Obsidian & Quartz) */
 div.callout[data-callout="footnote-one"] .callout-icon,
+div.callout[data-callout="footnote-one"] svg.lucide-pencil, 
 div.callout[data-callout="footnote-one"] svg {
     display: none !important;
 }
 
-/* STYLE THE TITLE (CONNECTIONS) */
+/* 2. STYLE THE TITLE */
 div.callout[data-callout="footnote-one"] .callout-title {
     background-color: transparent !important;
     padding: 0 !important;
-    margin-bottom: 5px !important;
-    color: var(--text-muted, #888) !important;
+    color: var(--text-muted, var(--gray)) !important;
     font-style: italic !important;
     font-weight: normal !important;
     font-size: 0.85em !important;
 }
 
-/* NORMALIZE THE LINKS (KILL THE PILLS) */
-div.callout[data-callout="footnote-one"] .callout-content a,
-div.callout[data-callout="footnote-one"] .callout-content .internal-link {
-    background: transparent !important;
-    background-color: transparent !important;
-    padding: 0 !important;
-    border: none !important;
-    border-radius: 0 !important;
-    color: var(--text-accent, #9d7dfa) !important;
-    text-decoration: none !important;
-    font-size: 1em !important;
+/* 3. STYLE THE FOLD ARROW */
+div.callout[data-callout="footnote-one"] .callout-fold,
+div.callout[data-callout="footnote-one"] svg.fold-icon {
+    color: var(--text-faint, var(--gray)) !important;
+    opacity: 0.5;
 }
 
-/* FOLD ICON (THE ARROW) */
-div.callout[data-callout="footnote-one"] .callout-fold {
-    color: var(--text-faint, #666) !important;
-    padding-right: 8px !important;
+/* 4. CLEAN UP THE LINKS (Remove Quartz "Pills") */
+div.callout[data-callout="footnote-one"] .callout-content a.internal,
+div.callout[data-callout="footnote-one"] .internal-link {
+    background-color: transparent !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    color: var(--text-accent, var(--secondary)) !important;
+    text-decoration: none !important;
+}
+
+div.callout[data-callout="footnote-one"] .callout-content a.internal:hover {
+    text-decoration: underline !important;
 }

@@ -72,51 +72,54 @@
 
 /*FOOTNOTE DESIGN*/
 
-/* Quartz Override for the 'footnote-one' callout */
+/* 1. Strip the main box, borders, and background */
 .callout[data-callout="footnote-one"] {
+    background: transparent !important;
     background-color: transparent !important;
     border: none !important;
-    border-top: 1px solid var(--lightgray) !important; /* Adjust color variable if needed */
+    border-top: 1px solid var(--lightgray) !important; /* The footnote line */
     border-radius: 0 !important;
     padding: 15px 0 0 0 !important;
     margin-top: 40px !important;
     box-shadow: none !important;
 }
 
-/* ⬇️ THIS REMOVES THE PENCIL IN QUARTZ ⬇️ */
-.callout[data-callout="footnote-one"] .callout-icon,
-.callout[data-callout="footnote-one"] svg {
+/* 2. Annihilate the pencil icon entirely */
+.callout[data-callout="footnote-one"] .callout-icon {
     display: none !important;
 }
 
-/* Style the summary/title row in Quartz */
+/* 3. Strip the blue title background and adjust text */
+.callout[data-callout="footnote-one"] .callout-title,
 .callout[data-callout="footnote-one"] summary {
-    padding: 0 !important;
     background: transparent !important;
-}
-
-.callout[data-callout="footnote-one"] .callout-title {
+    background-color: transparent !important;
     color: var(--gray) !important; /* Muted text */
     font-style: italic !important;
     font-weight: normal !important;
-    font-size: 0.9em !important;
+    padding: 0 !important;
     margin-bottom: 5px !important;
 }
 
-/* Style the links and content inside the dropdown */
+/* 4. Remove the "Pill" background from the internal links */
+.callout[data-callout="footnote-one"] .callout-content a.internal {
+    background: transparent !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    color: var(--tertiary) !important; /* Subtle link color */
+    border-radius: 0 !important;
+    text-decoration: none !important;
+}
+
+.callout[data-callout="footnote-one"] .callout-content a.internal:hover {
+    text-decoration: underline !important;
+    opacity: 1 !important;
+}
+
+/* 5. Clean up the content spacing */
 .callout[data-callout="footnote-one"] .callout-content {
     padding: 0 !important;
-    font-size: 0.85em !important;
     color: var(--gray) !important;
-}
-
-.callout[data-callout="footnote-one"] a {
-    color: var(--secondary) !important; /* Uses your Quartz accent color */
-    text-decoration: none !important;
-    opacity: 0.85;
-}
-
-.callout[data-callout="footnote-one"] a:hover {
-    opacity: 1;
-    text-decoration: underline !important;
+    font-size: 0.85em !important;
+    line-height: 1.6 !important;
 }

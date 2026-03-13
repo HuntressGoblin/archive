@@ -69,3 +69,55 @@
 .markdown-rendered .redbox-dark {
   max-width: 100%;
 }
+
+/* Target only the 'footnote-one' callout */
+.callout[data-callout="footnote-one"] {
+    --callout-icon: none;          /* Standard variable fix */
+    background-color: transparent; 
+    border: none;                  
+    border-top: 1px solid var(--hr-color); 
+    border-radius: 0;
+    padding: 12px 0 0 0;
+    margin-top: 40px;              
+    font-size: 0.82em;             
+    box-shadow: none;
+}
+
+/* ⬇️ THIS REMOVES THE PENCIL/ICON ⬇️ */
+.callout[data-callout="footnote-one"] .callout-icon {
+    display: none !important;
+}
+
+/* Style the title (Connections) */
+.callout[data-callout="footnote-one"] .callout-title {
+    color: var(--text-muted);      
+    font-style: italic;
+    font-weight: normal;
+    padding: 0;
+    margin-bottom: 4px;
+    opacity: 0.7;
+}
+
+/* Style the fold icon (the triangle) */
+.callout[data-callout="footnote-one"] .callout-fold {
+    color: var(--text-faint);
+    padding-right: 6px;
+    transform: scale(0.8);        
+}
+
+.callout[data-callout="footnote-one"] .callout-content {
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.callout[data-callout="footnote-one"] .internal-link {
+    color: var(--text-accent);
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.callout[data-callout="footnote-one"] .internal-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}

@@ -44,6 +44,9 @@
 
 </div>
 
+Connections
+---
+
 [[Tarak]]
 [[Kobolds of Dragon's Rest]]
 [[Stormwreck Isle]]

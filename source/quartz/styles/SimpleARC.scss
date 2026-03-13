@@ -70,54 +70,53 @@
   max-width: 100%;
 }
 
-/* Target only the 'footnote-one' callout */
+/*FOOTNOTE DESIGN*/
+
+/* Quartz Override for the 'footnote-one' callout */
 .callout[data-callout="footnote-one"] {
-    --callout-icon: none;          /* Standard variable fix */
-    background-color: transparent; 
-    border: none;                  
-    border-top: 1px solid var(--hr-color); 
-    border-radius: 0;
-    padding: 12px 0 0 0;
-    margin-top: 40px;              
-    font-size: 0.82em;             
-    box-shadow: none;
+    background-color: transparent !important;
+    border: none !important;
+    border-top: 1px solid var(--lightgray) !important; /* Adjust color variable if needed */
+    border-radius: 0 !important;
+    padding: 15px 0 0 0 !important;
+    margin-top: 40px !important;
+    box-shadow: none !important;
 }
 
-/* ⬇️ THIS REMOVES THE PENCIL/ICON ⬇️ */
-.callout[data-callout="footnote-one"] .callout-icon {
+/* ⬇️ THIS REMOVES THE PENCIL IN QUARTZ ⬇️ */
+.callout[data-callout="footnote-one"] .callout-icon,
+.callout[data-callout="footnote-one"] svg {
     display: none !important;
 }
 
-/* Style the title (Connections) */
+/* Style the summary/title row in Quartz */
+.callout[data-callout="footnote-one"] summary {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
 .callout[data-callout="footnote-one"] .callout-title {
-    color: var(--text-muted);      
-    font-style: italic;
-    font-weight: normal;
-    padding: 0;
-    margin-bottom: 4px;
-    opacity: 0.7;
+    color: var(--gray) !important; /* Muted text */
+    font-style: italic !important;
+    font-weight: normal !important;
+    font-size: 0.9em !important;
+    margin-bottom: 5px !important;
 }
 
-/* Style the fold icon (the triangle) */
-.callout[data-callout="footnote-one"] .callout-fold {
-    color: var(--text-faint);
-    padding-right: 6px;
-    transform: scale(0.8);        
-}
-
+/* Style the links and content inside the dropdown */
 .callout[data-callout="footnote-one"] .callout-content {
-    padding: 0;
-    line-height: 1.6;
-    color: var(--text-muted);
+    padding: 0 !important;
+    font-size: 0.85em !important;
+    color: var(--gray) !important;
 }
 
-.callout[data-callout="footnote-one"] .internal-link {
-    color: var(--text-accent);
-    text-decoration: none;
+.callout[data-callout="footnote-one"] a {
+    color: var(--secondary) !important; /* Uses your Quartz accent color */
+    text-decoration: none !important;
     opacity: 0.85;
 }
 
-.callout[data-callout="footnote-one"] .internal-link:hover {
+.callout[data-callout="footnote-one"] a:hover {
     opacity: 1;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }

@@ -19,7 +19,7 @@ title: Welcome to the Eternal Library
 Hi, a little personal note from the person making this herself! This is just a disclaimer that I do not own a vast majority of art on this page! Yes, there is even some that are AI-generated that I grabbed off the web. All credit goes to the creators of whatever is used! 
 
 ---
-It should go without saying, but ***SPOILERS AHEAD!!!!*** Browse at your own risk. Even if you're avoiding your own campaign, you still run the risk of finding out things you shouldn't know.
+It should go without saying, but ***SPOILERS AHEAD!!!!*** Browse at your own risk. Even if you're avoiding your own campaign, you still run the risk of finding out things you shouldn't know. I try to make things as accessible for all and spoiler free, but even I may miss things from my personal notes I have to delete. 
 
 ---
 With that out of the way, go enjoy! I would recommend checking out "[[The Tomes of the Eternal Library]] to get started. Things are still under construction, so there may be placeholders. Once again, ***SPOILERS AHEAD!!!!*** I'd recommend refreshing your cache if anything appears odd or if you haven't visited in a couple of days! This is the main way to see new material that has been added.
@@ -51,10 +51,9 @@ Honorable Mentions of other people's awesome websites!
 [Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
 
 ---
-**LAST UPDATE:** 3/13/2026 1:51 PM CST
+**LAST UPDATE:** 3/14/2026 12:45 PM CST
 
-- Deleted NPC profiles for alterations to match new, fancier NPC format.
-- Added footnotes to preserve web connections. 
+- Added [[Eternity]]! (NOTE: Not the full map. Trailblazer people, stay out of there.)
 
 IN-PROGRESS/BUGS: 
 - All of the connections at the bottom of each page refuse to work with a format outside of the default quartz one. I'll search for a way to fix them, but for now, they'll be default since I really can't find a way to change it without destroying links like [[Elder Runara|these]] which unfortunately don't link to the web anymore. 

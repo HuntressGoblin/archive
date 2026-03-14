@@ -51,9 +51,9 @@ Honorable Mentions of other people's awesome websites!
 [Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
 
 ---
-**LAST UPDATE:** 3/14/2026 12:45 PM CST
+**LAST UPDATE:** 3/14/2026 1:02 PM CST
 
-- Added [[Eternity]]! (NOTE: Not the full map. Trailblazer people, stay out of there.)
+- I DID add Eternity, but the format is all sorts of broken so I need to figure out how to make it work. 
 
 IN-PROGRESS/BUGS: 
 - All of the connections at the bottom of each page refuse to work with a format outside of the default quartz one. I'll search for a way to fix them, but for now, they'll be default since I really can't find a way to change it without destroying links like [[Elder Runara|these]] which unfortunately don't link to the web anymore. 

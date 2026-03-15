@@ -125,41 +125,44 @@
 }
 
 /* =========================================================
-   TRAILBLAZER CONTINENT THEME - FULL QUARTZ OVERRIDE
+   TRAILBLAZER CONTINENT THEME - QUARTZ ULTIMATE OVERRIDE
    ========================================================= */
 
+/* 1. THE MAIN DESK CONTAINER */
 .callout[data-callout="trailblazer-continenttheme"] {
-    --callout-color: 255, 255, 255 !important;
-    
-    /* THE DESK (Main Container) */
     background-color: #3b2616 !important;
     background-image: 
         linear-gradient(115deg, rgba(255,255,255,0.05) 0%, transparent 30%, rgba(0,0,0,0.3) 70%, rgba(255,255,255,0.05) 100%),
         radial-gradient(ellipse at 20% 40%, rgba(0,0,0,0.3) 0%, transparent 70%),
         url("https://www.transparenttextures.com/patterns/wood-pattern.png") !important; 
-    
-    /* Force 3D Borders */
     border: none !important; 
     border-top: 2px solid rgba(255,255,255,0.1) !important;
     border-left: 2px solid rgba(255,255,255,0.05) !important;
     border-right: 4px solid rgba(0,0,0,0.4) !important;
     border-bottom: 8px solid rgba(0,0,0,0.5) !important;
-    
-    border-radius: 12px !important;
-    padding: 0 !important;
-    color: #fff !important;
-    font-family: 'Georgia', serif !important;
-    position: relative !important;
     box-shadow: inset 0 0 80px rgba(0,0,0,0.6), 0 20px 40px rgba(0,0,0,0.8), 0 30px 60px rgba(0,0,0,0.4) !important;
-    overflow: visible !important; 
+    padding: 0 !important;
     margin: 4em auto !important;
-    width: 95% !important;
-    perspective: 1000px !important;
+    overflow: visible !important;
+    perspective: 1000px;
 }
 
-/* THE MAIN PARCHMENT (H1 & H3) */
-.callout[data-callout="trailblazer-continenttheme"] h1,
-.callout[data-callout="trailblazer-continenttheme"] h3 {
+/* 2. HIDE QUARTZ'S DEFAULT HEADER (The "Trailblazer" blue text/pencil) */
+.callout[data-callout="trailblazer-continenttheme"] > .callout-title {
+    display: none !important;
+}
+
+/* 3. RESET THE CONTENT BOX (Quartz puts a background here by default) */
+.callout[data-callout="trailblazer-continenttheme"] > .callout-content {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #fff !important;
+}
+
+/* 4. THE MAIN PARCHMENT TITLE (H1 inside the content) */
+.callout[data-callout="trailblazer-continenttheme"] .callout-content h1 {
+    display: block !important;
     background: #fdf2d5 !important;
     background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png") !important;
     color: #2c241a !important;
@@ -170,12 +173,10 @@
     clip-path: polygon(0% 2%, 4% 0%, 96% 1%, 100% 4%, 99% 96%, 95% 100%, 2% 98%, 0% 94%) !important;
     transform: rotateX(2deg) rotateY(-1deg) rotateZ(-0.5deg) !important;
     box-shadow: 10px 15px 30px rgba(0,0,0,0.5) !important;
-    position: relative !important;
-    z-index: 1 !important;
 }
 
-/* THE MAP SNIPPET */
-.callout[data-callout="trailblazer-continenttheme"] img {
+/* 5. THE MAP SNIPPET */
+.callout[data-callout="trailblazer-continenttheme"] .callout-content img {
     display: block !important;
     max-width: 75% !important;
     margin: 20px auto !important;
@@ -183,42 +184,26 @@
     filter: sepia(0.5) contrast(1.2) brightness(0.9) !important;
     transform: translateZ(25px) rotate(2.5deg) rotateX(1deg) !important;
     box-shadow: 15px 20px 40px rgba(0,0,0,0.6) !important;
-    z-index: 10 !important;
 }
 
-/* THE TORN LOGS (PARCHMENT SHEETS) */
+/* 6. THE PARCHMENT LOGS (continent-info) */
 .callout[data-callout="trailblazer-continenttheme"] .continent-info {
     display: block !important;
     width: 82% !important;
     margin: 15px auto !important;
-    padding: 30px 40px !important;
+    padding: 20px 30px !important;
     background-color: #e6d5b0 !important; 
     background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png") !important;
     color: #3d2b1f !important; 
-    font-family: 'Crimson Text', serif !important;
-    font-size: 1.05em !important;
     clip-path: polygon(0% 5%, 15% 2%, 35% 5%, 50% 0%, 65% 3%, 85% 1%, 100% 5%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 95% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%) !important;
-    transform: translateZ(-10px) rotate(-1.5deg) !important;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.4) !important;
-    z-index: 0 !important;
-    text-align: left !important;
+    transform: rotate(-1deg) !important;
 }
 
-/* Styles for bold headers inside the logs */
-.callout[data-callout="trailblazer-continenttheme"] .continent-info strong:first-child {
-    display: block !important;
-    font-family: 'Georgia', serif !important;
-    font-size: 1.2em !important;
+/* 7. TITLES INSIDE LOGS */
+.callout[data-callout="trailblazer-continenttheme"] .continent-info strong {
+    color: #5a1a1a !important;
     font-variant: small-caps !important;
-    color: #5a1a1a !important; 
     border-bottom: 1px solid rgba(90, 26, 26, 0.2) !important;
-    margin-bottom: 10px !important;
-    letter-spacing: 1px !important;
-}
-
-/* Hide Quartz's default label, title, and icon */
-.callout[data-callout="trailblazer-continenttheme"] .callout-title,
-.callout[data-callout="trailblazer-continenttheme"] .callout-icon,
-.callout[data-callout="trailblazer-continenttheme"] .continent-label {
-    display: none !important;
+    display: block !important;
 }

@@ -125,11 +125,11 @@
 }
 
 /* =========================================================
-   TRAILBLAZER CONTINENT THEME - QUARTZ ULTIMATE OVERRIDE
+   BIGTABLE - NAVIGATOR'S DESK THEME
    ========================================================= */
 
-/* 1. THE MAIN DESK CONTAINER */
-.callout[data-callout="trailblazer-continenttheme"] {
+/* THE MAIN DESK */
+.callout[data-callout="bigtable"] {
     background-color: #3b2616 !important;
     background-image: 
         linear-gradient(115deg, rgba(255,255,255,0.05) 0%, transparent 30%, rgba(0,0,0,0.3) 70%, rgba(255,255,255,0.05) 100%),
@@ -140,28 +140,29 @@
     border-left: 2px solid rgba(255,255,255,0.05) !important;
     border-right: 4px solid rgba(0,0,0,0.4) !important;
     border-bottom: 8px solid rgba(0,0,0,0.5) !important;
+    border-radius: 12px !important;
     box-shadow: inset 0 0 80px rgba(0,0,0,0.6), 0 20px 40px rgba(0,0,0,0.8), 0 30px 60px rgba(0,0,0,0.4) !important;
     padding: 0 !important;
     margin: 4em auto !important;
     overflow: visible !important;
-    perspective: 1000px;
+    perspective: 1000px !important;
 }
 
-/* 2. HIDE QUARTZ'S DEFAULT HEADER (The "Trailblazer" blue text/pencil) */
-.callout[data-callout="trailblazer-continenttheme"] > .callout-title {
+/* HIDE THE DEFAULT TITLE & ICON */
+.callout[data-callout="bigtable"] > .callout-title {
     display: none !important;
 }
 
-/* 3. RESET THE CONTENT BOX (Quartz puts a background here by default) */
-.callout[data-callout="trailblazer-continenttheme"] > .callout-content {
+/* RESET INTERNAL CONTENT BOX */
+.callout[data-callout="bigtable"] > .callout-content {
     background: transparent !important;
     padding: 0 !important;
     margin: 0 !important;
     color: #fff !important;
 }
 
-/* 4. THE MAIN PARCHMENT TITLE (H1 inside the content) */
-.callout[data-callout="trailblazer-continenttheme"] .callout-content h1 {
+/* THE MAIN PARCHMENT TITLE (H1) */
+.callout[data-callout="bigtable"] .callout-content h1 {
     display: block !important;
     background: #fdf2d5 !important;
     background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png") !important;
@@ -173,10 +174,11 @@
     clip-path: polygon(0% 2%, 4% 0%, 96% 1%, 100% 4%, 99% 96%, 95% 100%, 2% 98%, 0% 94%) !important;
     transform: rotateX(2deg) rotateY(-1deg) rotateZ(-0.5deg) !important;
     box-shadow: 10px 15px 30px rgba(0,0,0,0.5) !important;
+    position: relative !important;
 }
 
-/* 5. THE MAP SNIPPET */
-.callout[data-callout="trailblazer-continenttheme"] .callout-content img {
+/* THE MAP SNIPPET */
+.callout[data-callout="bigtable"] .callout-content img {
     display: block !important;
     max-width: 75% !important;
     margin: 20px auto !important;
@@ -186,8 +188,8 @@
     box-shadow: 15px 20px 40px rgba(0,0,0,0.6) !important;
 }
 
-/* 6. THE PARCHMENT LOGS (continent-info) */
-.callout[data-callout="trailblazer-continenttheme"] .continent-info {
+/* THE PARCHMENT LOGS (continent-info) */
+.callout[data-callout="bigtable"] .continent-info {
     display: block !important;
     width: 82% !important;
     margin: 15px auto !important;
@@ -197,13 +199,15 @@
     color: #3d2b1f !important; 
     clip-path: polygon(0% 5%, 15% 2%, 35% 5%, 50% 0%, 65% 3%, 85% 1%, 100% 5%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 95% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%) !important;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.4) !important;
-    transform: rotate(-1deg) !important;
+    transform: rotate(-1.5deg) !important;
 }
 
-/* 7. TITLES INSIDE LOGS */
-.callout[data-callout="trailblazer-continenttheme"] .continent-info strong {
+/* LOG TITLES */
+.callout[data-callout="bigtable"] .continent-info strong {
+    display: block !important;
+    font-family: serif !important;
     color: #5a1a1a !important;
     font-variant: small-caps !important;
     border-bottom: 1px solid rgba(90, 26, 26, 0.2) !important;
-    display: block !important;
+    margin-bottom: 5px !important;
 }

@@ -364,6 +364,7 @@
 /* =========================================
    FUSED: PARCHMENT BANNER
    ID: parchmentbanner
+   Quartz Compatible
    ========================================= */
 
 .callout[data-callout="parchmentbanner"] {
@@ -381,16 +382,19 @@
     /* Subtle horizontal arch */
     clip-path: ellipse(100% 100% at 50% 0%);
     
-    /* Bookmark Spine — moved to the top for a banner feel */
+    /* Bookmark Spine */
     border: none;
-    border-top: 4px solid #2b1a0f; 
+    border-top: 4px solid #2b1a0f;
     border-radius: 0 0 12px 12px;
     overflow: hidden;
     
-    /* Deep shadow to make the banner "float" */
+    /* Floating shadow */
     box-shadow: 
         0 10px 20px rgba(0,0,0,0.1),
         0 4px 6px rgba(0,0,0,0.05);
+
+    /* --- FORCE BLACK TEXT (Quartz override) --- */
+    color: #000 !important;
 }
 
 /* --- Hide Title & Icon --- */
@@ -402,10 +406,7 @@
 .callout[data-callout="parchmentbanner"]::before {
     content: "";
     position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
+    inset: 0;
     background-image: repeating-linear-gradient(
         90deg,
         rgba(0,0,0,0.015) 0 1px,
@@ -415,7 +416,7 @@
     z-index: 1;
 }
 
-/* --- Ink Splatters (Strategic placement for banners) --- */
+/* --- Ink Splatters --- */
 .callout[data-callout="parchmentbanner"]::after {
     content: "";
     position: absolute;
@@ -434,20 +435,26 @@
     font-family: 'Dancing Script', 'Palatino Linotype', serif;
     font-size: 1.4em;
     line-height: 1.4;
-    z-index: 3;
-    position: relative;
-    margin: 0;
     font-weight: 500;
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    color: #000 !important;
 }
 
-/* --- FORCE ALL TEXT BLACK --- */
-.callout[data-callout="parchmentbanner"],
-.callout[data-callout="parchmentbanner"] * {
-    color: #000000 !important;
+/* --- FORCE ALL NESTED TEXT BLACK (Quartz markdown wrapper fix) --- */
+.callout[data-callout="parchmentbanner"] *,
+.callout[data-callout="parchmentbanner"] p,
+.callout[data-callout="parchmentbanner"] span,
+.callout[data-callout="parchmentbanner"] strong,
+.callout[data-callout="parchmentbanner"] em {
+    color: #000 !important;
 }
 
-/* --- Link styling --- */
-.callout[data-callout="parchmentbanner"] a {
-    color: #000000 !important;
+/* --- Links --- */
+.callout[data-callout="parchmentbanner"] a,
+.callout[data-callout="parchmentbanner"] a.internal,
+.callout[data-callout="parchmentbanner"] .internal-link {
+    color: #000 !important;
     text-decoration: underline dotted;
 }

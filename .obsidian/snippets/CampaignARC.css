@@ -125,96 +125,100 @@
 }
 
 /* =========================================================
-   TRAILBLAZER CONTINENT THEME - 3D NAVIGATOR'S DESK
-   (IN-NOTE TITLES VERSION)
+   TRAILBLAZER CONTINENT THEME - FULL QUARTZ OVERRIDE
    ========================================================= */
 
 .callout[data-callout="trailblazer-continenttheme"] {
-    --callout-color: 255, 255, 255;
-    background-color: #3b2616;
+    --callout-color: 255, 255, 255 !important;
+    
+    /* THE DESK (Main Container) */
+    background-color: #3b2616 !important;
     background-image: 
         linear-gradient(115deg, rgba(255,255,255,0.05) 0%, transparent 30%, rgba(0,0,0,0.3) 70%, rgba(255,255,255,0.05) 100%),
         radial-gradient(ellipse at 20% 40%, rgba(0,0,0,0.3) 0%, transparent 70%),
-        url("https://www.transparenttextures.com/patterns/wood-pattern.png"); 
-    border-top: 2px solid rgba(255,255,255,0.1);
-    border-left: 2px solid rgba(255,255,255,0.05);
-    border-right: 4px solid rgba(0,0,0,0.4);
-    border-bottom: 8px solid rgba(0,0,0,0.5);
-    border-radius: 12px;
-    padding: 0;
-    color: #fff;
-    font-family: 'Georgia', serif;
-    position: relative;
-    box-shadow: inset 0 0 80px rgba(0,0,0,0.6), 0 20px 40px rgba(0,0,0,0.8), 0 30px 60px rgba(0,0,0,0.4);
-    overflow: visible; 
-    margin: 4em auto;
-    width: 95%;
-    perspective: 1000px;
+        url("https://www.transparenttextures.com/patterns/wood-pattern.png") !important; 
+    
+    /* Force 3D Borders */
+    border: none !important; 
+    border-top: 2px solid rgba(255,255,255,0.1) !important;
+    border-left: 2px solid rgba(255,255,255,0.05) !important;
+    border-right: 4px solid rgba(0,0,0,0.4) !important;
+    border-bottom: 8px solid rgba(0,0,0,0.5) !important;
+    
+    border-radius: 12px !important;
+    padding: 0 !important;
+    color: #fff !important;
+    font-family: 'Georgia', serif !important;
+    position: relative !important;
+    box-shadow: inset 0 0 80px rgba(0,0,0,0.6), 0 20px 40px rgba(0,0,0,0.8), 0 30px 60px rgba(0,0,0,0.4) !important;
+    overflow: visible !important; 
+    margin: 4em auto !important;
+    width: 95% !important;
+    perspective: 1000px !important;
 }
 
 /* THE MAIN PARCHMENT (H1 & H3) */
 .callout[data-callout="trailblazer-continenttheme"] h1,
 .callout[data-callout="trailblazer-continenttheme"] h3 {
-    background: #fdf2d5;
-    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-    color: #2c241a;
-    width: 88%;
-    margin: 60px auto 15px auto;
-    padding: 35px;
-    border: 1px solid #d4c39d;
-    clip-path: polygon(0% 2%, 4% 0%, 96% 1%, 100% 4%, 99% 96%, 95% 100%, 2% 98%, 0% 94%);
-    transform: rotateX(2deg) rotateY(-1deg) rotateZ(-0.5deg);
-    box-shadow: 10px 15px 30px rgba(0,0,0,0.5);
-    position: relative;
-    z-index: 1;
+    background: #fdf2d5 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png") !important;
+    color: #2c241a !important;
+    width: 88% !important;
+    margin: 60px auto 15px auto !important;
+    padding: 35px !important;
+    border: 1px solid #d4c39d !important;
+    clip-path: polygon(0% 2%, 4% 0%, 96% 1%, 100% 4%, 99% 96%, 95% 100%, 2% 98%, 0% 94%) !important;
+    transform: rotateX(2deg) rotateY(-1deg) rotateZ(-0.5deg) !important;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.5) !important;
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 /* THE MAP SNIPPET */
 .callout[data-callout="trailblazer-continenttheme"] img {
-    display: block;
-    max-width: 75%;
-    margin: 20px auto;
-    clip-path: polygon(1% 3%, 5% 0%, 15% 4%, 35% 1%, 50% 5%, 65% 2%, 85% 6%, 100% 3%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 96% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%);
-    filter: sepia(0.5) contrast(1.2) brightness(0.9);
-    transform: translateZ(25px) rotate(2.5deg) rotateX(1deg);
-    box-shadow: 15px 20px 40px rgba(0,0,0,0.6);
-    z-index: 10;
+    display: block !important;
+    max-width: 75% !important;
+    margin: 20px auto !important;
+    clip-path: polygon(1% 3%, 5% 0%, 15% 4%, 35% 1%, 50% 5%, 65% 2%, 85% 6%, 100% 3%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 96% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%) !important;
+    filter: sepia(0.5) contrast(1.2) brightness(0.9) !important;
+    transform: translateZ(25px) rotate(2.5deg) rotateX(1deg) !important;
+    box-shadow: 15px 20px 40px rgba(0,0,0,0.6) !important;
+    z-index: 10 !important;
 }
 
 /* THE TORN LOGS (PARCHMENT SHEETS) */
 .callout[data-callout="trailblazer-continenttheme"] .continent-info {
-    display: block;
-    width: 82%;
-    margin: 15px auto;
-    padding: 30px 40px;
-    background-color: #e6d5b0; 
-    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
-    color: #3d2b1f; 
-    font-family: 'Crimson Text', serif;
-    font-size: 1.05em;
-    clip-path: polygon(0% 5%, 15% 2%, 35% 5%, 50% 0%, 65% 3%, 85% 1%, 100% 5%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 95% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%);
-    transform: translateZ(-10px) rotate(-1.5deg);
-    box-shadow: 5px 10px 20px rgba(0,0,0,0.4);
-    z-index: 0;
-    text-align: left;
+    display: block !important;
+    width: 82% !important;
+    margin: 15px auto !important;
+    padding: 30px 40px !important;
+    background-color: #e6d5b0 !important; 
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png") !important;
+    color: #3d2b1f !important; 
+    font-family: 'Crimson Text', serif !important;
+    font-size: 1.05em !important;
+    clip-path: polygon(0% 5%, 15% 2%, 35% 5%, 50% 0%, 65% 3%, 85% 1%, 100% 5%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 95% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%) !important;
+    transform: translateZ(-10px) rotate(-1.5deg) !important;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.4) !important;
+    z-index: 0 !important;
+    text-align: left !important;
 }
 
-/* --- NEW: IN-NOTE TITLES --- */
-/* This styles any H4 or bold text inside the parchment sheet */
-.callout[data-callout="trailblazer-continenttheme"] .continent-info h4,
+/* Styles for bold headers inside the logs */
 .callout[data-callout="trailblazer-continenttheme"] .continent-info strong:first-child {
-    display: block;
-    font-family: 'Georgia', serif;
-    font-size: 1.2em;
-    font-variant: small-caps;
-    color: #5a1a1a; /* Dried blood / Dark ink color */
-    border-bottom: 1px solid rgba(90, 26, 26, 0.2);
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    display: block !important;
+    font-family: 'Georgia', serif !important;
+    font-size: 1.2em !important;
+    font-variant: small-caps !important;
+    color: #5a1a1a !important; 
+    border-bottom: 1px solid rgba(90, 26, 26, 0.2) !important;
+    margin-bottom: 10px !important;
+    letter-spacing: 1px !important;
 }
 
-/* Hide default label and title */
-.callout[data-callout="trailblazer-continenttheme"] .continent-label,
-.callout[data-callout="trailblazer-continenttheme"] .callout-title {
+/* Hide Quartz's default label, title, and icon */
+.callout[data-callout="trailblazer-continenttheme"] .callout-title,
+.callout[data-callout="trailblazer-continenttheme"] .callout-icon,
+.callout[data-callout="trailblazer-continenttheme"] .continent-label {
     display: none !important;
 }

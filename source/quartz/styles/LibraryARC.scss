@@ -200,3 +200,242 @@
   border: 1px solid #b8a574;
   color: #000000; /* Ensures variant is also black */
 }
+
+/* =========================================
+   FUSED: ANGLE-PAGE INK-STAINED MANUSCRIPT
+   ID: paperpagenotes (Titleless Version)
+   ========================================= */
+
+.callout[data-callout="paperpagenotes"] {
+    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%);
+    position: relative;
+    
+    /* The Angle */
+    transform: rotate(1.2deg);
+    margin: 2em 1.5em;
+    padding: 22px 28px;
+    
+    /* Bookmark Spine */
+    border: none;
+    border-left: 5px solid #2b1a0f; 
+    border-radius: 2px 8px 8px 2px;
+    overflow: hidden;
+    
+    box-shadow:
+        4px 4px 15px rgba(0, 0, 0, 0.12),
+        0 2px 4px rgba(0, 0, 0, 0.05),
+        inset 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* --- Hide Title & Icon --- */
+.callout[data-callout="paperpagenotes"] .callout-title {
+    display: none !important;
+}
+
+/* --- Internal Texture (Fiber look) --- */
+.callout[data-callout="paperpagenotes"]::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0 1px, transparent 1px 5px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* --- The Ink Splatter Overlay --- */
+.callout[data-callout="paperpagenotes"]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 12% 15%, rgba(43, 26, 15, 0.06) 0 2.5px, transparent 3px),
+        radial-gradient(circle at 80% 85%, rgba(43, 26, 15, 0.04) 0 2px, transparent 2.5px),
+        radial-gradient(circle at 50% 10%, rgba(43, 26, 15, 0.03) 0 1.5px, transparent 2px);
+    mix-blend-mode: multiply;
+    z-index: 2;
+    animation: inkDrift 6s ease-in-out infinite alternate;
+}
+
+@keyframes inkDrift {
+    0%   { transform: translate(0,0) scale(1); }
+    100% { transform: translate(1px, 1px) scale(1.02); }
+}
+
+/* --- Body Text Styling --- */
+.callout[data-callout="paperpagenotes"] .callout-content {
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+    color: #1c1c1c;
+    line-height: 1.6;
+    z-index: 3;
+    position: relative;
+    margin: 0; /* Ensures text starts at the top of the box */
+}
+
+/* --- Links --- */
+.callout[data-callout="paperpagenotes"] a,
+.callout[data-callout="paperpagenotes"] .internal-link {
+    color: #0f0f0f !important;
+    text-decoration: underline dotted;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* =========================================
+   FUSED: LEFT-ANGLED INK-STAINED MANUSCRIPT
+   ID: paperpagenotesleft
+   ========================================= */
+
+.callout[data-callout="paperpagenotesleft"] {
+    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%);
+    position: relative;
+    
+    /* The Left Tilt */
+    transform: rotate(-1.5deg);
+    margin: 2em 1.5em;
+    padding: 22px 28px;
+    
+    /* Bookmark Spine */
+    border: none;
+    border-left: 5px solid #2b1a0f; 
+    border-radius: 2px 8px 8px 2px;
+    overflow: hidden;
+    
+    box-shadow:
+        -4px 4px 15px rgba(0, 0, 0, 0.12), /* Shadow shifted for left tilt */
+        0 2px 4px rgba(0, 0, 0, 0.05),
+        inset 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* --- Hide Title & Icon --- */
+.callout[data-callout="paperpagenotesleft"] .callout-title {
+    display: none !important;
+}
+
+/* --- Internal Texture (Fiber look) --- */
+.callout[data-callout="paperpagenotesleft"]::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0 1px, transparent 1px 5px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* --- The Ink Splatter Overlay --- */
+.callout[data-callout="paperpagenotesleft"]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 15% 25%, rgba(43, 26, 15, 0.06) 0 2.5px, transparent 3px),
+        radial-gradient(circle at 75% 80%, rgba(43, 26, 15, 0.04) 0 2px, transparent 2.5px),
+        radial-gradient(circle at 40% 15%, rgba(43, 26, 15, 0.03) 0 1.5px, transparent 2px);
+    mix-blend-mode: multiply;
+    z-index: 2;
+    animation: inkDriftLeft 6s ease-in-out infinite alternate;
+}
+
+@keyframes inkDriftLeft {
+    0%   { transform: translate(0,0) scale(1); }
+    100% { transform: translate(-1px, 1px) scale(1.01); }
+}
+
+/* --- Body Text Styling --- */
+.callout[data-callout="paperpagenotesleft"] .callout-content {
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+    color: #1c1c1c;
+    line-height: 1.6;
+    z-index: 3;
+    position: relative;
+    margin: 0;
+}
+
+/* --- Links --- */
+.callout[data-callout="paperpagenotesleft"] a,
+.callout[data-callout="paperpagenotesleft"] .internal-link {
+    color: #0f0f0f !important;
+    text-decoration: underline dotted;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* =========================================
+   FUSED: PARCHMENT BANNER
+   ID: parchmentbanner
+   ========================================= */
+
+.callout[data-callout="parchmentbanner"] {
+    /* --- The Custom Gradient --- */
+    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%);
+    position: relative;
+    
+    /* Banner Layout: Wide and Centered */
+    margin: 2.5em auto;
+    padding: 30px 40px;
+    width: 95%; 
+    max-width: 800px;
+    text-align: center;
+    
+    /* Subtle horizontal arch */
+    clip-path: ellipse(100% 100% at 50% 0%);
+    
+    /* Bookmark Spine — moved to the top for a banner feel */
+    border: none;
+    border-top: 4px solid #2b1a0f; 
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+    
+    /* Deep shadow to make the banner "float" */
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.1),
+        0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* --- Hide Title & Icon --- */
+.callout[data-callout="parchmentbanner"] .callout-title {
+    display: none !important;
+}
+
+/* --- Internal Fiber Texture --- */
+.callout[data-callout="parchmentbanner"]::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0 1px, transparent 1px 5px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* --- Ink Splatters (Strategic placement for banners) --- */
+.callout[data-callout="parchmentbanner"]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 5% 50%, rgba(43, 26, 15, 0.05) 0 3px, transparent 4px),
+        radial-gradient(circle at 95% 40%, rgba(43, 26, 15, 0.04) 0 2px, transparent 3px),
+        radial-gradient(circle at 50% 85%, rgba(43, 26, 15, 0.03) 0 1.5px, transparent 2px);
+    mix-blend-mode: multiply;
+    z-index: 2;
+}
+
+/* --- Banner Typography --- */
+.callout[data-callout="parchmentbanner"] .callout-content {
+    font-family: 'Dancing Script', 'Palatino Linotype', serif;
+    color: #1c1c1c;
+    font-size: 1.4em; /* Larger text for headers */
+    line-height: 1.4;
+    z-index: 3;
+    position: relative;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* --- Link styling --- */
+.callout[data-callout="parchmentbanner"] a {
+    color: #2b1a0f !important;
+    text-decoration: underline dotted;
+}

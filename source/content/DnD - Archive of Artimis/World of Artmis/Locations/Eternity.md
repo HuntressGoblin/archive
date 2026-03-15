@@ -1,4 +1,4 @@
-> [!bigtable]
+> [!trailblazerexplorertheme]
 > # Eternity - Where the Adventurous go to Vanish
 > <img src="EternityFINAL.png" class="continent-img">
 > <div class="continent-info"><strong>Name</strong> Eternity</div>

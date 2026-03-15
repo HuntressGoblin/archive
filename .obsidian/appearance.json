@@ -14,5 +14,6 @@
     "SettingARC",
     "SimpleARC",
     "TextsARC"
-  ]
+  ],
+  "theme": "system"
 }

@@ -15,18 +15,16 @@ title: Welcome to the Eternal Library
 </div>
 </div>
 
----
-Hi, a little personal note from the person making this herself! This is just a disclaimer that I do not own a vast majority of art on this page! Yes, there is even some that are AI-generated that I grabbed off the web. All credit goes to the creators of whatever is used! 
+> [!paperpagenotes] Disclaimer
+> While the [[What is the Eternal Library|Cluster Galaxy]] and the [[What is the Eternal Library|Eternal Library]] (plus all its contents) are all original concepts from me, I do not take credit for any of the images used on this website or material that comes straight from official Tabletop companies (Wizards of the Coast, Paizo, etc). Most images are either from players, pulled from the internet, or generated using AI. All credit goes to the appropriate sources.
 
----
-It should go without saying, but ***SPOILERS AHEAD!!!!*** Browse at your own risk. Even if you're avoiding your own campaign, you still run the risk of finding out things you shouldn't know. I try to make things as accessible for all and spoiler free, but even I may miss things from my personal notes I have to delete. 
+> [!paperpagenotesleft] Spoiler Warning
+> **Spoilers** are plentiful here on this wiki! If you're playing in one of my campaigns, I ask that you proceed with caution! While I do try to make the wiki hide important information to make it as spoiler-esh free, there will ALWAYS be some degree of spoilers no matter what. I repeat: ***SPOILERS AHEAD!!!!!*** 
 
----
-With that out of the way, go enjoy! I would recommend checking out "[[The Tomes of the Eternal Library]] to get started. Things are still under construction, so there may be placeholders. Once again, ***SPOILERS AHEAD!!!!*** I'd recommend refreshing your cache if anything appears odd or if you haven't visited in a couple of days! This is the main way to see new material that has been added.
+> [!paperpagenotes] Quick Thought
+> Formatting is still a major WIP. You may see some sections that have more links than others. Putting in links for EVERY possible thing that can be is very time-consuming and redundant, so not every page will be as thorough as the others! There may even be pages that look drastically different than others purely because I don't have the sanity to redo everything at the slightest change in format. If you see anything that seems off, let me know! 
 
----
-
-<br><br><br>
+<br>
 
 
 
@@ -35,47 +33,39 @@ With that out of the way, go enjoy! I would recommend checking out "[[The Tomes 
     <img src="Technicallynotimport.png" alt="Divine Portrait">
   </div>
 </div>
+
+
+
 <br>
 
 
+> [!parchmentbanner]
+> Welcome to the Eternal Library!
+
+<br>
+<div class="purple-divine-container">
+  <div class="purple-divine-diamond">
+    <img src="Purplelibrary.png" alt="Library">
+  </div>
+</div>
+<br>
+
+> [!paperpagenotesleft] Other Websites
+> In this note are honorable mentioned of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out.
+> [Stensin: Enutheta](https://wiki.enutheta.com/)
+> [Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
+
+> [!paperpagenotes] Updates
+> **LAST UPDATE:** 3/15/2026 1:37 PM CST 
+> - Altered formatting with my welcome page, as you can now see!
+> 
+
+> [!paperpagenotesleft] Inprogress and Bugs
+> IN-PROGRESS/BUGS
+> - All of the connections at the bottom of each page refuse to work with a format outside of the default quartz one. I'll search for a way to fix them, but for now, they'll be default since I really can't find a way to change it without destroying links like [[Elder Runara|these]] which unfortunately don't link to the web anymore. 
+
 ---
-
-<h1 style="text-align: center;">Welcome to the Eternal Library!</h1>
-
----
-
-Honorable Mentions of other people's awesome websites!
-
-[Stensin: Enutheta](https://wiki.enutheta.com/)
-
-[Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
-
----
-**LAST UPDATE:** 3/14/2026 9:18 PM CST
-
-- Fixed [[Eternity]]. 
-
-IN-PROGRESS/BUGS: 
-- All of the connections at the bottom of each page refuse to work with a format outside of the default quartz one. I'll search for a way to fix them, but for now, they'll be default since I really can't find a way to change it without destroying links like [[Elder Runara|these]] which unfortunately don't link to the web anymore. 
-
----
-
-
-
-
-
-
-
-
-
-
-
-
 <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">
   Anything in here that you don't want documented or shown? Feel free to reach out and ping me! I'll gladly remove it!
 </p>
 
----
-
-
-<img src="Purplelibrary.png" alt="Purplelibrary">

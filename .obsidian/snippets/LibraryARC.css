@@ -364,51 +364,51 @@
 /* =========================================
    FUSED: PARCHMENT BANNER
    ID: parchmentbanner
-   Quartz HARD TEXT OVERRIDE
    ========================================= */
 
 .callout[data-callout="parchmentbanner"] {
+    /* --- The Custom Gradient --- */
     background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%);
     position: relative;
-
+    
+    /* Banner Layout: Wide and Centered */
     margin: 2.5em auto;
     padding: 30px 40px;
-    width: 95%;
+    width: 95%; 
     max-width: 800px;
     text-align: center;
-
+    
+    /* Subtle horizontal arch */
     clip-path: ellipse(100% 100% at 50% 0%);
-
+    
+    /* Bookmark Spine — moved to the top for a banner feel */
     border: none;
-    border-top: 4px solid #2b1a0f;
+    border-top: 4px solid #2b1a0f; 
     border-radius: 0 0 12px 12px;
     overflow: hidden;
-
-    box-shadow:
+    
+    /* Deep shadow to make the banner "float" */
+    box-shadow: 
         0 10px 20px rgba(0,0,0,0.1),
         0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* Hide callout title */
+/* --- Hide Title & Icon --- */
 .callout[data-callout="parchmentbanner"] .callout-title {
     display: none !important;
 }
 
-/* Paper fiber texture */
+/* --- Internal Fiber Texture --- */
 .callout[data-callout="parchmentbanner"]::before {
     content: "";
     position: absolute;
-    inset: 0;
-    background-image: repeating-linear-gradient(
-        90deg,
-        rgba(0,0,0,0.015) 0 1px,
-        transparent 1px 5px
-    );
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0 1px, transparent 1px 5px);
     pointer-events: none;
     z-index: 1;
 }
 
-/* Ink splatters */
+/* --- Ink Splatters (Strategic placement for banners) --- */
 .callout[data-callout="parchmentbanner"]::after {
     content: "";
     position: absolute;
@@ -422,35 +422,25 @@
     z-index: 2;
 }
 
-/* Banner typography */
+/* --- Banner Typography (Forced Black) --- */
 .callout[data-callout="parchmentbanner"] .callout-content {
     font-family: 'Dancing Script', 'Palatino Linotype', serif;
-    font-size: 1.4em;
+    color: #000000 !important; /* Forced pure black */
+    font-size: 1.4em; 
     line-height: 1.4;
-    font-weight: 500;
-    position: relative;
     z-index: 3;
+    position: relative;
+    margin: 0;
+    font-weight: 500;
 }
 
-/* =========================================
-   QUARTZ TEXT COLOR OVERRIDE
-   ========================================= */
-
-.callout[data-callout="parchmentbanner"],
-.callout[data-callout="parchmentbanner"] * ,
-.callout[data-callout="parchmentbanner"] p,
-.callout[data-callout="parchmentbanner"] span,
-.callout[data-callout="parchmentbanner"] strong,
-.callout[data-callout="parchmentbanner"] em,
-.callout[data-callout="parchmentbanner"] .markdown-content,
-.callout[data-callout="parchmentbanner"] .markdown-content * {
+/* Target all interior text tags (bold, italic, paragraphs, lists) to prevent theme overrides */
+.callout[data-callout="parchmentbanner"] .callout-content * {
     color: #000000 !important;
 }
 
-/* Force Quartz links black */
-.callout[data-callout="parchmentbanner"] a,
-.callout[data-callout="parchmentbanner"] .internal-link,
-.callout[data-callout="parchmentbanner"] .external-link {
-    color: #000000 !important;
+/* --- Link styling --- */
+.callout[data-callout="parchmentbanner"] a {
+    color: #000000 !important; /* Kept purely black to match */
     text-decoration: underline dotted;
 }

@@ -402,8 +402,15 @@
 .callout[data-callout="parchmentbanner"]::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0 1px, transparent 1px 5px);
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background-image: repeating-linear-gradient(
+        90deg,
+        rgba(0,0,0,0.015) 0 1px,
+        transparent 1px 5px
+    );
     pointer-events: none;
     z-index: 1;
 }
@@ -425,8 +432,7 @@
 /* --- Banner Typography --- */
 .callout[data-callout="parchmentbanner"] .callout-content {
     font-family: 'Dancing Script', 'Palatino Linotype', serif;
-    color: #1c1c1c;
-    font-size: 1.4em; /* Larger text for headers */
+    font-size: 1.4em;
     line-height: 1.4;
     z-index: 3;
     position: relative;
@@ -434,8 +440,14 @@
     font-weight: 500;
 }
 
+/* --- FORCE ALL TEXT BLACK --- */
+.callout[data-callout="parchmentbanner"],
+.callout[data-callout="parchmentbanner"] * {
+    color: #000000 !important;
+}
+
 /* --- Link styling --- */
 .callout[data-callout="parchmentbanner"] a {
-    color: #2b1a0f !important;
+    color: #000000 !important;
     text-decoration: underline dotted;
 }

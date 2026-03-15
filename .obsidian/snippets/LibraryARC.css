@@ -368,10 +368,10 @@
 
 .callout[data-callout="parchmentbanner"] {
     /* --- The Custom Gradient --- */
-    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%);
+    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%) !important;
     position: relative;
     
-    /* Banner Layout: Wide and Centered */
+    /* Banner Layout */
     margin: 2.5em auto;
     padding: 30px 40px;
     width: 95%; 
@@ -381,13 +381,13 @@
     /* Subtle horizontal arch */
     clip-path: ellipse(100% 100% at 50% 0%);
     
-    /* Bookmark Spine — moved to the top for a banner feel */
-    border: none;
-    border-top: 4px solid #2b1a0f; 
+    /* Bookmark Spine */
+    border: none !important;
+    border-top: 4px solid #2b1a0f !important; 
     border-radius: 0 0 12px 12px;
     overflow: hidden;
     
-    /* Deep shadow to make the banner "float" */
+    /* Deep shadow */
     box-shadow: 
         0 10px 20px rgba(0,0,0,0.1),
         0 4px 6px rgba(0,0,0,0.05);
@@ -408,7 +408,7 @@
     z-index: 1;
 }
 
-/* --- Ink Splatters (Strategic placement for banners) --- */
+/* --- Ink Splatters --- */
 .callout[data-callout="parchmentbanner"]::after {
     content: "";
     position: absolute;
@@ -422,10 +422,17 @@
     z-index: 2;
 }
 
-/* --- Banner Typography (Forced Black) --- */
+/* --- GLOBAL TEXT OVERRIDE --- */
+/* This forces black on the container AND all children (p, span, strong, etc) */
+.callout[data-callout="parchmentbanner"],
+.callout[data-callout="parchmentbanner"] .callout-content,
+.callout[data-callout="parchmentbanner"] .callout-content * {
+    color: #000000 !important;
+    font-family: 'Dancing Script', 'Palatino Linotype', serif !important;
+    -webkit-font-smoothing: antialiased;
+}
+
 .callout[data-callout="parchmentbanner"] .callout-content {
-    font-family: 'Dancing Script', 'Palatino Linotype', serif;
-    color: #000000 !important; /* Forced pure black */
     font-size: 1.4em; 
     line-height: 1.4;
     z-index: 3;
@@ -434,13 +441,18 @@
     font-weight: 500;
 }
 
-/* Target all interior text tags (bold, italic, paragraphs, lists) to prevent theme overrides */
-.callout[data-callout="parchmentbanner"] .callout-content * {
+/* --- Link & Inline Element Cleanup --- */
+.callout[data-callout="parchmentbanner"] a,
+.callout[data-callout="parchmentbanner"] .internal-link {
     color: #000000 !important;
+    text-decoration: underline dotted !important;
+    background: transparent !important; /* Removes the grey highlight in your screenshot */
 }
 
-/* --- Link styling --- */
-.callout[data-callout="parchmentbanner"] a {
-    color: #000000 !important; /* Kept purely black to match */
-    text-decoration: underline dotted;
+/* Fix for the "pill" background on links/code seen in your image */
+.callout[data-callout="parchmentbanner"] code,
+.callout[data-callout="parchmentbanner"] .cm-inline-code {
+    background: rgba(0,0,0,0.05) !important;
+    color: #000000 !important;
+    border: none !important;
 }

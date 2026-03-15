@@ -203,36 +203,26 @@
 
 /* =========================================
    FUSED: ANGLE-PAGE INK-STAINED MANUSCRIPT
-   ID: paperpagenotes (Titleless Version)
+   ID: paperpagenotes
    ========================================= */
 
 .callout[data-callout="paperpagenotes"] {
-    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%);
+    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%) !important;
     position: relative;
-    
-    /* The Angle */
     transform: rotate(1.2deg);
     margin: 2em 1.5em;
     padding: 22px 28px;
-    
-    /* Bookmark Spine */
-    border: none;
-    border-left: 5px solid #2b1a0f; 
+    border: none !important;
+    border-left: 5px solid #2b1a0f !important; 
     border-radius: 2px 8px 8px 2px;
     overflow: hidden;
-    
-    box-shadow:
-        4px 4px 15px rgba(0, 0, 0, 0.12),
-        0 2px 4px rgba(0, 0, 0, 0.05),
-        inset 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05), inset 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* --- Hide Title & Icon --- */
 .callout[data-callout="paperpagenotes"] .callout-title {
     display: none !important;
 }
 
-/* --- Internal Texture (Fiber look) --- */
 .callout[data-callout="paperpagenotes"]::before {
     content: "";
     position: absolute;
@@ -242,7 +232,6 @@
     z-index: 1;
 }
 
-/* --- The Ink Splatter Overlay --- */
 .callout[data-callout="paperpagenotes"]::after {
     content: "";
     position: absolute;
@@ -257,28 +246,20 @@
     animation: inkDrift 6s ease-in-out infinite alternate;
 }
 
-@keyframes inkDrift {
-    0%   { transform: translate(0,0) scale(1); }
-    100% { transform: translate(1px, 1px) scale(1.02); }
+/* FORCED BLACK OVERRIDE (Right Tilt) */
+.callout[data-callout="paperpagenotes"],
+.callout[data-callout="paperpagenotes"] .callout-content,
+.callout[data-callout="paperpagenotes"] .callout-content * {
+    color: #000000 !important;
+    --text-normal: #000000 !important;
+    --link-color: #000000 !important;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
+    background-color: transparent !important; /* Removes link background pills */
 }
 
-/* --- Body Text Styling --- */
-.callout[data-callout="paperpagenotes"] .callout-content {
-    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
-    color: #1c1c1c;
-    line-height: 1.6;
-    z-index: 3;
-    position: relative;
-    margin: 0; /* Ensures text starts at the top of the box */
-}
-
-/* --- Links --- */
-.callout[data-callout="paperpagenotes"] a,
-.callout[data-callout="paperpagenotes"] .internal-link {
-    color: #0f0f0f !important;
-    text-decoration: underline dotted;
+.callout[data-callout="paperpagenotes"] a {
+    text-decoration: underline dotted !important;
     font-style: italic;
-    font-weight: 500;
 }
 
 /* =========================================
@@ -287,32 +268,22 @@
    ========================================= */
 
 .callout[data-callout="paperpagenotesleft"] {
-    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%);
+    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%) !important;
     position: relative;
-    
-    /* The Left Tilt */
     transform: rotate(-1.5deg);
     margin: 2em 1.5em;
     padding: 22px 28px;
-    
-    /* Bookmark Spine */
-    border: none;
-    border-left: 5px solid #2b1a0f; 
+    border: none !important;
+    border-left: 5px solid #2b1a0f !important; 
     border-radius: 2px 8px 8px 2px;
     overflow: hidden;
-    
-    box-shadow:
-        -4px 4px 15px rgba(0, 0, 0, 0.12), /* Shadow shifted for left tilt */
-        0 2px 4px rgba(0, 0, 0, 0.05),
-        inset 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05), inset 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* --- Hide Title & Icon --- */
 .callout[data-callout="paperpagenotesleft"] .callout-title {
     display: none !important;
 }
 
-/* --- Internal Texture (Fiber look) --- */
 .callout[data-callout="paperpagenotesleft"]::before {
     content: "";
     position: absolute;
@@ -322,7 +293,6 @@
     z-index: 1;
 }
 
-/* --- The Ink Splatter Overlay --- */
 .callout[data-callout="paperpagenotesleft"]::after {
     content: "";
     position: absolute;
@@ -337,28 +307,30 @@
     animation: inkDriftLeft 6s ease-in-out infinite alternate;
 }
 
+/* FORCED BLACK OVERRIDE (Left Tilt) */
+.callout[data-callout="paperpagenotesleft"],
+.callout[data-callout="paperpagenotesleft"] .callout-content,
+.callout[data-callout="paperpagenotesleft"] .callout-content * {
+    color: #000000 !important;
+    --text-normal: #000000 !important;
+    --link-color: #000000 !important;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
+    background-color: transparent !important; /* Removes link background pills */
+}
+
+.callout[data-callout="paperpagenotesleft"] a {
+    text-decoration: underline dotted !important;
+    font-style: italic;
+}
+
+@keyframes inkDrift {
+    0%   { transform: translate(0,0) scale(1); }
+    100% { transform: translate(1px, 1px) scale(1.02); }
+}
+
 @keyframes inkDriftLeft {
     0%   { transform: translate(0,0) scale(1); }
     100% { transform: translate(-1px, 1px) scale(1.01); }
-}
-
-/* --- Body Text Styling --- */
-.callout[data-callout="paperpagenotesleft"] .callout-content {
-    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
-    color: #1c1c1c;
-    line-height: 1.6;
-    z-index: 3;
-    position: relative;
-    margin: 0;
-}
-
-/* --- Links --- */
-.callout[data-callout="paperpagenotesleft"] a,
-.callout[data-callout="paperpagenotesleft"] .internal-link {
-    color: #0f0f0f !important;
-    text-decoration: underline dotted;
-    font-style: italic;
-    font-weight: 500;
 }
 
 /* =========================================

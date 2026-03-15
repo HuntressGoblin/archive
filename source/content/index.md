@@ -16,7 +16,6 @@ title: Welcome to the Eternal Library
 </div>
 
 > [!paperpagenotes] Disclaimer
-> 
 > While the [[What is the Eternal Library|Cluster Galaxy]] and the [[What is the Eternal Library|Eternal Library]] (plus all its contents) are all original concepts from me, I do not take credit for any of the images used on this website or material that comes straight from official Tabletop companies (Wizards of the Coast, Paizo, etc). Most images are either from players, pulled from the internet, or generated using AI. All credit goes to the appropriate sources.
 
 > [!paperpagenotesleft] Spoiler Warning

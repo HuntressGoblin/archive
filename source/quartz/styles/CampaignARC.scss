@@ -216,7 +216,6 @@
    ========================================= */
 
 .callout[data-callout="ephemeratheme1"] {
-
     --ghost-glow: rgba(170,210,255,0.15);
     --ghost-border: #7fa8c6;
 
@@ -228,30 +227,22 @@
 
     border: 1px solid var(--ghost-border);
     border-radius: 6px;
-
     padding: 18px;
     margin: 18px 0;
-
     color: #e6f3ff;
-
     box-shadow:
         0 0 20px var(--ghost-glow),
         inset 0 0 40px rgba(0,0,0,0.6);
-
     position: relative;
     overflow: visible;
 }
 
 /* =========================================
-   REMOVE OBSIDIAN/QUARTZ PENCIL ICON
+   REMOVE OBSIDIAN/QUARTZ DEFAULTS
    ========================================= */
 
 .callout[data-callout="ephemeratheme1"] .callout-icon {
     display: none !important;
-}
-
-.callout[data-callout="ephemeratheme1"] .callout-title-inner {
-    margin-left: 0 !important;
 }
 
 /* =========================================
@@ -259,19 +250,16 @@
    ========================================= */
 
 .callout[data-callout="ephemeratheme1"]::before {
-
     content: "";
     position: absolute;
     inset: -30%;
-
     background:
         radial-gradient(circle at 20% 40%, rgba(200,230,255,0.06), transparent 60%),
         radial-gradient(circle at 80% 60%, rgba(170,210,255,0.05), transparent 60%),
         radial-gradient(circle at 50% 80%, rgba(210,240,255,0.04), transparent 60%);
-
     animation: ghostMist 35s linear infinite;
-
     pointer-events: none;
+    z-index: 0;
 }
 
 @keyframes ghostMist {
@@ -286,6 +274,7 @@
 
 .callout[data-callout="ephemeratheme1"] .callout-content {
     position: relative;
+    z-index: 1;
 }
 
 .callout[data-callout="ephemeratheme1"] .callout-content::after {
@@ -298,10 +287,8 @@
     background: radial-gradient(circle, #f6b7c9 60%, transparent 70%);
     border-radius: 50%;
     box-shadow:
-        120px 80px 0 #f6b7c9,
-        200px 30px 0 #f1a3ba,
-        260px 140px 0 #f6b7c9,
-        340px 90px 0 #f1a3ba,
+        120px 80px 0 #f6b7c9, 200px 30px 0 #f1a3ba,
+        260px 140px 0 #f6b7c9, 340px 90px 0 #f1a3ba,
         420px 10px 0 #f6b7c9;
     animation: sakuraFall1 14s linear infinite;
     opacity: .75;
@@ -317,10 +304,8 @@
     background: radial-gradient(circle, #f1a3ba 60%, transparent 70%);
     border-radius: 50%;
     box-shadow:
-        -120px 100px 0 #f6b7c9,
-        -200px 40px 0 #f1a3ba,
-        80px 160px 0 #f6b7c9,
-        160px 60px 0 #f1a3ba,
+        -120px 100px 0 #f6b7c9, -200px 40px 0 #f1a3ba,
+        80px 160px 0 #f6b7c9, 160px 60px 0 #f1a3ba,
         240px 20px 0 #f6b7c9;
     animation: sakuraFall2 18s linear infinite;
     opacity: .7;
@@ -362,7 +347,7 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: 16px;
-    color: #3a2a1c;
+    color: #3a2a1c !important;
     background:
         radial-gradient(circle at 50% 85%, #c63a3a 6px, transparent 7px),
         linear-gradient(180deg,#fffdf5,#efe5c9);
@@ -370,6 +355,7 @@
     box-shadow: 0 10px 18px rgba(0,0,0,0.55);
     transform: rotate(-12deg);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 100%, 50% 85%, 25% 100%, 0% 85%);
+    z-index: 10;
 }
 
 .callout[data-callout="ephemeratheme1"]::after {
@@ -386,7 +372,7 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: 16px;
-    color: #3a2a1c;
+    color: #3a2a1c !important;
     background:
         radial-gradient(circle at 50% 85%, #c63a3a 6px, transparent 7px),
         linear-gradient(180deg,#fffdf5,#efe5c9);
@@ -394,6 +380,7 @@
     box-shadow: 0 10px 18px rgba(0,0,0,0.55);
     transform: rotate(8deg);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 100%, 50% 85%, 25% 100%, 0% 85%);
+    z-index: 10;
 }
 
 /* =========================================
@@ -407,26 +394,33 @@
     right: -10px;
     font-size: 22px;
     filter: drop-shadow(0 0 6px rgba(255,80,80,0.5));
+    z-index: 10;
 }
 
 /* =========================================
-   TITLE - FIXED COLOR SPECIFICITY
+   TITLE - THE "BLUE KILLER" FIX
    ========================================= */
 
 .callout[data-callout="ephemeratheme1"] .callout-title {
     position: relative;
     border-bottom: 1px solid rgba(170,210,255,0.35);
-    padding-bottom: 6px;
-    margin-bottom: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    display: flex !important;
+    align-items: center;
 }
 
-/* Targeted selector to override Quartz defaults */
-.callout[data-callout="ephemeratheme1"] .callout-title .callout-title-inner {
-    font-family: "Georgia", serif;
-    letter-spacing: 0.05em;
-    font-weight: bold;
-    color: #dff2ff !important; /* Force the ghost blue color */
-    text-shadow: 0 0 8px rgba(170,210,255,0.35);
+/* This targets the actual text element (div, p, or h) to override Quartz */
+.callout[data-callout="ephemeratheme1"] .callout-title-inner,
+.callout[data-callout="ephemeratheme1"] .callout-title-inner * {
+    font-family: "Georgia", serif !important;
+    color: #dff2ff !important; 
+    text-shadow: 0 0 8px rgba(170,210,255,0.35) !important;
+    font-weight: bold !important;
+    letter-spacing: 0.05em !important;
+    margin: 0 !important;
+    padding-left: 15px !important; /* Move text away from the Ofuda */
+    text-decoration: none !important;
 }
 
 /* =========================================

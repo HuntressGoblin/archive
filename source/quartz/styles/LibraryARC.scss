@@ -357,6 +357,100 @@
 }
 
 /* =========================================
+   FUSED: LEFT-ANGLED INK-STAINED MANUSCRIPT
+   ID: paperpagenotesleft
+   ========================================= */
+
+.callout[data-callout="paperpagenotesleft"] {
+    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%) !important;
+    position: relative;
+    transform: rotate(-1.5deg); /* Tilted Left */
+    margin: 2em 1.5em;
+    padding: 22px 28px;
+    border: none !important;
+    border-left: 5px solid #2b1a0f !important; 
+    border-radius: 2px 8px 8px 2px;
+    overflow: visible !important; /* Required for previews */
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05), inset 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.callout[data-callout="paperpagenotesleft"] .callout-title {
+    display: none !important;
+}
+
+/* Texture Overlays */
+.callout[data-callout="paperpagenotesleft"]::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0 1px, transparent 1px 5px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.callout[data-callout="paperpagenotesleft"]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 15% 25%, rgba(43, 26, 15, 0.06) 0 2.5px, transparent 3px),
+        radial-gradient(circle at 75% 80%, rgba(43, 26, 15, 0.04) 0 2px, transparent 2.5px),
+        radial-gradient(circle at 40% 15%, rgba(43, 26, 15, 0.03) 0 1.5px, transparent 2px);
+    mix-blend-mode: multiply;
+    z-index: 2;
+    animation: inkDriftLeft 6s ease-in-out infinite alternate;
+}
+
+/* --- TEXT & LINK STYLING --- */
+.callout[data-callout="paperpagenotesleft"],
+.callout[data-callout="paperpagenotesleft"] .callout-content {
+    color: #000000 !important;
+    --text-normal: #000000 !important;
+    --link-color: #000000 !important;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
+}
+
+.callout[data-callout="paperpagenotesleft"] a {
+    text-decoration: underline dotted !important;
+    font-style: italic;
+    background-color: transparent !important;
+}
+
+/* =========================================
+   SCOPED PARCHMENT PREVIEW FIX (LEFT)
+   ========================================= */
+
+/* Deep targeting for Quartz popover layers */
+.callout[data-callout="paperpagenotesleft"] .popover,
+.callout[data-callout="paperpagenotesleft"] .hover-preview,
+.callout[data-callout="paperpagenotesleft"] .popover-inner,
+.callout[data-callout="paperpagenotesleft"] [data-component="popover"],
+.callout[data-callout="paperpagenotesleft"] .popover > div {
+    background-color: #fdf6e3 !important;
+    background-image: none !important;
+    border: 1px solid rgba(43, 26, 15, 0.3) !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+    transform: rotate(1.5deg) !important; /* Counter-rotates the tilt back to level */
+}
+
+/* Force dark text and parchment variables inside the popover */
+.callout[data-callout="paperpagenotesleft"] .popover *,
+.callout[data-callout="paperpagenotesleft"] .hover-preview * {
+    color: #000000 !important;
+    --text-normal: #000000 !important;
+    --secondary: #000000 !important;
+    --background: #fdf6e3 !important;
+    background-color: transparent !important;
+}
+
+/* Animations */
+@keyframes inkDriftLeft {
+    0%   { transform: translate(0,0) scale(1); }
+    100% { transform: translate(-1px, 1px) scale(1.01); }
+}
+
+/* =========================================
    FUSED: PARCHMENT BANNER
    ID: parchmentbanner
    ========================================= */

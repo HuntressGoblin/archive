@@ -370,8 +370,14 @@
     border: none !important;
     border-left: 5px solid #2b1a0f !important; 
     border-radius: 2px 8px 8px 2px;
-    overflow: visible !important; /* Changed to visible for popover rendering */
+    overflow: visible !important; 
     box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05), inset 0 2px 8px rgba(0,0,0,0.05);
+    z-index: 1; /* Establishes a baseline layer */
+}
+
+/* Brings the entire callout to the front when you interact with it */
+.callout[data-callout="paperpagenotesleft"]:hover {
+    z-index: 999 !important; 
 }
 
 /* Hides both the title bar and any default icons */
@@ -425,10 +431,8 @@
 
 /* =========================================
    SCOPED PARCHMENT PREVIEW FIX (LEFT)
-   Targets the preview ONLY inside this callout
    ========================================= */
 
-/* Targets the container AND all internal Quartz popover layers */
 .callout[data-callout="paperpagenotesleft"] .popover,
 .callout[data-callout="paperpagenotesleft"] .hover-preview,
 .callout[data-callout="paperpagenotesleft"] .popover-inner,
@@ -438,7 +442,8 @@
     background-image: none !important;    
     border: 1px solid rgba(43, 26, 15, 0.3) !important;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
-    transform: rotate(1.5deg) !important; /* Counter-rotates to make preview straight */
+    transform: rotate(1.5deg) !important; 
+    z-index: 1000 !important; /* Forces the preview itself to the absolute top */
 }
 
 /* Force all text elements inside THAT specific popover to be black */

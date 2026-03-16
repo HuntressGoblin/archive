@@ -10,19 +10,13 @@
     <div class="letterbox-signature">
     — ???
 </div>
+</div>
 
 ---
 
 
 
 > [!ephemeratheme1] . Meet the Villagers!
-
-
-
-
-
-
-
 
 <div class="seasonghostsgrid player-grid">
   <div class="player-card">

@@ -215,12 +215,20 @@
     border: none !important;
     border-left: 5px solid #2b1a0f !important; 
     border-radius: 2px 8px 8px 2px;
-    /* overflow: visible is required for popovers to render correctly in some Quartz builds */
+    /* overflow: visible is required for popovers to render correctly */
     overflow: visible !important; 
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05), inset 0 2px 8px rgba(0,0,0,0.05);
+    z-index: 1; /* Establish baseline z-index */
 }
 
-.callout[data-callout="paperpagenotes"] .callout-title {
+/* Fix: Bring callout to front on hover so preview isn't hidden by lower callouts */
+.callout[data-callout="paperpagenotes"]:hover {
+    z-index: 999 !important;
+}
+
+/* Hide title and default icon */
+.callout[data-callout="paperpagenotes"] .callout-title,
+.callout[data-callout="paperpagenotes"] .callout-icon {
     display: none !important;
 }
 
@@ -247,19 +255,57 @@
     z-index: 2;
 }
 
-/* TEXT & LINK STYLING */
+/* FORCED BLACK TEXT & FONT STYLING */
 .callout[data-callout="paperpagenotes"],
-.callout[data-callout="paperpagenotes"] .callout-content {
+.callout[data-callout="paperpagenotes"] .callout-content,
+.callout[data-callout="paperpagenotes"] .callout-content * {
     color: #000000 !important;
     --text-normal: #000000 !important;
+    --text-muted: #1a1a1a !important;
     --link-color: #000000 !important;
+    --link-external-color: #000000 !important;
+    --secondary: #000000 !important;
     font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
+    background-color: transparent !important; 
 }
 
 .callout[data-callout="paperpagenotes"] a {
     text-decoration: underline dotted !important;
     font-style: italic;
-    background-color: transparent !important; 
+}
+
+/* =========================================
+   SCOPED PARCHMENT PREVIEW FIX
+   Targets the preview ONLY inside this callout
+   ========================================= */
+
+.callout[data-callout="paperpagenotes"] .popover,
+.callout[data-callout="paperpagenotes"] .hover-preview,
+.callout[data-callout="paperpagenotes"] .popover-inner,
+.callout[data-callout="paperpagenotes"] [data-component="popover"],
+.callout[data-callout="paperpagenotes"] .popover > div {
+    background-color: #fdf6e3 !important;
+    background-image: none !important;
+    border: 1px solid rgba(43, 26, 15, 0.3) !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+    transform: rotate(-1.2deg) !important; /* Counter-rotates based on 1.2deg tilt */
+    z-index: 1000 !important;
+}
+
+/* Force text inside the popover to stay black */
+.callout[data-callout="paperpagenotes"] .popover *,
+.callout[data-callout="paperpagenotes"] .hover-preview * {
+    color: #000000 !important;
+    --text-normal: #000000 !important;
+    --secondary: #000000 !important;
+    --background: #fdf6e3 !important;
+    background-color: transparent !important;
+}
+
+/* Pointer arrow adjustment */
+.callout[data-callout="paperpagenotes"] .popover::after,
+.callout[data-callout="paperpagenotes"] .hover-preview::after {
+    border-bottom-color: #fdf6e3 !important;
 }
 
 /* =========================================

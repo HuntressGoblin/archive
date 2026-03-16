@@ -263,6 +263,59 @@
 }
 
 /* =========================================
+   PARCHMENT POPUPS: THEMED PREVIEW BOXES
+   Matches the "old paper" callout style
+   ========================================= */
+
+/* Use 'popover' or 'hover-preview' depending on your specific Quartz setup */
+.popover, 
+.hover-preview,
+div[data-component="popover"],
+.internal-link + div[data-component="popover"] { 
+    /* Aged paper background with texture and transparency */
+    background-color: rgba(246, 238, 212, 0.95) !important; /* #F6EED4 with opacity */
+    background-image: repeating-linear-gradient(
+        90deg, 
+        rgba(43, 26, 15, 0.01) 0 1px, 
+        transparent 1px 5px
+    ) !important;
+    background-blend-mode: multiply !important;
+    
+    /* Text colors (matching callout style) */
+    color: #000000 !important; 
+    --text-normal: #000000 !important;
+    --h1-color: #000000 !important;
+    --h2-color: #1a100a !important;
+    --link-color: #000000 !important;
+    
+    /* Elegant antique font stack */
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
+    font-size: 0.95em !important;
+    line-height: 1.5 !important;
+    
+    /* Structure, border, and antique shadow */
+    border: 1px solid rgba(43, 26, 15, 0.3) !important;
+    border-radius: 6px !important;
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.1), 
+        0 2px 4px rgba(43, 26, 15, 0.1) !important;
+    backdrop-filter: blur(2px) !important; /* Slight blur behind the popup */
+}
+
+/* Style links within the popover to match callout links */
+.popover a, .hover-preview a {
+    text-decoration: underline dotted !important;
+    font-style: italic !important;
+}
+
+/* Style code blocks within popovers to be readable */
+.popover code, .hover-preview code {
+    background-color: rgba(43, 26, 15, 0.1) !important;
+    color: #1a100a !important;
+    font-family: monospace !important;
+}
+
+/* =========================================
    FUSED: PARCHMENT BANNER
    ID: parchmentbanner
    ========================================= */

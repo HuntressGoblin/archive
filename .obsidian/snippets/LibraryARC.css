@@ -430,30 +430,29 @@
 }
 
 /* =========================================
-   QUARTZ LINK HOVER FIX (NO TRANSPARENCY)
+   QUARTZ LINK PREVIEW FIX (NO TRANSPARENCY)
    ========================================= */
 
-.callout[data-callout="paperpagenotes"] a,
-.callout[data-callout="paperpagenotesleft"] a,
-.callout[data-callout="parchmentbanner"] a,
-.callout[data-callout="paperpagenotes"] .internal-link,
-.callout[data-callout="paperpagenotesleft"] .internal-link,
-.callout[data-callout="parchmentbanner"] .internal-link {
+.popover,
+.popover.hover-popover,
+.popover .popover-content {
 
+    background: #fdf6e3 !important; /* solid parchment */
     opacity: 1 !important;
-    mix-blend-mode: normal !important;
-    background: none !important;
+    backdrop-filter: none !important;
+    
+    border: 1px solid #2b1a0f !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25) !important;
 }
 
-.callout[data-callout="paperpagenotes"] a:hover,
-.callout[data-callout="paperpagenotesleft"] a:hover,
-.callout[data-callout="parchmentbanner"] a:hover,
-.callout[data-callout="paperpagenotes"] .internal-link:hover,
-.callout[data-callout="paperpagenotesleft"] .internal-link:hover,
-.callout[data-callout="parchmentbanner"] .internal-link:hover {
-
+/* Ensure text inside is solid */
+.popover * {
     opacity: 1 !important;
-    mix-blend-mode: normal !important;
-    background: none !important;
     color: #000 !important;
+}
+
+/* Remove Quartz fade effects */
+a:hover,
+.internal-link:hover {
+    opacity: 1 !important;
 }

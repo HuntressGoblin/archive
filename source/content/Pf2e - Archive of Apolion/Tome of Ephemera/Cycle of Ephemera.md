@@ -38,7 +38,7 @@
   <div class="player-card">
     <img src="Aethepic1.png" alt="Aethepic">
     <div class="player-name">Aethelearn-wānling</div>
-    <div class="character-class">Alcehmist</div>
+    <div class="character-class">Alchemist</div>
   </div>
   <div class="player-card">
     <img src="Renshupic1.png" alt="Renshupic">

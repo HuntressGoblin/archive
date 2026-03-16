@@ -428,3 +428,22 @@
     color: #000000 !important;
     border: none !important;
 }
+
+/* =========================================
+   QUARTZ LINK HOVER FIX
+   Prevent transparent hover previews
+   ========================================= */
+
+.callout[data-callout="paperpagenotes"] a:hover,
+.callout[data-callout="paperpagenotes"] .internal-link:hover,
+.callout[data-callout="paperpagenotesleft"] a:hover,
+.callout[data-callout="paperpagenotesleft"] .internal-link:hover,
+.callout[data-callout="parchmentbanner"] a:hover,
+.callout[data-callout="parchmentbanner"] .internal-link:hover {
+
+    opacity: 1 !important;
+    background: rgba(255,255,255,0.85) !important; /* removes transparency */
+    color: #000 !important;
+
+    text-decoration: underline dotted;
+}

@@ -263,56 +263,97 @@
 }
 
 /* =========================================
-   PARCHMENT POPUPS: THEMED PREVIEW BOXES
-   Matches the "old paper" callout style
+   FUSED: ANGLE-PAGE INK-STAINED MANUSCRIPT
+   ID: paperpagenotes
    ========================================= */
 
-/* Use 'popover' or 'hover-preview' depending on your specific Quartz setup */
-.popover, 
-.hover-preview,
-div[data-component="popover"],
-.internal-link + div[data-component="popover"] { 
-    /* Aged paper background with texture and transparency */
-    background-color: rgba(246, 238, 212, 0.95) !important; /* #F6EED4 with opacity */
-    background-image: repeating-linear-gradient(
-        90deg, 
-        rgba(43, 26, 15, 0.01) 0 1px, 
-        transparent 1px 5px
-    ) !important;
-    background-blend-mode: multiply !important;
-    
-    /* Text colors (matching callout style) */
-    color: #000000 !important; 
+.callout[data-callout="paperpagenotes"] {
+    background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%) !important;
+    position: relative;
+    transform: rotate(1.2deg);
+    margin: 2em 1.5em;
+    padding: 22px 28px;
+    border: none !important;
+    border-left: 5px solid #2b1a0f !important; 
+    border-radius: 2px 8px 8px 2px;
+    /* overflow: visible is required for popovers to render correctly in some Quartz builds */
+    overflow: visible !important; 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05), inset 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.callout[data-callout="paperpagenotes"] .callout-title {
+    display: none !important;
+}
+
+/* Paper Texture Overlays */
+.callout[data-callout="paperpagenotes"]::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0 1px, transparent 1px 5px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.callout[data-callout="paperpagenotes"]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 12% 15%, rgba(43, 26, 15, 0.06) 0 2.5px, transparent 3px),
+        radial-gradient(circle at 80% 85%, rgba(43, 26, 15, 0.04) 0 2px, transparent 2.5px),
+        radial-gradient(circle at 50% 10%, rgba(43, 26, 15, 0.03) 0 1.5px, transparent 2px);
+    mix-blend-mode: multiply;
+    z-index: 2;
+}
+
+/* TEXT & LINK STYLING */
+.callout[data-callout="paperpagenotes"],
+.callout[data-callout="paperpagenotes"] .callout-content {
+    color: #000000 !important;
     --text-normal: #000000 !important;
-    --h1-color: #000000 !important;
-    --h2-color: #1a100a !important;
     --link-color: #000000 !important;
-    
-    /* Elegant antique font stack */
     font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
-    font-size: 0.95em !important;
-    line-height: 1.5 !important;
-    
-    /* Structure, border, and antique shadow */
-    border: 1px solid rgba(43, 26, 15, 0.3) !important;
-    border-radius: 6px !important;
-    box-shadow: 
-        0 4px 12px rgba(0, 0, 0, 0.1), 
-        0 2px 4px rgba(43, 26, 15, 0.1) !important;
-    backdrop-filter: blur(2px) !important; /* Slight blur behind the popup */
 }
 
-/* Style links within the popover to match callout links */
-.popover a, .hover-preview a {
+.callout[data-callout="paperpagenotes"] a {
     text-decoration: underline dotted !important;
-    font-style: italic !important;
+    font-style: italic;
+    background-color: transparent !important; 
 }
 
-/* Style code blocks within popovers to be readable */
-.popover code, .hover-preview code {
-    background-color: rgba(43, 26, 15, 0.1) !important;
-    color: #1a100a !important;
-    font-family: monospace !important;
+/* =========================================
+   SCOPED PARCHMENT PREVIEW FIX 
+   Targets the preview ONLY inside this callout
+   ========================================= */
+
+/* This targets the container AND all internal Quartz popover layers */
+.callout[data-callout="paperpagenotes"] .popover,
+.callout[data-callout="paperpagenotes"] .hover-preview,
+.callout[data-callout="paperpagenotes"] .popover-inner,
+.callout[data-callout="paperpagenotes"] [data-component="popover"],
+.callout[data-callout="paperpagenotes"] .popover > div {
+    background-color: #fdf6e3 !important; /* Solid parchment background */
+    background-image: none !important;    /* Removes dark theme gradients */
+    border: 1px solid rgba(43, 26, 15, 0.3) !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+}
+
+/* Force all text elements inside THAT specific popover to be black */
+.callout[data-callout="paperpagenotes"] .popover *,
+.callout[data-callout="paperpagenotes"] .hover-preview * {
+    color: #000000 !important;
+    --text-normal: #000000 !important;
+    --secondary: #000000 !important;
+    --background: #fdf6e3 !important; /* Forces the internal background variable to match paper */
+    background-color: transparent !important;
+}
+
+/* Adjust the pointer/arrow of the popover if it exists */
+.callout[data-callout="paperpagenotes"] .popover::after,
+.callout[data-callout="paperpagenotes"] .hover-preview::after {
+    border-bottom-color: #fdf6e3 !important;
 }
 
 /* =========================================

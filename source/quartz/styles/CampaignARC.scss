@@ -209,3 +209,637 @@
     border-bottom: 1px solid rgba(90, 26, 26, 0.2) !important;
     margin-bottom: 5px !important;
 }
+
+/* =========================================
+   EPHEMERATHEME1
+   Ghost / Sakura Theme
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"] {
+
+    --ghost-glow: rgba(170,210,255,0.15);
+    --ghost-border: #7fa8c6;
+
+    background: linear-gradient(
+        180deg,
+        rgba(18,28,36,0.95),
+        rgba(14,22,30,0.98)
+    );
+
+    border: 1px solid var(--ghost-border);
+    border-radius: 6px;
+
+    padding: 18px;
+    margin: 18px 0;
+
+    color: #e6f3ff;
+
+    box-shadow:
+        0 0 20px var(--ghost-glow),
+        inset 0 0 40px rgba(0,0,0,0.6);
+
+    position: relative;
+    overflow: visible;
+}
+
+/* =========================================
+   REMOVE OBSIDIAN PENCIL ICON
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"] .callout-icon {
+    display: none !important;
+}
+
+.callout[data-callout="ephemeratheme1"] .callout-title-inner {
+    margin-left: 0 !important;
+}
+
+/* =========================================
+   FLOATING GHOST MIST
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"]::before {
+
+    content: "";
+    position: absolute;
+    inset: -30%;
+
+    background:
+        radial-gradient(circle at 20% 40%, rgba(200,230,255,0.06), transparent 60%),
+        radial-gradient(circle at 80% 60%, rgba(170,210,255,0.05), transparent 60%),
+        radial-gradient(circle at 50% 80%, rgba(210,240,255,0.04), transparent 60%);
+
+    animation: ghostMist 35s linear infinite;
+
+    pointer-events: none;
+}
+
+@keyframes ghostMist {
+
+    0% { transform: translateX(0px) translateY(0px); }
+
+    50% { transform: translateX(-40px) translateY(20px); }
+
+    100% { transform: translateX(0px) translateY(0px); }
+
+}
+
+/* =========================================
+   CHERRY BLOSSOM PETALS
+   RANDOMIZED FALL
+   ========================================= */
+
+/* Base settings */
+.callout[data-callout="ephemeratheme1"] .callout-content {
+    position: relative;
+}
+
+/* PETAL STREAM 1 */
+
+.callout[data-callout="ephemeratheme1"] .callout-content::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: -60px;
+    left: 15%;
+
+    width: 7px;
+    height: 7px;
+
+    background: radial-gradient(circle, #f6b7c9 60%, transparent 70%);
+    border-radius: 50%;
+
+    box-shadow:
+        120px 80px 0 #f6b7c9,
+        200px 30px 0 #f1a3ba,
+        260px 140px 0 #f6b7c9,
+        340px 90px 0 #f1a3ba,
+        420px 10px 0 #f6b7c9;
+
+    animation: sakuraFall1 14s linear infinite;
+
+    opacity: .75;
+}
+
+/* PETAL STREAM 2 */
+
+.callout[data-callout="ephemeratheme1"] .callout-content::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+    left: 40%;
+
+    width: 6px;
+    height: 6px;
+
+    background: radial-gradient(circle, #f1a3ba 60%, transparent 70%);
+    border-radius: 50%;
+
+    box-shadow:
+        -120px 100px 0 #f6b7c9,
+        -200px 40px 0 #f1a3ba,
+        80px 160px 0 #f6b7c9,
+        160px 60px 0 #f1a3ba,
+        240px 20px 0 #f6b7c9;
+
+    animation: sakuraFall2 18s linear infinite;
+
+    opacity: .7;
+}
+
+/* EXTRA PETAL LAYER */
+
+.callout[data-callout="ephemeratheme1"] {
+
+    --petal-layer: radial-gradient(circle,#f6b7c9 3px,transparent 4px);
+
+}
+
+.callout[data-callout="ephemeratheme1"]::marker { content: ""; }
+
+/* =========================================
+   PETAL ANIMATIONS
+   ========================================= */
+
+@keyframes sakuraFall1 {
+
+    0% {
+        transform: translateY(-60px) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% { opacity: .8; }
+
+    25% {
+        transform: translateY(80px) translateX(30px) rotate(90deg);
+    }
+
+    50% {
+        transform: translateY(160px) translateX(-25px) rotate(180deg);
+    }
+
+    75% {
+        transform: translateY(240px) translateX(20px) rotate(260deg);
+    }
+
+    100% {
+        transform: translateY(320px) translateX(-10px) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+@keyframes sakuraFall2 {
+
+    0% {
+        transform: translateY(-80px) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% { opacity: .7; }
+
+    30% {
+        transform: translateY(90px) translateX(-35px) rotate(120deg);
+    }
+
+    55% {
+        transform: translateY(180px) translateX(20px) rotate(200deg);
+    }
+
+    80% {
+        transform: translateY(260px) translateX(-15px) rotate(280deg);
+    }
+
+    100% {
+        transform: translateY(340px) translateX(10px) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================================
+   OFUDA TALISMAN (TOP LEFT)
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"] .callout-title::before {
+
+    content: "霊封守";
+
+    position: absolute;
+
+    top: -28px;
+    left: -22px;
+
+    width: 36px;
+    height: 85px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-top: 8px;
+
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+    font-size: 16px;
+
+    color: #3a2a1c;
+
+    background:
+        radial-gradient(circle at 50% 85%, #c63a3a 6px, transparent 7px),
+        linear-gradient(180deg,#fffdf5,#efe5c9);
+
+    border: 1px solid #d2c39b;
+
+    box-shadow:
+        0 10px 18px rgba(0,0,0,0.55);
+
+    transform: rotate(-12deg);
+
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 85%,
+        75% 100%,
+        50% 85%,
+        25% 100%,
+        0% 85%
+    );
+}
+
+/* =========================================
+   OFUDA TALISMAN (BOTTOM RIGHT)
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"]::after {
+
+    content: "守霊符";
+
+    position: absolute;
+
+    bottom: -28px;
+    right: -22px;
+
+    width: 34px;
+    height: 80px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-top: 8px;
+
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+    font-size: 16px;
+
+    color: #3a2a1c;
+
+    background:
+        radial-gradient(circle at 50% 85%, #c63a3a 6px, transparent 7px),
+        linear-gradient(180deg,#fffdf5,#efe5c9);
+
+    border: 1px solid #d2c39b;
+
+    box-shadow:
+        0 10px 18px rgba(0,0,0,0.55);
+
+    transform: rotate(8deg);
+
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 85%,
+        75% 100%,
+        50% 85%,
+        25% 100%,
+        0% 85%
+    );
+}
+
+/* =========================================
+   RED LANTERNS
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"] .callout-title {
+
+    position: relative;
+}
+
+.callout[data-callout="ephemeratheme1"] .callout-title::after {
+
+    content: "🏮";
+
+    position: absolute;
+
+    top: -16px;
+    right: -10px;
+
+    font-size: 22px;
+
+    filter: drop-shadow(0 0 6px rgba(255,80,80,0.5));
+}
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"] .callout-title {
+
+    font-family: "Georgia", serif;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+
+    color: #dff2ff;
+
+    border-bottom: 1px solid rgba(170,210,255,0.35);
+
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+
+    text-shadow: 0 0 8px rgba(170,210,255,0.35);
+}
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"] a {
+
+    color: #9fd1ff;
+
+}
+
+.callout[data-callout="ephemeratheme1"] a:hover {
+
+    color: #cfe9ff;
+
+}
+
+/* =========================================
+   BLOCKQUOTES
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"] blockquote {
+
+    border-left: 3px solid #7fa8c6;
+    padding-left: 10px;
+    color: #d6ebff;
+
+}
+
+/* =========================================
+   TABLES
+   ========================================= */
+
+.callout[data-callout="ephemeratheme1"] table {
+
+    border-collapse: collapse;
+
+}
+
+.callout[data-callout="ephemeratheme1"] th,
+.callout[data-callout="ephemeratheme1"] td {
+
+    border: 1px solid rgba(170,210,255,0.25);
+    padding: 6px 10px;
+
+}
+
+/* --- SEASONS OF GHOSTS: EPHEMERA COLORATION --- */
+
+.seasonghostsgrid.player-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+  background: transparent;
+}
+
+.seasonghostsgrid .player-card {
+  --ghost-glow: rgba(170, 210, 255, 0.15);
+  --ghost-border: #7fa8c6;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 175px;
+  padding: 20px;
+  border-radius: 6px;
+  
+  /* Deep Midnight Background from Ephemera */
+  background: linear-gradient(
+    180deg,
+    rgba(18, 28, 36, 0.95),
+    rgba(14, 22, 30, 0.98)
+  );
+  
+  border: 1px solid var(--ghost-border);
+  /* Ghostly outer glow and deep inner shadow */
+  box-shadow: 
+    0 0 15px var(--ghost-glow),
+    inset 0 0 30px rgba(0, 0, 0, 0.7);
+    
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.seasonghostsgrid .player-card:hover {
+  transform: translateY(-5px);
+  border-color: #cfe9ff;
+  box-shadow: 
+    0 0 25px rgba(170, 210, 255, 0.3),
+    inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.seasonghostsgrid .player-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 4px;
+  object-fit: cover;
+  /* Muted blue-tint border for images */
+  border: 1px solid rgba(127, 168, 198, 0.4);
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  filter: grayscale(20%) brightness(90%);
+}
+
+.seasonghostsgrid .player-card:hover img {
+  filter: grayscale(0%) brightness(110%);
+  border-color: var(--ghost-border);
+}
+
+.seasonghostsgrid .player-name {
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+  /* Icy Ghost Blue */
+  color: #dff2ff;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 8px rgba(170, 210, 255, 0.4);
+}
+
+.seasonghostsgrid .character-class {
+  font-size: 0.85rem;
+  /* Muted Blue-Grey */
+  color: #9fd1ff;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Floating Mist Animation Overlay */
+.seasonghostsgrid .player-card::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle at 50% 50%, rgba(200, 230, 255, 0.04), transparent 70%);
+  animation: ghostMist 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes ghostMist {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-10%, 10%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* --- SEASONS OF GHOSTS: SOGdropdown1 BALANCED CSS --- */
+
+.SOGdropdown1-wrapper {
+    width: 100%; 
+    margin: 45px 0 20px 0; 
+    font-family: "Georgia", serif;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* THE SPECTRAL OFUDA */
+.SOGdropdown1-header::before {
+    content: "霊封"; 
+    position: absolute;
+    top: -25px;
+    left: 10px; /* Moved further left to reduce text gap */
+    width: 32px;
+    height: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 5px; 
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 13px;
+    font-weight: bold;
+    color: #0e161e; 
+    background: linear-gradient(180deg, #dff2ff, #7fa8c6);
+    border: 1px solid #cfe9ff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: rotate(-6deg);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 11;
+}
+
+/* THE RED DOT (Cinnabar Seal) */
+.SOGdropdown1-header-seal {
+    position: absolute;
+    top: 32px; 
+    left: 20px; /* Adjusted to follow the Ofuda's new 'left' position */
+    width: 12px;
+    height: 12px;
+    background: #b32d2d;
+    border-radius: 50%;
+    z-index: 12;
+    box-shadow: 0 0 5px rgba(179, 45, 45, 0.6);
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+/* OPEN STATES */
+details[open] .SOGdropdown1-header::before {
+    transform: rotate(0deg) translateY(-8px);
+}
+
+details[open] .SOGdropdown1-header-seal {
+    transform: translateY(-8px);
+    background: #ff4d4d;
+}
+
+/* MAIN HEADER BAR */
+.SOGdropdown1-header {
+    background: linear-gradient(180deg, rgba(18, 28, 36, 0.95), rgba(14, 22, 30, 0.98));
+    border: 1px solid #7fa8c6;
+    border-radius: 6px;
+    /* Reduced left padding from 65px to 45px for better text centering */
+    padding: 12px 18px 12px 45px; 
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #dff2ff;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 15px rgba(170, 210, 255, 0.1);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.SOGdropdown1-header:hover {
+    border-color: #cfe9ff;
+    box-shadow: 0 0 20px rgba(170, 210, 255, 0.2);
+}
+
+.SOGdropdown1-header::after {
+    content: "▼";
+    font-size: 0.8rem;
+    color: #7fa8c6;
+    transition: transform 0.3s ease;
+}
+
+details[open] .SOGdropdown1-header::after { transform: rotate(180deg); }
+
+/* CONTENT BOX */
+.SOGdropdown1-content {
+    background: rgba(14, 22, 30, 0.6);
+    border: 1px solid #7fa8c6;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* Reduced left padding here as well */
+    padding: 20px 20px 20px 45px; 
+    color: #e6f3ff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: -1px; 
+    box-sizing: border-box;
+}
+
+/* LINKS */
+.SOGdropdown1-content a {
+    color: #9fd1ff;
+    text-decoration: none;
+}
+
+.SOGdropdown1-content a:hover {
+    color: #cfe9ff;
+    text-decoration: underline;
+}
+
+/* CLEANUP */
+summary.SOGdropdown1-header::-webkit-details-marker { display: none; }
+summary { list-style: none; }
+

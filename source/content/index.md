@@ -56,8 +56,8 @@ title: Welcome to the Eternal Library
 > [Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
 
 > [!paperpagenotes] Updates
-> **LAST UPDATE:** 3/15/2026 1:37 PM CST 
-> - Altered formatting with my welcome page, as you can now see!
+> **LAST UPDATE:** 3/16/2026
+> - Fixed transparency bug with main page. 
 > 
 
 > [!paperpagenotesleft] Inprogress and Bugs

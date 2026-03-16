@@ -296,20 +296,20 @@
 }
 
 /* =========================================
-   FUSED: LEFT-ANGLED INK-STAINED MANUSCRIPT
-   ID: paperpagenotesleft
-   ========================================= */
+    FUSED: LEFT-ANGLED INK-STAINED MANUSCRIPT
+    ID: paperpagenotesleft
+    ========================================= */
 
 .callout[data-callout="paperpagenotesleft"] {
     background: linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%) !important;
     position: relative;
-    transform: rotate(-1.5deg); /* Tilted Left */
+    transform: rotate(-1.5deg);
     margin: 2em 1.5em;
     padding: 22px 28px;
     border: none !important;
     border-left: 5px solid #2b1a0f !important; 
     border-radius: 2px 8px 8px 2px;
-    overflow: visible !important; /* Required for previews */
+    overflow: visible !important; /* Required for popover rendering */
     box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05), inset 0 2px 8px rgba(0,0,0,0.05);
 }
 
@@ -317,7 +317,6 @@
     display: none !important;
 }
 
-/* Texture Overlays */
 .callout[data-callout="paperpagenotesleft"]::before {
     content: "";
     position: absolute;
@@ -350,17 +349,18 @@
     font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
 }
 
+/* Target links specifically to remove pills without breaking previews */
 .callout[data-callout="paperpagenotesleft"] a {
     text-decoration: underline dotted !important;
     font-style: italic;
-    background-color: transparent !important;
+    background-color: transparent !important; 
 }
 
 /* =========================================
    SCOPED PARCHMENT PREVIEW FIX (LEFT)
+   Targets the preview ONLY inside this callout
    ========================================= */
 
-/* Deep targeting for Quartz popover layers */
 .callout[data-callout="paperpagenotesleft"] .popover,
 .callout[data-callout="paperpagenotesleft"] .hover-preview,
 .callout[data-callout="paperpagenotesleft"] .popover-inner,
@@ -370,10 +370,10 @@
     background-image: none !important;
     border: 1px solid rgba(43, 26, 15, 0.3) !important;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
-    transform: rotate(1.5deg) !important; /* Counter-rotates the tilt back to level */
+    transform: rotate(1.5deg) !important; /* Straightens the preview box */
 }
 
-/* Force dark text and parchment variables inside the popover */
+/* Force all text elements inside the popover to be black */
 .callout[data-callout="paperpagenotesleft"] .popover *,
 .callout[data-callout="paperpagenotesleft"] .hover-preview * {
     color: #000000 !important;
@@ -383,7 +383,12 @@
     background-color: transparent !important;
 }
 
-/* Animations */
+/* --- ANIMATIONS --- */
+@keyframes inkDrift {
+    0%   { transform: translate(0,0) scale(1); }
+    100% { transform: translate(1px, 1px) scale(1.02); }
+}
+
 @keyframes inkDriftLeft {
     0%   { transform: translate(0,0) scale(1); }
     100% { transform: translate(-1px, 1px) scale(1.01); }

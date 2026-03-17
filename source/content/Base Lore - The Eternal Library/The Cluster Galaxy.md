@@ -102,7 +102,50 @@
 </details>
 
 <br>
+<div class="advancedgalaxydropdown-container">
+<details>
+<summary class="advancedgalaxydropdown-trigger">
+<span class="selected-text">What is the timeline of each Cluster?</span>
+<span class="dropdown-arrow">▼</span>
+</summary>
+
+<div class="advancedgalaxydropdown-menu">
+
+<div class="galaxy-option-wrapper">
+<label class="advancedgalaxydropdown-item">
+<input type="checkbox" value="andromeda">
+Artemis (DND5e, A.G)
+</label>
+<div class="galaxy-description">
+Spellplague (1385 DR) > End of Spellplague (1394–1395 DR) > Aura (1490 DR) > Heroics (1492 DR)
+</div>
+</div>
+
+<div class="galaxy-option-wrapper">
+<label class="advancedgalaxydropdown-item">
+<input type="checkbox" value="orion">
+Apolion (PF2E)
+</label>
+<div class="galaxy-description">
+Ephemera (7018 IC) > ???
+</div>
+</div>
+
+<div class="galaxy-option-wrapper">
+<label class="advancedgalaxydropdown-item">
+<input type="checkbox" value="void">
+Aethena (SF2E)
+</label>
+<div class="galaxy-description">
+Entropy (325 AG) > ???
+</div>
+</div>
+
+</div>
+</details>
+</div>
 <br>
-<br>
+
+
 > [!tinynote]- Connections
-> [[Istoria, Lady of Ink]], [[The Ink that Binds]], [[The Cluster Galaxy]], [[The Supernova]]
+> [[The Supernova]], [[Istoria, Lady of Ink]], [[The Cluster Galaxy]], [[The Ink that Binds]].

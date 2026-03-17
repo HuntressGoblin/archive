@@ -59,6 +59,8 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 <details class="advancedgalaxydropdown-container" id="galaxyDropdown">
     <summary class="advancedgalaxydropdown-trigger">
         <span class="selected-text">What is the timeline of each Cluster?</span>
@@ -99,5 +101,8 @@
     </div>
 </details>
 
+<br>
+<br>
+<br>
 > [!tinynote]- Connections
 > [[Istoria, Lady of Ink]], [[The Ink that Binds]], [[The Cluster Galaxy]], [[The Supernova]]

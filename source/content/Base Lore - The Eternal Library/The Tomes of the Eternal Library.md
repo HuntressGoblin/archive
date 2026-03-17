@@ -105,5 +105,51 @@
   </div>
 </div>
 
+
+
+<details class="advancedgalaxydropdown-container" id="galaxyDropdown">
+    <summary class="advancedgalaxydropdown-trigger">
+        <span class="selected-text">What is the timeline of each series?</span>
+        <span class="dropdown-arrow">▼</span>
+    </summary>
+    
+    <div class="advancedgalaxydropdown-menu">
+        <div class="galaxy-option-wrapper">
+            <label class="advancedgalaxydropdown-item">
+                <input type="checkbox" value="andromeda">
+                <span class="checkbox-custom"></span>
+                Artimis (DND5e, A.G)
+            </label>
+            <div class="galaxy-description">
+                Spellplague (1385 DR) End of Spellplague (1394-1395 DR) > Aura (1490 DR) > Heroics (1492 DR) > Divinity = Crystalline Rebirth (1492 DR- Spring of 1493) = Elements (1492 DR) > Artistry (1492 DR) > Tyranny (Spring of 1493 DR) > Hellfire (1494 DR) > Trailblazer ("1150"-1494 DR) > Candlelight (???)
+            </div>
+        </div>
+        <div class="galaxy-option-wrapper">
+            <label class="advancedgalaxydropdown-item">
+                <input type="checkbox" value="orion">
+                <span class="checkbox-custom"></span>
+                Apolion (PF2E)
+            </label>
+            <div class="galaxy-description">
+                Ephemera (7108 IC) > ??? 
+            </div>
+        </div>
+        <div class="galaxy-option-wrapper">
+            <label class="advancedgalaxydropdown-item">
+                <input type="checkbox" value="void">
+                <span class="checkbox-custom"></span>
+                Aethena (SF2E)
+            </label>
+            <div class="galaxy-description">
+                Entropy (325 AG) > ???
+            </div>
+        </div>
+    </div>
+</details>
+
+
+
+
+
 > [!tinynote]- Connections
 > [[The Cluster Galaxy]], [[What is the Eternal Library]].

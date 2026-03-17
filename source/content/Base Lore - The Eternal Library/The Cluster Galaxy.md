@@ -85,7 +85,7 @@ Spellplague (1385 DR) End of Spellplague (1394-1395 DR) > Aura (1490 DR) > Heroi
 Apolion (PF2E)
 </label>
 <div class="galaxy-description">
-Ephemera (7018 IC) > ???
+Ephemera (7108 IC) > ???
 </div>
 </div>
 <div class="galaxy-option-wrapper">

@@ -462,12 +462,10 @@
 }
 
 /* =========================================
-   DEEP NEBULA DROPDOWN - QUARTZ SAFE VERSION
+   DEEP NEBULA DROPDOWN
    ========================================= */
 
-/* =========================================
-   STARLIGHT PULSE ANIMATION
-   ========================================= */
+/* Glow animation */
 
 @keyframes starlight-pulse {
     0% {
@@ -487,9 +485,7 @@
     }
 }
 
-/* =========================================
-   CONTAINER
-   ========================================= */
+/* Container */
 
 .advancedgalaxydropdown-container {
     position: relative;
@@ -500,19 +496,12 @@
     font-style: italic;
 }
 
-/* Remove default summary marker */
+/* Remove default marker */
 
-.advancedgalaxydropdown-container summary::-webkit-details-marker {
-    display: none;
-}
+summary::-webkit-details-marker { display: none; }
+summary::marker { display: none; }
 
-.advancedgalaxydropdown-container summary::marker {
-    display: none;
-}
-
-/* =========================================
-   DROPDOWN TRIGGER
-   ========================================= */
+/* Trigger */
 
 .advancedgalaxydropdown-trigger {
     display: flex;
@@ -538,30 +527,20 @@
     backdrop-filter: blur(30px) saturate(180%);
 }
 
-/* Title text */
-
 .selected-text {
     font-weight: bold;
-    color: white;
-    text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
-
-/* Arrow */
 
 .dropdown-arrow {
     color: #67e8f9;
-    transition: transform 0.25s ease;
+    transition: transform 0.3s ease;
 }
 
-/* Rotate arrow when open */
-
-.advancedgalaxydropdown-container[open] .dropdown-arrow {
+details[open] .dropdown-arrow {
     transform: rotate(180deg);
 }
 
-/* =========================================
-   DROPDOWN MENU
-   ========================================= */
+/* Menu */
 
 .advancedgalaxydropdown-menu {
 
@@ -593,16 +572,11 @@
     gap: 8px;
 }
 
-/* =========================================
-   OPTION WRAPPER
-   ========================================= */
+/* Option wrapper */
 
 .galaxy-option-wrapper {
-
     border-radius: 12px;
-
     background: rgba(34,211,238,0.03);
-
     transition: background 0.25s ease;
 }
 
@@ -610,9 +584,7 @@
     background: rgba(232,121,249,0.08);
 }
 
-/* =========================================
-   OPTION LABEL
-   ========================================= */
+/* Option label */
 
 .advancedgalaxydropdown-item {
 
@@ -626,9 +598,7 @@
     color: #e0f2fe;
 }
 
-/* =========================================
-   CUSTOM CHECKBOX
-   ========================================= */
+/* Custom checkbox */
 
 .advancedgalaxydropdown-item input[type="checkbox"] {
 
@@ -652,8 +622,6 @@
     flex-shrink: 0;
 }
 
-/* checked state */
-
 .advancedgalaxydropdown-item input[type="checkbox"]:checked {
 
     background: #0891b2;
@@ -662,8 +630,6 @@
 
     box-shadow: 0 0 15px rgba(34,211,238,0.8);
 }
-
-/* star icon */
 
 .advancedgalaxydropdown-item input[type="checkbox"]:checked::after {
 
@@ -681,9 +647,7 @@
     color: white;
 }
 
-/* =========================================
-   DESCRIPTION PANEL
-   ========================================= */
+/* Description panel */
 
 .galaxy-description {
 
@@ -705,9 +669,9 @@
         padding 0.3s ease;
 }
 
-/* Show description when checkbox checked */
+/* SHOW DESCRIPTION WHEN CHECKED */
 
-.galaxy-option-wrapper input:checked ~ .galaxy-description {
+.galaxy-option-wrapper:has(input:checked) .galaxy-description {
 
     max-height: 250px;
 

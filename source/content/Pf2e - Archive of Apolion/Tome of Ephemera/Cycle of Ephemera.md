@@ -81,6 +81,6 @@
     </details>
 </div>
 
-> [!footnote-one]- Connections
+> [!tinynote]- Connections
 > [[Shenmen]], [[Willowshore]], [[Reenactment Festival]]
 

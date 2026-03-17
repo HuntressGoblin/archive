@@ -53,19 +53,22 @@ title: Welcome to the Eternal Library
 > [!paperpagenotesleft] Other Websites
 > In this note are honorable mentioned of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out.
 > [Stensin: Enutheta](https://wiki.enutheta.com/)
-> [Dio: Dioctionary](https://dioctionary.net/THE+DIOCTIONARY/01.+HOME/HOME)
+> https://diopedia.net
 
 > [!paperpagenotes] Updates
 > **LAST UPDATE:** 3/16/2026
-> - Fixed transparency bug with main page. 
+> - Replaced more formatting with a note theme. Tried to fix the connections at the bottom. Might not work, but oh well.
 > 
 
 > [!paperpagenotesleft] Inprogress and Bugs
 > IN-PROGRESS/BUGS
-> - All of the connections at the bottom of each page refuse to work with a format outside of the default quartz one. I'll search for a way to fix them, but for now, they'll be default since I really can't find a way to change it without destroying links like [[Elder Runara|these]] which unfortunately don't link to the web anymore. 
+> - Dunno yet. If I see anything, I shall try to fix it in due time.
 
 ---
 <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">
   Anything in here that you don't want documented or shown? Feel free to reach out and ping me! I'll gladly remove it!
 </p>
 
+
+> [!tinynote]- Connections
+> Look for me to find links to other notes! I'm a little hidden on purpose. :)

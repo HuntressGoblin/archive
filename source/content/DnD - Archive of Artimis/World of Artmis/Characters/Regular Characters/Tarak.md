@@ -52,5 +52,5 @@
   </div>
 
 
-> [!footnote-one]- Connections
+> [!tinynote]- Connections
 > [[Drougma Tarak]], [[Stormwreck Isle]], [[Elder Runara]], [[Rise of Tyranny|Yang Gang]], [[Dragon's Rest]], [[Kobolds of Dragon's Rest]], [[Aleitha]].

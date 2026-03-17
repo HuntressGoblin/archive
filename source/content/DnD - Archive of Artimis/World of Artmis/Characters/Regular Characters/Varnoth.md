@@ -52,5 +52,5 @@
     </div>
   </div>
 
-> [!footnote-one]- Connections
+> [!tinynote]- Connections
 > [[Tarak]], [[Stormwreck Isle]], [[Elder Runara]], [[Rise of Tyranny|Yang Gang]], [[Dragon's Rest]], [[Azure Wolves]], [[Kobolds of Dragon's Rest]], [[Elder Runara]].

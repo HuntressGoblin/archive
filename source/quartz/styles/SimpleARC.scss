@@ -71,12 +71,12 @@
 }
 
 /* ============================================================
-   FOOTNOTE-ONE THEME
+   TINYNOTE THEME
    Works for: Obsidian, GitHub Preview, and Quartz 4.0
    ============================================================ */
 
 /* 1. MAIN CONTAINER: Strip the box and add the top divider */
-div.callout[data-callout="footnote-one"] {
+div.callout[data-callout="tinynote"] {
     --callout-icon: none !important;
     background-color: transparent !important;
     background: transparent !important;
@@ -90,15 +90,15 @@ div.callout[data-callout="footnote-one"] {
 }
 
 /* 2. ICON REMOVAL: Specifically targets the pencil and SVGs */
-div.callout[data-callout="footnote-one"] .callout-icon,
-div.callout[data-callout="footnote-one"] .callout-icon svg,
-div.callout[data-callout="footnote-one"] svg {
+div.callout[data-callout="tinynote"] .callout-icon,
+div.callout[data-callout="tinynote"] .callout-icon svg,
+div.callout[data-callout="tinynote"] svg {
     display: none !important;
 }
 
 /* 3. TITLE/SUMMARY: Style the "Connections" label */
-div.callout[data-callout="footnote-one"] .callout-title,
-div.callout[data-callout="footnote-one"] summary {
+div.callout[data-callout="tinynote"] .callout-title,
+div.callout[data-callout="tinynote"] summary {
     background-color: transparent !important;
     background: transparent !important;
     padding: 0 !important;
@@ -111,15 +111,15 @@ div.callout[data-callout="footnote-one"] summary {
 }
 
 /* 4. THE ARROW (FOLD ICON): Make it subtle */
-div.callout[data-callout="footnote-one"] .callout-fold,
-div.callout[data-callout="footnote-one"] .fold-icon svg {
+div.callout[data-callout="tinynote"] .callout-fold,
+div.callout[data-callout="tinynote"] .fold-icon svg {
     color: var(--text-faint, var(--gray)) !important;
     opacity: 0.6;
     padding-right: 8px !important;
 }
 
 /* 5. CONTENT AREA: Clean list styling */
-div.callout[data-callout="footnote-one"] .callout-content {
+div.callout[data-callout="tinynote"] .callout-content {
     padding: 0 !important;
     margin: 0 !important;
     line-height: 1.6 !important;
@@ -128,9 +128,9 @@ div.callout[data-callout="footnote-one"] .callout-content {
 }
 
 /* 6. LINKS: Remove Quartz "Pills" and style as text */
-div.callout[data-callout="footnote-one"] .callout-content a,
-div.callout[data-callout="footnote-one"] .callout-content a.internal,
-div.callout[data-callout="footnote-one"] .internal-link {
+div.callout[data-callout="tinynote"] .callout-content a,
+div.callout[data-callout="tinynote"] .callout-content a.internal,
+div.callout[data-callout="tinynote"] .internal-link {
     background-color: transparent !important;
     background: transparent !important;
     padding: 0 !important;
@@ -142,8 +142,9 @@ div.callout[data-callout="footnote-one"] .internal-link {
 }
 
 /* 7. LINK HOVER: Visual feedback */
-div.callout[data-callout="footnote-one"] .callout-content a:hover,
-div.callout[data-callout="footnote-one"] .internal-link:hover {
+div.callout[data-callout="tinynote"] .callout-content a:hover,
+div.callout[data-callout="tinynote"] .internal-link:hover {
     text-decoration: underline !important;
     opacity: 1 !important;
 }
+

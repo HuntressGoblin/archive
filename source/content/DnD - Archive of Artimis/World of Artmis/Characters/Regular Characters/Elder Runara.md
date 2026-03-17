@@ -44,5 +44,5 @@
 
 </div>
 
-> [!footnote-one]- Connections
+> [!tinynote]- Connections
 > [[Stormwreck Isle]], [[Aidron]], [[Rise of Tyranny|Yang Gang]], [[Dragon's Rest]], [[Diomeades Eldwynair]].

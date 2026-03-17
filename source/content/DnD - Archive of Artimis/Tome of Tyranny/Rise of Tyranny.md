@@ -84,5 +84,7 @@ You may not know me, but I am very aware of you. I am aware of your situation an
 
 
 
+> [!tinynote]- Connections
+> WIP
 
 

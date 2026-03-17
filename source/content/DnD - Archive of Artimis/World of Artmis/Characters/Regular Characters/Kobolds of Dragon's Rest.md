@@ -55,5 +55,5 @@
     </div>
   </div>
 
-> [!footnote-one]- Connections
+> [!tinynote]- Connections
 > [[Sparkrender]], [[Stormwreck Isle]], [[Rise of Tyranny|Yang Gang]], [[Dragon's Rest]], [[Elder Runara]], [[Kalis]].

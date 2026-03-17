@@ -76,7 +76,7 @@
 Artemis (DND5e, A.G)
 </label>
 <div class="galaxy-description">
-Spellplague (1385 DR) > End of Spellplague (1394–1395 DR) > Aura (1490 DR) > Heroics (1492 DR)
+Spellplague (1385 DR) End of Spellplague (1394-1395 DR) > Aura (1490 DR) > Heroics (1492 DR) > Divinity = Crystalline Rebirth (1492 DR- Spring of 1493) = Elements (1492 DR) > Artistry (1492 DR) > Tyranny (Spring of 1493 DR) > Hellfire (1494 DR) > Trailblazer ("1150"-1494 DR) > Candlelight (???)
 </div>
 </div>
 <div class="galaxy-option-wrapper">

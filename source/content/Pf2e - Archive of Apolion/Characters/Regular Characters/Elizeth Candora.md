@@ -1,7 +1,6 @@
 <div class="willowshorefigures1">
     <h1>Elizeth Candora</h1>
     <span class="ws-subtitle"></span>
-    
     <div class="ws-img-container">
         <img src="Shesbluedabadedabadei.png" />
     </div>

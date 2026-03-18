@@ -56,13 +56,13 @@ title: Welcome to the Eternal Library
 > https://diopedia.net
 
 > [!paperpagenotes] Updates
-> **LAST UPDATE:** 3/16/2026
-> - Replaced more formatting with a note theme. Tried to fix the connections at the bottom. Might not work, but oh well.
+> **LAST UPDATE:** 3/18/2026
+> - My Ephemera group is eating good tonight! Full Ephemera stuff brought over that is relevant. ;) 
 > 
 
 > [!paperpagenotesleft] Inprogress and Bugs
 > IN-PROGRESS/BUGS
-> - Dunno yet. If I see anything, I shall try to fix it in due time.
+> - Yes, I know the picture in [[The Eight Practices]] is off-centered. I'll fix it eventually. ...eventually. 😴
 
 ---
 <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">

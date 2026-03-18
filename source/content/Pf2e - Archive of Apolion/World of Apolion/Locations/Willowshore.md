@@ -13,7 +13,6 @@
             Hidden amongst <a class="internal-link" href="Shenmen">Shenmen</a> in <a class="internal-link" href="Tian Xia">Tian Xia</a> is a humble village nestled along the banks of the Ceiba River. Willowshore has deep roots that trace back to older times. Despite the political turmoil that plagues the area, it remains isolated and relatively peaceful. Many who come here can find a new life full of community and peace. The settlement also has many festivals, celebrations, and a deep culture that focuses on the threat... of spirits. One of the most famous places before it was left abandoned was the <a class="internal-link" href="Tan Sugi Monastery">Tan Sugi Monastery</a>
             Willowshore is split into two groups. Those of <a class="internal-link" href="Southridge">Southridge</a> push for tradition and self sufficiency. Those of <a class="internal-link" href="Northridge">Northridge</a> push away from tradition and try to focus on expansion and growth from the outside world.
         </p>
-        
         <h3>Population (Estimation)</h3>
         <p>
             225 (73% humans, 6% half-elves, 4% halflings, 4% kitsune, 3% elves, 3% tengu, 2% nagaji, 5% others).

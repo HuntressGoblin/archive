@@ -12,7 +12,6 @@
         <p>
             Those in <a class="internal-link" href="Willowshore">Willowshore</a> who tradition and want to push for the village to be more self-sufficient align with <a class="internal-link" href="Southridge">Southridge</a>. One of the most prominent figures is <a class="internal-link" href="Old Matsuki Shou">"Old" Matsuki</a>. Those who align with <a class="internal-link" href="Northridge">Northridge</a> often oppose this way of thinking.
         </p>
-        
     </div>
     <div class="ws3-footer">❦</div>
 </div>

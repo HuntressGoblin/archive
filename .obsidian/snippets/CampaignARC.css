@@ -1207,9 +1207,8 @@ summary { list-style: none; }
     max-width: 620px;
     margin: 40px auto;
     font-family: 'Constantia', 'Georgia', serif;
-    /* Very subtle pale spirit-green parchment tint */
     background-color: #f6f9f2; 
-    border: 3px double #5d4037; /* The existing rustic border */
+    border: 3px double #5d4037; 
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     overflow: hidden;
@@ -1217,18 +1216,17 @@ summary { list-style: none; }
     box-sizing: border-box;
 }
 
-/* 1. Header: The Dark, Old Wood and Lantern */
+/* 1. Header: Dark Wood and Lantern */
 .ws3-header {
-    /* Darkened wood tones for an aged look */
     background: linear-gradient(180deg, #2b1d16, #46312a); 
-    padding: 35px 25px 50px 25px; /* Deep bottom padding to frame image */
+    padding: 35px 25px 50px 25px; 
     text-align: center;
     position: relative;
     border-bottom: 2px solid #5d4037;
-    overflow: visible; /* Required for the talisman to overflow */
+    overflow: visible; 
 }
 
-/* 2. The Lantern (Inherited Animation) */
+/* 2. The Lantern */
 .ws3-header::after {
     content: "🏮";
     position: absolute;
@@ -1237,7 +1235,6 @@ summary { list-style: none; }
     font-size: 2.2rem;
     opacity: 0.9;
     transform-origin: top center;
-    /* Assumes 'lanternSway' is defined (copied below for reference) */
     animation: lanternSway 3s ease-in-out infinite alternate;
     z-index: 5;
 }
@@ -1247,20 +1244,20 @@ summary { list-style: none; }
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0;
-    color: #fdfaf0; /* Warm white title */
+    color: #fdfaf0; 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
 .ws3-subtitle {
     font-style: italic;
-    color: #cfd9b9; /* A pale, ghostly moss-green subtitle */
+    color: #cfd9b9; 
     font-size: 1.1rem;
     margin-top: 6px;
     display: block;
     opacity: 0.9;
 }
 
-/* 3. The New Talisman (Ofuda) */
+/* 3. The Talisman (Ofuda) */
 .ws3-talisman {
     content: "霊封"; 
     position: absolute;
@@ -1276,22 +1273,18 @@ summary { list-style: none; }
     text-orientation: upright;
     font-size: 14px;
     font-weight: bold;
-    color: #2b1d16; /* Matches dark header */
-    
-    /* Blue spectral gradient for 'spirit power' */
+    color: #2b1d16; 
     background: linear-gradient(180deg, rgba(223, 242, 255, 0.9), rgba(127, 168, 198, 0.95));
     border: 1px solid #cfe9ff;
     clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 50% 100%, 0% 88%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    
-    /* Rotated slightly to look hand-placed */
     transform: rotate(-4deg);
     z-index: 10;
 }
 
 /* 4. Protective Ring Image Container */
 .ws3-image-wrapper {
-    margin: -40px auto 10px auto; /* Pulls image *deep* into the dark header */
+    margin: -40px auto 10px auto; 
     display: flex;
     justify-content: center;
     position: relative;
@@ -1304,28 +1297,23 @@ summary { list-style: none; }
     height: 220px;
     object-fit: cover;
     border-radius: 50%;
-    
-    /* Protective Ring/Seal: Uses the existing green from subtitle */
     border: 5px solid #6b8e23; 
-    
-    box-shadow: 0 0 20px rgba(107, 142, 35, 0.3), /* External subtle green glow */
-                inset 0 0 10px rgba(0, 0, 0, 0.4); /* Internal 'old photo' shadow */
+    box-shadow: 0 0 20px rgba(107, 142, 35, 0.3), 
+                inset 0 0 10px rgba(0, 0, 0, 0.4); 
     transition: all 0.4s ease;
 }
 
-/* 5. Content Area: The Stone and Hallowed Ground */
+/* 5. Content Area: Forced Black Text */
 .ws3-content {
     padding: 25px 45px 35px 45px;
-    color: #2c3e50;
     line-height: 1.7;
-    /* Optional texture: Very faint noise overlay for 'old stone/moss' feel */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236b8e23' fill-opacity='0.03'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236b8e23' fill-opacity='0.03'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .ws3-content h3 {
-    color: #3e2723; /* Darkened title color */
+    color: #3e2723; 
     font-variant: small-caps;
-    border-bottom: 2px double #8b4513; /* Stronger accent border */
+    border-bottom: 2px double #8b4513; 
     margin-bottom: 15px;
     font-size: 1.4rem;
     letter-spacing: 1px;
@@ -1333,26 +1321,23 @@ summary { list-style: none; }
 }
 
 .ws3-content p {
+    color: #000000 !important; /* Forced solid black */
+    opacity: 1 !important; /* Full opacity for maximum readability */
     text-align: justify;
     margin-bottom: 18px;
-    opacity: 0.95;
 }
 
-/* 6. Decorative Footer (The Charm/Flourish) */
+/* 6. Decorative Footer */
 .ws3-footer {
     text-align: center;
     padding-bottom: 25px;
-    margin-top: -10px; /* Pulls up near content */
+    margin-top: -10px; 
     color: #d2b48c;
     font-size: 1.8rem;
     opacity: 0.8;
 }
 
-/* Swirl flourish overlay on footer */
-.ws3-footer::after {
-    /* Removed four leaf clover */
-    display: inline-block;
-    color: #6b8e23;
+@keyframes lanternSway {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(10deg); }
 }
-
-/* Reference to inherited animation from previous prompt */

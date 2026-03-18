@@ -12,7 +12,6 @@
         <p>
             Those in <a class="internal-link" href="Willowshore">Willowshore</a> who prefer expansion and a push away from tradition align themselves as those of Northridge. One of the most prominent figures is <a class="internal-link" href="Granny Hu Ban-niang">"Granny" Hu</a>. Those who align with <a class="internal-link" href="Southridge">Southridge</a> often oppose this way of thinking.
         </p>
-        
     </div>
     <div class="ws3-footer">❦</div>
 </div>

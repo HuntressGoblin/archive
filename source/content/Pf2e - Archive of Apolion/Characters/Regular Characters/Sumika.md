@@ -19,4 +19,4 @@
 
 
 > [!tinynote]- Connections
-> [[Willowshore]], [[Old Matsuki Shou]], [[Northridge]]
+> [[Willowshore]].

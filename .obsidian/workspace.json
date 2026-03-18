@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
+                "file": "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters/Granny Hu Ban-niang.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Cluster Galaxy"
+              "title": "Granny Hu Ban-niang"
             }
           }
         ]
@@ -186,14 +186,30 @@
   },
   "active": "51b0f23028237bab",
   "lastOpenFiles": [
+    "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters/Kim Gu-won.md",
+    "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters/Hai-er Ha.md",
+    "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters/Luda Bama.md",
+    "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters/Old Matsuki Shou.md",
+    "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters/Sumika.md",
+    "source/content/Pf2e - Archive of Apolion/Tome of Ephemera/Cycle of Ephemera.md",
+    "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters/Granny Hu Ban-niang.md",
+    "source/content/Z - Pictures/Whydohalflingsnotwearshoes.png",
+    "source/content/Z - Pictures/Haierha.png",
+    "source/content/Z - Pictures/IWANTPERFECTIONONTHOSEAPPLES.png",
+    "source/content/Z - Pictures/Kinguwon.png",
+    "source/content/Z - Pictures/Oldmatsuki.png",
+    "source/content/Z - Pictures/Grannyhu.png",
+    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
+    "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters",
+    "source/content/Pf2e - Archive of Apolion/Characters/Powerful Figures",
+    "source/content/Pf2e - Archive of Apolion/Characters/Divine Figures",
+    "source/content/Pf2e - Archive of Apolion/Characters",
     "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
     "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
     "source/content/index.md",
-    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
     "source/content/Base Lore - The Eternal Library/The Supernova.md",
     "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
     "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
-    "source/content/Pf2e - Archive of Apolion/Tome of Ephemera/Cycle of Ephemera.md",
     "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Varnoth.md",
     "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Tarak.md",
     "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Elder Runara.md",
@@ -204,8 +220,6 @@
     "source/content/Z - Pictures/Renshupic1.png",
     "source/content/Z - Pictures/Kakepic1.png",
     "source/content/Z - Pictures/Heipic1.png",
-    "source/content/Z - Pictures/Blistpic1.png",
-    "source/content/Z - Pictures/Aethepic1.png",
     "source/content/DnD - Archive of Artimis/World of Artmis/Locations/Eternity.md",
     "source/content/Pf2e - Archive of Apolion/Tome of Ephemera",
     "source/content/Pf2e - Archive of Apolion",
@@ -213,24 +227,9 @@
     "source/content/DnD - Archive of Artimis/World of Artmis/Locations/The Dessarin Valley.md",
     "source/content/DnD - Archive of Artimis/World of Artmis/Locations/The Sword Coast.md",
     "source/content/DnD - Archive of Artimis/World of Artmis/Locations/Stormwreck Isle.md",
-    "source/content/DnD - Archive of Artimis/World of Artmis/Locations/Candlekeep.md",
-    "source/content/Z - Pictures/EternityFINAL.png",
-    "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Aleitha.md",
-    "source/content/Z - Pictures/Finalepic.png",
-    "source/content/Z - Pictures/Tarakpicture.png",
-    "source/content/Z - Pictures/Varnothpic.png",
-    "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Aidron.md",
     "source/content/DnD - Archive of Artimis/World of Artmis/Locations",
     "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters",
     "source/content/DnD - Archive of Artimis/World of Artmis/Characters",
-    "source/content/DnD - Archive of Artimis/World of Artmis",
-    "source/content/DnD - Archive of Artimis/Tome of Tyranny",
-    "source/content/DnD - Archive of Artimis",
-    "source/content/Base Lore - The Eternal Library/Stop! Start here!.md",
-    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library 2.md",
-    "source/content/Base Lore - The Eternal Library/index.md",
-    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy IMPROVE.md",
-    "source/content/category-folder",
-    "source/quartz/styles/UniquetextARC.scss"
+    "source/content/DnD - Archive of Artimis/World of Artmis"
   ]
 }

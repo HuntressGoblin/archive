@@ -1088,3 +1088,123 @@ details[open] .SOGdropdown1-header::after { transform: rotate(180deg); }
 summary.SOGdropdown1-header::-webkit-details-marker { display: none; }
 summary { list-style: none; }
 
+/* Container for willowshorefigures1and2 */
+.willowshorefigures1 {
+    background-color: #fdfaf0;
+    border: 3px double #5d4037;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 450px;
+    margin: 20px auto;
+    color: #2c3e50;
+    font-family: 'Constantia', 'Georgia', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Red Lantern with Sway Animation */
+.willowshorefigures1::before {
+    content: "🏮";
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 2.5rem;
+    opacity: 0.9;
+    display: inline-block;
+    /* Sets the pivot point to the top center of the emoji */
+    transform-origin: top center; 
+    /* Animation: name | duration | timing-function | iteration-count | direction */
+    animation: lanternSway 3s ease-in-out infinite alternate;
+}
+
+/* The Swaying Motion */
+@keyframes lanternSway {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+/* Title Styling */
+.willowshorefigures1 h1 {
+    color: #3e2723;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Subtitle Styling */
+.willowshorefigures1 .ws-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #6b8e23;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Profile Image Styling */
+.willowshorefigures1 img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #8b4513;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Wider Container for the Content/Description */
+.willowshorefigure2 {
+    background-color: #f9f5e8;
+    background-image: linear-gradient(to bottom, #f9f5e8, #fdfaf0);
+    border: 3px double #5d4037;
+    padding: 30px 40px; /* Increased padding for the wider layout */
+    border-radius: 12px;
+    max-width: 650px; /* Increased from 450px */
+    margin: 20px auto;
+    color: #2c3e50;
+    font-family: 'Constantia', 'Georgia', serif;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+    line-height: 1.6;
+}
+
+/* Section Labels */
+.willowshorefigure2 strong {
+    color: #8b4513;
+    display: block;
+    font-variant: small-caps;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid #d2b48c;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-size: 1.15rem;
+}
+
+/* Remove top margin for the very first label */
+.willowshorefigure2 strong:first-of-type {
+    margin-top: 0;
+}
+
+/* Paragraph text */
+.willowshorefigure2 p {
+    margin: 0 0 15px 0;
+    font-size: 1rem;
+    text-align: justify; /* Looks great in wider boxes */
+}
+
+/* Decorative flourish at the bottom */
+.willowshorefigure2::after {
+    content: "❦";
+    display: block;
+    text-align: center;
+    color: #d2b48c;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    opacity: 0.7;
+}

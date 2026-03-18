@@ -10,13 +10,10 @@
 <div class="willowshorefigure2">
     <strong>Summary</strong>
     <p>Elizeth Candora is a cleric to <a class="internal-link" href="Willowshore">Pharasma</a>. She resides within <a class="internal-link" href="Willowshore">Willowshore</a> and stays around the dead at the Lady of Souls.</p>
-    
     <strong>Personality</strong>
     <p>Elizeth prefers solitude over the company of most people. However, she has a quiet yet strong attitude to her.</p>
-    
     <strong>Secrets</strong>
     <p>- ???</p>
-    
     <strong>Backstory</strong>
     <p>WIP</p>
 </div>

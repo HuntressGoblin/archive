@@ -11,8 +11,6 @@
         <p>
             Within the community of <a class="internal-link" href="Willowshore">Willowshore</a> lies eight practices that many follow during the first few weeks of summer. These beliefs are primarily local superstitions, and their capacity to actually help in an encounter with any sort of malicious spirit is hotly debated.
         </p>
-        
-        
         </p>
     </div>
     <div class="ws3-footer">❦</div>

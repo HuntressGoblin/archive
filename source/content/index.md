@@ -57,7 +57,7 @@ title: Welcome to the Eternal Library
 
 > [!paperpagenotes] Updates
 > **LAST UPDATE:** 3/18/2026
-> - My Ephemera group is eating good tonight! Full Ephemera stuff brought over that is relevant. ;) 
+> - My Ephemera group is eating good tonight! Full Ephemera stuff brought over that is relevant. Well, most of it, I guess.
 > 
 
 > [!paperpagenotesleft] Inprogress and Bugs

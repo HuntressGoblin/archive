@@ -15,6 +15,5 @@
     </div>
     <div class="ws3-footer">❦</div>
 </div>
-
 > [!tinynote]- Connections
 > [[Willowshore]], [[Granny Hu Ban-niang]], [[Southridge]].

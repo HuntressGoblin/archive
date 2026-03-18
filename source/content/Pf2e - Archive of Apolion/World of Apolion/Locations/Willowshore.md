@@ -17,10 +17,9 @@
         <p>
             225 (73% humans, 6% half-elves, 4% halflings, 4% kitsune, 3% elves, 3% tengu, 2% nagaji, 5% others).
         </p>
-        
         <h3>Special Features</h3>
         <p>
-            <strong>Teeth-Clenching Teamwork:</strong> Willowshore’s residents help one another despite their differences. You can attempt to Request help from another Willowshore resident even if they’re indifferent or unfriendly, but you do so with a –2 circumstance penalty. This applies to those who reside in Willowshore only.
+            Teeth-Clenching Teamwork: Willowshore’s residents help one another despite their differences. You can attempt to Request help from another Willowshore resident even if they’re indifferent or unfriendly, but you do so with a –2 circumstance penalty. This applies to those who reside in Willowshore only.
         </p>
     </div>
     <div class="ws3-footer">❦</div>

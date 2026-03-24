@@ -13,3 +13,5 @@
 
 <i class="fa-jelly-duo fa-alarm-clock fa-beat"></i>
 
+<i class="fa-sharp-duotone fa-solid fa-hippo"></i>
+

@@ -15,7 +15,8 @@
     "SimpleARC",
     "TextsARC",
     "Customfonts",
-    "all"
+    "all",
+    "fontawesome"
   ],
   "theme": "system"
 }

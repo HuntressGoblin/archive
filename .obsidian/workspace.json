@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "source/content/Base Lore - The Eternal Library/Angry Void of Testing.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -181,12 +181,13 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "iconic:Open rulebook": false
+      "bases:Create new base": false
     }
   },
   "active": "51b0f23028237bab",
   "lastOpenFiles": [
+    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
+    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
     "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
     "source/content/Base Lore - The Eternal Library/Angry Void of Testing.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/History/Phenomena & Events/The Eight Practices.md",
@@ -211,8 +212,6 @@
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Kim Gu-won.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Kazuma Oono.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Kawaka.md",
-    "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Jubei.md",
-    "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Huo Tian-Zhe.md",
     "source/content/Z - Pictures/Yournameissolong.png",
     "source/content/Z - Pictures/WELLHELLOYOUDIIIVA.png",
     "source/content/Z - Pictures/Thiskidlookspissed.png",

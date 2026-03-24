@@ -1,14 +1,220 @@
-/* Register the Brands font */
+/* ===============================
+   Font Awesome 7 – Obsidian Snippet
+   Place this in .obsidian/snippets/fontawesome.css
+   =============================== */
+
+/* --- Brands --- */
 @font-face {
   font-family: "Font Awesome 7 Brands";
-  src: url("../fonts/Font Awesome 7 Brands-Regular-400.woff2") format("woff2");
+  src: url("../fonts/Font Awesome 7 Brands-Regular-400.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
-
-/* Base class for all brand icons */
 .fa-brands {
   font-family: "Font Awesome 7 Brands";
   font-weight: 400;
   display: inline-block;
 }
+
+/* --- Chisel --- */
+@font-face {
+  font-family: "Font Awesome 7 Chisel";
+  src: url("../fonts/Font Awesome 7 Chisel-Regular-400.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+.fa-chisel { font-family: "Font Awesome 7 Chisel"; font-weight: 400; }
+
+/* --- Duotone --- */
+@font-face {
+  font-family: "Font Awesome 7 Duotone Light";
+  src: url("../fonts/Font Awesome 7 Duotone-Light-300.otf") format("opentype");
+  font-weight: 300;
+}
+.fa-duotone-light { font-family: "Font Awesome 7 Duotone Light"; font-weight: 300; }
+
+@font-face {
+  font-family: "Font Awesome 7 Duotone Regular";
+  src: url("../fonts/Font Awesome 7 Duotone-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-duotone-regular { font-family: "Font Awesome 7 Duotone Regular"; font-weight: 400; }
+
+@font-face {
+  font-family: "Font Awesome 7 Duotone Solid";
+  src: url("../fonts/Font Awesome 7 Duotone-Solid-900.otf") format("opentype");
+  font-weight: 900;
+}
+.fa-duotone-solid { font-family: "Font Awesome 7 Duotone Solid"; font-weight: 900; }
+
+@font-face {
+  font-family: "Font Awesome 7 Duotone Thin";
+  src: url("../fonts/Font Awesome 7 Duotone-Thin-100.otf") format("opentype");
+  font-weight: 100;
+}
+.fa-duotone-thin { font-family: "Font Awesome 7 Duotone Thin"; font-weight: 100; }
+
+/* --- Etch --- */
+@font-face {
+  font-family: "Font Awesome 7 Etch Solid";
+  src: url("../fonts/Font Awesome 7 Etch-Solid-900.otf") format("opentype");
+  font-weight: 900;
+}
+.fa-etch-solid { font-family: "Font Awesome 7 Etch Solid"; font-weight: 900; }
+
+/* --- Graphite --- */
+@font-face {
+  font-family: "Font Awesome 7 Graphite Thin";
+  src: url("../fonts/Font Awesome 7 Graphite-Thin-100.otf") format("opentype");
+  font-weight: 100;
+}
+.fa-graphite-thin { font-family: "Font Awesome 7 Graphite Thin"; font-weight: 100; }
+
+/* --- Jelly Duo --- */
+@font-face {
+  font-family: "Font Awesome 7 Jelly Duo";
+  src: url("../fonts/Font Awesome 7 Jelly Duo-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-jelly-duo { font-family: "Font Awesome 7 Jelly Duo"; font-weight: 400; }
+
+/* --- Jelly Fill --- */
+@font-face {
+  font-family: "Font Awesome 7 Jelly Fill";
+  src: url("../fonts/Font Awesome 7 Jelly Fill-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-jelly-fill { font-family: "Font Awesome 7 Jelly Fill"; font-weight: 400; }
+
+/* --- Jelly Regular --- */
+@font-face {
+  font-family: "Font Awesome 7 Jelly Regular";
+  src: url("../fonts/Font Awesome 7 Jelly-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-jelly-regular { font-family: "Font Awesome 7 Jelly Regular"; font-weight: 400; }
+
+/* --- Notdog Duo Solid --- */
+@font-face {
+  font-family: "Font Awesome 7 Notdog Duo Solid";
+  src: url("../fonts/Font Awesome 7 Notdog Duo-Solid-900.otf") format("opentype");
+  font-weight: 900;
+}
+.fa-notdog-duo-solid { font-family: "Font Awesome 7 Notdog Duo Solid"; font-weight: 900; }
+
+/* --- Pro Light / Regular / Solid / Thin --- */
+@font-face {
+  font-family: "Font Awesome 7 Pro Light";
+  src: url("../fonts/Font Awesome 7 Pro-Light-300.otf") format("opentype");
+  font-weight: 300;
+}
+.fa-pro-light { font-family: "Font Awesome 7 Pro Light"; font-weight: 300; }
+
+@font-face {
+  font-family: "Font Awesome 7 Pro Regular";
+  src: url("../fonts/Font Awesome 7 Pro-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-pro-regular { font-family: "Font Awesome 7 Pro Regular"; font-weight: 400; }
+
+@font-face {
+  font-family: "Font Awesome 7 Pro Solid";
+  src: url("../fonts/Font Awesome 7 Pro-Solid-900.otf") format("opentype");
+  font-weight: 900;
+}
+.fa-pro-solid { font-family: "Font Awesome 7 Pro Solid"; font-weight: 900; }
+
+@font-face {
+  font-family: "Font Awesome 7 Pro Thin";
+  src: url("../fonts/Font Awesome 7 Pro-Thin-100.otf") format("opentype");
+  font-weight: 100;
+}
+.fa-pro-thin { font-family: "Font Awesome 7 Pro Thin"; font-weight: 100; }
+
+/* --- Sharp Duotone Light / Regular / Solid / Thin --- */
+@font-face {
+  font-family: "Font Awesome 7 Sharp Duotone Light";
+  src: url("../fonts/Font Awesome 7 Sharp Duotone-Light-300.otf") format("opentype");
+  font-weight: 300;
+}
+.fa-sharp-duotone-light { font-family: "Font Awesome 7 Sharp Duotone Light"; font-weight: 300; }
+
+@font-face {
+  font-family: "Font Awesome 7 Sharp Duotone Regular";
+  src: url("../fonts/Font Awesome 7 Sharp Duotone-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-sharp-duotone-regular { font-family: "Font Awesome 7 Sharp Duotone Regular"; font-weight: 400; }
+
+@font-face {
+  font-family: "Font Awesome 7 Sharp Duotone Solid";
+  src: url("../fonts/Font Awesome 7 Sharp Duotone-Solid-900.otf") format("opentype");
+  font-weight: 900;
+}
+.fa-sharp-duotone-solid { font-family: "Font Awesome 7 Sharp Duotone Solid"; font-weight: 900; }
+
+@font-face {
+  font-family: "Font Awesome 7 Sharp Light";
+  src: url("../fonts/Font Awesome 7 Sharp-Light-300.otf") format("opentype");
+  font-weight: 300;
+}
+.fa-sharp-light { font-family: "Font Awesome 7 Sharp Light"; font-weight: 300; }
+
+@font-face {
+  font-family: "Font Awesome 7 Sharp Regular";
+  src: url("../fonts/Font Awesome 7 Sharp-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-sharp-regular { font-family: "Font Awesome 7 Sharp Regular"; font-weight: 400; }
+
+@font-face {
+  font-family: "Font Awesome 7 Sharp Solid";
+  src: url("../fonts/Font Awesome 7 Sharp-Solid-900.otf") format("opentype");
+  font-weight: 900;
+}
+.fa-sharp-solid { font-family: "Font Awesome 7 Sharp Solid"; font-weight: 900; }
+
+/* --- Slab Press / Slab --- */
+@font-face {
+  font-family: "Font Awesome 7 Slab Press";
+  src: url("../fonts/Font Awesome 7 Slab Press-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-slab-press { font-family: "Font Awesome 7 Slab Press"; font-weight: 400; }
+
+@font-face {
+  font-family: "Font Awesome 7 Slab";
+  src: url("../fonts/Font Awesome 7 Slab-Regular-400.otf") format("opentype");
+  font-weight: 400;
+}
+.fa-slab { font-family: "Font Awesome 7 Slab"; font-weight: 400; }
+
+/* --- Utility Duo / Utility Fill / Utility Semibold --- */
+@font-face {
+  font-family: "Font Awesome 7 Utility Duo Semibold";
+  src: url("../fonts/Font Awesome 7 Utility Duo-Semibold-600.otf") format("opentype");
+  font-weight: 600;
+}
+.fa-utility-duo-semibold { font-family: "Font Awesome 7 Utility Duo Semibold"; font-weight: 600; }
+
+@font-face {
+  font-family: "Font Awesome 7 Utility Fill Semibold";
+  src: url("../fonts/Font Awesome 7 Utility Fill-Semibold-600.otf") format("opentype");
+  font-weight: 600;
+}
+.fa-utility-fill-semibold { font-family: "Font Awesome 7 Utility Fill Semibold"; font-weight: 600; }
+
+@font-face {
+  font-family: "Font Awesome 7 Utility Semibold";
+  src: url("../fonts/Font Awesome 7 Utility-Semibold-600.otf") format("opentype");
+  font-weight: 600;
+}
+.fa-utility-semibold { font-family: "Font Awesome 7 Utility Semibold"; font-weight: 600; }
+
+/* --- Whiteboard Semibold --- */
+@font-face {
+  font-family: "Font Awesome 7 Whiteboard Semibold";
+  src: url("../fonts/Font Awesome 7 Whiteboard-Semibold-600.otf") format("opentype");
+  font-weight: 600;
+}
+.fa-whiteboard-semibold { font-family: "Font Awesome 7 Whiteboard Semibold"; font-weight: 600; }

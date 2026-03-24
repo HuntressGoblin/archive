@@ -13,7 +13,9 @@
     "LibraryARC",
     "SettingARC",
     "SimpleARC",
-    "TextsARC"
+    "TextsARC",
+    "Customfonts",
+    "all"
   ],
   "theme": "system"
 }

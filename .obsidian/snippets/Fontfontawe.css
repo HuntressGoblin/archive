@@ -1,6 +1,0 @@
-.nav-file-title::before {
-    font-family: 'Font Awesome 7 Brands-Regular-400'; /* Use 'Font Awesome 6 Brands' for brand icons */
-    font-weight: 900; /* 900 for solid, 400 for regular */
-    content: '\f016'; /* Unicode for the icon */
-    margin-right: 5px;
-}

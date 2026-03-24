@@ -1,0 +1,14 @@
+/* Register the Brands font */
+@font-face {
+  font-family: "Font Awesome 7 Brands";
+  src: url("../fonts/Font Awesome 7 Brands-Regular-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Base class for all brand icons */
+.fa-brands {
+  font-family: "Font Awesome 7 Brands";
+  font-weight: 400;
+  display: inline-block;
+}

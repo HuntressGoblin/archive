@@ -15,3 +15,9 @@
 
 <i class="fa-sharp-duotone fa-solid fa-hippo"></i>
 
+<i class="fa-sharp-duotone fa-regular fa-hippo"></i>
+
+<i class="fa-sharp-duotone fa-light fa-hippo"></i>
+
+<i class="fa-sharp-duotone fa-thin fa-hippo"></i>
+

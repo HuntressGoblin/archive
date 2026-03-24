@@ -10,4 +10,5 @@
 
 <i class="fa-duotone fa-aeropress"></i>
 
+<i class="fa-notdog-duo fa-solid fa-alarm-clock"></i>
 

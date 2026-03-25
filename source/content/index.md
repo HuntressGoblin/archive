@@ -58,11 +58,13 @@ title: Welcome to the Eternal Library
 > [!paperpagenotes] Updates
 > **LAST UPDATE:** 3/25/2026
 > - A few tests are being ran! Working on Hellfire stuff, however. 
+> - Uploaded [[Captain Zodge]]!
 > 
 
 > [!paperpagenotesleft] Inprogress and Bugs
 > IN-PROGRESS/BUGS
 > - Yes, I know the picture in [[The Eight Practices]] is off-centered. I'll fix it eventually. ...eventually. 😴
+> - To see the icons I placed, you have to refresh your cache using your browser's shortcuts. Sorry, don't think there is any fix around this. 
 
 ---
 <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">

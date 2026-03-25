@@ -56,8 +56,8 @@ title: Welcome to the Eternal Library
 > https://diopedia.net
 
 > [!paperpagenotes] Updates
-> **LAST UPDATE:** 3/18/2026
-> - My Ephemera group is eating good tonight! Full Ephemera stuff brought over that is relevant. Well, most of it, I guess.
+> **LAST UPDATE:** 3/25/2026
+> - A few tests are being ran! Working on Hellfire stuff, however. 
 > 
 
 > [!paperpagenotesleft] Inprogress and Bugs

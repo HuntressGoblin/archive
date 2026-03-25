@@ -320,10 +320,8 @@
 
 /* ==========================
    Baldur's Gate Theme - Gatekeeper Variant
-   Full Gold Inlay - Compatibility Fix Included
+   FIXED: Removed @import to prevent Quartz build errors.
    ========================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* --- General styling for bgtheme1 sections --- */
 .callout-section[data-theme="bgtheme1"],
@@ -332,7 +330,8 @@
     border-radius: 4px;
     padding: 16px;
     margin-bottom: 12px;
-    font-family: "EB Garamond", serif;
+    /* Fallback fonts if Google Fonts aren't loaded in your Quartz Head */
+    font-family: "Cinzel", "EB Garamond", serif;
     color: #e0d1b8; 
     background: radial-gradient(circle at center, #2c2f35 0%, #1a1c20 100%); 
     box-shadow: 
@@ -356,7 +355,6 @@
     text-transform: uppercase;
     background: linear-gradient(180deg, #f9f295 0%, #e0aa3e 45%, #b8860b 70%, #5d4a1f 100%);
     
-    /* Compatibility Fixes for warnings */
     -webkit-background-clip: text;
     background-clip: text; 
     -webkit-text-fill-color: transparent;
@@ -374,7 +372,6 @@
     padding-bottom: 6px;
     margin: 0 auto 15px auto;
     display: block;
-    /* Ensure height is enough for the title drop-shadow */
     min-height: 1.6em; 
 }
 

@@ -25,7 +25,7 @@
 </div>
 
 > [!tinynote]- Connections
-> [[Baldur's Gate]], [[Flaming Fists]]
+> [[Baldur's Gate]], [[Flaming Fists]], [[Duke Ravengard]], [[Liara Portyr]], [[Glimpse into Hellfire|Hellfire Party]].
 
 
 

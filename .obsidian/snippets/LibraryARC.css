@@ -718,3 +718,155 @@
 .callout-section[data-theme="notenpc1"] div + div {
   margin-top: 5px;
 }
+
+
+
+
+
+/* === Full Bookshelf Container === */
+.bookshelf {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: transparent;
+}
+
+/* === The Heavy Cabinet Frame === */
+.shelf {
+  position: relative;
+  display: flex;
+  align-items: flex-end; 
+  gap: 0; 
+  height: 295px; 
+  padding: 0; 
+  width: fit-content; 
+  min-width: 300px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  /* UPDATED: Back Panel now matches the wood color instead of being black */
+  background: 
+    /* 1. Deep shadow under the ceiling */
+    linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 25%), 
+    /* 2. Corner shadows */
+    linear-gradient(90deg, rgba(0,0,0,0.3) 0%, transparent 5%, transparent 95%, rgba(0,0,0,0.3) 100%),
+    /* 3. Wood Grain fibers for the backboard */
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 25px),
+    /* 4. The Walnut Backboard Color */
+    #2d1e15; 
+  
+  border: 24px solid #2d1e15; 
+  border-bottom: 0; 
+  border-radius: 12px 12px 0 0;
+  
+  box-shadow: 
+    0 30px 60px rgba(0,0,0,0.6), 
+    inset 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* === The Heavy Shelf Floor === */
+.shelf::after {
+  content: "";
+  position: absolute;
+  top: 100%; 
+  left: -24px;
+  right: -24px;
+  height: 28px; 
+  background: 
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 2px, transparent 20px),
+    linear-gradient(180deg, #3a281b 0%, #2d1e15 10%, #1a120c 90%, #050302 100%);
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5), inset 0 2px 0 rgba(255,255,255,0.08);
+}
+
+/* Ceiling shadow overlay */
+.shelf::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 50px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* === Books === */
+.book {
+  position: relative;
+  flex: 0 0 auto;
+  width: 50px; 
+  height: 210px; 
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), z-index 0.2s;
+  z-index: 2;
+  transform-origin: bottom;
+  margin: 0 0.5px; 
+}
+
+.book.tall { height: 260px; width: 55px; } 
+.book.short { height: 170px; width: 45px; }
+.book.wide { width: 80px; }
+
+.book .spine {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px 2px 1px 1px;
+  background: var(--book-color, #555);
+  box-shadow:
+    inset -4px 0 rgba(0,0,0,0.3),       
+    inset 4px 0 rgba(255,255,255,0.1),  
+    -2px 0 5px rgba(0,0,0,0.4);         
+}
+
+.book:hover {
+  transform: translateY(-15px) scale(1.03);
+  z-index: 20;
+}
+
+/* === Blurb Card === */
+.book .blurb {
+  position: absolute;
+  bottom: 50%; 
+  left: 115%; 
+  transform: translateY(50%);
+  width: 200px;
+  padding: 16px;
+  background: 
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 15px),
+    linear-gradient(180deg, #2d1e15, #1a120c);
+  color: #e2c08d; 
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  border: 1px solid #3d2b1f;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  z-index: 100;
+}
+
+.book:hover .blurb {
+  opacity: 1;
+  transform: translateY(50%) translateX(10px);
+}
+
+/* === Spine Text === */
+.spine-text {
+  writing-mode: vertical-rl; 
+  transform: translateX(-50%) rotate(180deg); 
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  pointer-events: none;
+
+  /* Darken the book color */
+  color: rgba(0,0,0,0.85); /* fallback if needed */
+  mix-blend-mode: multiply; /* blends with book color */
+}

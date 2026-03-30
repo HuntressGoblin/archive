@@ -19,15 +19,11 @@
     <div><a class="internal-link" href="Dobi">Dobi</a> ...heh, cute. Tough too.</div>
     <div><a class="internal-link" href="Dalia">Dalia:</a> A fellow traveler, you got to be tough to survive. ...but she has a bit of friendliness left in her.</div>
     <div><a class="internal-link" href="Lysander">Lysander:</a> The silent, broody types are always fun to pester. ...he does make a mean healing potion though, doesn't taste like someone shoved soap down your mouth.</div>
-    <div><a class="internal-link" href="Sunrisen">Sunrisen:</a> ...yeah, they're chill. Good weapons.</div>
 </div>
-<!-- INFO 1 BOX -->
 <div class="callout-section info-box" data-theme="notenpc1">
     <div><strong><i class="fa-regular fa-book-open-reader"></i> Summary</strong></div>
     <div>Thralla is an orc who wanders <a class="internal-link" href="Eternity">Eternity</a> trying to "find herself" and such. She is aloof and cold, but is willing to extend information and help where she can… if she is in the mood for it. She is 43 years old. 
 </div>
 
-<br>
-
 > [!tinynote]- Connections
-> [[Eternity]], [[To be a Trailblazer|Trailblazer Party]], [[Dobi]], [[Dalia]], [[Lysander]], [[Sunrisen]]. 
+> [[Eternity]], [[To be a Trailblazer|Trailblazer Party]], [[Dobi]], [[Dalia]], [[Lysander]].

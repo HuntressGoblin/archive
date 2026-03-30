@@ -38,9 +38,6 @@ Esteemed person-of-interest, I write to you with this enchanted letter to bring 
       <div class="character-class">Artificer</div>
     </div>
   </div>
-  
-
-  <!-- Add more players below in the same format -->
 
 <div class="trailblazertheme2 player-grid">
   <div class="player-card">

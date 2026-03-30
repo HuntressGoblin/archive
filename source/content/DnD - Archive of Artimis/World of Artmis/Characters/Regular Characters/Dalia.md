@@ -19,6 +19,8 @@
     <div><strong><i class="fa-regular fa-book-open-reader"></i> Summary</strong></div>
     <div>Dalia is 28 years old. She rides throughout Eternity and sells her wares. Her horse is named "Big Dummy."
 </div>
+</div>
+
 
 > [!tinynote]- Connections
 > [[Eternity]], [[Little Lake]], [[Lysander]].

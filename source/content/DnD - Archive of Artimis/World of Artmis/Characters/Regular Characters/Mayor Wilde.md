@@ -19,6 +19,8 @@
     <div><strong><i class="fa-regular fa-book-open-reader"></i> Summary</strong></div>
     <div>Mayor Wilde is a large, stout, middle-aged centaur man. He is muscular and broad. He has scars on his face and is beard is a little wild and scruffy in a country-esk way. His centaur body is more Clydesdale than any other horse. Mayor Wilde is the gruff leader of Horseshoe Ranch. He appreciates when the party helps around Horseshoe ranch and shows acts of integrity, honor, and virtue. He dislikes if the party shows malice, wastefulness, or greed. He seems gruff sometimes, but he's generally good-spirited and reasonable. Just don't step on his hooves <i>metaphorically</i>.
 </div>
+</div>
+
 
 > [!tinynote]- Connections
 > [[Eternity]], [[Horseshoe Ranch]], [[To be a Trailblazer|Trailblazer Party]], [[Belle]].

@@ -19,6 +19,7 @@
     <div><strong><i class="fa-regular fa-book-open-reader"></i> Summary</strong></div>
     <div>Lysander is a silent man who offers his medical expertise in exchange for gold. He is 28 years old. He doesn't say much, but he knows his medicine. He also loves ravens, letting them live by his store.
 </div>
+</div>
 
 > [!tinynote]- Connections
 > [[Eternity]], [[Little Lake]], [[Dalia]].

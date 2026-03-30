@@ -21,9 +21,6 @@ title: Welcome to the Eternal Library
 > [!paperpagenotesleft] Spoiler Warning
 > **Spoilers** are plentiful here on this wiki! If you're playing in one of my campaigns, I ask that you proceed with caution! While I do try to make the wiki hide important information to make it as spoiler-esh free, there will ALWAYS be some degree of spoilers no matter what. I repeat: ***SPOILERS AHEAD!!!!!*** 
 
-> [!paperpagenotes] Quick Thought
-> Formatting is still a major WIP. You may see some sections that have more links than others. Putting in links for EVERY possible thing that can be is very time-consuming and redundant, so not every page will be as thorough as the others! There may even be pages that look drastically different than others purely because I don't have the sanity to redo everything at the slightest change in format. If you see anything that seems off, let me know! 
-
 <br>
 
 
@@ -56,12 +53,19 @@ title: Welcome to the Eternal Library
 > https://diopedia.net
 
 > [!paperpagenotes] Updates
-> **LAST UPDATE:** 3/25/2026
-> - A few tests are being ran! Working on Hellfire stuff, however. 
-> - Uploaded [[Captain Zodge]]!
+> <b>GENERAL:</b> Yep, I decided to sort out my updates by campaign or type. General is not fully related to any campaign. The others are any content that is linked to it.
+> <b>DIVINITY:</b> N/A
+> <b>ELEMENTs:</b> N/A
+> <b>HELLFIRE:</b> N/A
+> <b>ENTROPY:</b> N/A
+> <b>EPHEMERA:</b> 3/30/2026 - Fixed one of the connections not working.
+> <b>TYRANNY:</b> N/A
+> <b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS!
+> <b>CRYSTALLINE REBIRTH:</b> N/A
+> <b>ONESHOTS:</b> N/A
 > 
 
-> [!paperpagenotesleft] Inprogress and Bugs
+> [!paperpagenotesleft] In-progress and Bugs
 > IN-PROGRESS/BUGS
 > - Yes, I know the picture in [[The Eight Practices]] is off-centered. I'll fix it eventually. ...eventually. 😴
 > - To see the icons I placed, you have to refresh your cache using your browser's shortcuts. Sorry, don't think there is any fix around this. 

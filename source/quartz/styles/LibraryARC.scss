@@ -582,11 +582,12 @@
     border: none !important;
 }
 
-/*npcnote1*/
+/*notenpc1 - tanned parchment for all sections with medium images*/
 
 .callout-section[data-theme="notenpc1"] {
   position: relative;
-  background: linear-gradient(145deg, #fdf0d6 0%, #f7e6c4 60%, #f1ddb5 100%);
+  /* warmer, tanned parchment gradient */
+  background: linear-gradient(145deg, #f5e1c0 0%, #ecd2a8 60%, #e3c997 100%);
   border-radius: 16px;
   padding: 24px 20px 18px 20px; 
   margin: 16px 0;
@@ -625,15 +626,17 @@
   box-shadow: inset 0 0 18px rgba(90, 60, 30, 0.18);
 }
 
-/* Subtle worn edges */
+/* Subtle worn edges + light tan overlay */
 .callout-section[data-theme="notenpc1"]::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 16px;
   pointer-events: none;
-  background: radial-gradient(circle at 10% 10%, rgba(0,0,0,0.05), transparent 40%),
-              radial-gradient(circle at 90% 90%, rgba(0,0,0,0.06), transparent 45%);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(0,0,0,0.05), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(0,0,0,0.06), transparent 45%),
+    linear-gradient(145deg, rgba(235,195,140,0.05), rgba(230,180,110,0.05));
 }
 
 /* Name badge — more tactile */
@@ -674,11 +677,11 @@
   opacity: 0.85;
 }
 
-/* Image — more like pasted photo */
+/* Image — medium size, more like pasted photo */
 .callout-section[data-theme="notenpc1"] img {
   display: block;
-  width: 55%;
-  max-width: 220px;
+  width: 42%;
+  max-width: 190px;
   margin: 14px auto 4px auto;
 
   border-radius: 8px;
@@ -693,8 +696,8 @@
 }
 
 /* Info boxes — slightly offset like stacked notes */
-.callout-section.info-box[data-theme="notenpc1"] {
-  background: linear-gradient(145deg, #fdf0d6, #f3e1bb);
+.callout-section[data-theme="notenpc1"].info-box {
+  background: linear-gradient(145deg, #f5e1c0, #ecd2a8);
   border-radius: 12px;
   padding: 10px 14px;
   margin-top: 12px;

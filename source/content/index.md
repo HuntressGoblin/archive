@@ -16,7 +16,6 @@ title: Welcome to the Eternal Library
 
 <div class="bookshelf">
   <div class="shelf">
-    
     <div class="book tall burgundy">
       <div class="spine">
         <span class="spine-text">Credits</span>
@@ -33,7 +32,7 @@ title: Welcome to the Eternal Library
       <div class="spine">
         <span class="spine-text">Other Creators</span>
       </div>
-      <div class="blurb">In this note are honorable mentioned of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out! <br><b>Stensin's Website:</b> https://wiki.enutheta.com <br><b>Dio's Website:</b> https://diopedia.net
+      <div class="blurb">Honorable mentions of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out! <br><b>Stensin's Website:</b> https://wiki.enutheta.com <br><b>Dio's Website:</b> https://diopedia.net
 </div>
     </div>
     <div class="book tall plum">

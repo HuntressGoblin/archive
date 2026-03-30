@@ -24,6 +24,8 @@
     <div><strong><i class="fa-regular fa-book-open-reader"></i> Summary</strong></div>
     <div>Thralla is an orc who wanders <a class="internal-link" href="Eternity">Eternity</a> trying to "find herself" and such. She is aloof and cold, but is willing to extend information and help where she can… if she is in the mood for it. She is 43 years old. 
 </div>
+</div>
 
+<br>
 > [!tinynote]- Connections
 > [[Eternity]], [[To be a Trailblazer|Trailblazer Party]], [[Dobi]], [[Dalia]], [[Lysander]].

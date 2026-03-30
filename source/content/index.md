@@ -54,15 +54,15 @@ title: Welcome to the Eternal Library
 
 > [!paperpagenotes] Updates
 > <b>GENERAL:</b> Yep, I decided to sort out my updates by campaign or type. General is not fully related to any campaign. The others are any content that is linked to it.
-> <b>DIVINITY:</b> N/A
-> <b>ELEMENTs:</b> N/A
-> <b>HELLFIRE:</b> N/A
-> <b>ENTROPY:</b> N/A
-> <b>EPHEMERA:</b> 3/30/2026 - Fixed one of the connections not working.
-> <b>TYRANNY:</b> N/A
-> <b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS!
-> <b>CRYSTALLINE REBIRTH:</b> N/A
-> <b>ONESHOTS:</b> N/A
+> <br><b>DIVINITY:</b> N/A
+> <br><b>ELEMENTs:</b> N/A
+> <br><b>HELLFIRE:</b> N/A
+> <br><b>ENTROPY:</b> N/A
+> <br><b>EPHEMERA:</b> 3/30/2026 - Fixed one of the connections not working.
+> <br><b>TYRANNY:</b> N/A
+> <br><b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS!
+> <br><b>CRYSTALLINE REBIRTH:</b> N/A
+> <br><b>ONESHOTS:</b> N/A
 > 
 
 > [!paperpagenotesleft] In-progress and Bugs

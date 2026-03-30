@@ -26,8 +26,5 @@
 </div>
 </div>
 
-<br>
-<br>
-
 > [!tinynote]- Connections
 > [[Eternity]], [[To be a Trailblazer|Trailblazer Party]], [[Dobi]], [[Dalia]], [[Lysander]].

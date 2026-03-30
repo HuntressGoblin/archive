@@ -1,11 +1,6 @@
 <div class="callout-section" data-theme="notenpc1" style="text-align:center;">
-    <!-- NAME -->
     <div class="callout-title"><i class="fa-solid fa-sun"></i>Dalia<i class="fa-solid fa-coins"></i></div>
-    
-    <!-- TITLE / Subtitle -->
     <div style="font-style:italic; margin-bottom:6px;">The Quickest Wandering Merchant</div>
-    
-    <!-- PICTURE -->
     <img src="Theycallherawanderer.png" alt="Daliapic">
 </div>
 <div class="callout-section info-box" data-theme="notenpc1">

@@ -69,6 +69,7 @@ title: Welcome to the Eternal Library
 > IN-PROGRESS/BUGS
 > - Yes, I know the picture in [[The Eight Practices]] is off-centered. I'll fix it eventually. ...eventually. 😴
 > - To see the icons I placed, you have to refresh your cache using your browser's shortcuts. Sorry, don't think there is any fix around this. 
+> - Going to be working on each campaign page as well as clickable links that send you from the library (where all of the modules are displayed) to the actual page itself. Some pages may appear buggy for a while, and I am aware. None of the pages are finalized just yet, as I do need to tweak some. 
 
 ---
 <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">

@@ -1,10 +1,8 @@
 <div class="callout-section" data-theme="notenpc1" style="text-align:center;">
     <!-- NAME -->
     <div class="callout-title"><i class="fa-solid fa-hat-cowboy"></i>Belle<i class="fa-solid fa-hat-cowboy"></i></div>
-    
     <!-- TITLE / Subtitle -->
     <div style="font-style:italic; margin-bottom:6px;"></div>
-    
     <!-- PICTURE -->
     <img src="Mayorskid.png" alt="Bellepic">
 </div>

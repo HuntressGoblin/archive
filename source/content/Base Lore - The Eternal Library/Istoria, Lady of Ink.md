@@ -58,6 +58,7 @@
       <div class="blurb">Istoria is a neutral storytelling force. If she intervenes, it's for the beauty of a story instead of personal feelings. Death and destruction make for a bleak ending, but difficulty can be an excellent way to encourage triumphs and a well-earned victory. Don't challenge her, but she ultimately does cheer for the heroes in her story.
       </div> 
 </div>
+</div>
 
 <br>
 

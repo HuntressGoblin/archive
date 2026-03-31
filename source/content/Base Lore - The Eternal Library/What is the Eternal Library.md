@@ -44,6 +44,7 @@
       <div class="blurb">Every story is safely stored in the Eternal Library, watched over by a large figure cloaked in purple. Some refer to this figure as the "Domain Master," but others may refer to them as "<a class="internal-link" href="Istoria, Lady of Ink">Istoria, Lady of Ink</a>." To see Istoria is to see madness itself, be wary not to look behind the paragraphs.
       </div>
 </div>
+</div>
 
 
 

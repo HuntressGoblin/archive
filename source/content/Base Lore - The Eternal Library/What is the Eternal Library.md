@@ -14,7 +14,6 @@
 
 <div class="bookshelf">
   <div class="shelf">
-    
     <div class="book tall burgundy">
       <div class="spine">
         <span class="spine-text">What is the Eternal Library?</span>

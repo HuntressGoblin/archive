@@ -18,7 +18,6 @@
 
 <div class="bookshelf">
   <div class="shelf">
-    
     <div class="book tall burgundy">
       <div class="spine">
         <span class="spine-text">Why is it called the "Cluster" Galaxy?</span>

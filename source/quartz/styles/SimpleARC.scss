@@ -148,3 +148,113 @@ div.callout[data-callout="tinynote"] .internal-link:hover {
     opacity: 1 !important;
 }
 
+/* Center the group on the page */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #050510;
+}
+
+/* Container */
+.triplediamondbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px; 
+  padding: 50px;
+}
+
+/* 1. The Animation Wrapper */
+.triplediamondframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px; 
+  height: 140px; 
+  animation: verticalBob 5s ease-in-out infinite;
+}
+
+/* Animation Timing Stagger */
+.triplediamondframe:nth-child(2) { animation-delay: 0.8s; }
+.triplediamondframe:nth-child(3) { animation-delay: 1.6s; }
+
+/* 2. The Actual Diamond Shape */
+.diamond-shape {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+/* The Image - NOW WITH 200% COVERAGE */
+.diamond-shape img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  /* Increased to 200% to guarantee no black corners */
+  width: 200%; 
+  height: 200%;
+  min-width: 200%;
+  min-height: 200%;
+  
+  object-fit: cover;
+  /* Centering and counter-rotation */
+  transform: translate(-50%, -50%) rotate(-45deg);
+  filter: saturate(1.1) contrast(1.05);
+}
+
+/* Sparkle Layer */
+.diamond-shape::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(-45deg);
+  animation: shimmer 6s infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* KEYFRAMES */
+@keyframes verticalBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes shimmer {
+  0% { transform: rotate(-45deg) translate(-35%, -35%); opacity: 0; }
+  15% { opacity: 1; }
+  30% { transform: rotate(-45deg) translate(35%, 35%); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Color Glows */
+.glow-purple .diamond-shape {
+  border-color: rgba(160, 100, 255, 0.6);
+  box-shadow: 0 0 30px rgba(140, 80, 255, 0.3);
+}
+
+.glow-red .diamond-shape {
+  border-color: rgba(255, 60, 60, 0.6);
+  box-shadow: 0 0 30px rgba(255, 50, 50, 0.3);
+}
+
+.glow-white .diamond-shape {
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}

@@ -14,8 +14,12 @@ title: Welcome to the Eternal Library
 </div>
 </div>
 
+---
+
+
 <div class="bookshelf">
   <div class="shelf">
+    
     <div class="book tall burgundy">
       <div class="spine">
         <span class="spine-text">Credits</span>
@@ -32,14 +36,14 @@ title: Welcome to the Eternal Library
       <div class="spine">
         <span class="spine-text">Other Creators</span>
       </div>
-      <div class="blurb">Honorable mentions of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out! <br><b>Stensin's Website:</b> https://wiki.enutheta.com <br><b>Dio's Website:</b> https://diopedia.net
+      <div class="blurb">In this note are honorable mentioned of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out! <br><b>Stensin's Website:</b> https://wiki.enutheta.com <br><b>Dio's Website:</b> https://diopedia.net
 </div>
     </div>
     <div class="book tall plum">
       <div class="spine">
         <span class="spine-text">Changelog</span>
       </div>
-      <div class="blurb"> <br><b> GENERAL:</b>N/A <br><b>DIVINITY:</b> N/A<br><b>ELEMENTs:</b> N/A <br><b>HELLFIRE:</b> N/A <br><b>ENTROPY:</b> N/A <br><b>EPHEMERA:</b> 3/30/2026 - Fixed one of the connections not working. <br><b>TYRANNY:</b> N/A <br><b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS! <br><b>CRYSTALLINE REBIRTH:</b> N/A <br><b>ONESHOTS:</b> N/A </div>
+      <div class="blurb"> <br><b> GENERAL:</b>3/30/2026 - Redid the base lore. <br><b>DIVINITY:</b> N/A<br><b>ELEMENTs:</b> N/A <br><b>HELLFIRE:</b> N/A <br><b>ENTROPY:</b> N/A <br><b>EPHEMERA:</b> 3/30/2026 - Fixed one of the connections not working. <br><b>TYRANNY:</b> N/A <br><b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS! <br><b>CRYSTALLINE REBIRTH:</b> N/A <br><b>ONESHOTS:</b> N/A </div>
     </div>
     <div class="book wide forest">
       <div class="spine">
@@ -79,6 +83,25 @@ title: Welcome to the Eternal Library
     </div>
   </div>
 </div>
+
+<div class="triplediamondbox">
+  <div class="triplediamondframe glow-purple">
+    <div class="diamond-shape">
+      <img src="Technicallynotimport.png" alt="Purple">
+    </div>
+  </div>
+  <div class="triplediamondframe glow-red">
+    <div class="diamond-shape">
+      <img src="Futureistoria 1.png" alt="Red">
+    </div>
+  </div>
+  <div class="triplediamondframe glow-white">
+    <div class="diamond-shape">
+      <img src="Sadpurplelady.png" alt="White">
+    </div>
+  </div>
+</div>
+
 
 > [!tinynote]- Connections
 > Look for me to find links to other notes! I'm a little hidden on purpose. :)

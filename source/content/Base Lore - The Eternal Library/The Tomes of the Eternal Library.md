@@ -11,9 +11,10 @@
 </div>
 </div>
 
+---
 
-> [!parchmentbanner]
-> The tomes of the [[What is the Eternal Library|Eternal Library]] are divided into Archives. These Archives occupy various planets all centered within the "[[The Cluster Galaxy|Cluster Galaxy]]." The ink merely writes what was always meant to be. Even with every mistake, things are guided back in place. The various tomes are noted below.
+> [!paperpagenotesleft] What are the tomes?
+> The <a class="internal-link" href="The Tomes of the Eternal Library">tomes of the Eternal Library</a> are divided into Archives. These Archives occupy various planets all centered within the <a class="internal-link" href="the Cluster Galaxy">the Cluster Galaxy</a>. The ink merely writes what was always meant to be. Even with every mistake, things are guided back in place. The various tomes are noted below.
 
 
 

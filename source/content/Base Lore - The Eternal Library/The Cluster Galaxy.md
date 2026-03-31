@@ -1,6 +1,6 @@
 
 <div class="bookmark-box">
-    <h3>Home is Everything</h3>
+    <h3><i class="fa-solid fa-feather-pointed"></i>Home is Everything</h3>
     <p>The Cluster Galaxy is not simply just another universe. It comes in many different forms, each hidden behind the veil of ink like a bookshelf separating tomes in a library. There are many ways to look at this oddity. There is one truth that remains consistent about it, however. The Cluster Galaxy is not just a universe, it is the home of all. </p>
     <!-- Add ink drops -->
     <span class="ink-drop"></span>

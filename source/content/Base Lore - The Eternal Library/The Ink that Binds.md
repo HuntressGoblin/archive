@@ -1,5 +1,5 @@
 <div class="bookmark-box">
-    <h3>Essence of Everything</h3>
+    <h3><i class="fa-solid fa-feather-pointed"></i>Essence of Everything</h3>
     <p>What isn't made from ink? The grass, the trees, the sea, the people, even this tiny, little grasshopper. The world is but a series of words, yet every story holds life in its pages due to the transcripts within. </p>
     <!-- Add ink drops -->
     <span class="ink-drop"></span>

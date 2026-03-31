@@ -1,5 +1,5 @@
 <div class="bookmark-box">
-    <h3>Every Story holds Life</h3>
+    <h3><i class="fa-solid fa-feather-pointed"></i>Every Story holds Life</h3>
     <p>There are several tomes throughout her library. Each is unique and different, fostering life within each sentence and syllable. To read them yourself would be an overwhelming, maddening abyss of writhing ink. To her, it is a story to hold dear for the rest of time itself. </p>
     <!-- Add ink drops -->
     <span class="ink-drop"></span>

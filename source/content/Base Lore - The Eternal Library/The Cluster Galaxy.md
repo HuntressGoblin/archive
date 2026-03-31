@@ -22,19 +22,19 @@
       <div class="spine">
         <span class="spine-text">Why is it called the "Cluster" Galaxy?</span>
       </div>
-      <div class="blurb">Within each archive, tomes are arranged to where their writing forms "clusters." These clusters form the various aspects of a universe such as planets, characters, plant life, history, and other small pieces that contribute to the world. Therefore, each galaxy is simply a "cluster" of various writings that come together to form one galaxy.</div>
+      <div class="blurb"><b>Why is it called the "Cluster" Galaxy?</b><br>Within each archive, tomes are arranged to where their writing forms "clusters." These clusters form the various aspects of a universe such as planets, characters, plant life, history, and other small pieces that contribute to the world. Therefore, each galaxy is simply a "cluster" of various writings that come together to form one galaxy.</div>
     </div>
     <div class="book tall midnight">
       <div class="spine">
         <span class="spine-text">Is traveling between each "cluster" possible?</span>
       </div>
-      <div class="blurb">Under normal circumstances, no one is able to cross the <a class="internal-link" href="The Ink that Binds">ink</a> that separates each world. This extends to divine beings, even. However, it is not impossible. Some say that if you gain just a small bottle of ink, you can hop between each cluster and explore new archives. Just be wary, the <a class="internal-link" href="Istoria, Lady of Ink">Storyteller</a> doesn't like intruders, and neither does the world around you. </div>
+      <div class="blurb"><b>Is traveling between each "cluster" possible?</b><br>Under normal circumstances, no one is able to cross the <a class="internal-link" href="The Ink that Binds">ink</a> that separates each world. This extends to divine beings, even. However, it is not impossible. Some say that if you gain just a small bottle of ink, you can hop between each cluster and explore new archives. Just be wary, the <a class="internal-link" href="Istoria, Lady of Ink">Storyteller</a> doesn't like intruders, and neither does the world around you. </div>
     </div>
     <div class="book tall midnight">
       <div class="spine">
         <span class="spine-text">Are all universes called "the Cluster"?</span>
       </div>
-      <div class="blurb"><a class="internal-link" href="The Cluster Galaxy">the Cluster Galaxy</a> is an umbrella term. While all perceive themselves to be located in the Cluster, the truth is that the "Cluster Galaxy" encompasses every world. Each world is hidden behind a great void of <a class="internal-link" href="The Ink that Binds">ink</a>. Most would observe this phenomenon as the void, as it stretches on for eternity and seems to be endless. Even if one were able to touch it, this void would have no texture nor any sign of being made of this "ink" in the first place. This <a class="internal-link" href="The Ink that Binds">ink</a> acts as a barrier to prevent the words from truly interacting, a way to separate different tomes that come from different archives, and as a safety net to prevent the triggering of the <a class="internal-link" href="The Supernova">the Supernova</a>.
+      <div class="blurb"><b>Are all universes called "the Cluster"?</b><br><a class="internal-link" href="The Cluster Galaxy">the Cluster Galaxy</a> is an umbrella term. While all perceive themselves to be located in the Cluster, the truth is that the "Cluster Galaxy" encompasses every world. Each world is hidden behind a great void of <a class="internal-link" href="The Ink that Binds">ink</a>. Most would observe this phenomenon as the void, as it stretches on for eternity and seems to be endless. Even if one were able to touch it, this void would have no texture nor any sign of being made of this "ink" in the first place. This <a class="internal-link" href="The Ink that Binds">ink</a> acts as a barrier to prevent the words from truly interacting, a way to separate different tomes that come from different archives, and as a safety net to prevent the triggering of the <a class="internal-link" href="The Supernova">the Supernova</a>.
  </div>
     </div>
 </div>

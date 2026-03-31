@@ -23,62 +23,62 @@ title: Welcome to the Eternal Library
       <div class="spine">
         <span class="spine-text">Credits</span>
       </div>
-      <div class="blurb">While the Cluster and the Eternal Library (plus all its contents) are all original concepts from me, I do not take credit for any of the images used on this website or material that comes straight from official Tabletop companies (Wizards of the Coast, Paizo, etc). Most images are either from players, pulled from the internet, or generated using AI. All credit goes to the appropriate sources.</div>
+      <div class="blurb"><b>Credits</b><br>While the Cluster and the Eternal Library (plus all its contents) are all original concepts from me, I do not take credit for any of the images used on this website or material that comes straight from official Tabletop companies (Wizards of the Coast, Paizo, etc). Most images are either from players, pulled from the internet, or generated using AI. All credit goes to the appropriate sources.</div>
     </div>
     <div class="book tall midnight">
       <div class="spine">
         <span class="spine-text">Spoiler Warning!</span>
       </div>
-      <div class="blurb"><b>Spoilers</b> are plentiful here on this wiki! If you're playing in one of my campaigns, I ask that you proceed with caution! While I do try to make the wiki hide important information to make it as spoiler-esh free, there will ALWAYS be some degree of spoilers no matter what. I repeat: <b><i>SPOILERS AHEAD!!!!!</i></b> </div>
+      <div class="blurb"><b>Spoiler Warning!</b><br><b>Spoilers</b> are plentiful here on this wiki! If you're playing in one of my campaigns, I ask that you proceed with caution! While I do try to make the wiki hide important information to make it as spoiler-esh free, there will ALWAYS be some degree of spoilers no matter what. I repeat: <b><i>SPOILERS AHEAD!!!!!</i></b> </div>
     </div>
     <div class="book short rust">
       <div class="spine">
         <span class="spine-text">Other Creators</span>
       </div>
-      <div class="blurb">In this note are honorable mentioned of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out! <br><b>Stensin's Website:</b> https://wiki.enutheta.com <br><b>Dio's Website:</b> https://diopedia.net
+      <div class="blurb"><b>Other Creators</b><br>In this are honorable mentions of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out! <br><b>Stensin's Website:</b> https://wiki.enutheta.com <br><b>Dio's Website:</b> https://diopedia.net
 </div>
     </div>
     <div class="book tall plum">
       <div class="spine">
         <span class="spine-text">Changelog</span>
       </div>
-      <div class="blurb"> <br><b> GENERAL:</b>3/30/2026 - Redid the base lore. <br><b>DIVINITY:</b> N/A<br><b>ELEMENTs:</b> N/A <br><b>HELLFIRE:</b> N/A <br><b>ENTROPY:</b> N/A <br><b>EPHEMERA:</b> 3/30/2026 - Fixed one of the connections not working. <br><b>TYRANNY:</b> N/A <br><b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS! <br><b>CRYSTALLINE REBIRTH:</b> N/A <br><b>ONESHOTS:</b> N/A </div>
+      <div class="blurb"><b>Changelog</b><br><b> GENERAL:</b>3/30/2026 - Redid the base lore. <br><b>DIVINITY:</b> N/A<br><b>ELEMENTs:</b> N/A <br><b>HELLFIRE:</b> N/A <br><b>ENTROPY:</b> N/A <br><b>EPHEMERA:</b> 3/30/2026 - Fixed one of the connections not working. <br><b>TYRANNY:</b> N/A <br><b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS! <br><b>CRYSTALLINE REBIRTH:</b> N/A <br><b>ONESHOTS:</b> N/A </div>
     </div>
     <div class="book wide forest">
       <div class="spine">
         <span class="spine-text">Bug List/In-Progress</span>
       </div>
-      <div class="blurb"> <br>- Yes, I know the picture in The Eight Practices is off-centered. I'll fix it eventually. ...eventually. 😴 <br>- To see the icons I placed, you have to refresh your cache using your browser's shortcuts. Sorry, don't think there is any fix around this. <br>- Going to be working on each campaign page as well as clickable links that send you from the library (where all of the modules are displayed) to the actual page itself. Some pages may appear buggy for a while, and I am aware. None of the pages are finalized just yet, as I do need to tweak some. </div>
+      <div class="blurb"> <b>Bug List/In-Progress</b><br>- Yes, I know the picture in The Eight Practices is off-centered. I'll fix it eventually. ...eventually. 😴 <br>- To see the icons I placed, you have to refresh your cache using your browser's shortcuts. Sorry, don't think there is any fix around this. <br>- Going to be working on each campaign page as well as clickable links that send you from the library (where all of the modules are displayed) to the actual page itself. Some pages may appear buggy for a while, and I am aware. None of the pages are finalized just yet, as I do need to tweak some. </div>
     </div>
     <div class="book tall walnut">
       <div class="spine">
         <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb">(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
     </div>
     <div class="book short midnight">
       <div class="spine">
         <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb">(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
     </div>
     <div class="book tall burgundy">
       <div class="spine">
         <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb">(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
     </div>
     <div class="book wide rust">
       <div class="spine">
         <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb">(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
     </div>
     <div class="book tall forest">
       <div class="spine">
         <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb">(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
     </div>
   </div>
 </div>

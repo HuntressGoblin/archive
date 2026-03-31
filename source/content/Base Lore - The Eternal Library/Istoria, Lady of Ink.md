@@ -43,19 +43,19 @@
       <div class="spine">
         <span class="spine-text">Who/what is Istoria?</span>
       </div>
-      <div class="blurb">Istoria is a "Domain Master." Despite any rumors, she is not made to represent anyone or anything. She functions as the Storyteller, as neutral as a force as one can get. If she ever intervenes, it's for the flow of the story itself. Her form and methods may shift with the setting. After all, a good story must adapt.</div>
+      <div class="blurb"><b>Who/what is Istoria?</b><br>Istoria is a "Domain Master." Despite any rumors, she is not made to represent anyone or anything. She functions as the Storyteller, as neutral as a force as one can get. If she ever intervenes, it's for the flow of the story itself. Her form and methods may shift with the setting. After all, a good story must adapt.</div>
     </div>
     <div class="book tall midnight">
       <div class="spine">
         <span class="spine-text">Is she actually a short nerd underneath all that luster?</span>
       </div>
-      <div class="blurb">First off, fuck you. Second off, no. I like using a DM persona because it helps lessen any personal qualms about crushing my players to bits. Any references to myself are just for the sillies. </div>
+      <div class="blurb"><b>Is she actually a short nerd underneath all that luster?</b><br>First off, fuck you. Second off, no. I like using a DM persona because it helps lessen any personal qualms about crushing my players to bits. Any references to myself are just for the sillies. </div>
     </div>
     <div class="book short rust">
       <div class="spine">
         <span class="spine-text">What are her rules?</span>
       </div>
-      <div class="blurb">Istoria is a neutral storytelling force. If she intervenes, it's for the beauty of a story instead of personal feelings. Death and destruction make for a bleak ending, but difficulty can be an excellent way to encourage triumphs and a well-earned victory. Don't challenge her, but she ultimately does cheer for the heroes in her story.
+      <div class="blurb"><b>What are her rules?</b><br>Istoria is a neutral storytelling force. If she intervenes, it's for the beauty of a story instead of personal feelings. Death and destruction make for a bleak ending, but difficulty can be an excellent way to encourage triumphs and a well-earned victory. Don't challenge her, but she ultimately does cheer for the heroes in her story.
       </div> 
 </div>
 </div>

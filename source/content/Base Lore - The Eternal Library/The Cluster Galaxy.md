@@ -9,7 +9,7 @@
     <span class="ink-drop"></span>
     <div class="letterbox-signature">
     — ???
-
+</div>
 </div>
 
 
@@ -105,6 +105,7 @@
         </div>
     </div>
 </details>
-
+<br>
+<br>
 > [!tinynote]- Connections
 > [[Istoria, Lady of Ink]], [[The Ink that Binds]], [[The Cluster Galaxy]], [[The Supernova]]

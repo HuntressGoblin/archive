@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/index.md",
-                "mode": "preview",
+                "file": "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "What is the Eternal Library"
             }
           }
         ]
@@ -186,16 +186,16 @@
   },
   "active": "51b0f23028237bab",
   "lastOpenFiles": [
+    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/The Supernova.md",
+    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
+    "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
+    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
+    "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
+    "source/content/index.md",
     "source/content/Z - Pictures/Willowshorepic1.png",
     "source/content/Z - Pictures/Zephpic1.png",
     "source/content/Z - Pictures/ZODGE.png",
-    "source/content/index.md",
-    "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
-    "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
-    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
-    "source/content/Base Lore - The Eternal Library/The Supernova.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Locations/Willowshore.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/History/Phenomena & Events/The Eight Practices.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/History/Organizations/Southridge.md",
@@ -222,7 +222,6 @@
     "source/content/Z - Pictures/Thiskidlookspissed.png",
     "source/content/Z - Pictures/Thatissuchanicedesign.png",
     "source/content/Z - Pictures/Shereallylikesfoxediguess.png",
-    "source/content/Z - Pictures/Plaaant.png",
     "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters",
     "source/content/Pf2e - Archive of Apolion/Characters/Powerful Figures",
     "source/content/Pf2e - Archive of Apolion/Characters/Divine Figures",

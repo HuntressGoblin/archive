@@ -35,7 +35,7 @@
 > [!paperpagenotes] Istoria
 > ***Istoria is a large woman-esk figure wearing a long purple cloak. She often wears a blank, white mask with empty sockets. However, she has no being or figure. Instead, she is made of ink. If you took off her cloak, it would be an inky mass of tendrils with no rhyme or reason. She swaps her mask at will, often imitating those in her tales as she narrates. While enjoying a good story, Istoria will never intervene unless... ...it makes for a good story.*** 
 
-
+---
 
 <div class="bookshelf">
   <div class="shelf">
@@ -61,7 +61,7 @@
 </div>
 </div>
 
-
+---
 
 <br>
 

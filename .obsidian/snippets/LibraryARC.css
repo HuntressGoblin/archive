@@ -741,74 +741,6 @@
   max-width: 1000px;
   margin: 0 auto;
 
-  /* UPDATED: Back Panel now matches the wood color instead of being black */
-  background: 
-    /* 1. Deep shadow under the ceiling */
-    linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 25%), 
-    /* 2. Corner shadows */
-    linear-gradient(90deg, rgba(0,0,0,0.3) 0%, transparent 5%, transparent 95%, rgba(0,0,0,0.3) 100%),
-    /* 3. Wood Grain fibers for the backboard */
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 25px),
-    /* 4. The Walnut Backboard Color */
-    #2d1e15; 
-  
-  border: 24px solid #2d1e15; 
-  border-bottom: 0; 
-  border-radius: 12px 12px 0 0;
-  
-  box-shadow: 
-    0 30px 60px rgba(0,0,0,0.6), 
-    inset 0 10px 20px rgba(0,0,0,0.5);
-}
-
-/* === The Heavy Shelf Floor === */
-.shelf::after {
-  content: "";
-  position: absolute;
-  top: 100%; 
-  left: -24px;
-  right: -24px;
-  height: 28px; 
-  background: 
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 2px, transparent 20px),
-    linear-gradient(180deg, #3a281b 0%, #2d1e15 10%, #1a120c 90%, #050302 100%);
-  border-radius: 0 0 12px 12px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5), inset 0 2px 0 rgba(255,255,255,0.08);
-}
-
-/* Ceiling shadow overlay */
-.shelf::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 50px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: 10;
-}
-
-/* === Full Bookshelf Container === */
-.bookshelf {
-  padding: 80px 20px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background: transparent;
-}
-
-/* === The Heavy Cabinet Frame === */
-.shelf {
-  position: relative;
-  display: flex;
-  align-items: flex-end; 
-  gap: 0; 
-  height: 295px; 
-  padding: 0; 
-  width: fit-content; 
-  min-width: 300px;
-  max-width: 1000px;
-  margin: 0 auto;
-
   /* Back Panel Walnut Wood */
   background: 
     linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 25%), 
@@ -872,7 +804,6 @@
   overflow: hidden;
   border-radius: 4px 4px 1px 1px;
   
-  /* 3D Lighting: Highlights and Shadows for roundness */
   background: 
     linear-gradient(90deg, 
       rgba(0,0,0,0.3) 0%, 
@@ -887,7 +818,7 @@
     -4px 0 12px rgba(0,0,0,0.5);
 }
 
-/* THE BANDS: Subtle raised horizontal lines */
+/* THE BANDS */
 .book .spine::before {
   content: "";
   position: absolute;
@@ -901,7 +832,7 @@
   pointer-events: none;
 }
 
-/* THE ACCENTS: Gold lines at top and bottom */
+/* THE ACCENTS */
 .book .spine::after {
   content: "";
   position: absolute;
@@ -912,7 +843,7 @@
   pointer-events: none;
 }
 
-/* === Spine Text (Gold Stamped Style) === */
+/* === Spine Text (Aged Gold/Soft Yellow) === */
 .spine-text {
   writing-mode: vertical-rl; 
   transform: translateX(-50%) rotate(180deg); 
@@ -926,8 +857,9 @@
   top: 15%;
   left: 50%;
   pointer-events: none;
-  color: rgba(212, 175, 55, 0.85);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  /* Updated: Softened Yellow/Gold */
+  color: #e0c05a !important; 
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
 /* Hover Physics */
@@ -954,29 +886,50 @@
 .rust     { --book-color: #5e2c04; --tilt: 0.5deg; }
 .forest   { --book-color: #0d1a11; --tilt: -0.3deg; }
 
-/* === Blurb Card === */
+/* === Parchment Blurb Card === */
 .book .blurb {
   position: absolute;
   bottom: 50%; 
   left: 115%; 
   transform: translateY(50%);
-  width: 210px;
-  padding: 16px;
-  background: linear-gradient(180deg, #2d1e15, #1a120c);
-  color: #e2c08d; 
-  border-radius: 8px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+  width: 220px;
+  padding: 20px;
+  
+  /* Parchment Background */
+  background: #f4e4bc;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.3), transparent),
+    repeating-linear-gradient(45deg, rgba(0,0,0,0.02) 0px, rgba(0,0,0,0.02) 1px, transparent 1px, transparent 10px);
+  
+  /* Forced Black Text */
+  color: #000000 !important;
+  
+  border-radius: 2px;
+  box-shadow: 
+    5px 15px 30px rgba(0,0,0,0.5), 
+    inset 0 0 50px rgba(139, 69, 19, 0.15);
+  
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
-  border: 1px solid #4a3224;
+  border: 1px solid #d2b48c;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   z-index: 100;
+  font-family: "Georgia", serif;
+}
+
+/* Subtle corner texture for the blurb */
+.book .blurb::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, transparent 15%);
+  pointer-events: none;
 }
 
 .book:hover .blurb {
   opacity: 1;
-  transform: translateY(50%) translateX(10px);
+  transform: translateY(50%) translateX(15px);
 }

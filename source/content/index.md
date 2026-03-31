@@ -19,7 +19,6 @@ title: Welcome to the Eternal Library
 
 <div class="bookshelf">
   <div class="shelf">
-    
     <div class="book tall burgundy">
       <div class="spine">
         <span class="spine-text">Credits</span>

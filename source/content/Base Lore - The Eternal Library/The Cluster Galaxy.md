@@ -107,6 +107,7 @@
     </div>
 </details>
 <br>
-<br>
-> [!tinynote]- Connections
+
+
+>[!tinynote]- Connections
 > [[Istoria, Lady of Ink]], [[The Ink that Binds]], [[The Cluster Galaxy]], [[The Supernova]]

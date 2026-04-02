@@ -42,7 +42,7 @@ title: Welcome to the Eternal Library
       <div class="spine">
         <span class="spine-text">Changelog</span>
       </div>
-      <div class="blurb"><b>Changelog</b><br><b> GENERAL:</b>3/30/2026 - Redid the base lore. <br><b>DIVINITY:</b> N/A<br><b>ELEMENTs:</b> N/A <br><b>HELLFIRE:</b> N/A <br><b>ENTROPY:</b> N/A <br><b>EPHEMERA:</b> 3/30/2026 - Fixed one of the connections not working. <br><b>TYRANNY:</b> N/A <br><b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS! <br><b>CRYSTALLINE REBIRTH:</b> N/A <br><b>ONESHOTS:</b> N/A </div>
+      <div class="blurb"><b>Changelog</b><br><b> GENERAL:</b> 4/2/2026<br><b>DIVINITY:</b> N/A<br><b>ELEMENTs:</b> N/A <br><b>HELLFIRE:</b> N/A <br><b>ENTROPY:</b> N/A <br><b>EPHEMERA:</b> 4/2/2026 - Ephemera now has a link in the tomes. <br><b>TYRANNY:</b> N/A <br><b>TRAILBLAZER:</b> 3/30/2026 - Added some NPCS! <br><b>CRYSTALLINE REBIRTH:</b> N/A <br><b>ONESHOTS:</b> N/A </div>
     </div>
     <div class="book wide forest">
       <div class="spine">
@@ -52,9 +52,9 @@ title: Welcome to the Eternal Library
     </div>
     <div class="book tall walnut">
       <div class="spine">
-        <span class="spine-text">Empty Tome</span>
+        <span class="spine-text">Symbol Guide</span>
       </div>
-      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Symbol Guide</b><br><i class="fa-solid fa-arrow-up-right-from-square"></i> This icon shows that clicking on the picture near it will take you somewhere else!</div>
     </div>
     <div class="book short midnight">
       <div class="spine">

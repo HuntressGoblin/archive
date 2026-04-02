@@ -54,7 +54,7 @@ title: Welcome to the Eternal Library
       <div class="spine">
         <span class="spine-text">Symbol Guide</span>
       </div>
-      <div class="blurb"><b>Symbol Guide</b><br><i class="fa-solid fa-arrow-up-right-from-square"></i> This icon shows that clicking on the picture near it will take you somewhere else!</div>
+      <div class="blurb"><b>Symbol Guide (Make sure you refresh to see the symbols if they don't appear.)</b><br><i class="fa-solid fa-arrow-up-right-from-square"></i> This icon shows that clicking on the picture near it will take you somewhere else!</div>
     </div>
     <div class="book short midnight">
       <div class="spine">

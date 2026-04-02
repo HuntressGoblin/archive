@@ -113,7 +113,6 @@
         <span class="selected-text">What is the timeline of each series?</span>
         <span class="dropdown-arrow">▼</span>
     </summary>
-    
     <div class="advancedgalaxydropdown-menu">
         <div class="galaxy-option-wrapper">
             <label class="advancedgalaxydropdown-item">

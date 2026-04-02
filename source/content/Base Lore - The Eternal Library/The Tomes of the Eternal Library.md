@@ -84,6 +84,7 @@
   </div>
   <div class="istoria-tome">
       <img src="Seasonofghoststhumbnail.png" alt="EphemeraPic">
+      <a href="[Cycle of Ephemera](https://archive.goblindnd.com/Pf2e---Archive-of-Apolion/Tome-of-Ephemera/Cycle-of-Ephemera)" class="tome-link">
       <div class="tome-tooltip">Tome of Ephemera</div>
     </a>
   </div>

@@ -105,7 +105,7 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "Actually Hides the Content" Edition)
+   TINYNOTE THEME (The "Stealth Gray" Edition)
    ============================================================ */
 
 /* 1. CONTAINER: The Top Divider */
@@ -113,7 +113,7 @@
     --callout-icon: none !important;
     background: transparent !important;
     border: none !important;
-    border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
+    border-top: 1px solid #333333 !important; /* Dimmer divider line */
     border-radius: 0 !important;
     padding: 16px 0 0 0 !important;
     margin-top: 40px !important;
@@ -121,73 +121,71 @@
     overflow: visible !important;
 }
 
-/* 2. THE TITLE: Keeps text full and aligned */
+/* 2. THE TITLE: Fixed Gray color (Kills the blue/bright white) */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary {
-    display: block !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
     background: transparent !important;
-    color: var(--text-muted, var(--gray)) !important;
-    font-size: 0.85em !important;
+    
+    /* Force a soft, dim gray */
+    color: #666666 !important; 
+    
+    font-size: 0.82em !important; /* Slightly smaller for stealth */
     font-style: italic !important;
-    font-weight: normal !important;
+    font-weight: 400 !important;
     padding: 4px 0 !important;
     margin: 0 !important;
     cursor: pointer !important;
     line-height: 1.4 !important;
 }
 
-.callout[data-callout="tinynote"] .callout-title-inner {
-    display: inline-flex !important;
-    align-items: center;
-    gap: 6px;
-}
-
-/* 3. UI CLEANUP: Hide pencil, style arrow */
+/* 3. UI CLEANUP: Hide pencil, dim the arrow further */
 .callout[data-callout="tinynote"] .callout-icon {
     display: none !important;
 }
 
-.callout[data-callout="tinynote"] .callout-fold,
+.callout[data-callout="tinynote"] .callout-fold {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.callout[data-callout="tinynote"] .callout-fold svg,
 .callout[data-callout="tinynote"] .fold-icon svg {
-    display: inline-flex !important;
-    color: var(--text-faint, var(--gray)) !important;
-    opacity: 0.4;
-    width: 12px !important;
-    height: 12px !important;
-    vertical-align: middle;
+    color: #444444 !important; /* Very dark gray arrow */
+    opacity: 0.3 !important;   /* Barely there */
+    width: 10px !important;    /* Slightly smaller arrow */
+    height: 10px !important;
 }
 
-/* ============================================================
-   4. THE FIX: EXPLICITLY HIDING THE CONTENT WHEN COLLAPSED
-   ============================================================ */
-
-/* Forces Obsidian and standard Quartz configurations to hide content */
-.callout[data-callout="tinynote"].is-collapsed .callout-content {
-    display: none !important;
-}
-
-/* Forces alternative Quartz configurations (using native <details>) to hide content */
+/* 4. THE FOLD LOGIC: Explicitly hiding the content */
+.callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
 }
-/* ============================================================ */
 
-/* 5. CONTENT & LINKS: Clean text */
+/* 5. CONTENT & LINKS: Muted gray text */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 10px 0 0 0 !important;
     margin: 0 !important;
-    color: var(--text-muted, var(--gray)) !important;
-    font-size: 0.85em !important;
+    color: #666666 !important; /* Match the title gray */
+    font-size: 0.82em !important;
 }
 
 .callout[data-callout="tinynote"] .callout-content a {
     background: transparent !important;
     padding: 0 !important;
     border: none !important;
-    color: var(--text-accent, var(--secondary)) !important;
+    color: #888888 !important; /* Slightly lighter gray for links so they're readable */
     text-decoration: none !important;
 }
 
 .callout[data-callout="tinynote"] .callout-content a:hover {
     text-decoration: underline !important;
+    color: var(--text-accent, #aaaaaa) !important; /* Subtle highlight on hover */
 }

@@ -105,16 +105,16 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME — Zero UI (No Arrow, No Line)
+   TINYNOTE THEME — Zero UI (Smaller Spacing)
    ============================================================ */
 
 /* 1. MAIN CONTAINER */
 .callout[data-callout="tinynote"] {
     background: transparent !important;
-    border: none !important;         /* removes all borders, including the top line */
+    border: none !important;
     border-radius: 0 !important;
-    padding: 16px 0 0 0 !important;
-    margin-top: 40px !important;
+    padding: 8px 0 4px 0 !important;   /* smaller padding: top 8px, bottom 4px */
+    margin-top: 16px !important;       /* smaller space above */
     box-shadow: none !important;
 }
 
@@ -158,7 +158,7 @@ details.callout[data-callout="tinynote"]:not([open]) .callout-content {
 
 /* 6. CONTENT & LINKS */
 .callout[data-callout="tinynote"] .callout-content {
-    padding: 8px 0 0 0 !important;
+    padding: 4px 0 4px 0 !important;   /* smaller padding inside content */
     color: #666 !important;
     font-size: 0.82em !important;
 }

@@ -105,57 +105,63 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "No-Clip" Edition)
+   TINYNOTE THEME (The "Function over Form" Edition)
    ============================================================ */
 
-/* 1. CONTAINER: Added more top padding to prevent clipping */
+/* 1. CONTAINER: The Top Divider */
 .callout[data-callout="tinynote"] {
     --callout-icon: none !important;
     background: transparent !important;
     border: none !important;
     border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
     border-radius: 0 !important;
-    padding: 20px 0 0 0 !important; /* Increased space from the line */
+    padding: 16px 0 0 0 !important;
     margin-top: 40px !important;
     box-shadow: none !important;
-    overflow: visible !important; /* Ensures text can't be cut off */
+    overflow: visible !important;
 }
 
-/* 2. THE TITLE: Fixed alignment and line-height */
+/* 2. THE TITLE (SUMMARY): Standard display to keep toggle working */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary {
+    display: block !important; /* Restore standard behavior for folding */
     background: transparent !important;
     color: var(--text-muted, var(--gray)) !important;
     font-size: 0.85em !important;
     font-style: italic !important;
     font-weight: normal !important;
-    padding: 4px 0 !important; /* Added vertical padding so text isn't tight */
+    padding: 4px 0 !important;
     margin: 0 !important;
     cursor: pointer !important;
-    display: flex !important;
-    align-items: baseline !important; /* Aligns text and arrow to their "feet" */
-    gap: 8px;
-    line-height: 1.2 !important; /* Prevents tall containers from clipping */
-    min-height: auto !important;
+    line-height: 1.4 !important;
 }
 
-/* 3. UI CLEANUP: Remove pencil and style arrow */
+/* 3. TITLE INNER: Handles the text + arrow alignment without breaking the fold */
+.callout[data-callout="tinynote"] .callout-title-inner {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 6px;
+}
+
+/* 4. UI CLEANUP: Hide pencil icon */
 .callout[data-callout="tinynote"] .callout-icon {
     display: none !important;
 }
 
+/* 5. THE ARROW: Subtle and aligned */
 .callout[data-callout="tinynote"] .callout-fold,
 .callout[data-callout="tinynote"] .fold-icon svg {
+    display: inline-flex !important;
     color: var(--text-faint, var(--gray)) !important;
     opacity: 0.4;
     width: 12px !important;
     height: 12px !important;
-    align-self: center; /* Keeps arrow centered even if text is baseline */
+    vertical-align: middle;
 }
 
-/* 4. CONTENT & LINKS: No Quartz Pills */
+/* 6. CONTENT & LINKS: Clean text, no Quartz Pills */
 .callout[data-callout="tinynote"] .callout-content {
-    padding: 8px 0 0 0 !important;
+    padding: 10px 0 0 0 !important;
     margin: 0 !important;
     color: var(--text-muted, var(--gray)) !important;
     font-size: 0.85em !important;

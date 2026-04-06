@@ -105,20 +105,17 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (Quartz “Zero UI” — Invisible Arrow Edition)
+   TINYNOTE THEME — Zero UI (No Arrow, No Line)
    ============================================================ */
 
 /* 1. MAIN CONTAINER */
 .callout[data-callout="tinynote"] {
-    --callout-icon: none !important;  
     background: transparent !important;
-    border: none !important;
-    border-top: 1px solid #333 !important;
+    border: none !important;         /* removes all borders, including the top line */
     border-radius: 0 !important;
     padding: 16px 0 0 0 !important;
     margin-top: 40px !important;
     box-shadow: none !important;
-    outline: none !important;
 }
 
 /* 2. SUMMARY / TITLE */
@@ -130,30 +127,30 @@
     font-size: 0.82em !important;
     font-style: italic !important;
     margin: 0 !important;
-    padding-left: 0 !important;  /* remove space where arrow was */
+    padding-left: 0 !important;
     cursor: pointer !important;
 }
 
-/* 3. MAKE ARROW INVISIBLE */
+/* 3. HIDE THE ARROW & BLUE BOX */
 .callout[data-callout="tinynote"] .callout-icon,
 .callout[data-callout="tinynote"] .callout-icon svg,
 .callout[data-callout="tinynote"] .callout-fold {
-    display: none !important;   /* hides the arrow completely */
+    display: none !important;
     width: 0 !important;
     height: 0 !important;
-    padding: 0 !important;
     margin: 0 !important;
+    padding: 0 !important;
     visibility: hidden !important;
 }
 
-/* 4. HIDE DEFAULT MARKER IN BROWSERS */
+/* 4. HIDE DEFAULT MARKER */
 .callout[data-callout="tinynote"] summary::-webkit-details-marker,
 .callout[data-callout="tinynote"] summary::marker {
     display: none !important;
     content: none !important;
 }
 
-/* 5. FOLD LOGIC */
+/* 5. COLLAPSIBLE CONTENT */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;

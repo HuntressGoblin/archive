@@ -105,16 +105,15 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "Zero UI" Edition)
+   TINYNOTE THEME (Quartz "Zero UI" Edition)
    ============================================================ */
 
-/* 1. CONTAINER: Top Divider */
+/* 1. MAIN CONTAINER: Transparent with top divider */
 .callout[data-callout="tinynote"] {
-    --callout-icon: none !important;
+    --callout-icon: none !important;  /* Quartz icon variable */
     background: transparent !important;
-    background-color: transparent !important;
     border: none !important;
-    border-top: 1px solid #333333 !important;
+    border-top: 1px solid #333 !important;
     border-radius: 0 !important;
     padding: 16px 0 0 0 !important;
     margin-top: 40px !important;
@@ -122,62 +121,58 @@
     outline: none !important;
 }
 
-/* 2. THE TITLE: Killing the Blue Box & Text */
+/* 2. SUMMARY / TITLE: remove all background, box, and marker */
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title {
     display: block !important;
     background: transparent !important;
-    background-color: transparent !important;
-    color: #666666 !important;
-    outline: none !important; 
-    -webkit-tap-highlight-color: transparent !important;
-    box-shadow: none !important;
-    list-style: none !important; /* Removes the arrow/marker */
-    cursor: pointer !important;
+    color: #666 !important;
     font-size: 0.82em !important;
     font-style: italic !important;
     margin: 0 !important;
+    padding-left: 0 !important;          /* remove left spacing from marker */
+    list-style: none !important;
+    outline: none !important;
+    cursor: pointer !important;
 }
 
-/* 3. NEUTRALIZE INTERNAL WRAPPERS */
-.callout[data-callout="tinynote"] .callout-title-inner,
-.callout[data-callout="tinynote"] .callout-title-inner * {
-    color: #666666 !important;
-    background: transparent !important;
-    border: none !important;
-}
-
-/* 4. TOTAL ICON/MARKER REMOVAL */
-.callout[data-callout="tinynote"] summary::-webkit-details-marker,
-.callout[data-callout="tinynote"] summary::marker,
-.callout[data-callout="tinynote"] .callout-fold,
+/* 3. REMOVE QUARTZ ICONS & ARROWS */
 .callout[data-callout="tinynote"] .callout-icon,
-.callout[data-callout="tinynote"] svg {
+.callout[data-callout="tinynote"] svg,
+.callout[data-callout="tinynote"] .callout-fold,
+.callout[data-callout="tinynote"] summary::-webkit-details-marker,
+.callout[data-callout="tinynote"] summary::marker {
     display: none !important;
     content: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
 }
 
-/* 5. FOLD LOGIC: Stay hidden until 'open' */
+/* 4. FOLD LOGIC: hide content until open */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
 }
 
-/* 6. CONTENT & LINKS */
+/* 5. CONTENT & LINKS */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 8px 0 0 0 !important;
-    color: #666666 !important;
+    color: #666 !important;
     font-size: 0.82em !important;
 }
 
 .callout[data-callout="tinynote"] .callout-content a {
     background: transparent !important;
-    color: #888888 !important;
+    color: #888 !important;
     border: none !important;
     padding: 0 !important;
 }
 
-/* 7. REMOVE LEFTOVER SPACING FROM THE DETAILS MARKER */
-.callout[data-callout="tinynote"] > summary {
-    padding-left: 0 !important;
+/* 6. INTERNAL TITLE WRAPPERS */
+.callout[data-callout="tinynote"] .callout-title-inner,
+.callout[data-callout="tinynote"] .callout-title-inner * {
+    color: #666 !important;
+    background: transparent !important;
+    border: none !important;
 }

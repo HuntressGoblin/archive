@@ -105,75 +105,66 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "Total Arrow Annihilation" Edition)
+   TINYNOTE THEME (The "Zero UI" Edition)
    ============================================================ */
 
-/* 1. CONTAINER: The Top Divider */
+/* 1. CONTAINER: Top Divider */
 .callout[data-callout="tinynote"] {
     --callout-icon: none !important;
     background: transparent !important;
+    background-color: transparent !important;
     border: none !important;
     border-top: 1px solid #333333 !important;
     border-radius: 0 !important;
     padding: 16px 0 0 0 !important;
     margin-top: 40px !important;
     box-shadow: none !important;
+    outline: none !important;
 }
 
-/* 2. THE TITLE: Pure Gray Text */
-.callout[data-callout="tinynote"] > .callout-title,
+/* 2. THE TITLE: Killing the Blue Box & Text */
 .callout[data-callout="tinynote"] > summary,
+.callout[data-callout="tinynote"] .callout-title {
+    display: block !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #666666 !important;
+    /* This kills the blue highlight/box when clicked */
+    outline: none !important; 
+    -webkit-tap-highlight-color: transparent !important;
+    box-shadow: none !important;
+    list-style: none !important; /* Removes the arrow/marker */
+    cursor: pointer !important;
+    font-size: 0.82em !important;
+    font-style: italic !important;
+    margin: 0 !important;
+}
+
+/* 3. NEUTRALIZE INTERNAL WRAPPERS */
 .callout[data-callout="tinynote"] .callout-title-inner,
 .callout[data-callout="tinynote"] .callout-title-inner * {
     color: #666666 !important;
-    text-decoration: none !important;
-    font-size: 0.82em !important;
-    font-style: italic !important;
-    font-weight: 400 !important;
+    background: transparent !important;
+    border: none !important;
 }
 
-/* 3. THE ARROW SLAYER: This targets the actual "containers" of the arrow */
-.callout[data-callout="tinynote"] .callout-fold,
-.callout[data-callout="tinynote"] .fold-icon,
+/* 4. TOTAL ICON/MARKER REMOVAL */
+.callout[data-callout="tinynote"] summary::-webkit-details-marker,
 .callout[data-callout="tinynote"] summary::marker,
-.callout[data-callout="tinynote"] summary::-webkit-details-marker {
-    display: none !important;
-    content: "" !important;
-    width: 0 !important;
-    height: 0 !important;
-    max-width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
-
-/* 4. THE PSEUDO-KILLER: Stops Quartz from "injecting" an arrow via CSS */
-.callout[data-callout="tinynote"] *::before,
-.callout[data-callout="tinynote"] *::after {
-    content: none !important;
-    display: none !important;
-}
-
-/* 5. SVG REMOVAL: Final safety net for any icons */
+.callout[data-callout="tinynote"] .callout-fold,
+.callout[data-callout="tinynote"] .callout-icon,
 .callout[data-callout="tinynote"] svg {
     display: none !important;
-    width: 0 !important;
-    height: 0 !important;
+    content: none !important;
 }
 
-/* 6. LAYOUT & FOLD LOGIC */
-.callout[data-callout="tinynote"] > summary {
-    list-style: none !important;
-    cursor: pointer !important;
-}
-
+/* 5. FOLD LOGIC: Stay hidden until 'open' */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
 }
 
-/* 7. CONTENT & LINKS */
+/* 6. CONTENT & LINKS */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 8px 0 0 0 !important;
     color: #666666 !important;
@@ -181,6 +172,8 @@ details.callout[data-callout="tinynote"]:not([open]) .callout-content {
 }
 
 .callout[data-callout="tinynote"] .callout-content a {
+    background: transparent !important;
     color: #888888 !important;
-    text-decoration: none !important;
+    border: none !important;
+    padding: 0 !important;
 }

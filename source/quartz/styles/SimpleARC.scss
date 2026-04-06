@@ -104,13 +104,13 @@
   box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2);
 }
 
-/* ============================================================
-   TINYNOTE THEME (Tinynote — Arrow on Right)
+ /* ============================================================
+   TINYNOTE THEME (Quartz “Zero UI” Gray Arrow Edition)
    ============================================================ */
 
 /* 1. MAIN CONTAINER */
 .callout[data-callout="tinynote"] {
-    --callout-icon: none !important;  
+    --callout-icon: none !important;  /* disable default icon */
     background: transparent !important;
     border: none !important;
     border-top: 1px solid #333 !important;
@@ -121,13 +121,12 @@
     outline: none !important;
 }
 
-/* 2. SUMMARY / TITLE: flex to move arrow */
+/* 2. SUMMARY / TITLE */
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title {
-    display: flex !important;
+    display: flex !important;           /* align arrow & text */
     align-items: center !important;
-    justify-content: space-between !important;  /* pushes arrow to right */
-    background: transparent !important;
+    background: transparent !important; /* remove blue box */
     color: #666 !important;
     font-size: 0.82em !important;
     font-style: italic !important;
@@ -136,21 +135,34 @@
     cursor: pointer !important;
 }
 
-/* 3. ARROW: keep default blue */
+/* 3. QUARTZ ARROW */
 .callout[data-callout="tinynote"] .callout-icon,
 .callout[data-callout="tinynote"] .callout-icon svg,
 .callout[data-callout="tinynote"] .callout-fold {
-    order: 2 !important;           /* forces arrow to right */
-    margin-left: 0.5em !important; /* spacing from text */
+    background: transparent !important;  /* remove blue box */
+    fill: #888 !important;               /* gray arrow */
+    stroke: #888 !important;             /* gray stroke if used */
+    width: 1em !important;
+    height: 1em !important;
+    padding: 0 !important;
+    margin-right: 0.25em !important;    /* small spacing from text */
+    display: inline-block !important;
 }
 
-/* 4. FOLD LOGIC: hide content until open */
+/* 4. HIDE DEFAULT MARKER */
+.callout[data-callout="tinynote"] summary::-webkit-details-marker,
+.callout[data-callout="tinynote"] summary::marker {
+    display: none !important;
+    content: none !important;
+}
+
+/* 5. FOLD LOGIC */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
 }
 
-/* 5. CONTENT & LINKS */
+/* 6. CONTENT & LINKS */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 8px 0 0 0 !important;
     color: #666 !important;
@@ -164,7 +176,7 @@ details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     padding: 0 !important;
 }
 
-/* 6. INTERNAL TITLE WRAPPERS */
+/* 7. INTERNAL TITLE WRAPPERS */
 .callout[data-callout="tinynote"] .callout-title-inner,
 .callout[data-callout="tinynote"] .callout-title-inner * {
     color: #666 !important;

@@ -129,7 +129,6 @@
     background: transparent !important;
     background-color: transparent !important;
     color: #666666 !important;
-    /* This kills the blue highlight/box when clicked */
     outline: none !important; 
     -webkit-tap-highlight-color: transparent !important;
     box-shadow: none !important;
@@ -176,4 +175,9 @@ details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     color: #888888 !important;
     border: none !important;
     padding: 0 !important;
+}
+
+/* 7. REMOVE LEFTOVER SPACING FROM THE DETAILS MARKER */
+.callout[data-callout="tinynote"] > summary {
+    padding-left: 0 !important;
 }

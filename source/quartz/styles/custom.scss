@@ -8,22 +8,22 @@
 
 @use "./base.scss";
 
-/* === QUARTZ: COSMIC MIDNIGHT LIBRARY THEME === */
+/* === QUARTZ: MIDNIGHT COSMIC LIBRARY THEME (#080415 BASE) === */
 
 /* Dark Mode */
 :root[saved-theme=dark],
 :root[saved-theme="dark"],
 :root[data-theme=dark],
 :root[data-theme="dark"] {
-  --light: #0c091a !important;        /* deep cosmic purple/black background */
-  --lightgray: #16102d !important;    /* shadowed panels / shelves */
-  --gray: #241b44 !important;         /* subtle surface depth / raised sections */
+  --light: #080415 !important;        /* primary deep cosmic purple/black */
+  --lightgray: #120a2b !important;    /* shadowed secondary surfaces */
+  --gray: #1f153f !important;         /* subtle surface depth */
 
-  --darkgray: #b3a6e6 !important;     /* soft parchment-text contrast */
-  --dark: #dcd0ff !important;         /* main text (light lavender) */
+  --darkgray: #b8a8e0 !important;     /* muted text / parchment contrast */
+  --dark: #ded0ff !important;         /* main text (lavender-white) */
 
-  --secondary: #8c6fe6 !important;    /* muted purple accent (links, highlights) */
-  --tertiary: #a988ff !important;     /* brighter cosmic purple accent */
+  --secondary: #8c6fe6 !important;    /* link / highlight accent (muted purple) */
+  --tertiary: #a988ff !important;     /* cosmic glow accent (brighter purple) */
 }
 
 /* Light Mode */
@@ -31,12 +31,12 @@
 :root[saved-theme="light"],
 :root[data-theme=light],
 :root[data-theme="light"] {
-  --light: #ede9fc !important;        /* pale cosmic parchment background */
-  --lightgray: #dad6f7 !important;    /* secondary surfaces / shelves */
-  --gray: #c9c0f0 !important;         /* subtle depth panels */
+  --light: #f0edfc !important;        /* light parchment / cosmic paper */
+  --lightgray: #e0d9f7 !important;    /* secondary panels / surfaces */
+  --gray: #d1c8f0 !important;         /* subtle depth for raised sections */
 
-  --darkgray: #4a3d78 !important;     /* readable deep purple text */
-  --dark: #2b1f52 !important;         /* main text (dark ink purple) */
+  --darkgray: #4a3d78 !important;     /* readable text in purple ink */
+  --dark: #2b1f52 !important;         /* main text (deep purple ink) */
 
   --secondary: #a084ff !important;    /* link / highlight accent */
   --tertiary: #b9a3ff !important;     /* cosmic glow accent */

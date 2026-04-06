@@ -1,5 +1,5 @@
 /* =========================================
-   BANNER EFFECT MULTIPLE COLORS - FULL
+   BANNER EFFECT MULTIPLE COLORS - FINAL
    ========================================= */
 
 /* 1. Main Container */
@@ -37,6 +37,10 @@
   overflow: hidden;
   border-left: 1px solid rgba(255, 255, 255, 0.05);
   border-right: 1px solid rgba(255, 255, 255, 0.05);
+
+  /* FORCE removal of theme-added top lines/shadows */
+  border-top: none !important;
+  box-shadow: none !important;
 }
 
 /* 4. The Image (Banner Canvas) */
@@ -93,21 +97,21 @@
 }
 
 /* =========================================
-   COLOR IDENTITIES (Glows & Top-Lighting)
+   COLOR IDENTITIES (Glows & Inner Shadows)
    ========================================= */
 .glow-purple .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(160, 100, 255, 0.4));
-  box-shadow: inset 0 20px 30px -10px rgba(160, 100, 255, 0.3);
+  box-shadow: inset 0 20px 30px -10px rgba(160, 100, 255, 0.3) !important;
 }
 
 .glow-red .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(255, 60, 60, 0.4));
-  box-shadow: inset 0 20px 30px -10px rgba(255, 60, 60, 0.3);
+  box-shadow: inset 0 20px 30px -10px rgba(255, 60, 60, 0.3) !important;
 }
 
 .glow-white .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(255, 255, 255, 0.3));
-  box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2) !important;
 }
 
 /* =========================================

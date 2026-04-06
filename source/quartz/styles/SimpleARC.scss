@@ -1,9 +1,13 @@
-/* 1. BANNER EFFECT MULTIPLE COLORS - The Main Container */
+/* =========================================
+   BANNER EFFECT MULTIPLE COLORS - FULL
+   ========================================= */
+
+/* 1. Main Container */
 .banner-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px; 
+  gap: 50px;
   padding: 80px;
   perspective: 1000px; /* Adds depth for the subtle tilt animation */
 }
@@ -13,8 +17,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px; 
-  height: 220px; 
+  width: 120px;
+  height: 220px;
   animation: bannerSway 6s ease-in-out infinite;
 }
 
@@ -35,15 +39,16 @@
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* The Image (Banner Canvas) */
+/* 4. The Image (Banner Canvas) */
 .banner-shape img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: saturate(1.2) contrast(1.1) brightness(0.9);
+  object-fit: cover;        /* Ensures image fills the bookmark */
+  object-position: center;  /* Centers the image */
+  clip-path: inherit;       /* Matches parent clip-path perfectly */
   transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), filter 0.5s;
 }
 
@@ -53,7 +58,7 @@
   filter: saturate(1.4) contrast(1.2) brightness(1.1);
 }
 
-/* The Mystical Shimmer Overlay */
+/* 5. Mystical Shimmer Overlay */
 .banner-shape::after {
   content: "";
   position: absolute;
@@ -72,7 +77,9 @@
   pointer-events: none;
 }
 
-/* ANIMATIONS */
+/* =========================================
+   ANIMATIONS
+   ========================================= */
 @keyframes bannerSway {
   0%, 100% { transform: translateY(0) rotateX(0deg); }
   50% { transform: translateY(-20px) rotateX(5deg); }
@@ -85,7 +92,9 @@
   100% { opacity: 0; }
 }
 
-/* COLOR IDENTITIES (Glows & Top-Lighting) */
+/* =========================================
+   COLOR IDENTITIES (Glows & Top-Lighting)
+   ========================================= */
 .glow-purple .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(160, 100, 255, 0.4));
   border-top: 3px solid #a064ff;

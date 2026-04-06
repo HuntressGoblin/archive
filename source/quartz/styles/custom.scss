@@ -8,22 +8,22 @@
 
 @use "./base.scss";
 
-/* === QUARTZ: AGED SPACE LIBRARY THEME === */
+/* === QUARTZ: COSMIC PURPLE LIBRARY THEME === */
 
 /* Dark Mode */
 :root[saved-theme=dark],
 :root[saved-theme="dark"],
 :root[data-theme=dark],
 :root[data-theme="dark"] {
-  --light: #1b1410 !important;        /* deep brown background */
-  --lightgray: #241a14 !important;    /* secondary surfaces / wood panels */
-  --gray: #2e221a !important;         /* raised panels / subtle depth */
+  --light: #1c1126 !important;        /* deep purple background */
+  --lightgray: #2a1f3b !important;    /* secondary panels / shelves */
+  --gray: #382850 !important;         /* subtle depth for surfaces */
 
-  --darkgray: #b8a88c !important;     /* muted parchment text */
-  --dark: #e8dcc8 !important;         /* main text (warm parchment) */
+  --darkgray: #c7b3e6 !important;     /* soft parchment-text contrast */
+  --dark: #e0d6f5 !important;         /* main text (light lavender) */
 
-  --secondary: #c9a96a !important;    /* gold accent (highlights, links) */
-  --tertiary: #7c5cff !important;     /* faint purple accent (cosmic hints) */
+  --secondary: #9d7edb !important;    /* gold-ish accent (links, highlights) */
+  --tertiary: #b491ff !important;     /* bright purple accent (cosmic hints) */
 }
 
 /* Light Mode */
@@ -31,15 +31,15 @@
 :root[saved-theme="light"],
 :root[data-theme=light],
 :root[data-theme="light"] {
-  --light: #f4ecd8 !important;        /* parchment / light library background */
-  --lightgray: #e6dcc5 !important;    /* secondary surfaces / wood panels */
-  --gray: #d8c9b0 !important;         /* raised panels / subtle depth */
+  --light: #ede6f5 !important;        /* light parchment purple background */
+  --lightgray: #d9cee8 !important;    /* secondary panels / shelves */
+  --gray: #c6b5dd !important;         /* subtle depth for surfaces */
 
-  --darkgray: #3a2c22 !important;     /* readable brown text */
-  --dark: #1b1008 !important;         /* main text (darker ink) */
+  --darkgray: #4b3860 !important;     /* soft readable text */
+  --dark: #2d1f42 !important;         /* main text (dark purple ink) */
 
-  --secondary: #b08a4f !important;    /* gold accent */
-  --tertiary: #6e5ad1 !important;     /* muted purple accent */
+  --secondary: #a67efb !important;    /* links / highlights accent */
+  --tertiary: #bb9dff !important;     /* cosmic purple accent */
 }
 
 /* Hide the "Created with Quartz" line, keep your links */

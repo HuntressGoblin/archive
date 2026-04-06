@@ -105,7 +105,7 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "Function over Form" Edition)
+   TINYNOTE THEME (The "Actually Hides the Content" Edition)
    ============================================================ */
 
 /* 1. CONTAINER: The Top Divider */
@@ -121,10 +121,10 @@
     overflow: visible !important;
 }
 
-/* 2. THE TITLE (SUMMARY): Standard display to keep toggle working */
+/* 2. THE TITLE: Keeps text full and aligned */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary {
-    display: block !important; /* Restore standard behavior for folding */
+    display: block !important;
     background: transparent !important;
     color: var(--text-muted, var(--gray)) !important;
     font-size: 0.85em !important;
@@ -136,19 +136,17 @@
     line-height: 1.4 !important;
 }
 
-/* 3. TITLE INNER: Handles the text + arrow alignment without breaking the fold */
 .callout[data-callout="tinynote"] .callout-title-inner {
     display: inline-flex !important;
     align-items: center;
     gap: 6px;
 }
 
-/* 4. UI CLEANUP: Hide pencil icon */
+/* 3. UI CLEANUP: Hide pencil, style arrow */
 .callout[data-callout="tinynote"] .callout-icon {
     display: none !important;
 }
 
-/* 5. THE ARROW: Subtle and aligned */
 .callout[data-callout="tinynote"] .callout-fold,
 .callout[data-callout="tinynote"] .fold-icon svg {
     display: inline-flex !important;
@@ -159,7 +157,22 @@
     vertical-align: middle;
 }
 
-/* 6. CONTENT & LINKS: Clean text, no Quartz Pills */
+/* ============================================================
+   4. THE FIX: EXPLICITLY HIDING THE CONTENT WHEN COLLAPSED
+   ============================================================ */
+
+/* Forces Obsidian and standard Quartz configurations to hide content */
+.callout[data-callout="tinynote"].is-collapsed .callout-content {
+    display: none !important;
+}
+
+/* Forces alternative Quartz configurations (using native <details>) to hide content */
+details.callout[data-callout="tinynote"]:not([open]) .callout-content {
+    display: none !important;
+}
+/* ============================================================ */
+
+/* 5. CONTENT & LINKS: Clean text */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 10px 0 0 0 !important;
     margin: 0 !important;

@@ -1,5 +1,5 @@
 /* =========================================
-   INK-STAINED BOOKMARK — TAN PARCHEMENT FOR BLACK BACKGROUND
+   INK-STAINED BOOKMARK — TAN PARCHMENT FOR BLACK BACKGROUND
    ========================================= */
 .bookmark-box {
     position: relative;
@@ -12,7 +12,7 @@
     font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: #1b1b17; /* dark brown text instead of pure black for softer contrast */
+    color: #000000; /* pure black text */
     overflow: hidden;
     box-shadow:
         inset 0 4px 10px rgba(0,0,0,0.08),
@@ -63,26 +63,26 @@
 /* links styled like handwritten ink */
 .bookmark-box a,
 .bookmark-box .internal-link {
-    color: #1b1b17 !important; /* dark brown instead of black */
+    color: #000000 !important; /* force black */
     text-decoration: underline dotted;
     font-style: italic !important;
     font-weight: 500 !important;
-    text-shadow: 0 0 1px rgba(0,0,0,0.15);
+    text-shadow: none !important;
     transition: color 150ms ease, text-shadow 150ms ease;
 }
 
 /* link hover — simulate fresh ink glint */
 .bookmark-box a:hover,
 .bookmark-box .internal-link:hover {
-    color: #2c2c22 !important;
-    text-shadow: 0 0 2px rgba(0,0,0,0.25);
+    color: #000000 !important; /* stays black */
+    text-shadow: none !important;
 }
 
 /* optional heading style — elegant script */
 .bookmark-box h3,
 .bookmark-box .caption {
     font-family: 'Dancing Script', 'Palatino Linotype', serif;
-    color: #2c2c22;
+    color: #000000 !important; /* force black */
     font-variant: small-caps;
     letter-spacing: 0.03em;
     margin: 0 0 8px 0;
@@ -96,7 +96,7 @@
     top: 0; /* drip begins at the top */
     width: 4px;
     height: 4px;
-    background: #1b1b17;
+    background: #000000; /* black ink drops */
     border-radius: 50%;
     opacity: 0.7;
     animation: drip 2s linear infinite;

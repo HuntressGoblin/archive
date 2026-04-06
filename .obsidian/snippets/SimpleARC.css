@@ -105,12 +105,12 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (Gray Arrow Edition)
+   TINYNOTE THEME (Quartz Gray Arrow Edition)
    ============================================================ */
 
-/* 1. MAIN CONTAINER: same as before */
+/* 1. MAIN CONTAINER */
 .callout[data-callout="tinynote"] {
-    --callout-icon: none !important;  
+    --callout-icon: none !important;
     background: transparent !important;
     border: none !important;
     border-top: 1px solid #333 !important;
@@ -124,33 +124,40 @@
 /* 2. SUMMARY / TITLE */
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title {
-    display: block !important;
-    background: transparent !important;
+    display: flex !important;           /* allow alignment with arrow */
+    align-items: center !important;
+    background: transparent !important; /* remove blue background */
     color: #666 !important;
     font-size: 0.82em !important;
     font-style: italic !important;
     margin: 0 !important;
     padding-left: 0 !important;
-    list-style: none !important;
-    outline: none !important;
     cursor: pointer !important;
 }
 
-/* 3. MAKE THE ARROW GRAY */
+/* 3. QUARTZ ARROW & ICON FIX */
 .callout[data-callout="tinynote"] .callout-icon,
-.callout[data-callout="tinynote"] svg,
-.callout[data-callout="tinynote"] .callout-fold {
-    fill: #888 !important;       /* SVG arrows */
-    stroke: #888 !important;     /* optional stroke if used */
+.callout[data-callout="tinynote"] svg {
+    background: transparent !important; /* remove blue box */
+    fill: #888 !important;              /* make arrow gray */
+    width: 1em !important;              /* optional: size */
+    height: 1em !important;
 }
 
-/* 4. DEFAULT marker for browsers */
+/* 4. HIDE default marker in case browser adds it */
 .callout[data-callout="tinynote"] summary::-webkit-details-marker,
 .callout[data-callout="tinynote"] summary::marker {
-    color: #888 !important;      /* gray marker for default triangles */
+    display: none !important;
+    content: none !important;
 }
 
-/* 5. CONTENT & LINKS */
+/* 5. FOLD LOGIC: keep content hidden until open */
+.callout[data-callout="tinynote"].is-collapsed .callout-content,
+details.callout[data-callout="tinynote"]:not([open]) .callout-content {
+    display: none !important;
+}
+
+/* 6. CONTENT & LINKS */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 8px 0 0 0 !important;
     color: #666 !important;
@@ -164,7 +171,7 @@
     padding: 0 !important;
 }
 
-/* 6. INTERNAL TITLE WRAPPERS */
+/* 7. INTERNAL TITLE WRAPPERS */
 .callout[data-callout="tinynote"] .callout-title-inner,
 .callout[data-callout="tinynote"] .callout-title-inner * {
     color: #666 !important;

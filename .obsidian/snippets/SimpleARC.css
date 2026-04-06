@@ -47,7 +47,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;        /* Ensures image fills the bookmark */
-  object-position: center;  /* Centers the image */
+  object-position: center top;  /* Shift image upward */
   clip-path: inherit;       /* Matches parent clip-path perfectly */
   transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), filter 0.5s;
 }

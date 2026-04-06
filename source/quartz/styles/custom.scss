@@ -10,38 +10,45 @@
 
 /* === QUARTZ: MIDNIGHT COSMIC LIBRARY THEME (#080415 BASE) === */
 
-/* Cosmic Theme — Dark & Slightly Lighter Light Mode */
+/* Cosmic Theme — Locked Main Theme */
 
-/* --- Dark Mode --- */
-:root[saved-theme=dark],
-:root[saved-theme="dark"],
-:root[data-theme=dark],
-:root[data-theme="dark"] {
-  --light: #03010c !important;        /* primary deep cosmic purple/black */
-  --lightgray: #1b0f35 !important;    /* secondary surfaces, visible */
-  --gray: #2e1b5f !important;         /* panel depth */
+:root {
+  /* This forces the browser to treat the UI as dark by default */
+  color-scheme: dark;
 
-  --darkgray: #d1c0ff !important;     /* muted text / parchment contrast */
-  --dark: #f0e8ff !important;         /* main text (lavender-white) */
+  /* Primary deep cosmic purple/black */
+  --light: #03010c !important;        
+  
+  /* Secondary surfaces, visible */
+  --lightgray: #1b0f35 !important;    
+  
+  /* Panel depth */
+  --gray: #2e1b5f !important;         
 
-  --secondary: #a074ff !important;    /* link / highlight accent */
-  --tertiary: #c2a0ff !important;     /* brighter cosmic glow accent */
+  /* Muted text / parchment contrast */
+  --darkgray: #d1c0ff !important;     
+  
+  /* Main text (lavender-white) */
+  --dark: #f0e8ff !important;         
+
+  /* Link / highlight accent */
+  --secondary: #a074ff !important;    
+  
+  /* Brighter cosmic glow accent */
+  --tertiary: #c2a0ff !important;     
+
+  /* Optional: Ensure highlights match your cosmic palette */
+  --highlight: rgba(160, 116, 255, 0.2) !important;
 }
 
-/* --- Light Mode (slightly lighter tinge) */
-:root[saved-theme=light],
-:root[saved-theme="light"],
-:root[data-theme=light],
-:root[data-theme="light"] {
-  --light: #08021c !important;        /* slightly lighter cosmic black */
-  --lightgray: #241b49 !important;    /* lighter secondary surfaces */
-  --gray: #3b2a6f !important;         /* subtle panel depth increase */
-
-  --darkgray: #e0d0ff !important;     /* slightly brighter muted text */
-  --dark: #f8f4ff !important;         /* slightly brighter main text */
-
-  --secondary: #aa80ff !important;    /* slightly brighter accent */
-  --tertiary: #c9b0ff !important;     /* slightly brighter glow accent */
+/* Safety: Overwrite any specific theme attributes 
+   that Quartz might try to inject 
+*/
+[data-theme="light"], 
+[data-theme="dark"] {
+  --light: #03010c !important;
+  --dark: #f0e8ff !important;
+  --secondary: #a074ff !important;
 }
 
 /* Hide the "Created with Quartz" line, keep your links */

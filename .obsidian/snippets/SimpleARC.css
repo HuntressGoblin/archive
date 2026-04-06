@@ -105,66 +105,63 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (Optimized)
-   Works for: Obsidian, GitHub Preview, and Quartz 4.0
+   TINYNOTE THEME (Quartz 4.0 & Obsidian Optimized)
    ============================================================ */
 
-/* 1. MAIN CONTAINER: Minimalist top-divider style */
-div.callout[data-callout="tinynote"] {
+/* 1. CONTAINER: Force-remove the Quartz box styling */
+.callout[data-callout="tinynote"] {
     --callout-icon: none !important;
     background: transparent !important;
     border: none !important;
-    border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
+    border-top: 1px solid var(--lightgray) !important; /* Quartz uses --lightgray */
     border-radius: 0 !important;
-    padding: 12px 0 0 0 !important;
-    margin-top: 40px !important;
+    padding: 1rem 0 0 0 !important;
+    margin: 2rem 0 !important;
     box-shadow: none !important;
 }
 
-/* 2. UI REMOVAL: Hide icons and clean up header */
-div.callout[data-callout="tinynote"] :is(.callout-icon, svg) {
-    display: none !important;
+/* 2. REMOVE ICONS: Quartz often inserts these via SVGs or Pseudo-elements */
+.callout[data-callout="tinynote"] .callout-icon,
+.callout[data-callout="tinynote"] svg:not(.fold-icon) { 
+    display: none !important; 
 }
 
-/* 3. TITLE & CONTENT: Unified typography */
-div.callout[data-callout="tinynote"] :is(.callout-title, summary, .callout-content) {
+/* 3. TITLE/SUMMARY: Quartz uses 'summary' for foldable callouts */
+.callout[data-callout="tinynote"] :is(.callout-title, summary) {
     background: transparent !important;
     padding: 0 !important;
-    margin: 0 !important;
-    font-size: 0.85em !important;
-    color: var(--text-muted, var(--gray)) !important;
-}
-
-div.callout[data-callout="tinynote"] :is(.callout-title, summary) {
-    margin-bottom: 5px !important;
+    font-size: 0.85rem !important;
+    color: var(--gray) !important; /* Quartz standard muted text */
     font-style: italic !important;
-    font-weight: normal !important;
+    font-weight: 400 !important;
+    display: flex !important;
+    flex-direction: row-reverse; /* Pushes fold arrow to the left if present */
+    justify-content: flex-end;
+    gap: 8px;
 }
 
-div.callout[data-callout="tinynote"] .callout-content {
-    line-height: 1.6 !important;
-}
-
-/* 4. LINKS: Strip Quartz "Pills" back to plain text */
-div.callout[data-callout="tinynote"] .callout-content :is(a, .internal-link) {
+/* 4. THE LINKS: This kills the Quartz "Pill" style */
+.callout[data-callout="tinynote"] .callout-content a,
+.callout[data-callout="tinynote"] .callout-content a.internal,
+.callout[data-callout="tinynote"] .callout-content a.external {
     background: transparent !important;
+    background-color: transparent !important;
     padding: 0 !important;
     border: none !important;
-    color: var(--text-accent, var(--secondary)) !important;
+    border-radius: 0 !important;
+    color: var(--secondary) !important; /* Quartz link color */
     text-decoration: none !important;
+    font-weight: inherit !important;
 }
 
-div.callout[data-callout="tinynote"] .callout-content :is(a, .internal-link):hover {
+.callout[data-callout="tinynote"] .callout-content a:hover {
     text-decoration: underline !important;
-    opacity: 1 !important;
 }
 
-/* 5. CENTERED LAYOUT (Optional: For standalone preview) */
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #050510;
+/* 5. CONTENT AREA */
+.callout[data-callout="tinynote"] .callout-content {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0.85rem !important;
+    color: var(--gray) !important;
 }

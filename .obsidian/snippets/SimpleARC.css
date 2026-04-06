@@ -104,13 +104,13 @@
   box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2);
 }
 
-/* ============================================================
-   TINYNOTE THEME (Quartz Gray Arrow Edition)
+ /* ============================================================
+   TINYNOTE THEME (Quartz “Zero UI” Gray Arrow Edition)
    ============================================================ */
 
 /* 1. MAIN CONTAINER */
 .callout[data-callout="tinynote"] {
-    --callout-icon: none !important;
+    --callout-icon: none !important;  /* disable default icon */
     background: transparent !important;
     border: none !important;
     border-top: 1px solid #333 !important;
@@ -124,9 +124,9 @@
 /* 2. SUMMARY / TITLE */
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title {
-    display: flex !important;           /* allow alignment with arrow */
+    display: flex !important;           /* align arrow & text */
     align-items: center !important;
-    background: transparent !important; /* remove blue background */
+    background: transparent !important; /* remove blue box */
     color: #666 !important;
     font-size: 0.82em !important;
     font-style: italic !important;
@@ -135,23 +135,28 @@
     cursor: pointer !important;
 }
 
-/* 3. QUARTZ ARROW & ICON FIX */
+/* 3. QUARTZ ARROW */
 .callout[data-callout="tinynote"] .callout-icon,
-.callout[data-callout="tinynote"] svg {
-    background: transparent !important; /* remove blue box */
-    fill: #888 !important;              /* make arrow gray */
-    width: 1em !important;              /* optional: size */
+.callout[data-callout="tinynote"] .callout-icon svg,
+.callout[data-callout="tinynote"] .callout-fold {
+    background: transparent !important;  /* remove blue box */
+    fill: #888 !important;               /* gray arrow */
+    stroke: #888 !important;             /* gray stroke if used */
+    width: 1em !important;
     height: 1em !important;
+    padding: 0 !important;
+    margin-right: 0.25em !important;    /* small spacing from text */
+    display: inline-block !important;
 }
 
-/* 4. HIDE default marker in case browser adds it */
+/* 4. HIDE DEFAULT MARKER */
 .callout[data-callout="tinynote"] summary::-webkit-details-marker,
 .callout[data-callout="tinynote"] summary::marker {
     display: none !important;
     content: none !important;
 }
 
-/* 5. FOLD LOGIC: keep content hidden until open */
+/* 5. FOLD LOGIC */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;

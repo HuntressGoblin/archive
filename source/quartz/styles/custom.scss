@@ -10,36 +10,38 @@
 
 /* === QUARTZ: MIDNIGHT COSMIC LIBRARY THEME (#080415 BASE) === */
 
-/* Dark Mode */
+/* Cosmic Dark Theme — Unified Dual Mode */
+
+/* --- Dark Mode --- */
 :root[saved-theme=dark],
 :root[saved-theme="dark"],
 :root[data-theme=dark],
 :root[data-theme="dark"] {
   --light: #03010c !important;        /* primary deep cosmic purple/black */
-  --lightgray: #120a2b !important;    /* shadowed secondary surfaces */
-  --gray: #1f153f !important;         /* subtle surface depth */
+  --lightgray: #1b0f35 !important;    /* shadowed secondary surfaces, more visible */
+  --gray: #2e1b5f !important;         /* subtle surface depth for panels */
 
-  --darkgray: #b8a8e0 !important;     /* muted text / parchment contrast */
-  --dark: #ded0ff !important;         /* main text (lavender-white) */
+  --darkgray: #d1c0ff !important;     /* muted text / parchment contrast */
+  --dark: #f0e8ff !important;         /* main text (lavender-white) */
 
-  --secondary: #8c6fe6 !important;    /* link / highlight accent (muted purple) */
-  --tertiary: #a988ff !important;     /* cosmic glow accent (brighter purple) */
+  --secondary: #a074ff !important;    /* link / highlight accent (muted purple) */
+  --tertiary: #c2a0ff !important;     /* cosmic glow accent (brighter purple) */
 }
 
-/* Light Mode */
+/* --- Light Mode (mirrors Dark Mode) */
 :root[saved-theme=light],
 :root[saved-theme="light"],
 :root[data-theme=light],
 :root[data-theme="light"] {
-  --light: #f0edfc !important;        /* light parchment / cosmic paper */
-  --lightgray: #e0d9f7 !important;    /* secondary panels / surfaces */
-  --gray: #d1c8f0 !important;         /* subtle depth for raised sections */
+  --light: #03010c !important;        /* keep deep cosmic background */
+  --lightgray: #1b0f35 !important;    /* same secondary surfaces */
+  --gray: #2e1b5f !important;         /* same panel depth */
 
-  --darkgray: #4a3d78 !important;     /* readable text in purple ink */
-  --dark: #2b1f52 !important;         /* main text (deep purple ink) */
+  --darkgray: #d1c0ff !important;     /* same muted text */
+  --dark: #f0e8ff !important;         /* same main text */
 
-  --secondary: #a084ff !important;    /* link / highlight accent */
-  --tertiary: #b9a3ff !important;     /* cosmic glow accent */
+  --secondary: #a074ff !important;    /* same link / highlight accent */
+  --tertiary: #c2a0ff !important;     /* same cosmic glow accent */
 }
 
 /* Hide the "Created with Quartz" line, keep your links */

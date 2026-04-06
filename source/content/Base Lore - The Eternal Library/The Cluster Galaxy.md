@@ -59,12 +59,6 @@
 </div>
 
 
----
-> [!paperpagenotes] Clarification
-> B.G = Before Godspire
-A.G = After Godspire
-B.G: Supernova is created > Eden is created > Nova fuses with Eden > Humanity ascends to powers that can rival a gods > Cataclysm wishes to remake the entire world to prevent this from happening > other “gods” do not like this > Cataclysm is banished/husked, universe is mostly destroyed and set back to the beginning  
-A.G: Eden is saved, and so is Supernova and a few relics of the past.
 
 ---
 

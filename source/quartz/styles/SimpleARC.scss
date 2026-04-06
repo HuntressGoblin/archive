@@ -39,19 +39,16 @@
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* 4. The Image (Banner Canvas) - UPDATED TO REMOVE TOP GAP */
+/* 4. The Image (Banner Canvas) */
 .banner-shape img {
   position: absolute;
-  /* Adjust 'top' to a negative value to pull the image UP and hide transparency */
-  top: -25px; 
+  top: 0;
   left: 0;
   width: 100%;
-  /* Increase height to ensure it still covers the bottom tail */
-  height: calc(100% + 25px); 
-  
-  object-fit: cover;        /* Ensures image fills the bookmark */
-  object-position: center top; 
-  clip-path: inherit;       /* Matches parent clip-path perfectly */
+  height: 100%;
+  object-fit: cover;           /* Ensures image fills the bookmark */
+  object-position: center top; /* Shift image upward */
+  clip-path: inherit;          /* Matches parent clip-path perfectly */
   transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), filter 0.5s;
 }
 
@@ -100,19 +97,16 @@
    ========================================= */
 .glow-purple .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(160, 100, 255, 0.4));
-  border-top: 3px solid #a064ff;
   box-shadow: inset 0 20px 30px -10px rgba(160, 100, 255, 0.3);
 }
 
 .glow-red .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(255, 60, 60, 0.4));
-  border-top: 3px solid #ff3c3c;
   box-shadow: inset 0 20px 30px -10px rgba(255, 60, 60, 0.3);
 }
 
 .glow-white .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(255, 255, 255, 0.3));
-  border-top: 3px solid #ffffff;
   box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2);
 }
 

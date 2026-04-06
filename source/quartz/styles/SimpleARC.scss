@@ -105,7 +105,7 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "Actually Hides the Content" Edition)
+   TINYNOTE THEME (The "Side-by-Side Arrow" Edition)
    ============================================================ */
 
 /* 1. CONTAINER: The Top Divider */
@@ -121,10 +121,14 @@
     overflow: visible !important;
 }
 
-/* 2. THE TITLE: Keeps text full and aligned */
+/* 2. THE TITLE: Flex row keeps the text and arrow on the same line */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary {
-    display: block !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important; /* Centers text and arrow vertically */
+    justify-content: flex-start !important; /* Keeps them aligned to the left */
+    gap: 8px !important; /* Space between text and arrow */
     background: transparent !important;
     color: var(--text-muted, var(--gray)) !important;
     font-size: 0.85em !important;
@@ -136,37 +140,30 @@
     line-height: 1.4 !important;
 }
 
-.callout[data-callout="tinynote"] .callout-title-inner {
-    display: inline-flex !important;
-    align-items: center;
-    gap: 6px;
-}
-
 /* 3. UI CLEANUP: Hide pencil, style arrow */
 .callout[data-callout="tinynote"] .callout-icon {
     display: none !important;
 }
 
-.callout[data-callout="tinynote"] .callout-fold,
+.callout[data-callout="tinynote"] .callout-fold {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.callout[data-callout="tinynote"] .callout-fold svg,
 .callout[data-callout="tinynote"] .fold-icon svg {
-    display: inline-flex !important;
     color: var(--text-faint, var(--gray)) !important;
     opacity: 0.4;
     width: 12px !important;
     height: 12px !important;
-    vertical-align: middle;
 }
 
 /* ============================================================
    4. THE FIX: EXPLICITLY HIDING THE CONTENT WHEN COLLAPSED
    ============================================================ */
-
-/* Forces Obsidian and standard Quartz configurations to hide content */
-.callout[data-callout="tinynote"].is-collapsed .callout-content {
-    display: none !important;
-}
-
-/* Forces alternative Quartz configurations (using native <details>) to hide content */
+.callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
 }

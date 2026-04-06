@@ -105,7 +105,7 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "Stealth Gray" Edition)
+   TINYNOTE THEME (The "No-More-Blue" Edition)
    ============================================================ */
 
 /* 1. CONTAINER: The Top Divider */
@@ -113,7 +113,7 @@
     --callout-icon: none !important;
     background: transparent !important;
     border: none !important;
-    border-top: 1px solid #333333 !important; /* Dimmer divider line */
+    border-top: 1px solid #333333 !important;
     border-radius: 0 !important;
     padding: 16px 0 0 0 !important;
     margin-top: 40px !important;
@@ -121,59 +121,59 @@
     overflow: visible !important;
 }
 
-/* 2. THE TITLE: Fixed Gray color (Kills the blue/bright white) */
+/* 2. THE TITLE: The "Nuclear" Gray Fix */
+/* We target the summary AND any text/links inside it to kill the blue */
+.callout[data-callout="tinynote"] > .callout-title,
+.callout[data-callout="tinynote"] > summary,
+.callout[data-callout="tinynote"] .callout-title-inner,
+.callout[data-callout="tinynote"] .callout-title-inner *, 
+.callout[data-callout="tinynote"] summary * {
+    color: #666666 !important; /* Force muted gray on everything in the header */
+    fill: #666666 !important;  /* In case of SVG icons */
+    text-decoration: none !important;
+    font-size: 0.82em !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+}
+
+/* 3. LAYOUT: Keep it on one line */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    justify-content: flex-start !important;
     gap: 8px !important;
     background: transparent !important;
-    
-    /* Force a soft, dim gray */
-    color: #666666 !important; 
-    
-    font-size: 0.82em !important; /* Slightly smaller for stealth */
-    font-style: italic !important;
-    font-weight: 400 !important;
     padding: 4px 0 !important;
-    margin: 0 !important;
     cursor: pointer !important;
     line-height: 1.4 !important;
 }
 
-/* 3. UI CLEANUP: Hide pencil, dim the arrow further */
+/* 4. UI CLEANUP: Hide pencil, style arrow */
 .callout[data-callout="tinynote"] .callout-icon {
     display: none !important;
 }
 
-.callout[data-callout="tinynote"] .callout-fold {
-    display: flex !important;
-    align-items: center !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.callout[data-callout="tinynote"] .callout-fold svg,
+.callout[data-callout="tinynote"] .callout-fold,
 .callout[data-callout="tinynote"] .fold-icon svg {
-    color: #444444 !important; /* Very dark gray arrow */
-    opacity: 0.3 !important;   /* Barely there */
-    width: 10px !important;    /* Slightly smaller arrow */
+    display: flex !important;
+    opacity: 0.3 !important;
+    width: 10px !important;
     height: 10px !important;
+    color: #666666 !important;
 }
 
-/* 4. THE FOLD LOGIC: Explicitly hiding the content */
+/* 5. THE FOLD LOGIC */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
 }
 
-/* 5. CONTENT & LINKS: Muted gray text */
+/* 6. CONTENT & LINKS: Muted gray text */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 10px 0 0 0 !important;
     margin: 0 !important;
-    color: #666666 !important; /* Match the title gray */
+    color: #666666 !important;
     font-size: 0.82em !important;
 }
 
@@ -181,11 +181,10 @@ details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     background: transparent !important;
     padding: 0 !important;
     border: none !important;
-    color: #888888 !important; /* Slightly lighter gray for links so they're readable */
+    color: #888888 !important; /* Slightly lighter for readability */
     text-decoration: none !important;
 }
 
 .callout[data-callout="tinynote"] .callout-content a:hover {
     text-decoration: underline !important;
-    color: var(--text-accent, #aaaaaa) !important; /* Subtle highlight on hover */
 }

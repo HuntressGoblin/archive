@@ -1,6 +1,7 @@
 ---
 title: Welcome to the Eternal Library
 ---
+<br>
 <div class="bookmark-box">
     <h3><i class="fa-solid fa-feather-pointed"></i>Every Story holds Life</h3>
     <p>Welcome to the Eternal Library. In these shelves, you will find lore to satisfy even the most curious of adventurers. Yet remember, not everything has been written in ink. ...and of course, there are plenty of spoilers that lurk here too. You do NOT want to join the soul who keeps being thrown in Gay Baby Jail, trust me. Before you proceed, I ask you one thing: read each tome below. Remember to check in, the ink changes them quite often.</p>

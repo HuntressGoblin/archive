@@ -105,65 +105,63 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "Actually Folds" Edition)
+   TINYNOTE THEME (The "No-Clip" Edition)
    ============================================================ */
 
-/* 1. CONTAINER: The Top Divider */
+/* 1. CONTAINER: Added more top padding to prevent clipping */
 .callout[data-callout="tinynote"] {
     --callout-icon: none !important;
     background: transparent !important;
     border: none !important;
     border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
     border-radius: 0 !important;
-    padding: 12px 0 0 0 !important;
+    padding: 20px 0 0 0 !important; /* Increased space from the line */
     margin-top: 40px !important;
     box-shadow: none !important;
+    overflow: visible !important; /* Ensures text can't be cut off */
 }
 
-/* 2. REMOVE BULK: Kill default icons */
-.callout[data-callout="tinynote"] .callout-icon,
-.callout[data-callout="tinynote"] .callout-title-inner svg {
-    display: none !important;
-}
-
-/* 3. THE TOGGLE (SUMMARY): Clean & Clickable */
+/* 2. THE TITLE: Fixed alignment and line-height */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary {
     background: transparent !important;
-    padding: 0 !important;
-    margin-bottom: 5px !important;
     color: var(--text-muted, var(--gray)) !important;
     font-size: 0.85em !important;
     font-style: italic !important;
     font-weight: normal !important;
-    cursor: pointer !important; /* Visual cue that it's a button */
+    padding: 4px 0 !important; /* Added vertical padding so text isn't tight */
+    margin: 0 !important;
+    cursor: pointer !important;
     display: flex !important;
-    align-items: center;
-    gap: 6px;
+    align-items: baseline !important; /* Aligns text and arrow to their "feet" */
+    gap: 8px;
+    line-height: 1.2 !important; /* Prevents tall containers from clipping */
+    min-height: auto !important;
 }
 
-/* 4. THE ARROW: Re-added but very subtle */
+/* 3. UI CLEANUP: Remove pencil and style arrow */
+.callout[data-callout="tinynote"] .callout-icon {
+    display: none !important;
+}
+
 .callout[data-callout="tinynote"] .callout-fold,
 .callout[data-callout="tinynote"] .fold-icon svg {
-    display: block !important;
-    width: 14px;
-    height: 14px;
-    opacity: 0.5;
     color: var(--text-faint, var(--gray)) !important;
-    transition: transform 0.2s ease;
+    opacity: 0.4;
+    width: 12px !important;
+    height: 12px !important;
+    align-self: center; /* Keeps arrow centered even if text is baseline */
 }
 
-/* 5. CONTENT: Hidden by default when collapsed */
+/* 4. CONTENT & LINKS: No Quartz Pills */
 .callout[data-callout="tinynote"] .callout-content {
-    padding: 0 !important;
+    padding: 8px 0 0 0 !important;
     margin: 0 !important;
-    line-height: 1.6 !important;
-    font-size: 0.85em !important;
     color: var(--text-muted, var(--gray)) !important;
+    font-size: 0.85em !important;
 }
 
-/* 6. LINKS: Plain text style (No Quartz Pills) */
-.callout[data-callout="tinynote"] .callout-content :is(a, .internal-link) {
+.callout[data-callout="tinynote"] .callout-content a {
     background: transparent !important;
     padding: 0 !important;
     border: none !important;
@@ -171,6 +169,6 @@
     text-decoration: none !important;
 }
 
-.callout[data-callout="tinynote"] .callout-content :is(a, .internal-link):hover {
+.callout[data-callout="tinynote"] .callout-content a:hover {
     text-decoration: underline !important;
 }

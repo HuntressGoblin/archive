@@ -1,12 +1,12 @@
 /* =========================================
-   INK-STAINED BOOKMARK — MANUSCRIPT WITH DRIPPING INK
+   INK-STAINED BOOKMARK — TAN PARCHEMENT WITH DRIPPING INK
    ========================================= */
 .bookmark-box {
     position: relative;
     background:
-        linear-gradient(180deg, #fdf6e3 0%, #f9f0d9 50%, #f3e8c7 100%), /* soft parchment */
-        repeating-linear-gradient(90deg, rgba(0,0,0,0.01) 0 1px, transparent 1px 5px); /* fiber texture */
-    border-left: 5px solid #2b1a0f; /* deep ink/charcoal spine */
+        linear-gradient(180deg, #f5e1b8 0%, #e9c88c 50%, #d9b16b 100%), /* tanned parchment */
+        repeating-linear-gradient(90deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 5px); /* subtle fiber texture */
+    border-left: none; /* removed the left spine */
     border-radius: 8px;
     padding: 20px 24px;
     font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
@@ -128,30 +128,6 @@
 @media (max-width: 420px) {
     .bookmark-box { padding: 16px 14px; font-size: 0.95rem; }
     .bookmark-box::before { left: 6px; transform: rotate(-3deg); }
-}
-
-/* =========================================
-   FORCE ALL BOOKMARK TEXT BLACK (OBSIDIAN + QUARTZ)
-   ========================================= */
-
-.bookmark-box,
-.bookmark-box * {
-    color: #000000 !important;
-}
-
-/* specifically override Quartz link styling */
-.bookmark-box a,
-.bookmark-box .internal-link,
-.bookmark-box .external-link {
-    color: #000000 !important;
-    text-decoration: underline;
-}
-
-/* keep links black on hover */
-.bookmark-box a:hover,
-.bookmark-box .internal-link:hover,
-.bookmark-box .external-link:hover {
-    color: #000000 !important;
 }
 
 /* ============================= */

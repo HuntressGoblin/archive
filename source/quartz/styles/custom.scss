@@ -8,34 +8,38 @@
 
 @use "./base.scss";
 
+/* === QUARTZ: AGED SPACE LIBRARY THEME === */
+
+/* Dark Mode */
 :root[saved-theme=dark],
 :root[saved-theme="dark"],
 :root[data-theme=dark],
 :root[data-theme="dark"] {
-  --light: #0f172a !important;        /* deep space background */
-  --lightgray: #1a2142 !important;    /* galaxy panels */
-  --gray: #222a54 !important;         /* secondary surfaces */
+  --light: #1b1410 !important;        /* deep brown background */
+  --lightgray: #241a14 !important;    /* secondary surfaces / wood panels */
+  --gray: #2e221a !important;         /* raised panels / subtle depth */
 
-  --darkgray: #c7d2ff !important;     /* softer text */
-  --dark: #ffffff !important;         /* main text */
+  --darkgray: #b8a88c !important;     /* muted parchment text */
+  --dark: #e8dcc8 !important;         /* main text (warm parchment) */
 
-  --secondary: #2563eb !important;    /* galaxy blue */
-  --tertiary: #6d28d9 !important;     /* nebula purple */
+  --secondary: #c9a96a !important;    /* gold accent (highlights, links) */
+  --tertiary: #7c5cff !important;     /* faint purple accent (cosmic hints) */
 }
 
+/* Light Mode */
 :root[saved-theme=light],
 :root[saved-theme="light"],
 :root[data-theme=light],
 :root[data-theme="light"] {
-  --light: #1a1f3a !important;        /* slightly brighter cosmic background */
-  --lightgray: #242b52 !important;    /* nebula surface */
-  --gray: #2e3568 !important;         /* raised panels */
+  --light: #f4ecd8 !important;        /* parchment / light library background */
+  --lightgray: #e6dcc5 !important;    /* secondary surfaces / wood panels */
+  --gray: #d8c9b0 !important;         /* raised panels / subtle depth */
 
-  --darkgray: #d6dbff !important;     /* readable soft text */
-  --dark: #ffffff !important;         /* main text */
+  --darkgray: #3a2c22 !important;     /* readable brown text */
+  --dark: #1b1008 !important;         /* main text (darker ink) */
 
-  --secondary: #3b82f6 !important;    /* brighter galaxy blue */
-  --tertiary: #8b5cf6 !important;     /* brighter nebula purple */
+  --secondary: #b08a4f !important;    /* gold accent */
+  --tertiary: #6e5ad1 !important;     /* muted purple accent */
 }
 
 /* Hide the "Created with Quartz" line, keep your links */

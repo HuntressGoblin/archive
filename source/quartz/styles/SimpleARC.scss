@@ -105,12 +105,12 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (Quartz Gray Arrow Edition) - Improved
+   TINYNOTE THEME (Quartz “Zero UI” — Invisible Arrow Edition)
    ============================================================ */
 
-/* 1. MAIN CONTAINER (unchanged) */
+/* 1. MAIN CONTAINER */
 .callout[data-callout="tinynote"] {
-    --callout-icon: none !important;
+    --callout-icon: none !important;  
     background: transparent !important;
     border: none !important;
     border-top: 1px solid #333 !important;
@@ -118,46 +118,48 @@
     padding: 16px 0 0 0 !important;
     margin-top: 40px !important;
     box-shadow: none !important;
+    outline: none !important;
 }
 
 /* 2. SUMMARY / TITLE */
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title {
-    display: flex !important;
-    align-items: center !important;
+    display: block !important;
     background: transparent !important;
     color: #666 !important;
     font-size: 0.82em !important;
     font-style: italic !important;
     margin: 0 !important;
-    padding-left: 0 !important;
+    padding-left: 0 !important;  /* remove space where arrow was */
     cursor: pointer !important;
 }
 
-/* 3. FORCE GRAY ARROW – this is the key addition */
-.callout[data-callout="tinynote"] summary::marker,
-.callout[data-callout="tinynote"] summary::-webkit-details-marker,
+/* 3. MAKE ARROW INVISIBLE */
+.callout[data-callout="tinynote"] .callout-icon,
 .callout[data-callout="tinynote"] .callout-icon svg,
-.callout[data-callout="tinynote"] svg {
-    color: #888 !important;           /* main gray for the arrow */
-    fill: #888 !important;
-    stroke: #888 !important;          /* in case it's a stroked SVG */
-    background: transparent !important;
+.callout[data-callout="tinynote"] .callout-fold {
+    display: none !important;   /* hides the arrow completely */
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    visibility: hidden !important;
 }
 
-/* Also target the icon container itself for good measure */
-.callout[data-callout="tinynote"] .callout-icon {
-    color: #888 !important;
-    fill: #888 !important;
-}
-/* 4. HIDE default marker if needed (you already have this) */
+/* 4. HIDE DEFAULT MARKER IN BROWSERS */
 .callout[data-callout="tinynote"] summary::-webkit-details-marker,
 .callout[data-callout="tinynote"] summary::marker {
     display: none !important;
     content: none !important;
 }
 
-/* Rest of your rules (content, links, etc.) can stay the same */
+/* 5. FOLD LOGIC */
+.callout[data-callout="tinynote"].is-collapsed .callout-content,
+details.callout[data-callout="tinynote"]:not([open]) .callout-content {
+    display: none !important;
+}
+
+/* 6. CONTENT & LINKS */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 8px 0 0 0 !important;
     color: #666 !important;
@@ -165,5 +167,16 @@
 }
 
 .callout[data-callout="tinynote"] .callout-content a {
+    background: transparent !important;
     color: #888 !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* 7. INTERNAL TITLE WRAPPERS */
+.callout[data-callout="tinynote"] .callout-title-inner,
+.callout[data-callout="tinynote"] .callout-title-inner * {
+    color: #666 !important;
+    background: transparent !important;
+    border: none !important;
 }

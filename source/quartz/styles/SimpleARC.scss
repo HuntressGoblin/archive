@@ -105,12 +105,12 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (Quartz "Zero UI" Edition)
+   TINYNOTE THEME (Gray Arrow Edition)
    ============================================================ */
 
-/* 1. MAIN CONTAINER: Transparent with top divider */
+/* 1. MAIN CONTAINER: same as before */
 .callout[data-callout="tinynote"] {
-    --callout-icon: none !important;  /* Quartz icon variable */
+    --callout-icon: none !important;  
     background: transparent !important;
     border: none !important;
     border-top: 1px solid #333 !important;
@@ -121,7 +121,7 @@
     outline: none !important;
 }
 
-/* 2. SUMMARY / TITLE: remove all background, box, and marker */
+/* 2. SUMMARY / TITLE */
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title {
     display: block !important;
@@ -130,29 +130,24 @@
     font-size: 0.82em !important;
     font-style: italic !important;
     margin: 0 !important;
-    padding-left: 0 !important;          /* remove left spacing from marker */
+    padding-left: 0 !important;
     list-style: none !important;
     outline: none !important;
     cursor: pointer !important;
 }
 
-/* 3. REMOVE QUARTZ ICONS & ARROWS */
+/* 3. MAKE THE ARROW GRAY */
 .callout[data-callout="tinynote"] .callout-icon,
 .callout[data-callout="tinynote"] svg,
-.callout[data-callout="tinynote"] .callout-fold,
-.callout[data-callout="tinynote"] summary::-webkit-details-marker,
-.callout[data-callout="tinynote"] summary::marker {
-    display: none !important;
-    content: none !important;
-    width: 0 !important;
-    height: 0 !important;
-    margin: 0 !important;
+.callout[data-callout="tinynote"] .callout-fold {
+    fill: #888 !important;       /* SVG arrows */
+    stroke: #888 !important;     /* optional stroke if used */
 }
 
-/* 4. FOLD LOGIC: hide content until open */
-.callout[data-callout="tinynote"].is-collapsed .callout-content,
-details.callout[data-callout="tinynote"]:not([open]) .callout-content {
-    display: none !important;
+/* 4. DEFAULT marker for browsers */
+.callout[data-callout="tinynote"] summary::-webkit-details-marker,
+.callout[data-callout="tinynote"] summary::marker {
+    color: #888 !important;      /* gray marker for default triangles */
 }
 
 /* 5. CONTENT & LINKS */

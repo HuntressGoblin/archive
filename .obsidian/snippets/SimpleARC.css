@@ -105,7 +105,7 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "No-More-Blue" Edition)
+   TINYNOTE THEME (The "Total Neutral" Edition)
    ============================================================ */
 
 /* 1. CONTAINER: The Top Divider */
@@ -122,14 +122,12 @@
 }
 
 /* 2. THE TITLE: The "Nuclear" Gray Fix */
-/* We target the summary AND any text/links inside it to kill the blue */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title-inner,
 .callout[data-callout="tinynote"] .callout-title-inner *, 
 .callout[data-callout="tinynote"] summary * {
-    color: #666666 !important; /* Force muted gray on everything in the header */
-    fill: #666666 !important;  /* In case of SVG icons */
+    color: #666666 !important;
     text-decoration: none !important;
     font-size: 0.82em !important;
     font-style: italic !important;
@@ -149,27 +147,31 @@
     line-height: 1.4 !important;
 }
 
-/* 4. UI CLEANUP: Hide pencil, style arrow */
+/* 4. THE ARROW FIX: Kills the blue on the ">" symbol */
+/* This targets the native browser arrow and the Quartz SVG arrow */
+.callout[data-callout="tinynote"] summary::marker,
+.callout[data-callout="tinynote"] .callout-fold,
+.callout[data-callout="tinynote"] .callout-fold svg,
+.callout[data-callout="tinynote"] .fold-icon svg,
+.callout[data-callout="tinynote"] svg {
+    color: #444444 !important; /* Muted dark gray */
+    fill: #444444 !important;  /* Forces color on filled SVGs */
+    stroke: #444444 !important;/* Forces color on outlined SVGs */
+    opacity: 0.4 !important;
+}
+
+/* 5. UI CLEANUP: Hide pencil icon only */
 .callout[data-callout="tinynote"] .callout-icon {
     display: none !important;
 }
 
-.callout[data-callout="tinynote"] .callout-fold,
-.callout[data-callout="tinynote"] .fold-icon svg {
-    display: flex !important;
-    opacity: 0.3 !important;
-    width: 10px !important;
-    height: 10px !important;
-    color: #666666 !important;
-}
-
-/* 5. THE FOLD LOGIC */
+/* 6. THE FOLD LOGIC */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
 }
 
-/* 6. CONTENT & LINKS: Muted gray text */
+/* 7. CONTENT & LINKS: Muted gray text */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 10px 0 0 0 !important;
     margin: 0 !important;
@@ -181,7 +183,7 @@ details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     background: transparent !important;
     padding: 0 !important;
     border: none !important;
-    color: #888888 !important; /* Slightly lighter for readability */
+    color: #888888 !important;
     text-decoration: none !important;
 }
 

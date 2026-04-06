@@ -1,5 +1,5 @@
 /* =========================================
-   BANNER EFFECT MULTIPLE COLORS - FINAL
+   BANNER EFFECT MULTIPLE COLORS - FULL
    ========================================= */
 
 /* 1. Main Container */
@@ -9,7 +9,7 @@
   align-items: center;
   gap: 50px;
   padding: 80px;
-  perspective: 1000px; /* Adds depth for the subtle tilt animation */
+  perspective: 1000px;
 }
 
 /* 2. The Animation Wrapper (The Hanger) */
@@ -22,7 +22,6 @@
   animation: bannerSway 6s ease-in-out infinite;
 }
 
-/* Staggered floating effect for a mystical feel */
 .banner-frame:nth-child(2) { animation-delay: 1s; }
 .banner-frame:nth-child(3) { animation-delay: 2s; }
 
@@ -37,28 +36,26 @@
   overflow: hidden;
   border-left: 1px solid rgba(255, 255, 255, 0.05);
   border-right: 1px solid rgba(255, 255, 255, 0.05);
-
-  /* FORCE removal of theme-added top lines/shadows */
-  border-top: none !important;
-  box-shadow: none !important;
 }
 
-/* 4. The Image (Banner Canvas) */
+/* 4. The Image (Banner Canvas) 
+   FIX: Negative top pulls the image UP to hide the dark top bar.
+   Height calc ensures the bottom still reaches the swallow-tail tips. */
 .banner-shape img {
   position: absolute;
-  top: 0;
+  top: -45px;                /* Adjusted to hide the specific gap in your image */
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;           /* Ensures image fills the bookmark */
-  object-position: center top; /* Shift image upward */
-  clip-path: inherit;          /* Matches parent clip-path perfectly */
+  height: calc(100% + 45px); /* Matches the negative top to fill the frame */
+  object-fit: cover;
+  object-position: center top;
+  clip-path: inherit;
   transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), filter 0.5s;
 }
 
 /* Hover: The artifact "wakens" */
 .banner-shape:hover img {
-  transform: scale(1.15);
+  transform: scale(1.1);
   filter: saturate(1.4) contrast(1.2) brightness(1.1);
 }
 
@@ -97,21 +94,24 @@
 }
 
 /* =========================================
-   COLOR IDENTITIES (Glows & Inner Shadows)
+   COLOR IDENTITIES (Glows & Top-Lighting)
    ========================================= */
 .glow-purple .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(160, 100, 255, 0.4));
-  box-shadow: inset 0 20px 30px -10px rgba(160, 100, 255, 0.3) !important;
+  border-top: 3px solid #a064ff;
+  box-shadow: inset 0 20px 30px -10px rgba(160, 100, 255, 0.3);
 }
 
 .glow-red .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(255, 60, 60, 0.4));
-  box-shadow: inset 0 20px 30px -10px rgba(255, 60, 60, 0.3) !important;
+  border-top: 3px solid #ff3c3c;
+  box-shadow: inset 0 20px 30px -10px rgba(255, 60, 60, 0.3);
 }
 
 .glow-white .banner-shape {
   filter: drop-shadow(0 10px 20px rgba(255, 255, 255, 0.3));
-  box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2) !important;
+  border-top: 3px solid #ffffff;
+  box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2);
 }
 
 /* ============================================================

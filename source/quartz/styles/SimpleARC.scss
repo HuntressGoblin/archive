@@ -105,7 +105,7 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "Total Neutral" Edition)
+   TINYNOTE THEME (The "No Arrow, Just Text" Edition)
    ============================================================ */
 
 /* 1. CONTAINER: The Top Divider */
@@ -121,7 +121,7 @@
     overflow: visible !important;
 }
 
-/* 2. THE TITLE: The "Nuclear" Gray Fix */
+/* 2. THE TITLE: Total Gray Overload */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title-inner,
@@ -132,40 +132,38 @@
     font-size: 0.82em !important;
     font-style: italic !important;
     font-weight: 400 !important;
+    display: inline-block !important; /* Helps with alignment */
 }
 
-/* 3. LAYOUT: Keep it on one line */
+/* 3. LAYOUT: Simple Block */
 .callout[data-callout="tinynote"] > .callout-title,
 .callout[data-callout="tinynote"] > summary {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px !important;
+    display: block !important;
     background: transparent !important;
     padding: 4px 0 !important;
     cursor: pointer !important;
     line-height: 1.4 !important;
+    list-style: none !important; /* Removes native browser arrows (Chrome/Safari) */
 }
 
-/* 4. THE ARROW FIX: Kills the blue on the ">" symbol */
-/* This targets the native browser arrow and the Quartz SVG arrow */
-.callout[data-callout="tinynote"] summary::marker,
-.callout[data-callout="tinynote"] .callout-fold,
-.callout[data-callout="tinynote"] .callout-fold svg,
-.callout[data-callout="tinynote"] .fold-icon svg,
-.callout[data-callout="tinynote"] svg {
-    color: #444444 !important; /* Muted dark gray */
-    fill: #444444 !important;  /* Forces color on filled SVGs */
-    stroke: #444444 !important;/* Forces color on outlined SVGs */
-    opacity: 0.4 !important;
+/* 4. THE ARROW SLAYER: Hides all markers and icons */
+.callout[data-callout="tinynote"] summary::-webkit-details-marker, /* Safari/Chrome marker */
+.callout[data-callout="tinynote"] summary::marker,               /* Standard marker */
+.callout[data-callout="tinynote"] .callout-fold,                 /* Obsidian fold icon */
+.callout[data-callout="tinynote"] .fold-icon,                    /* Quartz fold icon */
+.callout[data-callout="tinynote"] svg {                          /* Any remaining SVGs */
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
 }
 
-/* 5. UI CLEANUP: Hide pencil icon only */
+/* 5. UI CLEANUP: Hide pencil icon */
 .callout[data-callout="tinynote"] .callout-icon {
     display: none !important;
 }
 
-/* 6. THE FOLD LOGIC */
+/* 6. THE FOLD LOGIC: Keeps content hidden until clicked */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
@@ -173,7 +171,7 @@ details.callout[data-callout="tinynote"]:not([open]) .callout-content {
 
 /* 7. CONTENT & LINKS: Muted gray text */
 .callout[data-callout="tinynote"] .callout-content {
-    padding: 10px 0 0 0 !important;
+    padding: 8px 0 0 0 !important;
     margin: 0 !important;
     color: #666666 !important;
     font-size: 0.82em !important;

@@ -105,10 +105,10 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (The "No-Clip" Version)
+   TINYNOTE THEME (The "Actually Folds" Edition)
    ============================================================ */
 
-/* 1. CONTAINER: Top-divider style */
+/* 1. CONTAINER: The Top Divider */
 .callout[data-callout="tinynote"] {
     --callout-icon: none !important;
     background: transparent !important;
@@ -116,39 +116,53 @@
     border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
     border-radius: 0 !important;
     padding: 12px 0 0 0 !important;
-    margin: 40px 0 10px 0 !important;
+    margin-top: 40px !important;
     box-shadow: none !important;
-    overflow: visible !important; /* Prevents text clipping */
 }
 
-/* 2. UI REMOVAL: Clean up icons */
-.callout[data-callout="tinynote"] :is(.callout-icon, svg:not(.fold-icon)) {
+/* 2. REMOVE BULK: Kill default icons */
+.callout[data-callout="tinynote"] .callout-icon,
+.callout[data-callout="tinynote"] .callout-title-inner svg {
     display: none !important;
 }
 
-/* 3. TITLE/SUMMARY: Fixed the clipping issue */
-.callout[data-callout="tinynote"] :is(.callout-title, summary) {
+/* 3. THE TOGGLE (SUMMARY): Clean & Clickable */
+.callout[data-callout="tinynote"] > .callout-title,
+.callout[data-callout="tinynote"] > summary {
     background: transparent !important;
     padding: 0 !important;
-    margin: 0 0 8px 0 !important;
-    font-size: 0.85em !important;
+    margin-bottom: 5px !important;
     color: var(--text-muted, var(--gray)) !important;
+    font-size: 0.85em !important;
     font-style: italic !important;
     font-weight: normal !important;
-    line-height: 1.4 !important; /* Ensures vertical space for text */
-    list-style: none !important; /* Removes default summary arrow if needed */
-    display: block !important;   /* Stable layout */
-    width: 100%;
+    cursor: pointer !important; /* Visual cue that it's a button */
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
 }
 
-/* 4. CONTENT & LINKS: Plain text style */
+/* 4. THE ARROW: Re-added but very subtle */
+.callout[data-callout="tinynote"] .callout-fold,
+.callout[data-callout="tinynote"] .fold-icon svg {
+    display: block !important;
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
+    color: var(--text-faint, var(--gray)) !important;
+    transition: transform 0.2s ease;
+}
+
+/* 5. CONTENT: Hidden by default when collapsed */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 0 !important;
     margin: 0 !important;
+    line-height: 1.6 !important;
     font-size: 0.85em !important;
     color: var(--text-muted, var(--gray)) !important;
 }
 
+/* 6. LINKS: Plain text style (No Quartz Pills) */
 .callout[data-callout="tinynote"] .callout-content :is(a, .internal-link) {
     background: transparent !important;
     padding: 0 !important;
@@ -159,10 +173,4 @@
 
 .callout[data-callout="tinynote"] .callout-content :is(a, .internal-link):hover {
     text-decoration: underline !important;
-}
-
-/* 5. FOLD ICON: Subtle and out of the way */
-.callout[data-callout="tinynote"] .callout-fold {
-    padding: 0 8px 0 0 !important;
-    opacity: 0.5;
 }

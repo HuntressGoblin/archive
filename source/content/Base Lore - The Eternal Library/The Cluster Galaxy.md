@@ -9,7 +9,7 @@
     <span class="ink-drop"></span>
     <div class="letterbox-signature">
     — ???
-</div>
+
 </div>
 
 
@@ -18,6 +18,7 @@
 
 <div class="bookshelf">
   <div class="shelf">
+    
     <div class="book tall burgundy">
       <div class="spine">
         <span class="spine-text">Why is it called the "Cluster" Galaxy?</span>
@@ -38,10 +39,9 @@
  </div>
     </div>
 </div>
-</div>
 
----
-<br> <br> <br> <br> <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">
+
+<br> <br> <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">
   Below represents the Cluster Galaxy in one of its many interpretations.
 </p>
 
@@ -59,12 +59,17 @@
 </div>
 
 
+---
+> [!paperpagenotes] Clarification
+> B.G = Before Godspire
+A.G = After Godspire
+B.G: Supernova is created > Eden is created > Nova fuses with Eden > Humanity ascends to powers that can rival a gods > Cataclysm wishes to remake the entire world to prevent this from happening > other “gods” do not like this > Cataclysm is banished/husked, universe is mostly destroyed and set back to the beginning  
+A.G: Eden is saved, and so is Supernova and a few relics of the past.
+
+---
 
 
 
-
-<br>
-<br>
 <br>
 
 <details class="advancedgalaxydropdown-container" id="galaxyDropdown">
@@ -106,8 +111,6 @@
         </div>
     </div>
 </details>
-<br>
 
-
->[!tinynote]- Connections
+> [!tinynote]- Connections
 > [[Istoria, Lady of Ink]], [[The Ink that Binds]], [[The Cluster Galaxy]], [[The Supernova]]

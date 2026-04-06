@@ -1,52 +1,70 @@
 /* ----------------------------
    Forced Themes: Full-Page Parchment
+   Targeted to one page only
    ---------------------------- */
 
-.callout.parchmentthemeone {
-  /* Full-page container */
-  position: fixed;       /* stick to viewport */
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;        /* allow scrolling if content is long */
-  z-index: 999;          /* above normal content */
-
-  /* Colors */
+/* Replace this slug with your page slug */
+body.page-this-is-a-test-for-forced-themes {
   --main-bg: #fdf6e3;          /* Parchment beige */
-  --secondary-bg: #f3ecd1;     /* Slightly darker for nested callouts */
+  --secondary-bg: #f3ecd1;     /* Slightly darker for nested elements */
   --main-color: #5b4636;       /* Dark brown text */
   --heading-color: #3b2f23;    /* Deep brown for headings */
-
-  /* Fonts */
-  --main-font: 'Georgia', serif;
-  --heading-font: 'Palatino Linotype', 'Book Antiqua', serif;
-
-  /* Apply theme */
+  --link-color: #5b4636;       /* Brown links */
+  font-family: 'Georgia', serif;
   background-color: var(--main-bg);
   color: var(--main-color);
-  font-family: var(--main-font);
-  line-height: 1.6;
-  padding: 3rem;
-  box-sizing: border-box;
 }
 
-/* Headings inside the theme */
-.callout.parchmentthemeone h1,
-.callout.parchmentthemeone h2,
-.callout.parchmentthemeone h3,
-.callout.parchmentthemeone h4 {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
-  margin-bottom: 1rem;
-}
-
-/* Nested callouts and blockquotes */
-.callout.parchmentthemeone blockquote,
-.callout.parchmentthemeone .callout {
+/* Header / breadcrumbs / navigation */
+body.page-this-is-a-test-for-forced-themes header,
+body.page-this-is-a-test-for-forced-themes nav,
+body.page-this-is-a-test-for-forced-themes .breadcrumbs {
   background-color: var(--secondary-bg);
-  padding: 1rem;
+  color: var(--main-color);
+}
+
+/* Sidebar and TOC */
+body.page-this-is-a-test-for-forced-themes .sidebar,
+body.page-this-is-a-test-for-forced-themes .table-of-contents,
+body.page-this-is-a-test-for-forced-themes .backlinks {
+  background-color: var(--secondary-bg);
+  color: var(--main-color);
+}
+
+/* Headings inside content */
+body.page-this-is-a-test-for-forced-themes h1,
+body.page-this-is-a-test-for-forced-themes h2,
+body.page-this-is-a-test-for-forced-themes h3,
+body.page-this-is-a-test-for-forced-themes h4,
+body.page-this-is-a-test-for-forced-themes h5 {
+  color: var(--heading-color);
+  font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+}
+
+/* Paragraphs */
+body.page-this-is-a-test-for-forced-themes p {
+  color: var(--main-color);
+  line-height: 1.6;
+}
+
+/* Callouts and blockquotes */
+body.page-this-is-a-test-for-forced-themes .callout,
+body.page-this-is-a-test-for-forced-themes blockquote {
+  background-color: var(--secondary-bg);
   border-left: 4px solid #c9b78c;
+  padding: 1rem;
   margin: 1rem 0;
   border-radius: 4px;
+  color: var(--main-color);
+}
+
+/* Links */
+body.page-this-is-a-test-for-forced-themes a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+/* Optional: make content area slightly inset like a parchment sheet */
+body.page-this-is-a-test-for-forced-themes main {
+  padding: 2rem 3rem;
 }

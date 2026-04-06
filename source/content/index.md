@@ -58,9 +58,9 @@ title: Welcome to the Eternal Library
     </div>
     <div class="book short midnight">
       <div class="spine">
-        <span class="spine-text">Empty Tome</span>
+        <span class="spine-text">Disclaimers</span>
       </div>
-      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Disclaimers</b><br>If you see any images or information you'd like for me to take down, please reach out! I am more than happy to accommodate.</div>
     </div>
     <div class="book tall burgundy">
       <div class="spine">

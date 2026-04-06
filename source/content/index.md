@@ -115,7 +115,8 @@ title: Welcome to the Eternal Library
 > [!tinynote]- Connections
 > Look for me to find links to other notes! I'm a little hidden on purpose. :)
 
-
+<br>
+<br>
 <p style="text-align: center; font-size: 0.85em; color: #8a8fae;">
   Anything in here that you don't want documented or shown? Feel free to reach out and ping me! I'll gladly remove it!
 </p>

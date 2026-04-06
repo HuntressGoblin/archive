@@ -1,12 +1,20 @@
 /* ----------------------------
-   Forced Themes: Parchment
-   Callout-based
+   Forced Themes: Full-Page Parchment
    ---------------------------- */
 
 .callout.parchmentthemeone {
+  /* Full-page container */
+  position: fixed;       /* stick to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;        /* allow scrolling if content is long */
+  z-index: 999;          /* above normal content */
+
   /* Colors */
   --main-bg: #fdf6e3;          /* Parchment beige */
-  --secondary-bg: #f3ecd1;     /* Slightly darker for callouts */
+  --secondary-bg: #f3ecd1;     /* Slightly darker for nested callouts */
   --main-color: #5b4636;       /* Dark brown text */
   --heading-color: #3b2f23;    /* Deep brown for headings */
 
@@ -14,18 +22,16 @@
   --main-font: 'Georgia', serif;
   --heading-font: 'Palatino Linotype', 'Book Antiqua', serif;
 
-  /* Apply the theme */
+  /* Apply theme */
   background-color: var(--main-bg);
   color: var(--main-color);
   font-family: var(--main-font);
   line-height: 1.6;
-  min-height: 100vh;
-  width: 100%;
-  padding: 2rem;
+  padding: 3rem;
   box-sizing: border-box;
 }
 
-/* Headings inside the callout theme */
+/* Headings inside the theme */
 .callout.parchmentthemeone h1,
 .callout.parchmentthemeone h2,
 .callout.parchmentthemeone h3,
@@ -35,7 +41,7 @@
   margin-bottom: 1rem;
 }
 
-/* Nested callouts or blockquotes */
+/* Nested callouts and blockquotes */
 .callout.parchmentthemeone blockquote,
 .callout.parchmentthemeone .callout {
   background-color: var(--secondary-bg);

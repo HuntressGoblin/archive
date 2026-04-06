@@ -1,87 +1,119 @@
-/* =============================== */
-/* Standalone Gold Box (For Quotes)*/
-/* =============================== */
-
-/* Core yellow box — NOT a callout, no blockquote needed */
-.goldbox {
-  background-color: rgba(218, 165, 32, 0.12); /* Subtle Gold Tint */
-  border-left: 4px solid #b8860b; /* Dark Goldenrod */
-  padding: 0.75em 1em;
-  margin: 0.5em 0;
-  border-radius: 6px;
-  box-shadow: none; 
+/* 1. BANNER EFFECT MULTIPLE COLORS - The Main Container */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; 
+  padding: 80px;
+  perspective: 1000px; /* Adds depth for the subtle tilt animation */
 }
 
-/* Optional: darker/richer yellow variant */
-.goldbox-dark {
-  background-color: rgba(184, 134, 11, 0.18); /* Deeper Amber */
-  border-left: 4px solid #8b6508; /* Burnished Gold */
-  padding: 0.75em 1em;
-  margin: 0.5em 0;
-  border-radius: 6px;
-  box-shadow: none;
+/* 2. The Animation Wrapper (The Hanger) */
+.banner-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; 
+  height: 220px; 
+  animation: bannerSway 6s ease-in-out infinite;
 }
 
-/* Remove extra spacing inside the box */
-.goldbox p,
-.goldbox-dark p {
-  margin: 0.25em 0;
+/* Staggered floating effect for a mystical feel */
+.banner-frame:nth-child(2) { animation-delay: 1s; }
+.banner-frame:nth-child(3) { animation-delay: 2s; }
+
+/* 3. The Banner Silhouette */
+.banner-shape {
+  position: relative;
+  width: 120px;
+  height: 200px;
+  background: #0a0a0a;
+  /* Sacred Swallow-tail Cut */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 88%, 0% 100%);
+  overflow: hidden;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Make it align perfectly with normal text width */
-.markdown-rendered .goldbox,
-.markdown-rendered .goldbox-dark {
-  max-width: 100%;
+/* The Image (Banner Canvas) */
+.banner-shape img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.2) contrast(1.1) brightness(0.9);
+  transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), filter 0.5s;
 }
 
-/* ============================= */
-/* Standalone Red Box (No Quote) */
-/* ============================= */
-
-/* Core red box — NOT a callout, no blockquote needed */
-.redbox {
-  background-color: rgba(211, 47, 47, 0.12);
-  border-left: 4px solid #892323;
-  padding: 0.75em 1em;
-  margin: 0.5em 0;
-  border-radius: 6px; /* remove if you want sharp corners */
-  box-shadow: none; /* no glow */
+/* Hover: The artifact "wakens" */
+.banner-shape:hover img {
+  transform: scale(1.15);
+  filter: saturate(1.4) contrast(1.2) brightness(1.1);
 }
 
-/* Optional: darker variant */
-.redbox-dark {
-  background-color: rgba(137, 35, 35, 0.18);
-  border-left: 4px solid #5e1717;
-  padding: 0.75em 1em;
-  margin: 0.5em 0;
-  border-radius: 6px;
-  box-shadow: none;
+/* The Mystical Shimmer Overlay */
+.banner-shape::after {
+  content: "";
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 400%;
+  height: 400%;
+  background: linear-gradient(
+    45deg,
+    transparent 45%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 55%
+  );
+  animation: sacredShimmer 8s infinite;
+  z-index: 2;
+  pointer-events: none;
 }
 
-/* Remove extra spacing inside the box */
-.redbox p,
-.redbox-dark p {
-  margin: 0.25em 0;
+/* ANIMATIONS */
+@keyframes bannerSway {
+  0%, 100% { transform: translateY(0) rotateX(0deg); }
+  50% { transform: translateY(-20px) rotateX(5deg); }
 }
 
-/* Make it align perfectly with normal text width */
-.markdown-rendered .redbox,
-.markdown-rendered .redbox-dark {
-  max-width: 100%;
+@keyframes sacredShimmer {
+  0% { transform: translate(-20%, -20%); opacity: 0; }
+  10% { opacity: 0.8; }
+  30% { transform: translate(20%, 20%); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* COLOR IDENTITIES (Glows & Top-Lighting) */
+.glow-purple .banner-shape {
+  filter: drop-shadow(0 10px 20px rgba(160, 100, 255, 0.4));
+  border-top: 3px solid #a064ff;
+  box-shadow: inset 0 20px 30px -10px rgba(160, 100, 255, 0.3);
+}
+
+.glow-red .banner-shape {
+  filter: drop-shadow(0 10px 20px rgba(255, 60, 60, 0.4));
+  border-top: 3px solid #ff3c3c;
+  box-shadow: inset 0 20px 30px -10px rgba(255, 60, 60, 0.3);
+}
+
+.glow-white .banner-shape {
+  filter: drop-shadow(0 10px 20px rgba(255, 255, 255, 0.3));
+  border-top: 3px solid #ffffff;
+  box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2);
 }
 
 /* ============================================================
-   TINYNOTE THEME
+   TINYNOTE THEME (Optimized)
    Works for: Obsidian, GitHub Preview, and Quartz 4.0
    ============================================================ */
 
-/* 1. MAIN CONTAINER: Strip the box and add the top divider */
+/* 1. MAIN CONTAINER: Minimalist top-divider style */
 div.callout[data-callout="tinynote"] {
     --callout-icon: none !important;
-    background-color: transparent !important;
     background: transparent !important;
     border: none !important;
-    /* Uses Obsidian divider color or Quartz lightgray fallback */
     border-top: 1px solid var(--hr-color, var(--lightgray)) !important;
     border-radius: 0 !important;
     padding: 12px 0 0 0 !important;
@@ -89,172 +121,50 @@ div.callout[data-callout="tinynote"] {
     box-shadow: none !important;
 }
 
-/* 2. ICON REMOVAL: Specifically targets the pencil and SVGs */
-div.callout[data-callout="tinynote"] .callout-icon,
-div.callout[data-callout="tinynote"] .callout-icon svg,
-div.callout[data-callout="tinynote"] svg {
+/* 2. UI REMOVAL: Hide icons and clean up header */
+div.callout[data-callout="tinynote"] :is(.callout-icon, svg) {
     display: none !important;
 }
 
-/* 3. TITLE/SUMMARY: Style the "Connections" label */
-div.callout[data-callout="tinynote"] .callout-title,
-div.callout[data-callout="tinynote"] summary {
-    background-color: transparent !important;
+/* 3. TITLE & CONTENT: Unified typography */
+div.callout[data-callout="tinynote"] :is(.callout-title, summary, .callout-content) {
     background: transparent !important;
     padding: 0 !important;
-    margin-bottom: 5px !important;
-    /* Muted text color with italic footnote style */
+    margin: 0 !important;
+    font-size: 0.85em !important;
     color: var(--text-muted, var(--gray)) !important;
+}
+
+div.callout[data-callout="tinynote"] :is(.callout-title, summary) {
+    margin-bottom: 5px !important;
     font-style: italic !important;
     font-weight: normal !important;
-    font-size: 0.85em !important;
 }
 
-/* 4. THE ARROW (FOLD ICON): Make it subtle */
-div.callout[data-callout="tinynote"] .callout-fold,
-div.callout[data-callout="tinynote"] .fold-icon svg {
-    color: var(--text-faint, var(--gray)) !important;
-    opacity: 0.6;
-    padding-right: 8px !important;
-}
-
-/* 5. CONTENT AREA: Clean list styling */
 div.callout[data-callout="tinynote"] .callout-content {
-    padding: 0 !important;
-    margin: 0 !important;
     line-height: 1.6 !important;
-    color: var(--text-muted, var(--gray)) !important;
-    font-size: 0.85em !important;
 }
 
-/* 6. LINKS: Remove Quartz "Pills" and style as text */
-div.callout[data-callout="tinynote"] .callout-content a,
-div.callout[data-callout="tinynote"] .callout-content a.internal,
-div.callout[data-callout="tinynote"] .internal-link {
-    background-color: transparent !important;
+/* 4. LINKS: Strip Quartz "Pills" back to plain text */
+div.callout[data-callout="tinynote"] .callout-content :is(a, .internal-link) {
     background: transparent !important;
     padding: 0 !important;
     border: none !important;
-    border-radius: 0 !important;
-    /* Uses accent color or Quartz secondary fallback */
     color: var(--text-accent, var(--secondary)) !important;
     text-decoration: none !important;
 }
 
-/* 7. LINK HOVER: Visual feedback */
-div.callout[data-callout="tinynote"] .callout-content a:hover,
-div.callout[data-callout="tinynote"] .internal-link:hover {
+div.callout[data-callout="tinynote"] .callout-content :is(a, .internal-link):hover {
     text-decoration: underline !important;
     opacity: 1 !important;
 }
 
-/* Center the group on the page */
+/* 5. CENTERED LAYOUT (Optional: For standalone preview) */
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #050510;
-}
-
-/* Container */
-.triplediamondbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 110px; 
-  padding: 50px;
-}
-
-/* 1. The Animation Wrapper */
-.triplediamondframe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 140px; 
-  height: 140px; 
-  animation: verticalBob 5s ease-in-out infinite;
-}
-
-/* Animation Timing Stagger */
-.triplediamondframe:nth-child(2) { animation-delay: 0.8s; }
-.triplediamondframe:nth-child(3) { animation-delay: 1.6s; }
-
-/* 2. The Actual Diamond Shape */
-.diamond-shape {
-  position: relative;
-  width: 140px;
-  height: 140px;
-  transform: rotate(45deg);
-  overflow: hidden;
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  flex-shrink: 0;
-}
-
-/* The Image - NOW WITH 200% COVERAGE */
-.diamond-shape img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  
-  /* Increased to 200% to guarantee no black corners */
-  width: 200%; 
-  height: 200%;
-  min-width: 200%;
-  min-height: 200%;
-  
-  object-fit: cover;
-  /* Centering and counter-rotation */
-  transform: translate(-50%, -50%) rotate(-45deg);
-  filter: saturate(1.1) contrast(1.05);
-}
-
-/* Sparkle Layer */
-.diamond-shape::after {
-  content: "";
-  position: absolute;
-  top: -100%;
-  left: -100%;
-  width: 300%;
-  height: 300%;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: rotate(-45deg);
-  animation: shimmer 6s infinite;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* KEYFRAMES */
-@keyframes verticalBob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-}
-
-@keyframes shimmer {
-  0% { transform: rotate(-45deg) translate(-35%, -35%); opacity: 0; }
-  15% { opacity: 1; }
-  30% { transform: rotate(-45deg) translate(35%, 35%); opacity: 0; }
-  100% { opacity: 0; }
-}
-
-/* Color Glows */
-.glow-purple .diamond-shape {
-  border-color: rgba(160, 100, 255, 0.6);
-  box-shadow: 0 0 30px rgba(140, 80, 255, 0.3);
-}
-
-.glow-red .diamond-shape {
-  border-color: rgba(255, 60, 60, 0.6);
-  box-shadow: 0 0 30px rgba(255, 50, 50, 0.3);
-}
-
-.glow-white .diamond-shape {
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #050510;
 }

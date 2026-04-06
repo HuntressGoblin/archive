@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "source/content/index.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -186,6 +186,9 @@
   },
   "active": "51b0f23028237bab",
   "lastOpenFiles": [
+    "source/content/Z - Pictures/Futureistoria.png",
+    "source/content/Z - Pictures/Technicallynotimport.png",
+    "source/content/Z - Pictures/Sadpurplelady.png",
     "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
     "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
     "source/content/Base Lore - The Eternal Library/The Supernova.md",
@@ -202,8 +205,6 @@
     "source/content/Z - Pictures/Ialmostmissedthisone.png",
     "source/content/Z - Pictures/Heresheis.png",
     "source/content/Z - Pictures/Hehasanorb.png",
-    "source/content/Z - Pictures/Haierha.png",
-    "source/content/Z - Pictures/Goodthinginallaisntinthiscampaign.png",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Locations/Willowshore.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/History/Organizations/Northridge.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Ba-Ming Ouh.md",

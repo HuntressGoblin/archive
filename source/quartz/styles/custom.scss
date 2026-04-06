@@ -8,22 +8,22 @@
 
 @use "./base.scss";
 
-/* === QUARTZ: COSMIC PURPLE LIBRARY THEME === */
+/* === QUARTZ: DEEP COSMIC PURPLE LIBRARY THEME === */
 
 /* Dark Mode */
 :root[saved-theme=dark],
 :root[saved-theme="dark"],
 :root[data-theme=dark],
 :root[data-theme="dark"] {
-  --light: #1c1126 !important;        /* deep purple background */
-  --lightgray: #2a1f3b !important;    /* secondary panels / shelves */
-  --gray: #382850 !important;         /* subtle depth for surfaces */
+  --light: #0d0618 !important;        /* nearly black deep purple background */
+  --lightgray: #1a0f2d !important;    /* shadowed secondary panels / shelves */
+  --gray: #2b1c47 !important;         /* subtle surface depth */
 
-  --darkgray: #c7b3e6 !important;     /* soft parchment-text contrast */
-  --dark: #e0d6f5 !important;         /* main text (light lavender) */
+  --darkgray: #bca6e0 !important;     /* soft parchment-text contrast */
+  --dark: #e2d6f8 !important;         /* main text (light lavender) */
 
-  --secondary: #9d7edb !important;    /* gold-ish accent (links, highlights) */
-  --tertiary: #b491ff !important;     /* bright purple accent (cosmic hints) */
+  --secondary: #8f6cd4 !important;    /* muted purple/gold accent (links, highlights) */
+  --tertiary: #ac86ff !important;     /* bright cosmic purple accent */
 }
 
 /* Light Mode */
@@ -31,15 +31,15 @@
 :root[saved-theme="light"],
 :root[data-theme=light],
 :root[data-theme="light"] {
-  --light: #ede6f5 !important;        /* light parchment purple background */
-  --lightgray: #d9cee8 !important;    /* secondary panels / shelves */
-  --gray: #c6b5dd !important;         /* subtle depth for surfaces */
+  --light: #e8e1f6 !important;        /* pale cosmic parchment background */
+  --lightgray: #d6cdea !important;    /* secondary surfaces / shelves */
+  --gray: #c2b5dd !important;         /* subtle panel depth */
 
-  --darkgray: #4b3860 !important;     /* soft readable text */
-  --dark: #2d1f42 !important;         /* main text (dark purple ink) */
+  --darkgray: #4a3675 !important;     /* readable deep purple text */
+  --dark: #2b1d4b !important;         /* main text (dark ink purple) */
 
-  --secondary: #a67efb !important;    /* links / highlights accent */
-  --tertiary: #bb9dff !important;     /* cosmic purple accent */
+  --secondary: #a07dfc !important;    /* link / highlight accent */
+  --tertiary: #b997ff !important;     /* cosmic glow accent */
 }
 
 /* Hide the "Created with Quartz" line, keep your links */

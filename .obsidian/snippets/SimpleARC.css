@@ -104,13 +104,13 @@
   box-shadow: inset 0 20px 30px -10px rgba(255, 255, 255, 0.2);
 }
 
- /* ============================================================
-   TINYNOTE THEME (Quartz “Zero UI” Gray Arrow Edition)
+/* ============================================================
+   TINYNOTE THEME (Quartz “Zero UI” — Invisible Arrow Edition)
    ============================================================ */
 
 /* 1. MAIN CONTAINER */
 .callout[data-callout="tinynote"] {
-    --callout-icon: none !important;  /* disable default icon */
+    --callout-icon: none !important;  
     background: transparent !important;
     border: none !important;
     border-top: 1px solid #333 !important;
@@ -124,32 +124,29 @@
 /* 2. SUMMARY / TITLE */
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title {
-    display: flex !important;           /* align arrow & text */
-    align-items: center !important;
-    background: transparent !important; /* remove blue box */
+    display: block !important;
+    background: transparent !important;
     color: #666 !important;
     font-size: 0.82em !important;
     font-style: italic !important;
     margin: 0 !important;
-    padding-left: 0 !important;
+    padding-left: 0 !important;  /* remove space where arrow was */
     cursor: pointer !important;
 }
 
-/* 3. QUARTZ ARROW */
+/* 3. MAKE ARROW INVISIBLE */
 .callout[data-callout="tinynote"] .callout-icon,
 .callout[data-callout="tinynote"] .callout-icon svg,
 .callout[data-callout="tinynote"] .callout-fold {
-    background: transparent !important;  /* remove blue box */
-    fill: #888 !important;               /* gray arrow */
-    stroke: #888 !important;             /* gray stroke if used */
-    width: 1em !important;
-    height: 1em !important;
+    display: none !important;   /* hides the arrow completely */
+    width: 0 !important;
+    height: 0 !important;
     padding: 0 !important;
-    margin-right: 0.25em !important;    /* small spacing from text */
-    display: inline-block !important;
+    margin: 0 !important;
+    visibility: hidden !important;
 }
 
-/* 4. HIDE DEFAULT MARKER */
+/* 4. HIDE DEFAULT MARKER IN BROWSERS */
 .callout[data-callout="tinynote"] summary::-webkit-details-marker,
 .callout[data-callout="tinynote"] summary::marker {
     display: none !important;

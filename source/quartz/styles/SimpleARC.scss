@@ -105,7 +105,7 @@
 }
 
 /* ============================================================
-   TINYNOTE THEME (Quartz “Zero UI” — Invisible Arrow Edition)
+   TINYNOTE THEME (Tinynote — Arrow on Right)
    ============================================================ */
 
 /* 1. MAIN CONTAINER */
@@ -121,45 +121,36 @@
     outline: none !important;
 }
 
-/* 2. SUMMARY / TITLE */
+/* 2. SUMMARY / TITLE: flex to move arrow */
 .callout[data-callout="tinynote"] > summary,
 .callout[data-callout="tinynote"] .callout-title {
-    display: block !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;  /* pushes arrow to right */
     background: transparent !important;
     color: #666 !important;
     font-size: 0.82em !important;
     font-style: italic !important;
     margin: 0 !important;
-    padding-left: 0 !important;  /* remove space where arrow was */
+    padding-left: 0 !important;
     cursor: pointer !important;
 }
 
-/* 3. MAKE ARROW INVISIBLE */
+/* 3. ARROW: keep default blue */
 .callout[data-callout="tinynote"] .callout-icon,
 .callout[data-callout="tinynote"] .callout-icon svg,
 .callout[data-callout="tinynote"] .callout-fold {
-    display: none !important;   /* hides the arrow completely */
-    width: 0 !important;
-    height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    visibility: hidden !important;
+    order: 2 !important;           /* forces arrow to right */
+    margin-left: 0.5em !important; /* spacing from text */
 }
 
-/* 4. HIDE DEFAULT MARKER IN BROWSERS */
-.callout[data-callout="tinynote"] summary::-webkit-details-marker,
-.callout[data-callout="tinynote"] summary::marker {
-    display: none !important;
-    content: none !important;
-}
-
-/* 5. FOLD LOGIC */
+/* 4. FOLD LOGIC: hide content until open */
 .callout[data-callout="tinynote"].is-collapsed .callout-content,
 details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     display: none !important;
 }
 
-/* 6. CONTENT & LINKS */
+/* 5. CONTENT & LINKS */
 .callout[data-callout="tinynote"] .callout-content {
     padding: 8px 0 0 0 !important;
     color: #666 !important;
@@ -173,7 +164,7 @@ details.callout[data-callout="tinynote"]:not([open]) .callout-content {
     padding: 0 !important;
 }
 
-/* 7. INTERNAL TITLE WRAPPERS */
+/* 6. INTERNAL TITLE WRAPPERS */
 .callout[data-callout="tinynote"] .callout-title-inner,
 .callout[data-callout="tinynote"] .callout-title-inner * {
     color: #666 !important;

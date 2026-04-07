@@ -105,9 +105,8 @@
     bottom: -18px; 
     left: -10px;
     font-size: 2.0rem; 
-    color: #f8c8dc !important; /* Soft Pastel Pink */
+    color: #f8c8dc !important; 
     
-    /* LEFT CLUSTER (Original) + RIGHT CLUSTER (Shifted significantly Right) */
     text-shadow: 
         /* --- Left Cluster --- */
         -15px -8px 0px #b22222,  
@@ -118,15 +117,15 @@
         5px -32px 0px #e0b0ff,   
         20px 4px 0px #c9a0dc,
 
-        /* --- Right Cluster (Increased values for a "Large Leap" right) --- */
-        695px -8px 0px #b22222,  
-        705px -25px 0px #e63946, 
-        720px -5px 0px #ffb7c5,  
-        730px -15px 0px #ff8fa3, 
-        690px 4px 0px #dcd0ff,  
-        715px -32px 0px #e0b0ff, 
-        730px 4px 0px #c9a0dc,
-        710px 5px 0px #b22222;
+        /* --- Right Cluster (Nudged 15px further Right) --- */
+        710px -8px 0px #b22222,  
+        720px -25px 0px #e63946, 
+        735px -5px 0px #ffb7c5,  
+        745px -15px 0px #ff8fa3, 
+        705px 4px 0px #dcd0ff,  
+        730px -32px 0px #e0b0ff, 
+        745px 4px 0px #c9a0dc,
+        725px 5px 0px #b22222;
         
     opacity: 0.9;
     z-index: 10;
@@ -138,7 +137,7 @@
 .willowshorefigure2::after {
     content: "封"; 
     position: absolute;
-    top: -15px;  /* Moved up from 25px */
+    top: 15px;  /* Moved down from -15px */
     right: 40px; 
     width: 38px;
     height: 100px;

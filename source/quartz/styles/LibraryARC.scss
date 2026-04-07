@@ -1,10 +1,11 @@
 /* =========================================
    INK-STAINED BOOKMARK — TAN PARCHMENT
-   FULLY FORCED BLACK TEXT + FLOATING EFFECT
+   FULLY SCOPED & STACKING FIXED
    ========================================= */
 
+/* 1. MAIN CONTAINER STYLING */
 .bookmark-box, .bookmarkbody-box {
-    position: relative !important; /* Required for z-index stacking */
+    position: relative !important;
     background:
         linear-gradient(180deg, #f0d8a8 0%, #e4c99a 50%, #d9b384 100%), 
         repeating-linear-gradient(90deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 5px);
@@ -15,20 +16,25 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #000000 !important;
-    overflow: visible !important; /* Prevents edge clipping */
+    overflow: visible !important; 
     box-shadow:
         inset 0 4px 10px rgba(0,0,0,0.08),
         0 4px 12px rgba(0,0,0,0.22);
-    z-index: 1; /* Base floor */
+    
+    /* Stacking Logic */
+    z-index: 1;
     transition: z-index 0s;
 }
 
-/* THE SLEEPY FIX: Boosts the whole box to the front on hover */
+/* THE HOVER FIX: 
+   Only boosts these specific boxes so they don't 
+   overlap neighboring bookmarks. 
+*/
 .bookmark-box:hover, .bookmarkbody-box:hover {
-    z-index: 9999 !important; 
+    z-index: 999 !important;
 }
 
-/* Floating Animation */
+/* Floating Animation (Only for the main box) */
 .bookmark-box {
     animation: floatUpDown 6s ease-in-out infinite;
 }
@@ -40,7 +46,7 @@
 }
 
 /* ===============================
-   DECORATIVE INK EFFECTS
+   2. DECORATIVE INK EFFECTS
    =============================== */
 
 .bookmark-box::before {
@@ -82,7 +88,7 @@
 }
 
 /* ===============================
-   FORCE TEXT STYLES
+   3. SCOPED TEXT & LINK STYLES
    =============================== */
 
 .bookmark-box *, .bookmarkbody-box * {
@@ -121,34 +127,39 @@
 }
 
 /* ===============================
-   THE NUCLEAR OPTION FOR POPOVERS
-   Targets the dark "frame" around the bookmark
+   4. SCOPED EMBEDS & TOOLTIPS
+   Only affects things nested inside the bookmark
    =============================== */
 
-/* Target the actual popover container */
-.popover, .hover-popover, .markdown-embed, .tooltip, .popover-content {
-    background-color: #e4c99a !important; /* Forces the dark frame to parchment color */
+.bookmark-box .markdown-embed, 
+.bookmarkbody-box .markdown-embed,
+.bookmark-box .internal-embed,
+.bookmarkbody-box .internal-embed {
+    background-color: #e4c99a !important; 
     background-image: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 100%) !important;
     border: 1px solid #d9b384 !important;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.5) !important;
-    z-index: 10000 !important;
-    padding: 0 !important; /* Prevents double-padding around the bookmark */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3) !important;
+    padding: 0 !important;
+    margin: 10px 0 !important;
 }
 
-/* Removes dark backgrounds from internal preview headers/scrollbars */
-.popover *, .markdown-embed * {
+/* Remove headers/titles inside the embedded preview */
+.bookmark-box .markdown-embed-header, 
+.bookmarkbody-box .markdown-embed-header,
+.bookmark-box .markdown-embed-title,
+.bookmarkbody-box .markdown-embed-title {
+    display: none !important; 
+}
+
+/* Force internal content of embeds to be transparent/black text */
+.bookmark-box .markdown-embed *, 
+.bookmarkbody-box .markdown-embed * {
     background-color: transparent !important;
     color: #000000 !important;
-    border-color: rgba(0,0,0,0.1) !important;
-}
-
-/* Fixes the "Home > Base Lore" breadcrumbs in your screenshot */
-.popover .markdown-embed-header, .popover .markdown-embed-title {
-    display: none !important; /* Cleans up the preview so it just shows the parchment */
 }
 
 /* ===============================
-   ANIMATED INK DROPS
+   5. ANIMATED INK DROPS
    =============================== */
 
 .bookmark-box .ink-drop {

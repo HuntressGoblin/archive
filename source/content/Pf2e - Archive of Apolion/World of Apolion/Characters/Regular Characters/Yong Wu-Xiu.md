@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Yong Wu-Xiu is a kitsune and is the blacksmith within <a class="internal-link" href="Willowshore">Willowshore</a>. </p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>Wu-Xiu thinks that a day of hard work is good work! She won't skimp out on her craft.</p>
 </div>
 

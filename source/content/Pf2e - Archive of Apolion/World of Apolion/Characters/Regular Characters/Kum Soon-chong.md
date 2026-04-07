@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Kum Soon-Chong is human and is the veterinarian within <a class="internal-link" href="Willowshore">Willowshore</a>. He can typically be found at the stables.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>Kum Soon-Chong is kind to all and is famous for his compassion towards all animals.</p>
 </div>
 

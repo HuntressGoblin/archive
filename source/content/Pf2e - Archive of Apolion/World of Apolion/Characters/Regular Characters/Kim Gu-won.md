@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Gu-won resides at <a class="internal-link" href="Northridge">Northridge</a>. He is a cleric, but also runs the Exchange within <a class="internal-link" href="Willowshore">Willowshore</a>.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>Gu-won is quiet and easier to be pushed around</p>
 </div>
 

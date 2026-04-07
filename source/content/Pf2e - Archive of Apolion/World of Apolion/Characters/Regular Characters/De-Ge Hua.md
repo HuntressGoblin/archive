@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>De-Ge is a halfling in <a class="internal-link" href="Willowshore">Willowshore</a>. He runs the Happy Kappa bathhouse.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>He is quite infamous for his obsession with cleanliness and being tidy.</p>
 </div>
 

@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Sumika is a hunter that resides in <a class="internal-link" href="Willowshore">Willowshore</a> to embrace growth and seek outside help.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>Sumika has a keen eye and a quiet disposition. She strives to help others, which can lead her into trouble</p>
 
 </div>

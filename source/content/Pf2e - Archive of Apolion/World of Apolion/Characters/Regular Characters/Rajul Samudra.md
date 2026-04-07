@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Rajul Samudra, a nagaji, was brought <a class="internal-link" href="Willowshore">Willowshore</a> by the Ceiba-Duyue Exchange. Specifically, it was for his ability to build boats.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>While appearing quite intimidating, Rajul is fairly mild-mannered.</p>
 </div>
 

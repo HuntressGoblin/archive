@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Choe Chung-Hu is a human and resides within <a class="internal-link" href="Willowshore">Willowshore</a>. He's the leading figure of the milling workers.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>Chung-hu will not stand for unfair treatment of workers or exploitation.</p>
 </div>
 

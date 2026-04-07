@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Ba-Ming Ouh is a human and resides within <a class="internal-link" href="Willowshore">Willowshore</a>. After being saved by foxes as a baby, she worships the goddess <a class="internal-link" href="Daikitsu"> Daikitsu</a>. </p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>Ba-Ming Ouh is quiet and contemplative.</p>
 </div>
 

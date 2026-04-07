@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Kazuma Oono runs the Seven-Colored Songbird theater in <a class="internal-link" href="Willowshore">Willowshore</a>. He is a kitsune.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>Kazuma has a flair for the dramatics and a keen eye for talent.</p>
 </div>
 

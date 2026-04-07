@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Mother Otis is an elf and resides within <a class="internal-link" href="Willowshore">Willowshore</a>. They run the Thrice-Blessed Inn.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>"Mother Otis" is welcoming to all who are under their care.</p>
 </div>
 

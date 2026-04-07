@@ -7,9 +7,9 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong>Summary</strong>
+    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
     <p>Nadoya Sanmi runs the store Treesparrow's. It is a family-owned grocer in <a class="internal-link" href="Willowshore">Willowshore</a>.</p>
-    <strong>Personality</strong>
+    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
     <p>Sanmi is polite and courteous.</p>
 </div>
 

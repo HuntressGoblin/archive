@@ -143,6 +143,7 @@
 
 ---
 <br>
-
+<br>
+</div>
 > [!tinynote]- Connections
 >  N/A

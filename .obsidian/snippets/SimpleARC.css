@@ -9,7 +9,7 @@
   align-items: center;
   gap: 50px;
   padding: 80px;
-  perspective: 1000px;
+  perspective: 1000px; /* Adds depth for the subtle tilt animation */
 }
 
 /* 2. The Animation Wrapper (The Hanger) */
@@ -22,6 +22,7 @@
   animation: bannerSway 6s ease-in-out infinite;
 }
 
+/* Staggered floating effect for a mystical feel */
 .banner-frame:nth-child(2) { animation-delay: 1s; }
 .banner-frame:nth-child(3) { animation-delay: 2s; }
 
@@ -38,24 +39,25 @@
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* 4. The Image (Banner Canvas) 
-   FIX: Negative top pulls the image UP to hide the dark top bar.
-   Height calc ensures the bottom still reaches the swallow-tail tips. */
+/* 4. The Image (Banner Canvas) - UPDATED TO REMOVE TOP GAP */
 .banner-shape img {
   position: absolute;
-  top: -45px;                /* Adjusted to hide the specific gap in your image */
+  /* Adjust 'top' to a negative value to pull the image UP and hide transparency */
+  top: -25px; 
   left: 0;
   width: 100%;
-  height: calc(100% + 45px); /* Matches the negative top to fill the frame */
-  object-fit: cover;
-  object-position: center top;
-  clip-path: inherit;
+  /* Increase height to ensure it still covers the bottom tail */
+  height: calc(100% + 25px); 
+  
+  object-fit: cover;        /* Ensures image fills the bookmark */
+  object-position: center top; 
+  clip-path: inherit;       /* Matches parent clip-path perfectly */
   transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), filter 0.5s;
 }
 
 /* Hover: The artifact "wakens" */
 .banner-shape:hover img {
-  transform: scale(1.1);
+  transform: scale(1.15);
   filter: saturate(1.4) contrast(1.2) brightness(1.1);
 }
 

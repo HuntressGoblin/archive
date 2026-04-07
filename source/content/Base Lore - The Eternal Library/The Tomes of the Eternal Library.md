@@ -107,7 +107,7 @@
 
 <details class="parchmentdropdown-container" id="parchmentDropdown">
     <summary class="parchmentdropdown-trigger">
-        <span class="selected-text">What is the timeline of each series?</span>
+        <span class="selected-text"><i class="fa-solid fa-clock"></i>What is the timeline of each series?</span>
         <span class="dropdown-arrow">▼</span>
     </summary>
     <div class="parchmentdropdown-menu">

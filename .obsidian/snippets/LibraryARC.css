@@ -1,36 +1,41 @@
 /* =========================================
-   INK-STAINED BOOKMARK — TAN PARCHMENT FOR BLACK BACKGROUND
+   INK-STAINED BOOKMARK — TAN PARCHMENT
    FULLY FORCED BLACK TEXT + FLOATING EFFECT
    ========================================= */
-.bookmark-box {
+
+.bookmark-box, .bookmarkbody-box {
     position: relative;
     background:
-        linear-gradient(180deg, #f0d8a8 0%, #e4c99a 50%, #d9b384 100%), /* warm tanned parchment */
-        repeating-linear-gradient(90deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 5px); /* subtle fiber texture */
+        linear-gradient(180deg, #f0d8a8 0%, #e4c99a 50%, #d9b384 100%), 
+        repeating-linear-gradient(90deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 5px);
     border-left: none;
     border-radius: 8px;
     padding: 20px 24px;
     font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: #000000 !important; /* force pure black text */
+    color: #000000 !important;
     overflow: hidden;
     box-shadow:
         inset 0 4px 10px rgba(0,0,0,0.08),
         0 4px 12px rgba(0,0,0,0.22);
+}
 
-    /* Floating animation */
+/* Specific to floating bookmark */
+.bookmark-box {
     animation: floatUpDown 6s ease-in-out infinite;
 }
 
-/* Floating keyframes */
 @keyframes floatUpDown {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-6px); } /* moves up */
+    50% { transform: translateY(-6px); }
     100% { transform: translateY(0); }
 }
 
-/* top-left folded tab — ink blotch inspired */
+/* ===============================
+   DECORATIVE INK EFFECTS
+   =============================== */
+
 .bookmark-box::before {
     content: "";
     position: absolute;
@@ -47,7 +52,6 @@
     z-index: 3;
 }
 
-/* ink splatter overlay */
 .bookmark-box::after {
     content: "";
     position: absolute;
@@ -65,7 +69,6 @@
     animation: inkDrift 5s ease-in-out infinite alternate;
 }
 
-/* slight movement like wet ink settling */
 @keyframes inkDrift {
     0%   { transform: translate(0,0) rotate(0deg); }
     100% { transform: translate(1px,-1px) rotate(0.1deg); }
@@ -74,32 +77,22 @@
 /* ===============================
    FORCE ALL NESTED TEXT TO BLACK
    =============================== */
-.bookmark-box,
-.bookmark-box * {
+
+.bookmark-box *, .bookmarkbody-box * {
     color: #000000 !important;
     text-shadow: none !important;
 }
 
-/* links styled like handwritten ink */
-.bookmark-box a,
-.bookmark-box a *,
-.bookmark-box .internal-link,
-.bookmark-box .internal-link * {
+.bookmark-box a, .bookmarkbody-box a,
+.bookmark-box .internal-link, .bookmarkbody-box .internal-link {
     color: #000000 !important;
     text-decoration: underline dotted !important;
     font-style: italic !important;
     font-weight: 500 !important;
-    text-shadow: none !important;
 }
 
-/* headings and captions */
-.bookmark-box h1,
-.bookmark-box h2,
-.bookmark-box h3,
-.bookmark-box h4,
-.bookmark-box h5,
-.bookmark-box h6,
-.bookmark-box .caption {
+.bookmark-box h1, .bookmark-box h2, .bookmark-box h3,
+.bookmarkbody-box h1, .bookmarkbody-box h2, .bookmarkbody-box h3 {
     color: #000000 !important;
     font-family: 'Dancing Script', 'Palatino Linotype', serif;
     font-variant: small-caps;
@@ -107,9 +100,29 @@
     margin: 0 0 8px 0;
 }
 
+/* =========================================
+   LETTERBOX SIGNATURE (RIGHT-ALIGNED)
+   ========================================= */
+
+.letterbox-signature {
+    display: block;
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 15px;
+    /* Inheriting original size and line-height */
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
+    font-size: 1rem; 
+    line-height: 1.6;
+    color: #000000 !important;
+    /* Keeps the organic handwritten feel without changing font/size */
+    transform: rotate(-1.5deg);
+    transform-origin: right;
+}
+
 /* ===============================
-   Animated ink drops
+   ANIMATED INK DROPS
    =============================== */
+
 .bookmark-box .ink-drop {
     position: absolute;
     top: 0;
@@ -121,94 +134,20 @@
     animation: drip 2s linear infinite;
 }
 
-/* positions of drops */
 .bookmark-box .ink-drop:nth-child(1) { left: 15%; animation-delay: 0s; }
 .bookmark-box .ink-drop:nth-child(2) { left: 40%; animation-delay: 1s; }
 .bookmark-box .ink-drop:nth-child(3) { left: 65%; animation-delay: 2s; }
 .bookmark-box .ink-drop:nth-child(4) { left: 80%; animation-delay: 1.5s; }
 
-/* drip animation */
 @keyframes drip {
-    0% {
-        transform: translateY(0) scaleY(1);
-        opacity: 0.7;
-    }
-    70% {
-        transform: translateY(35px) scaleY(1.2);
-        opacity: 0.5;
-    }
-    100% {
-        transform: translateY(70px) scaleY(1.6);
-        opacity: 0;
-    }
+    0% { transform: translateY(0) scaleY(1); opacity: 0.7; }
+    70% { transform: translateY(35px) scaleY(1.2); opacity: 0.5; }
+    100% { transform: translateY(70px) scaleY(1.6); opacity: 0; }
 }
 
-/* responsive tweak */
+/* Responsive Tweak */
 @media (max-width: 420px) {
-    .bookmark-box { padding: 16px 14px; font-size: 0.95rem; }
-    .bookmark-box::before { left: 6px; transform: rotate(-3deg); }
-}
-
-/* =========================================
-   BOOKMARK BODY BOX — TAN PARCHMENT FOR BODY TEXT
-   ========================================= */
-.bookmarkbody-box {
-    position: relative;
-    background:
-        linear-gradient(180deg, #f0d8a8 0%, #e4c99a 50%, #d9b384 100%), /* warm tanned parchment */
-        repeating-linear-gradient(90deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 5px); /* subtle fiber texture */
-    border-left: none;
-    border-radius: 8px;
-    padding: 20px 24px;
-    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #000000 !important; /* force pure black text */
-    overflow: hidden;
-    box-shadow:
-        inset 0 4px 10px rgba(0,0,0,0.08),
-        0 4px 12px rgba(0,0,0,0.22);
-}
-
-/* ===============================
-   FORCE ALL NESTED TEXT TO BLACK
-   =============================== */
-.bookmarkbody-box,
-.bookmarkbody-box * {
-    color: #000000 !important;
-    text-shadow: none !important;
-}
-
-/* links styled like handwritten ink */
-.bookmarkbody-box a,
-.bookmarkbody-box a *,
-.bookmarkbody-box .internal-link,
-.bookmarkbody-box .internal-link * {
-    color: #000000 !important;
-    text-decoration: underline dotted !important;
-    font-style: italic !important;
-    font-weight: 500 !important;
-    text-shadow: none !important;
-}
-
-/* headings and captions */
-.bookmarkbody-box h1,
-.bookmarkbody-box h2,
-.bookmarkbody-box h3,
-.bookmarkbody-box h4,
-.bookmarkbody-box h5,
-.bookmarkbody-box h6,
-.bookmarkbody-box .caption {
-    color: #000000 !important;
-    font-family: 'Dancing Script', 'Palatino Linotype', serif;
-    font-variant: small-caps;
-    letter-spacing: 0.03em;
-    margin: 0 0 8px 0;
-}
-
-/* responsive tweak */
-@media (max-width: 420px) {
-    .bookmarkbody-box { padding: 16px 14px; font-size: 0.95rem; }
+    .bookmark-box, .bookmarkbody-box { padding: 16px 14px; font-size: 0.95rem; }
 }
 
 /* === Full Bookshelf Container === */
@@ -424,4 +363,157 @@
 .book:hover .blurb {
   opacity: 1;
   transform: translateY(50%) translateX(15px);
+}
+
+/* =========================================
+   PARCHMENT DROPDOWN — TAN BOOKMARK THEME
+   ========================================= */
+
+@keyframes parchment-waver {
+    0% {
+        box-shadow: 
+            0 4px 10px rgba(0,0,0,0.1),
+            inset 0 0 30px rgba(139, 90, 43, 0.1);
+    }
+    50% {
+        box-shadow: 
+            0 6px 15px rgba(0,0,0,0.2),
+            inset 0 0 50px rgba(139, 90, 43, 0.2);
+    }
+    100% {
+        box-shadow: 
+            0 4px 10px rgba(0,0,0,0.1),
+            inset 0 0 30px rgba(139, 90, 43, 0.1);
+    }
+}
+
+.parchmentdropdown-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 24px 0;
+    color: #000000 !important; /* Forced Black Text */
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+}
+
+summary::-webkit-details-marker { display: none; }
+summary::marker { display: none; }
+
+/* Trigger (Matches bookmark-box colors) */
+.parchmentdropdown-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    /* Matching your bookmark's specific tan gradient */
+    background: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 50%, #d9b384 100%);
+    
+    /* Using bookmark box-shadow style */
+    border: 1px solid #b58d5a;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.22);
+    
+    animation: parchment-waver 6s infinite ease-in-out;
+}
+
+.selected-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.dropdown-arrow {
+    color: #000000;
+    transition: transform 0.4s ease;
+}
+
+details[open] .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Menu (Matches bookmarkbody-box style) */
+.parchmentdropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+
+    /* Tan gradient background */
+    background: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 100%);
+    border: 1px solid #b58d5a;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Option wrapper */
+.parchment-option-wrapper {
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.03);
+    transition: background 0.25s ease;
+}
+
+.parchment-option-wrapper:hover {
+    background: rgba(0, 0, 0, 0.07);
+}
+
+.parchmentdropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    cursor: pointer;
+    color: #000000 !important;
+}
+
+/* Custom checkbox (Ink Well Style) */
+.parchmentdropdown-item input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1.5px solid #000000;
+    margin-right: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    position: relative;
+}
+
+.parchmentdropdown-item input[type="checkbox"]:checked {
+    background: #000000; /* Solid ink fill */
+}
+
+.parchmentdropdown-item input[type="checkbox"]:checked::after {
+    content: "✒";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #f0d8a8;
+}
+
+/* Description (The "Ink" text) */
+.parchment-description {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    color: #000000 !important;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.parchment-option-wrapper:has(input:checked) .parchment-description {
+    max-height: 300px;
+    opacity: 1;
+    padding: 5px 15px 15px 48px;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    margin-left: 10px;
 }

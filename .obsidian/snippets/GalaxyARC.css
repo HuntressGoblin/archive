@@ -1,306 +1,4 @@
 /* =========================================
-   UNIVERSAL GALAXY STYLE - OBSIDIAN & QUARTZ
-   ========================================= */
-
-/* 1. The Main Container */
-.callout[data-callout="galaxy-no-title"] {
-  background: linear-gradient(
-    135deg,
-    rgba(15, 23, 42, 0.9), 
-    rgba(37, 99, 235, 0.3), 
-    rgba(109, 40, 217, 0.3)
-  ) !important;
-  border: 1px solid rgba(140, 90, 255, 0.5) !important;
-  border-radius: 18px !important;
-  padding: 18px !important;
-  box-shadow: 0 0 25px rgba(59, 130, 246, 0.15), 0 0 35px rgba(168, 85, 247, 0.15) !important;
-  display: block !important;
-}
-
-/* 2. Hide the Title Bar (Icon + Text) */
-.callout[data-callout="galaxy-no-title"] .callout-title {
-  display: none !important;
-}
-
-/* 3. Force Content Visibility & Color */
-.callout[data-callout="galaxy-no-title"] .callout-content {
-  display: block !important;
-  color: #ffffff !important;
-  font-style: italic !important;
-  opacity: 1 !important;
-}
-
-/* 4. Ensure paragraphs inside don't inherit theme colors */
-.callout[data-callout="galaxy-no-title"] .callout-content p {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  margin: 0 !important;
-}
-
-/* 5. Link Visibility for Dark Backgrounds */
-.callout[data-callout="galaxy-no-title"] a {
-  color: #93c5fd !important;
-  text-decoration: underline !important;
-}
-
-/* =========================================
-   GALAXY THEME (NO ICON) - FULL OVERRIDE
-   ========================================= */
-.callout[data-callout="galaxy"] {
-  background: linear-gradient(
-    135deg,
-    rgba(15, 23, 42, 0.8),
-    rgba(37, 99, 235, 0.3),
-    rgba(109, 40, 217, 0.3)
-  );
-  border: 1px solid rgba(140, 90, 255, 0.4);
-  border-radius: 18px;
-  padding: 18px;
-  font-style: italic;
-  box-shadow:
-    0 0 25px rgba(59, 130, 246, 0.15),
-    0 0 35px rgba(168, 85, 247, 0.15);
-
-  --callout-icon: none;
-  --callout-title-color: #ffffff;
-  --callout-content-color: #ffffff;
-  
-  /* IMPACTS DROPDOWNS: Ensures the container expands correctly */
-  overflow: hidden;
-  height: auto;
-}
-
-/* 1. Force the Title to White & FIX VERTICAL ALIGNMENT */
-.callout[data-callout="galaxy"] .callout-title {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  font-weight: bold;
-  display: flex !important;
-  align-items: center !important;
-
-  /* MANUAL SLIDER: Increase bottom to move text UP */
-  padding-top: 2px !important;    
-  padding-bottom: 20px !important; 
-  
-  /* IMPACTS DROPDOWNS: Space before content starts when open */
-  margin-bottom: 0px;
-}
-
-/* Force space only when OPEN */
-.callout[data-callout="galaxy"]:not(.is-collapsed) .callout-title {
-  margin-bottom: 16px !important;
-}
-
-.callout[data-callout="galaxy"] .callout-title-inner,
-.callout[data-callout="galaxy"] .callout-title-text {
-  color: #ffffff !important;
-  line-height: 1 !important;
-}
-
-/* 2. Force the Body Content to White */
-.callout[data-callout="galaxy"] .callout-content {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  position: relative !important;
-  display: block;
-}
-
-.callout[data-callout="galaxy"] .callout-content p {
-  color: #ffffff !important;
-  margin-top: 0 !important; /* Prevents text from sagging further */
-}
-
-/* 3. Completely hide the icon space */
-.callout[data-callout="galaxy"] .callout-icon {
-  display: none !important;
-}
-
-/* Fix for the dropdown arrow height */
-.callout[data-callout="galaxy"] .callout-fold {
-  color: #ffffff !important;
-  padding-bottom: 16px; /* Matches the text shift */
-}
-
-/* 4. Links */
-.callout[data-callout="galaxy"] a {
-  color: #93c5fd !important;
-  text-decoration: underline;
-}
-
-/* =========================================
-   GRID & PLAYER CARDS (UNTOUCHED)
-   ========================================= */
-
-.player-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 10px;
-}
-
-.player-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 160px;
-  padding: 18px;
-  border-radius: 18px;
-  background: linear-gradient(
-    135deg,
-    rgba(15, 23, 42, 0.7),
-    rgba(37, 99, 235, 0.25),
-    rgba(109, 40, 217, 0.25)
-  );
-  border: 1px solid rgba(139, 92, 246, 0.5);
-  box-shadow:
-    0 0 25px rgba(59, 130, 246, 0.15),
-    0 0 35px rgba(168, 85, 247, 0.15);
-  color: #fff;
-  text-align: center;
-  font-style: italic;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-.player-card:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow:
-    0 0 35px rgba(59, 130, 246, 0.3),
-    0 0 45px rgba(168, 85, 247, 0.3);
-}
-
-.player-card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 10px;
-  transition: transform 0.3s, border-color 0.3s;
-}
-
-.player-card:hover img {
-  transform: scale(1.1);
-  border-color: rgba(255, 215, 0, 0.8);
-}
-
-.player-name {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 3px;
-}
-
-.character-class {
-  font-size: 0.85rem;
-  color: #eee;
-  font-style: italic;
-}
-
-/* === GALAXY TOMES — STABILIZED (QUARTZ SAFE) === */
-
-.istoria-tome-row {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  margin: 3rem 0;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.istoria-tome {
-  position: relative;
-  width: 170px;
-  aspect-ratio: 2 / 3;
-  border-radius: 18px;
-  /* overflow: hidden;  <-- REMOVED THIS TO ALLOW TOOLTIPS TO SHOW */
-  cursor: pointer;
-  box-sizing: border-box;
-
-  background: linear-gradient(
-    135deg,
-    #1c1f3f 0%,
-    #2a1f5a 40%,
-    #3b2370 100%
-  );
-
-  border: 1px solid rgba(120, 110, 255, 0.35);
-
-  box-shadow:
-    0 0 20px rgba(80, 70, 200, 0.25),
-    0 0 40px rgba(60, 40, 150, 0.15);
-
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  z-index: 1;
-}
-
-.istoria-tome:hover {
-  transform: translateY(-10px) scale(1.04);
-
-  box-shadow:
-    0 0 35px rgba(110, 100, 255, 0.45),
-    0 0 70px rgba(60, 40, 150, 0.3);
-
-  z-index: 10; /* High enough to overlap rows, but below tooltip logic */
-}
-
-/* === IMAGE CENTERING (QUARTZ SAFE) === */
-
-.istoria-tome img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 18px; /* Matches the container */
-  display: block;
-  margin: 0;
-  max-width: none; 
-  /* This ensures the image doesn't bleed out even if the parent container isn't clipping */
-  overflow: hidden; 
-}
-
-/* === TOOLTIP === */
-
-.tome-tooltip {
-  position: absolute;
-  bottom: -110px; /* Adjust this if the text is too far/close */
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-
-  width: 220px;
-  padding: 0.9rem 1rem;
-  border-radius: 14px;
-
-  background: linear-gradient(
-    135deg,
-    #1c1f3f 0%,
-    #2a1f5a 40%,
-    #3b2370 100%
-  );
-
-  border: 1px solid rgba(120, 110, 255, 0.35);
-  box-shadow: 0 0 25px rgba(80, 70, 200, 0.3);
-
-  color: #ddd;
-  font-size: 0.85rem;
-  text-align: center;
-  line-height: 1.4;
-
-  opacity: 0;
-  pointer-events: none;
-
-  transition: opacity 0.25s ease, transform 0.25s ease;
-
-  /* Ensures it stays above EVERYTHING */
-  z-index: 9999; 
-}
-
-.istoria-tome:hover .tome-tooltip {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-/* =========================================
    GALAXY OBSERVATORY FRAME (BALANCED GLOW)
    ========================================= */
 
@@ -461,221 +159,105 @@
   to{transform:rotate(360deg);}
 }
 
-/* =========================================
-   DEEP NEBULA DROPDOWN
-   ========================================= */
+/* === GALAXY TOMES — STABILIZED (QUARTZ SAFE) === */
 
-/* Glow animation */
-
-@keyframes starlight-pulse {
-    0% {
-        box-shadow:
-            0 0 20px rgba(34,211,238,0.2),
-            0 0 30px rgba(232,121,249,0.15);
-    }
-    50% {
-        box-shadow:
-            0 0 35px rgba(34,211,238,0.4),
-            0 0 45px rgba(232,121,249,0.3);
-    }
-    100% {
-        box-shadow:
-            0 0 20px rgba(34,211,238,0.2),
-            0 0 30px rgba(232,121,249,0.15);
-    }
+.istoria-tome-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-/* Container */
+.istoria-tome {
+  position: relative;
+  width: 170px;
+  aspect-ratio: 2 / 3;
+  border-radius: 18px;
+  /* overflow: hidden;  <-- REMOVED THIS TO ALLOW TOOLTIPS TO SHOW */
+  cursor: pointer;
+  box-sizing: border-box;
 
-.advancedgalaxydropdown-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 24px 0;
-    color: white;
-    font-style: italic;
+  background: linear-gradient(
+    135deg,
+    #1c1f3f 0%,
+    #2a1f5a 40%,
+    #3b2370 100%
+  );
+
+  border: 1px solid rgba(120, 110, 255, 0.35);
+
+  box-shadow:
+    0 0 20px rgba(80, 70, 200, 0.25),
+    0 0 40px rgba(60, 40, 150, 0.15);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  z-index: 1;
 }
 
-/* Remove default marker */
+.istoria-tome:hover {
+  transform: translateY(-10px) scale(1.04);
 
-summary::-webkit-details-marker { display: none; }
-summary::marker { display: none; }
+  box-shadow:
+    0 0 35px rgba(110, 100, 255, 0.45),
+    0 0 70px rgba(60, 40, 150, 0.3);
 
-/* Trigger */
-
-.advancedgalaxydropdown-trigger {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 18px 24px;
-    border-radius: 18px;
-
-    cursor: pointer;
-
-    background: linear-gradient(
-        135deg,
-        rgba(15,23,42,0.7),
-        rgba(34,211,238,0.2),
-        rgba(232,121,249,0.2)
-    );
-
-    border: 1px solid rgba(165,180,252,0.5);
-
-    animation: starlight-pulse 4s infinite ease-in-out;
-
-    backdrop-filter: blur(30px) saturate(180%);
+  z-index: 10; /* High enough to overlap rows, but below tooltip logic */
 }
 
-.selected-text {
-    font-weight: bold;
+/* === IMAGE CENTERING (QUARTZ SAFE) === */
+
+.istoria-tome img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px; /* Matches the container */
+  display: block;
+  margin: 0;
+  max-width: none; 
+  /* This ensures the image doesn't bleed out even if the parent container isn't clipping */
+  overflow: hidden; 
 }
 
-.dropdown-arrow {
-    color: #67e8f9;
-    transition: transform 0.3s ease;
+/* === TOOLTIP === */
+
+.tome-tooltip {
+  position: absolute;
+  bottom: -110px; /* Adjust this if the text is too far/close */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+
+  width: 220px;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #1c1f3f 0%,
+    #2a1f5a 40%,
+    #3b2370 100%
+  );
+
+  border: 1px solid rgba(120, 110, 255, 0.35);
+  box-shadow: 0 0 25px rgba(80, 70, 200, 0.3);
+
+  color: #ddd;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.4;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.25s ease, transform 0.25s ease;
+
+  /* Ensures it stays above EVERYTHING */
+  z-index: 9999; 
 }
 
-details[open] .dropdown-arrow {
-    transform: rotate(180deg);
-}
-
-/* Menu */
-
-.advancedgalaxydropdown-menu {
-
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    width: 100%;
-
-    padding: 12px;
-
-    border-radius: 18px;
-
-    background: linear-gradient(
-        160deg,
-        rgba(10,10,25,0.95),
-        rgba(30,15,45,0.95)
-    );
-
-    border: 1px solid rgba(34,211,238,0.3);
-
-    box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-
-    backdrop-filter: blur(25px);
-
-    z-index: 999;
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/* Option wrapper */
-
-.galaxy-option-wrapper {
-    border-radius: 12px;
-    background: rgba(34,211,238,0.03);
-    transition: background 0.25s ease;
-}
-
-.galaxy-option-wrapper:hover {
-    background: rgba(232,121,249,0.08);
-}
-
-/* Option label */
-
-.advancedgalaxydropdown-item {
-
-    display: flex;
-    align-items: center;
-
-    padding: 14px;
-
-    cursor: pointer;
-
-    color: #e0f2fe;
-}
-
-/* Custom checkbox */
-
-.advancedgalaxydropdown-item input[type="checkbox"] {
-
-    appearance: none;
-
-    width: 20px;
-    height: 20px;
-
-    border-radius: 5px;
-
-    border: 1px solid rgba(34,211,238,0.6);
-
-    margin-right: 14px;
-
-    background: rgba(15,23,42,0.6);
-
-    cursor: pointer;
-
-    position: relative;
-
-    flex-shrink: 0;
-}
-
-.advancedgalaxydropdown-item input[type="checkbox"]:checked {
-
-    background: #0891b2;
-
-    border-color: white;
-
-    box-shadow: 0 0 15px rgba(34,211,238,0.8);
-}
-
-.advancedgalaxydropdown-item input[type="checkbox"]:checked::after {
-
-    content: "✦";
-
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    font-size: 12px;
-
-    color: white;
-}
-
-/* Description panel */
-
-.galaxy-description {
-
-    max-height: 0;
-
-    overflow: hidden;
-
-    padding: 0 15px;
-
-    font-size: 0.9rem;
-
-    color: #67e8f9;
-
-    opacity: 0;
-
-    transition:
-        max-height 0.35s ease,
-        opacity 0.3s ease,
-        padding 0.3s ease;
-}
-
-/* SHOW DESCRIPTION WHEN CHECKED */
-
-.galaxy-option-wrapper:has(input:checked) .galaxy-description {
-
-    max-height: 250px;
-
-    opacity: 1;
-
-    padding: 5px 15px 15px 48px;
+.istoria-tome:hover .tome-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }

@@ -107,26 +107,26 @@
     font-size: 2.0rem; 
     color: #f8c8dc !important; /* Soft Pastel Pink */
     
-    /* LEFT CLUSTER (Original offsets) + RIGHT CLUSTER (Mirrored & Adjusted Left) */
+    /* LEFT CLUSTER (Original) + RIGHT CLUSTER (Shifted significantly Right) */
     text-shadow: 
         /* --- Left Cluster --- */
-        -15px -8px 0px #b22222,  /* Red */
-        -5px -25px 0px #e63946,  /* Bright Red */
-        12px -5px 0px #ffb7c5,   /* Pink */
-        20px -15px 0px #ff8fa3,  /* Rose */
-        -22px 2px 0px #dcd0ff,   /* Lavender */
-        5px -32px 0px #e0b0ff,   /* Mauve */
-        20px 4px 0px #c9a0dc,    /* Wisteria */
+        -15px -8px 0px #b22222,  
+        -5px -25px 0px #e63946,  
+        12px -5px 0px #ffb7c5,   
+        20px -15px 0px #ff8fa3,  
+        -22px 2px 0px #dcd0ff,   
+        5px -32px 0px #e0b0ff,   
+        20px 4px 0px #c9a0dc,
 
-        /* --- Right Cluster (Moved left by decreasing the horizontal values) --- */
-        605px -8px 0px #b22222, 
-        615px -25px 0px #e63946, 
-        630px -5px 0px #ffb7c5, 
-        640px -15px 0px #ff8fa3, 
-        600px 4px 0px #dcd0ff, 
-        625px -32px 0px #e0b0ff, 
-        640px 4px 0px #c9a0dc,
-        620px 5px 0px #b22222;
+        /* --- Right Cluster (Increased values for a "Large Leap" right) --- */
+        695px -8px 0px #b22222,  
+        705px -25px 0px #e63946, 
+        720px -5px 0px #ffb7c5,  
+        730px -15px 0px #ff8fa3, 
+        690px 4px 0px #dcd0ff,  
+        715px -32px 0px #e0b0ff, 
+        730px 4px 0px #c9a0dc,
+        710px 5px 0px #b22222;
         
     opacity: 0.9;
     z-index: 10;
@@ -138,7 +138,7 @@
 .willowshorefigure2::after {
     content: "封"; 
     position: absolute;
-    top: 25px; 
+    top: -15px;  /* Moved up from 25px */
     right: 40px; 
     width: 38px;
     height: 100px;

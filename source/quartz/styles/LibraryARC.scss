@@ -15,11 +15,11 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #000000 !important;
-    overflow: visible !important; /* Changed from hidden to allow popups to breathe */
+    overflow: visible !important; 
     box-shadow:
         inset 0 4px 10px rgba(0,0,0,0.08),
         0 4px 12px rgba(0,0,0,0.22);
-    z-index: 1; /* Base layer */
+    z-index: 1;
 }
 
 /* Floating Animation */
@@ -76,27 +76,6 @@
 }
 
 /* ===============================
-   GLOBAL HOVER/POPUP THEMING
-   Force popups to look like parchment
-   =============================== */
-
-/* Target common Wiki/Obsidian popup classes */
-.popover, .hover-popover, .tooltip, .reference-tooltip, .floating-content {
-    background: #e4c99a !important; /* Parchment base */
-    background-image: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 100%) !important;
-    border: 1px solid #d9b384 !important;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4) !important;
-    color: #000000 !important;
-    z-index: 99999 !important; /* Top of everything */
-}
-
-/* Force text inside any popup to be black */
-.popover *, .hover-popover *, .tooltip *, .reference-tooltip * {
-    color: #000000 !important;
-    text-shadow: none !important;
-}
-
-/* ===============================
    FORCE TEXT STYLES
    =============================== */
 
@@ -136,6 +115,33 @@
 }
 
 /* ===============================
+   THE NUCLEAR OPTION FOR POPOVERS
+   Targets the dark "frame" around the bookmark
+   =============================== */
+
+/* Target the actual popover container */
+.popover, .hover-popover, .markdown-embed, .tooltip, .popover-content {
+    background-color: #e4c99a !important; /* Forces the dark frame to parchment color */
+    background-image: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 100%) !important;
+    border: 1px solid #d9b384 !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5) !important;
+    z-index: 10000 !important;
+    padding: 0 !important; /* Prevents double-padding around the bookmark */
+}
+
+/* Removes dark backgrounds from internal preview headers/scrollbars */
+.popover *, .markdown-embed * {
+    background-color: transparent !important;
+    color: #000000 !important;
+    border-color: rgba(0,0,0,0.1) !important;
+}
+
+/* Fixes the "Home > Base Lore" breadcrumbs in your screenshot */
+.popover .markdown-embed-header, .popover .markdown-embed-title {
+    display: none !important; /* Cleans up the preview so it just shows the parchment */
+}
+
+/* ===============================
    ANIMATED INK DROPS
    =============================== */
 
@@ -159,10 +165,6 @@
     0% { transform: translateY(0) scaleY(1); opacity: 0.7; }
     70% { transform: translateY(35px) scaleY(1.2); opacity: 0.5; }
     100% { transform: translateY(70px) scaleY(1.6); opacity: 0; }
-}
-
-@media (max-width: 420px) {
-    .bookmark-box, .bookmarkbody-box { padding: 16px 14px; font-size: 0.95rem; }
 }
 
 /* === Full Bookshelf Container === */

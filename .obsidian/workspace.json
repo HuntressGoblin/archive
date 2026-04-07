@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "The Cluster Galaxy"
             }
           }
         ]
@@ -186,19 +186,21 @@
   },
   "active": "de0d0534409a8d22",
   "lastOpenFiles": [
-    "source/content/Test.md",
     "source/content/Base Lore - The Eternal Library/The Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/The Ink.md",
+    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
+    "source/content/Galaxyswirl.png",
+    "source/content/Base Lore - The Eternal Library/Istoria, Lady of the Ink.md",
+    "source/content/Base Lore - The Eternal Library/The Supernova.md",
+    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
     "source/content/index.md",
+    "source/content/Test.md",
+    "source/content/Base Lore - The Eternal Library/The Ink.md",
     "source/content/Z - Pictures/Futureistoria.png",
     "source/content/Z - Pictures/Sadpurplelady.png",
     "source/content/Z - Pictures/Technicallynotimport.png",
     "source/content/Pf2e - Archive of Apolion/Tome of Ephemera/Cycle of Ephemera.md",
     "source/content/Base Lore - The Eternal Library/What is the Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/The Supernova.md",
-    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
-    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
     "source/content/Base Lore - The Eternal Library/Istoria, Lady of Ink.md",
     "source/content/DnD - Archive of Artimis/Tome of Trailblazers/To be a Trailblazer.md",
     "source/content/Z - Pictures/Unknownappearance.png",
@@ -207,7 +209,6 @@
     "source/content/Z - Pictures/Reddragonwithdice.png",
     "source/content/Z - Pictures/Ohboymydoordashorderishere.png",
     "source/content/Z - Pictures/Ialmostmissedthisone.png",
-    "source/content/Z - Pictures/Heresheis.png",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Locations/Willowshore.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/History/Organizations/Northridge.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Ba-Ming Ouh.md",
@@ -223,8 +224,6 @@
     "source/quartz/styles/New Text Document.txt",
     "source/content/Base Lore - The Eternal Library/This is a test.md",
     "source/quartz/styles/Differentstyles.scss",
-    "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Rajul Samudra.md",
-    "source/content/DnD - Archive of Artimis/World of Artmis/Characters/Regular Characters/Varnoth.md",
     "source/content/DnD - Archive of Artimis/Tome of Hellfire",
     "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters",
     "source/content/Pf2e - Archive of Apolion/Characters/Powerful Figures",

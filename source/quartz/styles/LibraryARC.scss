@@ -150,6 +150,41 @@
     .bookmark-box, .bookmarkbody-box { padding: 16px 14px; font-size: 0.95rem; }
 }
 
+/* =========================================
+   THEMED HOVER ELEMENTS (TOOLTIPS/POPUPS)
+   ========================================= */
+
+/* This targets elements that appear on hover inside the bookmark */
+.bookmark-box *:hover::after, 
+.bookmark-box *:hover::before,
+.bookmark-box [data-tooltip]:hover::before, 
+/* Generic catch-all for common popup classes */
+.bookmark-box .tooltip, 
+.bookmark-box .popup,
+.bookmark-box .hover-card {
+    background: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 100%) !important;
+    color: #000000 !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 4px !important;
+    padding: 8px 12px !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif !important;
+    
+    /* Ensure it floats above everything */
+    z-index: 9999 !important;
+    position: absolute;
+    pointer-events: auto;
+    
+    /* Re-apply the ink-drift animation if you want it to feel 'alive' */
+    animation: inkDrift 5s ease-in-out infinite alternate !important;
+}
+
+/* Force text inside the hover elements to stay black */
+.bookmark-box .tooltip *, 
+.bookmark-box .popup * {
+    color: #000000 !important;
+}
+
 /* === Full Bookshelf Container === */
 .bookshelf {
   padding: 80px 20px;

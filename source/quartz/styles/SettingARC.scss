@@ -1,424 +1,375 @@
-/* =========================================
-   AVERNUS DOSSIER PANEL (SUBTLE - NO EMBERS)
-   Use for: Race, Gender, Age, Alignment, etc.
-   ========================================= */
+/* Container for willowshorefigures1 (Profile Header) */
 
-.avernus-dossier {
-  width: 100%;
-  margin: 25px 0;
-  padding: 22px 26px;
-
-  border-radius: 12px;
-  position: relative;
-
-  /* Much softer background than main banner */
-  background: linear-gradient(
-    135deg,
-    rgba(25, 0, 0, 0.9),
-    rgba(55, 8, 8, 0.88),
-    rgba(20, 0, 0, 0.92)
-  );
-
-  border: 1px solid rgba(255, 90, 70, 0.25);
-
-  /* Subtle glow only (toned down) */
-  box-shadow:
-    0 0 18px rgba(255, 60, 40, 0.18),
-    inset 0 0 25px rgba(255, 40, 0, 0.05);
-}
-
-/* Header for the section (ex: "Dossier") */
-.avernus-dossier-header {
-  font-size: 1.1em;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  color: #ffb3a6;
-
-  border-bottom: 1px solid rgba(255, 90, 70, 0.35);
-  padding-bottom: 8px;
-
-  text-shadow: 0 0 8px rgba(255, 80, 60, 0.35);
-}
-
-/* Grid layout for stats */
-.avernus-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px 24px;
-}
-
-/* Individual stat block */
-.avernus-stat {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Label (Race, Gender, etc.) */
-.avernus-stat-label {
-  font-size: 0.75em;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255, 150, 130, 0.7);
-  margin-bottom: 3px;
-}
-
-/* Value (Angel, Female, Lawful Evil, etc.) */
-.avernus-stat-value {
-  font-size: 1em;
-  color: #ffd8cf;
-
-  text-shadow: 0 0 6px rgba(255, 80, 60, 0.15);
-}
-
-/* =========================================
-   AVERNUS QUOTE — EMBERS + GLOW + RUNES
-   Base Class: avernus-quote
-   Optional Class: runic (for angelic corners)
-   ========================================= */
-
-.avernus-quote {
-  width: 100%;
-  margin: 35px 0;
-  padding: 26px 30px;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-
-  /* Infernal parchment background */
-  background: linear-gradient(
-    135deg,
-    rgba(25, 0, 0, 0.96),
-    rgba(70, 5, 5, 0.92),
-    rgba(20, 0, 0, 0.98)
-  );
-
-  border-left: 4px solid rgba(255, 90, 70, 0.9);
-
-  /* Base glow */
-  box-shadow:
-    0 0 25px rgba(255, 50, 20, 0.25),
-    0 0 60px rgba(255, 20, 0, 0.15),
-    inset 0 0 35px rgba(255, 60, 20, 0.08);
-
-  /* Animated glow pulse */
-  animation: avernusGlow 6s ease-in-out infinite;
-}
-
-/* 🔥 Animated Glow Pulse */
-@keyframes avernusGlow {
-  0% {
-    box-shadow:
-      0 0 20px rgba(255, 50, 20, 0.2),
-      0 0 40px rgba(255, 20, 0, 0.12),
-      inset 0 0 25px rgba(255, 60, 20, 0.06);
-  }
-  50% {
-    box-shadow:
-      0 0 45px rgba(255, 70, 30, 0.4),
-      0 0 90px rgba(255, 30, 0, 0.25),
-      inset 0 0 55px rgba(255, 80, 30, 0.15);
-  }
-  100% {
-    box-shadow:
-      0 0 20px rgba(255, 50, 20, 0.2),
-      0 0 40px rgba(255, 20, 0, 0.12),
-      inset 0 0 25px rgba(255, 60, 20, 0.06);
-  }
-}
-
-/* ✨ Floating Ember Layer */
-.avernus-quote::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.6;
-
-  background-image:
-    radial-gradient(circle at 20% 80%, rgba(255,120,60,0.6) 1px, transparent 2px),
-    radial-gradient(circle at 70% 60%, rgba(255,80,40,0.5) 1px, transparent 2px),
-    radial-gradient(circle at 40% 30%, rgba(255,140,80,0.5) 1px, transparent 2px),
-    radial-gradient(circle at 85% 20%, rgba(255,90,50,0.4) 1px, transparent 2px);
-
-  animation: emberFloat 18s linear infinite;
-}
-
-/* Ember movement animation */
-@keyframes emberFloat {
-  0% {
-    transform: translateY(10px);
-    opacity: 0.3;
-  }
-  50% {
-    transform: translateY(-10px);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateY(10px);
-    opacity: 0.3;
-  }
-}
-
-/* Quote Text */
-.avernus-quote-text {
-  position: relative;
-  font-size: 1.08em;
-  line-height: 1.75;
-  color: #ffd8cf;
-  z-index: 2;
-
-  text-shadow:
-    0 0 6px rgba(255, 120, 90, 0.35),
-    0 0 18px rgba(255, 60, 40, 0.2);
-}
-
-/* Author / Attribution */
-.avernus-quote-author {
-  position: relative;
-  margin-top: 16px;
-  text-align: right;
-  font-size: 0.9em;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(255, 170, 150, 0.95);
-  z-index: 2;
-
-  text-shadow:
-    0 0 10px rgba(255, 80, 60, 0.45);
-}
-
-/* ===============================
-   DRAGRnpc TEMPLATE
-   "Bronze Reef" Resident Edition
-   ============================== */
-
-.DRAGRnpc {
-  max-width: 800px;
-  margin: 30px auto;
-  color: #cfe6dc;
-  background: none;
-  border: none;
-  padding: 0;
-}
-
-/* --- Floating Header with Symmetrical Lines --- */
-.DRAGR-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.DRAGR-name {
-  font-size: 32px;
-  font-weight: 800;
-  color: #d4a46a;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  
-  /* Flex setup for side lines */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px; /* Space between lines and text */
-
-  /* Bronze Shimmer */
-  background: linear-gradient(to right, #d4a46a 20%, #fffceb 50%, #d4a46a 80%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 8s linear infinite;
-}
-
-/* The Left and Right Lines */
-.DRAGR-name::before,
-.DRAGR-name::after {
-  content: "";
-  height: 1px;
-  flex: 1; /* Makes lines fill available space */
-  max-width: 100px; /* Limits how long the lines get */
-  background: linear-gradient(to var(--dir, right), transparent, #d4a46a);
-  opacity: 0.6;
-}
-
-/* Flip the gradient for the right side line */
-.DRAGR-name::after {
-  --dir: left;
-}
-
-.DRAGR-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: #7fc3a8;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-top: 10px;
-}
-
-/* --- Portrait --- */
-.DRAGR-portrait {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.DRAGR-portrait img {
-  width: 350px; 
-  max-width: 90%;
-  height: auto;
-  border-radius: 15px;
-  border: 3px solid #d4a46a;
-  padding: 6px;
-  background: rgba(20, 30, 28, 0.7);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-}
-
-/* --- Section Label Box --- */
-.DRAGR-label {
-  display: inline-block;
-  background: linear-gradient(90deg, rgba(22, 34, 32, 0.98), rgba(45, 95, 85, 0.4));
-  border-left: 5px solid #d4a46a;
-  border-radius: 0 15px 15px 0;
-  padding: 8px 25px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #fffceb;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
-
-.DRAGR-section {
-  margin-bottom: 35px;
-}
-
-.DRAGR-content {
-  font-size: 17px;
-  line-height: 1.8;
-  padding-left: 15px;
-}
-
-/* List Styles */
-.DRAGR-content ul {
-  list-style-type: "◦";
-  padding-left: 20px;
-}
-
-.DRAGR-content li::marker {
-  color: #d4a46a;
-}
-
-/* Links */
-.DRAGRnpc a {
-  color: #7fc3a8;
-  text-decoration: underline wavy rgba(212, 164, 106, 0.3);
-  font-weight: 600;
-}
-
-@keyframes shine {
-  to { background-position: 200% center; }
-}
-
-/* ==========================
-   Baldur's Gate Theme - Gatekeeper Variant
-   FIXED: Removed @import to prevent Quartz build errors.
-   ========================== */
-
-/* --- General styling for bgtheme1 sections --- */
-.callout-section[data-theme="bgtheme1"],
-.callout[data-callout="bgtheme1"] {
-    border: 2px solid #a68a56; 
-    border-radius: 4px;
-    padding: 16px;
-    margin-bottom: 12px;
-    /* Fallback fonts if Google Fonts aren't loaded in your Quartz Head */
-    font-family: "Cinzel", "EB Garamond", serif;
-    color: #e0d1b8; 
-    background: radial-gradient(circle at center, #2c2f35 0%, #1a1c20 100%); 
-    box-shadow: 
-        inset 0 0 15px #000000, 
-        0 4px 10px rgba(0,0,0,0.8);
-    line-height: 1.55;
-    letter-spacing: 0.3px;
+/* Main Header with Profile Picture */
+.willowshorefigures1 {
+    background-color: #fdfaf0 !important;
+    /* Combined paper texture with a central radial "glow" */
+    background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png"), 
+                      radial-gradient(circle at 50% 50%, rgba(255,255,255,0.6), transparent),
+                      linear-gradient(135deg, #fdfaf0 25%, #f7f1e3 100%) !important;
+    border: 3px double #5d4037 !important;
+    padding: 30px 25px;
+    border-radius: 12px;
+    max-width: 450px;
+    margin: 20px auto;
+    color: #2c3e50 !important;
+    font-family: 'Constantia', 'Georgia', serif;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), inset 0 0 50px rgba(139, 69, 19, 0.05);
 }
 
-/* --- The Main Title & Inline Bold "Sub-Titles" --- */
-.callout-section[data-theme="bgtheme1"] .callout-title,
-.callout[data-callout="bgtheme1"] .callout-title,
-.callout-section[data-theme="bgtheme1"] b,
-.callout-section[data-theme="bgtheme1"] strong,
-.callout[data-callout="bgtheme1"] b,
-.callout[data-callout="bgtheme1"] strong {
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #f9f295 0%, #e0aa3e 45%, #b8860b 70%, #5d4a1f 100%);
-    
-    -webkit-background-clip: text;
-    background-clip: text; 
-    -webkit-text-fill-color: transparent;
-    
-    filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.8));
-    letter-spacing: 1.2px;
-}
-
-/* Specific sizing for the Main Name/Title */
-.callout-section[data-theme="bgtheme1"] .callout-title,
-.callout[data-callout="bgtheme1"] .callout-title {
-    font-size: 1.55em;
-    text-align: center;
-    border-bottom: 1px solid #5d4a1f;
-    padding-bottom: 6px;
-    margin: 0 auto 15px auto;
-    display: block;
-    min-height: 1.6em; 
-}
-
-/* Specific sizing for inline bold titles */
-.callout-section[data-theme="bgtheme1"] b,
-.callout-section[data-theme="bgtheme1"] strong,
-.callout[data-callout="bgtheme1"] b,
-.callout[data-callout="bgtheme1"] strong {
-    font-size: 1.05em; 
+/* Red Lantern with Sway and Glow */
+.willowshorefigures1::before {
+    content: "🏮";
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    font-size: 2.8rem;
+    opacity: 1;
     display: inline-block;
-    margin-right: 2px;
+    transform-origin: top center; 
+    animation: lanternSway 3s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 8px rgba(255, 69, 0, 0.4));
+    z-index: 10;
 }
 
-/* --- Medium Sized Portrait --- */
-.callout-section[data-theme="bgtheme1"] img,
-.callout[data-callout="bgtheme1"] img {
+@keyframes lanternSway {
+    0% { transform: rotate(-8deg); }
+    100% { transform: rotate(12deg); }
+}
+
+/* Title Styling */
+.willowshorefigures1 h1 {
+    color: #3e2723 !important;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px 0 5px 0;
+    font-size: 1.9rem;
+    border-bottom: 1px solid rgba(93, 64, 55, 0.2);
+    display: inline-block;
+    width: 100%;
+}
+
+/* Subtitle Styling */
+.willowshorefigures1 .ws-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #556b2f !important;
+    font-size: 1.05rem;
     display: block;
-    margin: 10px auto;
-    max-width: 160px; 
-    height: auto;
-    border: 3px solid #4b3d21;
-    outline: 1px solid #a68a56;
-    outline-offset: 1px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-/* --- Hero Box (Character Sheet Header) --- */
-.callout-section[data-theme="bgtheme1"][style*="text-align:center;"] {
-    background: linear-gradient(145deg, #23262b, #121417);
-    border: 3px double #a68a56;
-    box-shadow: 0 0 25px rgba(0,0,0,0.9), inset 0 0 40px rgba(166, 138, 86, 0.05);
+/* Profile Image Styling */
+.willowshorefigures1 img {
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #8b4513 !important;
+    box-shadow: 0 0 0 3px #fdfaf0, 0 8px 15px rgba(0,0,0,0.2);
 }
 
-/* --- Links (Arcane Blue) --- */
-.callout-section[data-theme="bgtheme1"] a {
-    color: #8bb9d0;
-    text-decoration: none;
-    border-bottom: 1px dotted #456d81;
+/* Wider Container */
+.willowshorefigure2 {
+    background-color: #f9f5e8 !important;
+    background-image: 
+        url("https://www.transparenttextures.com/patterns/handmade-paper.png"), 
+        linear-gradient(to bottom, #f9f5e8, #fdfaf0) !important;
+    background-size: cover, cover !important;
+    background-position: center, center !important;
+    background-repeat: repeat, no-repeat !important;
+    
+    border: 3px double #5d4037 !important;
+    padding: 35px 45px;
+    border-radius: 4px;
+    max-width: 650px;
+    margin: 40px auto 20px auto; 
+    color: #000000 !important; 
+    font-family: 'Constantia', 'Georgia', serif;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+    line-height: 1.7;
+    position: relative;
+    perspective: 1000px; 
 }
 
-/* --- Code/Mechanics Blocks --- */
-.callout-section[data-theme="bgtheme1"] code {
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 1px solid #5d4a1f;
-    color: #d4af37;
-    padding: 2px 5px;
-    border-radius: 3px;
-    font-family: "Courier New", monospace;
-    font-size: 0.85em;
+/* Dual Floral Bundles - Bottom Left and Bottom Right */
+.willowshorefigure2::before {
+    content: "🌸"; 
+    position: absolute;
+    bottom: -18px; 
+    left: -10px;
+    font-size: 2.0rem; 
+    color: #f8c8dc !important; /* Soft Pastel Pink */
+    
+    /* LEFT CLUSTER (Original offsets) + RIGHT CLUSTER (Mirrored & Adjusted Left) */
+    text-shadow: 
+        /* --- Left Cluster --- */
+        -15px -8px 0px #b22222,  /* Red */
+        -5px -25px 0px #e63946,  /* Bright Red */
+        12px -5px 0px #ffb7c5,   /* Pink */
+        20px -15px 0px #ff8fa3,  /* Rose */
+        -22px 2px 0px #dcd0ff,   /* Lavender */
+        5px -32px 0px #e0b0ff,   /* Mauve */
+        20px 4px 0px #c9a0dc,    /* Wisteria */
+
+        /* --- Right Cluster (Moved left by decreasing the horizontal values) --- */
+        605px -8px 0px #b22222, 
+        615px -25px 0px #e63946, 
+        630px -5px 0px #ffb7c5, 
+        640px -15px 0px #ff8fa3, 
+        600px 4px 0px #dcd0ff, 
+        625px -32px 0px #e0b0ff, 
+        640px 4px 0px #c9a0dc,
+        620px 5px 0px #b22222;
+        
+    opacity: 0.9;
+    z-index: 10;
+    pointer-events: none;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.15));
+}
+
+/* The Ofuda (Talisman) */
+.willowshorefigure2::after {
+    content: "封"; 
+    position: absolute;
+    top: 25px; 
+    right: 40px; 
+    width: 38px;
+    height: 100px;
+    background-color: #ffffff;
+    background-image: 
+        radial-gradient(circle, #b22222 65%, transparent 70%), 
+        url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+    background-size: 30px 30px, cover;
+    background-position: center 75px, center;
+    background-repeat: no-repeat;
+    color: #1a1a1a;
+    border: 1px solid #d2b48c;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    z-index: 20;
+    pointer-events: none;
+    box-shadow: 
+        0px -45px 0px -18px #5d4037, 
+        2px -30px 4px -18px rgba(0,0,0,0.2),
+        2px 4px 8px rgba(0,0,0,0.2);
+    transform-origin: center -25px; 
+    animation: softSway 4s ease-in-out infinite alternate;
+}
+
+@keyframes softSway {
+    0% { transform: rotate(-1deg); }
+    100% { transform: rotate(3deg); }
+}
+
+/* Section Labels */
+.willowshorefigure2 strong {
+    color: #8b4513 !important; 
+    display: flex;
+    align-items: center;
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+
+.willowshorefigure2 strong::after {
+    content: "";
+    flex: 1;
+    margin-left: 15px;
+    height: 1px;
+    background: linear-gradient(to right, #d2b48c, transparent);
+}
+
+.willowshorefigure2 p {
+    margin: 0 0 18px 0;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/* --- WILLOWSHORE: FIGURE 3 (Hallowed Town Format - Final) --- */
+
+.willowshorefigure3-wrapper {
+    max-width: 620px;
+    margin: 40px auto;
+    font-family: 'Constantia', 'Georgia', serif;
+    background-color: #f6f9f2; 
+    border: 3px double #5d4037; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    outline: 1px solid rgba(93, 64, 55, 0.2);
+    outline-offset: -10px;
+}
+
+/* 1. Header: Dark Wood and Lantern */
+.ws3-header {
+    background: linear-gradient(180deg, #2b1d16, #46312a); 
+    padding: 35px 25px 50px 25px; 
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid #5d4037;
+    overflow: visible; 
+}
+
+/* 2. The Lantern: Sway Only (Lifted to Top) */
+.ws3-header::after {
+    content: "🏮";
+    position: absolute;
+    top: 0px; 
+    right: 25px;
+    font-size: 2.2rem;
+    opacity: 0.9;
+    transform-origin: top center;
+    animation: lanternSway 3s ease-in-out infinite alternate;
+    z-index: 5;
+}
+
+.ws3-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    color: #fdfaf0; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.ws3-subtitle {
+    font-style: italic;
+    color: #cfd9b9; 
+    font-size: 1.1rem;
+    margin-top: 6px;
+    display: block;
+    opacity: 0.9;
+}
+
+/* 3. The Talisman (Ofuda) with Flutter & Solid Circle */
+.ws3-talisman {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 35px;
+    height: 95px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px; 
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8b0000; 
+    background: linear-gradient(180deg, #fffcf0, #e6d5b8);
+    border: 1px solid #d4c4a8;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 50% 100%, 0% 88%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    transform-origin: top center;
+    animation: ofudaFlutter 4s ease-in-out infinite alternate;
+}
+
+/* The Static Spirit Circle */
+.ws3-talisman::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(139, 0, 0, 0.7); 
+    border-radius: 50%;
+    background: rgba(139, 0, 0, 0.1);
+    z-index: -1;
+}
+
+/* 4. Protective Ring Image Container */
+.ws3-image-wrapper {
+    margin: -40px auto 10px auto; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 8;
+    max-width: fit-content;
+}
+
+.ws3-image-wrapper img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #6b8e23; 
+    box-shadow: 0 0 20px rgba(107, 142, 35, 0.3), 
+                inset 0 0 10px rgba(0, 0, 0, 0.4); 
+    transition: all 0.4s ease;
+}
+
+/* 5. Content Area */
+.ws3-content {
+    padding: 25px 45px 35px 45px;
+    line-height: 1.7;
+    background-color: #f6f9f2;
+    background-image: 
+        radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(246,249,242,0) 100%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236b8e23' fill-opacity='0.03'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.ws3-content h3 {
+    color: #3e2723; 
+    font-variant: small-caps;
+    border-bottom: 2px double #8b4513; 
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.ws3-content p {
+    color: #000000 !important;
+    opacity: 1 !important;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+/* 6. Decorative Footer - Cherry Blossom Only */
+.ws3-footer {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 5px; 
+    font-size: 1.8rem;
+    opacity: 0.9;
+    /* Ensuring any inline text or acorns disappear */
+    color: transparent !important; 
+    user-select: none;
+}
+
+.ws3-footer::before {
+    content: "🌸";
+    color: initial; /* Restores color only for the emoji */
+}
+
+/* --- ANIMATIONS --- */
+
+@keyframes lanternSway {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(10deg); }
+}
+
+@keyframes ofudaFlutter {
+    0% { transform: rotate(-4deg) skewX(0deg); }
+    50% { transform: rotate(-2deg) skewX(1deg); }
+    100% { transform: rotate(-6deg) skewX(-1deg); }
 }

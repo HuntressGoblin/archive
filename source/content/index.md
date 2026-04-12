@@ -107,11 +107,17 @@ title: Welcome to the Eternal Library
     </div>
   </div>
 </div>
+---
+
+(Placeholder)
+
+
+
 
 
 ---
-
 > [!tinynote]- Connections
 > Look for me to find links to other notes! I'm a little hidden on purpose. :)
 
 
+[^1]: [[Willowshore]]

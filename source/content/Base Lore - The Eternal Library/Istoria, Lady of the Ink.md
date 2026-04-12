@@ -60,11 +60,10 @@
 </div>
 
 
+[^1]
+
+
 ---
-
-
-
-
 
 
 
@@ -73,3 +72,5 @@
 
 > [!tinynote]- Connections
 > [[The Ink that Binds]], [[The Cluster Galaxy]], [[The Tomes of the Eternal Library]].
+
+[^1]: [[Willowshore]]

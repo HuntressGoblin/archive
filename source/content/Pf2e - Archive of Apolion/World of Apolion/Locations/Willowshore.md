@@ -22,9 +22,6 @@
             Teeth-Clenching Teamwork: Willowshore’s residents help one another despite their differences. You can attempt to Request help from another Willowshore resident even if they’re indifferent or unfriendly, but you do so with a –2 circumstance penalty. This applies to those who reside in Willowshore only.
         </p>
         </p>
-        <h3>Secrets (DM ONLY)</h3>
-        <p>
-            - Everyone in Willowshore is locked in a mindscape, already dead.
         </p>
     </div>
     <div class="ws3-footer">❦</div>

@@ -42,7 +42,7 @@ title: Welcome to the Eternal Library
       <div class="spine">
         <span class="spine-text">Changelog</span>
       </div>
-      <div class="blurb"> <b>Changelog</b><br><b> GENERAL:</b>4/7/2026 - Major overhaul. I want to do things in chunks. <br><b>DIVINITY:</b> N/A<br><b>ELEMENTs:</b> N/A <br><b>HELLFIRE:</b> N/A <br><b>ENTROPY:</b> N/A <br><b>EPHEMERA:</b> N/A. <br><b>TYRANNY:</b> N/A <br><b>TRAILBLAZER:</b> N/A <br><b>CRYSTALLINE REBIRTH:</b> N/A <br><b>ONESHOTS:</b> N/A </div>
+      <div class="blurb"> <b>Changelog</b><br><b> GENERAL:</b>4/20/2026 - Some more page maintenance. <br><b>DIVINITY:</b> N/A<br><b>ELEMENTs:</b> N/A <br><b>HELLFIRE:</b> N/A <br><b>ENTROPY:</b> N/A <br><b>EPHEMERA:</b> N/A. <br><b>TYRANNY:</b> N/A <br><b>TRAILBLAZER:</b> N/A <br><b>CRYSTALLINE REBIRTH:</b> N/A <br><b>ONESHOTS:</b> N/A </div>
     </div>
     <div class="book wide forest">
       <div class="spine">
@@ -107,6 +107,23 @@ title: Welcome to the Eternal Library
     </div>
   </div>
 </div>
+
+---
+
+
+
+<div style="text-align: center;">
+<b>WHAT'S NEXT IN THE LIBRARY?</b>
+</div>
+
+
+<div class="istoria-tome-row">
+  <div class="istoria-tome">
+      <img src="Tarotcardpic.png" alt="Soontobe">
+      <div class="tome-tooltip">Take a moment now, count your blessings true. One card from the deck, will <b>Fortune</b> favor you?</div>
+    </a>
+  </div>
+
 
 
 ---

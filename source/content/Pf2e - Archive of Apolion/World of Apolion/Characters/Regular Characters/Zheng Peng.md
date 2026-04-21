@@ -22,13 +22,6 @@
     <p>- <a class="internal-link" href="Hai-er Ha">Hai-er Ha:</a> A soldier under my command, best she stays strong for the sake of the town.</p>
 </div>
 
-<div class="willowshorefigure2">
-    <strong><i class="fa-solid fa-book"></i>Backstory (DM ONLY)</strong>
-    <p>Zheng Peng is a watch officer in Willowshore</p>
-    <strong><i class="fa-solid fa-triangle-exclamation"></i>Secrets (DM ONLY)</strong>
-    <p>???</p>
-</div>
-
 
 ---
 

@@ -6,12 +6,25 @@
     </div>
 </div>
 
+
 <div class="willowshorefigure2">
-    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
-    <p>Dami is a human. He provides medical care to <a class="internal-link" href="Willowshore">Willowshore</a> at the Hand of Spring. He is, effectively, the town doctor.</p>
-    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
-    <p>Dami is charitable and puts others first. He prefers to stay out of anything political.</p>
+    <strong><i class="fa-solid fa-scroll"></i>Basic Information</strong>
+    <p><b>Name:</b> Damihansig Mababangloob.</p>
+    <p><b>Gender:</b> Male.</p>
+    <p><b>Species:</b> Human.</p>
+    <p><b>Personality:</b> 
+    <br>- Dami is charitable and puts others first.
+    <br>- Politics are something he despises, so much so that he will avoid it entirely.
+    <p><b>Summary:</b><br>Dami provides medical care to <a class="internal-link" href="Willowshore">Willowshore</a> at the Hand of Spring. He is, effectively, the town doctor. Others call him "Dami."</p>
 </div>
+
+<div class="willowshorefigure2">
+    <strong><i class="fa-solid fa-comment-smile"></i>Bonds</strong>
+    <p>- ???</p>
+</div>
+
+
+
 
 ---
 

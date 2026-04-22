@@ -6,14 +6,28 @@
     </div>
 </div>
 
+
 <div class="willowshorefigure2">
-    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
-    <p>Nadoya Sanmi runs the store Treesparrow's. It is a family-owned grocer in <a class="internal-link" href="Willowshore">Willowshore</a>.</p>
-    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
-    <p>Sanmi is polite and courteous.</p>
+    <strong><i class="fa-solid fa-scroll"></i>Basic Information</strong>
+    <p><b>Name:</b> Nadoya Sanmi.</p>
+    <p><b>Gender:</b> Female.</p>
+    <p><b>Species:</b> Human.</p>
+    <p><b>Personality:</b> 
+    <br>- Polite
+    <br>- Courteous.
+    <p><b>Summary:</b><br>Nadoya Sanmi runs the store Treesparrow's. It is a family-owned grocer in <a class="internal-link" href="Willowshore">Willowshore</a>.</p>
 </div>
+
+<div class="willowshorefigure2">
+    <strong><i class="fa-solid fa-comment-smile"></i>Bonds</strong>
+    <p>- <a class="internal-link" href="Yuli Sanmi">Yuli Sanmi:</a> Her bright, young daughter who needs to stay away from the Lelong's horrible influence!</p>
+</div>
+
+
+
+
 
 ---
 
 > [!tinynote]- Connections
-> [[Willowshore]].
+> [[Willowshore]], [[Yuli Sanmi]].

@@ -1,21 +1,20 @@
 <div class="willowshorefigures1">
-    <h1>Zataku</h1>
+    <h1>Igawa Jubei</h1>
     <span class="ws-subtitle"></span>
     <div class="ws-img-container">
-        <img src="Donttrytoeatratpeoplethatisracistwtf.png" />
+        <img src="Ialmostmissedthisone.png" />
     </div>
 </div>
 
 
 <div class="willowshorefigure2">
     <strong><i class="fa-solid fa-scroll"></i>Basic Information</strong>
-    <p><b>Name:</b> Zataku.</p>
+    <p><b>Name:</b> Igawa Jubei.</p>
     <p><b>Gender:</b> Female.</p>
-    <p><b>Species:</b> Ratfolk.</p>
+    <p><b>Species:</b> Human.</p>
     <p><b>Personality:</b> 
-    <br>- Very Observant.
-    <br>- Always has her head in the clouds, quite literally it feels!
-    <p><b>Summary:</b> Zataku is <a class="internal-link" href="Willowshore">Willowshore's</a> prized fisher! She has a special ability to sense the changes in weather. She is a ratfolk!</p>
+    <br>- Inquisitive and curious.
+    <p><b>Summary:</b><br>Jubei, despite being human, was raised by an old nagaji wizard, Anjal. After his death, Jubei seeks to continue to study the arcane arts in his honor. She resides in <a class="internal-link" href="Willowshore">Willowshore</a>.</p>
 </div>
 
 <div class="willowshorefigure2">
@@ -26,8 +25,7 @@
 
 
 
+
 ---
-
-
 > [!tinynote]- Connections
 > [[Willowshore]].

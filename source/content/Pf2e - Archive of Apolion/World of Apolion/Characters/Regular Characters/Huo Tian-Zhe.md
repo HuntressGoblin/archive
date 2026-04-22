@@ -6,14 +6,26 @@
     </div>
 </div>
 
+
 <div class="willowshorefigure2">
-    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
-    <p>Huo Tian-Zhe arrived to <a class="internal-link" href="Willowshore">Willowshore</a> with his blacksmith father. He was quickly humbled by what he first perceived was a "town of second-rated smiths" and decided to devote the remainder of his life so he could learn to be a "smith of use." He is also a human and quite the inventor.</p>
-    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
-    <p>A little cocky and confident at times, Huo Tian-Zhe isn't worried to admit when he's wrong.</p>
+    <strong><i class="fa-solid fa-scroll"></i>Basic Information</strong>
+    <p><b>Name:</b> Huo Tian-Zhe.</p>
+    <p><b>Gender:</b> Male.</p>
+    <p><b>Species:</b> Human.</p>
+    <p><b>Personality:</b> 
+    <br>- Can be cocky and confident, but also carries a level of humbleness to it too.
+    <p><b>Summary:</b><br>Huo Tian-Zhe arrived to <a class="internal-link" href="Willowshore">Willowshore</a> with his blacksmith father. He was quickly humbled by what he first perceived was a "town of second-rated smiths" and decided to devote the remainder of his life so he could learn to be a "smith of use." He is also a human and quite the inventor.</p>
 </div>
+
+<div class="willowshorefigure2">
+    <strong><i class="fa-solid fa-comment-smile"></i>Bonds</strong>
+    <p>- <a class="internal-link" href="Yong Wu-Xiu">Yong Wu-Xiu:</a> I won't let her down.</p>
+</div>
+
+
+
 
 ---
 
 > [!tinynote]- Connections
-> [[Willowshore]].
+> [[Willowshore]], [[Yong Wu-Xiu]].

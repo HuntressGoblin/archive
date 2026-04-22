@@ -7,14 +7,24 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
-    <p>Sumika is a hunter that resides in <a class="internal-link" href="Willowshore">Willowshore</a> to embrace growth and seek outside help.</p>
-    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
-    <p>Sumika has a keen eye and a quiet disposition. She strives to help others, which can lead her into trouble</p>
-
+    <strong><i class="fa-solid fa-scroll"></i>Basic Information</strong>
+    <p><b>Name:</b> Sumika.</p>
+    <p><b>Gender:</b> Female.</p>
+    <p><b>Species:</b> Human.</p>
+    <p><b>Personality:</b> 
+    <br>- Has keen eye and a quiet disposition.
+    <br> - Will help others where she can, which may lead her to trouble.
+    <p><b>Summary:</b><br>Sumika is a hunter who does business with <a class="internal-link" href="Willowshore">Willowshore</a>. She resides in the Silvermist Lodge.</p>
 </div>
+
+<div class="willowshorefigure2">
+    <strong><i class="fa-solid fa-comment-smile"></i>Bonds</strong>
+    <p>- <a class="internal-link" href="Aiomena">Aiomena:</a> A strong individual, but also lets her have a place to rest her head.</p>
+</div>
+
+
 
 ---
 
 > [!tinynote]- Connections
-> [[Willowshore]].
+> [[Willowshore]], [[Aiomena]].

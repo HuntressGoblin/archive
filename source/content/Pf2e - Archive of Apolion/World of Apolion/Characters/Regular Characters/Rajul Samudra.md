@@ -7,11 +7,22 @@
 </div>
 
 <div class="willowshorefigure2">
-    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
-    <p>Rajul Samudra, a nagaji, was brought <a class="internal-link" href="Willowshore">Willowshore</a> by the Ceiba-Duyue Exchange. Specifically, it was for his ability to build boats.</p>
-    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
-    <p>While appearing quite intimidating, Rajul is fairly mild-mannered.</p>
+    <strong><i class="fa-solid fa-scroll"></i>Basic Information</strong>
+    <p><b>Name:</b> Rajul Samudra.</p>
+    <p><b>Gender:</b> Male.</p>
+    <p><b>Species:</b> Nagaji.</p>
+    <p><b>Personality:</b> 
+    <br>- Seems frightening, but it is actually quite serene.
+    <p><b>Summary:</b><br>Rajul Samudra, a nagaji, was brought <a class="internal-link" href="Willowshore">Willowshore</a> by the Ceiba-Duyue Exchange. Specifically, it was for his ability to build boats.</p>
 </div>
+
+<div class="willowshorefigure2">
+    <strong><i class="fa-solid fa-comment-smile"></i>Bonds</strong>
+    <p>- <a class="internal-link" href="Kim Gu-won">Kim Gu-won:</a> Supposed to be like his boss, but he's just too meek for the position...</p>
+</div>
+
+
+
 
 
 ---

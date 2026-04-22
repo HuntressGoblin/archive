@@ -6,12 +6,24 @@
     </div>
 </div>
 
+
 <div class="willowshorefigure2">
-    <strong><i class="fa-chisel fa-regular fa-book-open"></i>Summary</strong>
-    <p>Mother Otis is an elf and resides within <a class="internal-link" href="Willowshore">Willowshore</a>. They run the Thrice-Blessed Inn.</p>
-    <strong><i class="fa-solid fa-comment-smile"></i>Personality</strong>
-    <p>"Mother Otis" is welcoming to all who are under their care.</p>
+    <strong><i class="fa-solid fa-scroll"></i>Basic Information</strong>
+    <p><b>Name:</b> "Mother Otis."</p>
+    <p><b>Gender:</b> Genderfluid.</p>
+    <p><b>Species:</b> Aiuvariny.</p>
+    <p><b>Personality:</b> 
+    <br>- Welcoming to all under their care.
+    <p><b>Summary:</b><br>Mother Otis is an aiuvariny and resides within <a class="internal-link" href="Willowshore">Willowshore</a>. They run the Thrice-Blessed Inn.</p>
 </div>
+
+<div class="willowshorefigure2">
+    <strong><i class="fa-solid fa-comment-smile"></i>Bonds</strong>
+    <p>- ???</p>
+</div>
+
+
+
 
 ---
 

@@ -1,5 +1,4 @@
 <div class="cc-dual-wrapper">
-    
     <!-- LEFT SIDE: TANUKI -->
     <div class="cc-character tanuki">
         <div class="cc-header">

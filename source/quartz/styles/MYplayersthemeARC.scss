@@ -1,0 +1,131 @@
+/* --- THE MASTER CONTAINER --- */
+.callout[data-callout="cakeandcheese"] {
+    --callout-icon: none;
+    background: var(--background-primary);
+    padding: 2.5rem;
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    border: 1px solid var(--divider-color);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem;
+}
+
+.cc-dual-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* --- THE CHARACTER CARD --- */
+.cc-character {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    height: 100%;
+}
+
+/* --- THE NEATENED BUBBLES --- */
+.cc-info-block {
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Soft 3D Bubble Effect */
+    box-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.15), 
+        -1px -1px 4px rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.cc-info-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* --- THEME PALETTES --- */
+
+/* KAKE (Tanuki) */
+.tanuki {
+    background: rgba(60, 70, 40, 0.1);
+    border: 2px solid #556b2f;
+}
+.tanuki .cc-info-block {
+    background: linear-gradient(145deg, rgba(85, 107, 47, 0.2), rgba(60, 70, 40, 0.1));
+    border-left: 4px solid #6b8e23;
+}
+.tanuki h2 { color: #8b4513 !important; font-family: "Georgia", serif; }
+.tanuki .cc-label { color: #6b8e23; }
+
+/* CHIZU (Noble) */
+.noble {
+    background: rgba(30, 58, 138, 0.05);
+    border: 2px solid #daa520;
+}
+.noble .cc-info-block {
+    background: linear-gradient(145deg, rgba(30, 58, 138, 0.15), rgba(20, 40, 100, 0.05));
+    border-left: 4px solid #daa520;
+}
+.noble h2 { color: #1e3a8a !important; font-family: "Times New Roman", serif; text-transform: uppercase; }
+.noble .cc-label { color: #b8860b; }
+
+/* --- HEADER & IMAGE --- */
+.cc-header { text-align: center; }
+.cc-header h2 { margin: 0; font-size: 1.8rem !important; }
+.cc-header p { margin: 0.2rem 0 1rem 0; opacity: 0.6; font-size: 0.9rem; font-style: italic; }
+
+.cc-image-wrapper img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- DATA FIELDS --- */
+.cc-info-grid { display: flex; flex-direction: column; gap: 0.75rem; }
+.cc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+
+.cc-label {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.2rem;
+}
+
+.cc-content {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--text-normal);
+}
+
+/* --- DM SECTION (Polished Secret Area) --- */
+.cc-dm-section {
+    margin-top: auto;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 68, 68, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cc-dm-header {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #ff4444;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 900px) {
+    .cc-dual-wrapper { grid-template-columns: 1fr; }
+    .callout[data-callout="cakeandcheese"] { padding: 1.5rem; }
+}

@@ -66,7 +66,7 @@ title: Welcome to the Eternal Library
       <div class="spine">
         <span class="spine-text">Progress Guide</span>
       </div>
-      <div class="blurb"><b>Progress Guide</b><br>Ephemera will be the first campaign I will be finishing up! They're currently a WIP, boasting a japanese & asian-inspired theme alongside fully-working character pages for each of our heroes!</div>
+      <div class="blurb"><b>Progress Guide</b><br>Trailblazer has become the latest priority due to their homebrewn nature.</div>
     </div>
     <div class="book wide rust">
       <div class="spine">

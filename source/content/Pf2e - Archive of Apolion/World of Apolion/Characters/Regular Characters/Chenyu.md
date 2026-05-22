@@ -9,13 +9,13 @@
 <div class="willowshorefigure2">
     <strong><i class="fa-solid fa-scroll"></i>Basic Information</strong>
     <p><b>Name:</b> Chenyu, but also called "Street Rat."</p>
-    <p><b>Gender:</b> Male.</p>
+    <p><b>Gender:</b> Female.</p>
     <p><b>Species:</b> Human.</p>
     <p><b>Personality:</b> 
-    <br>- Wants to belong with people who care about him.
-    <br>- Has a brighter mind than many may credit him for.
+    <br>- Wants to belong with people who care about her.
+    <br>- Has a brighter mind than many may credit her for.
     <br>- Will chew on small bits of wood or other small objects when nervous or in thought.
-    <p><b>Summary:</b><br>A youthful male who lives in <a class="internal-link" href="Willowshore">Willowshore</a>. He resides in it with <a class="internal-link" href="Aethelearn-wānling">Aethelearn-wānling</a> and <a class="internal-link" href="Renshu">Renshu</a>.</p>
+    <p><b>Summary:</b><br>A youthful female who lives in <a class="internal-link" href="Willowshore">Willowshore</a>. She resides in it with <a class="internal-link" href="Aethelearn-wānling">Aethelearn-wānling</a> and <a class="internal-link" href="Renshu">Renshu</a>.</p>
 </div>
 
 <div class="willowshorefigure2">

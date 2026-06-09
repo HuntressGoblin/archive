@@ -1239,7 +1239,6 @@ summary { list-style: none; }
 
 /* =========================================================
    TRAILBLAZER NPC THEME - DASH-FREE VERSION
-   FIXED POPUP STACKING (QUARTZ SAFE)
    ========================================================= */
 
 /* THE MAIN DESK */
@@ -1258,15 +1257,10 @@ summary { list-style: none; }
     box-shadow: inset 0 0 80px rgba(0,0,0,0.6), 0 20px 40px rgba(0,0,0,0.8), 0 30px 60px rgba(0,0,0,0.4) !important;
     padding: 0 !important;
     margin: 4em auto !important;
-
-    /* IMPORTANT: allows hover popovers to escape */
+    
+    /* CRITICAL FIX: Changed from hidden/hidden fallbacks to visible so hover boxes can break out */
     overflow: visible !important; 
     transform-style: flat !important;
-
-    /* FIX: keep callout below popovers */
-    position: relative !important;
-    z-index: 1 !important;
-    isolation: isolate !important;
 }
 
 /* HIDE DEFAULT TITLE */
@@ -1280,6 +1274,8 @@ summary { list-style: none; }
     padding: 0 !important;
     margin: 0 !important;
     color: #fff !important;
+    
+    /* CRITICAL FIX: Ensures internal elements don't chop off the hover box */
     overflow: visible !important; 
 }
 
@@ -1325,7 +1321,8 @@ summary { list-style: none; }
     transform: rotate(-1.5deg) !important;
     position: relative !important;
     z-index: 2 !important;
-
+    
+    /* CRITICAL FIX: Allows popups stemming from highlighted links inside text boxes to spill outside */
     overflow: visible !important; 
 }
 
@@ -1338,16 +1335,12 @@ summary { list-style: none; }
     margin-bottom: 5px !important;
 }
 
-/* ================================
-   QUARTZ POPUP FIX (FINAL LAYER)
-   ================================ */
-
+/* ENSURE POPOVER CONTAINERS FORCE THE ENTIRE BOX TO RENDER */
 .popover, 
 .quartz-popover,
 .hover-popover,
 [class*="popover"] {
-    position: fixed !important;
-    z-index: 2147483647 !important;
-    overflow: visible !important;
-    contain: none !important;
+    z-index: 99999 !important;
+    overflow: visible !important; /* Forces the internal content of the popup to draw entirely */
+    contain: none !important;    /* Prevents the browser from optimizing layout by slicing edges */
 }

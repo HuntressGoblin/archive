@@ -51,5 +51,6 @@
 
 ---
 
+
 > [!tinynote]- Connections
 > [[Istoria, Lady of the Ink]], [[The Cluster Galaxy]], [[Istoria, Lady of the Ink]], [[The Ink that Binds]].

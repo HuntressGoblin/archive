@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Chenyu.md",
+                "file": "source/content/DnD - Archive of Artimis/World of Artimis/Characters/Regular Characters/Alyss.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chenyu"
+              "title": "Alyss"
             }
           }
         ]
@@ -186,10 +186,23 @@
   },
   "active": "de0d0534409a8d22",
   "lastOpenFiles": [
+    "source/content/Base Lore - The Eternal Library/The Supernova.md",
+    "source/content/DnD - Archive of Artimis/World of Artimis/Characters/Regular Characters/Alyss.md",
+    "source/content/Z - Pictures/lolthisbird.png",
+    "source/content/Base Lore - The Eternal Library/The Tomes of the Eternal Library.md",
+    "source/content/DnD - Archive of Artimis/World of Artimis/Characters/Regular Characters",
+    "source/content/DnD - Archive of Artimis/World of Artimis/Characters",
+    "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Chenyu.md",
+    "source/content/DnD - Archive of Artimis/World of Artimis",
+    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
+    "source/content/Base Lore - The Eternal Library/The Eternal Library.md",
+    "source/content/Base Lore - The Eternal Library/Istoria, Lady of the Ink.md",
+    "source/content/Base Lore - The Eternal Library/The Worlds in the Cluster.md",
+    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
+    "source/content/index.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Hu Lelong.md",
     "source/content/Pf2e - Archive of Apolion/Tome of Ephemera/Heroes of Ephemera/Kake & Chizu.md",
     "source/content/Pf2e - Archive of Apolion/Tome of Ephemera/Cycle of Ephemera.md",
-    "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Chenyu.md",
     "source/content/Pf2e - Archive of Apolion/Tome of Ephemera/Heroes of Ephemera",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Anjal.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Mountain Summit Grass.md",
@@ -206,16 +219,7 @@
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Old Matsuki Shou.md",
     "source/content/Z - Pictures/Yayigotapicture.png",
     "source/content/Pf2e - Archive of Apolion/Tome of Ephemera",
-    "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/You So-Jin.md",
-    "source/content/Pf2e - Archive of Apolion/Tome of Ephemera.md",
     "source/content/Pf2e - Archive of Apolion/World of Apolion/Tome of Ephemeraa",
-    "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Kentaro.md",
-    "source/content/index.md",
-    "source/content/Base Lore - The Eternal Library/The Ink that Binds.md",
-    "source/content/Base Lore - The Eternal Library/The Eternal Library.md",
-    "source/content/Base Lore - The Eternal Library/The Cluster Galaxy.md",
-    "source/content/Base Lore - The Eternal Library/Istoria, Lady of the Ink.md",
-    "source/content/Pf2e - Archive of Apolion/World of Apolion/Characters/Regular Characters/Zheng Peng.md",
     "source/content/Z - Pictures/Wowlovethetusk.png",
     "source/content/Z - Pictures/Unknownappearance.png",
     "source/content/Z - Pictures/Niceart.png",
@@ -226,11 +230,7 @@
     "source/content/Pf2e - Archive of Apolion/World of Apolion/New folder",
     "source/content/Z - Pictures/Zephpic1.png",
     "source/content/Z - Pictures/Yournameissolong.png",
-    "source/content/Z - Pictures/Willowshorepic1.png",
     "source/quartz/styles/forcedthemes.scss",
-    "source/quartz/styles/New Text Document.txt",
-    "source/quartz/styles/Differentstyles.scss",
-    "source/content/DnD - Archive of Artimis/Tome of Hellfire",
-    "source/content/Pf2e - Archive of Apolion/Characters/Regular Characters"
+    "source/quartz/styles/New Text Document.txt"
   ]
 }

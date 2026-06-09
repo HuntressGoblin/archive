@@ -1236,3 +1236,89 @@ summary { list-style: none; }
   color: #dcc8ae;
   opacity: 0.9;
 }
+
+/* =========================================================
+   TRAILBLAZER NPC THEME - DASH-FREE VERSION
+   ========================================================= */
+
+/* THE MAIN DESK */
+.callout[data-callout="trailblazernpcformat"] {
+    background-color: #3b2616 !important;
+    background-image: 
+        linear-gradient(115deg, rgba(255,255,255,0.05) 0%, transparent 30%, rgba(0,0,0,0.3) 70%, rgba(255,255,255,0.05) 100%),
+        radial-gradient(ellipse at 20% 40%, rgba(0,0,0,0.3) 0%, transparent 70%),
+        url("https://www.transparenttextures.com/patterns/wood-pattern.png") !important; 
+    border: none !important; 
+    border-top: 2px solid rgba(255,255,255,0.1) !important;
+    border-left: 2px solid rgba(255,255,255,0.05) !important;
+    border-right: 4px solid rgba(0,0,0,0.4) !important;
+    border-bottom: 8px solid rgba(0,0,0,0.5) !important;
+    border-radius: 12px !important;
+    box-shadow: inset 0 0 80px rgba(0,0,0,0.6), 0 20px 40px rgba(0,0,0,0.8), 0 30px 60px rgba(0,0,0,0.4) !important;
+    padding: 0 !important;
+    margin: 4em auto !important;
+    overflow: visible !important;
+    perspective: 1000px !important;
+}
+
+/* HIDE DEFAULT TITLE */
+.callout[data-callout="trailblazernpcformat"] > .callout-title {
+    display: none !important;
+}
+
+/* CONTENT WRAPPER RESET */
+.callout[data-callout="trailblazernpcformat"] > .callout-content {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #fff !important;
+}
+
+/* PARCHMENT TITLE (H1) */
+.callout[data-callout="trailblazernpcformat"] .callout-content h1 {
+    display: block !important;
+    background: #fdf2d5 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png") !important;
+    color: #2c241a !important;
+    width: 88% !important;
+    margin: 60px auto 15px auto !important;
+    padding: 35px !important;
+    border: 1px solid #d4c39d !important;
+    clip-path: polygon(0% 2%, 4% 0%, 96% 1%, 100% 4%, 99% 96%, 95% 100%, 2% 98%, 0% 94%) !important;
+    transform: rotateX(2deg) rotateY(-1deg) rotateZ(-0.5deg) !important;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.5) !important;
+}
+
+/* MAP / NPC IMAGE */
+.callout[data-callout="trailblazernpcformat"] .callout-content img {
+    display: block !important;
+    max-width: 75% !important;
+    margin: 20px auto !important;
+    clip-path: polygon(1% 3%, 5% 0%, 15% 4%, 35% 1%, 50% 5%, 65% 2%, 85% 6%, 100% 3%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 96% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%) !important;
+    filter: sepia(0.5) contrast(1.2) brightness(0.9) !important;
+    transform: translateZ(25px) rotate(2.5deg) rotateX(1deg) !important;
+    box-shadow: 15px 20px 40px rgba(0,0,0,0.6) !important;
+}
+
+/* TORN LOGS (info-box / content elements) */
+.callout[data-callout="trailblazernpcformat"] .info-box {
+    display: block !important;
+    width: 82% !important;
+    margin: 15px auto !important;
+    padding: 20px 30px !important;
+    background-color: #e6d5b0 !important; 
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png") !important;
+    color: #3d2b1f !important; 
+    clip-path: polygon(0% 5%, 15% 2%, 35% 5%, 50% 0%, 65% 3%, 85% 1%, 100% 5%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 95% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%) !important;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.4) !important;
+    transform: rotate(-1.5deg) !important;
+}
+
+/* LOG HEADERS */
+.callout[data-callout="trailblazernpcformat"] .info-box strong {
+    display: block !important;
+    color: #5a1a1a !important;
+    font-variant: small-caps !important;
+    border-bottom: 1px solid rgba(90, 26, 26, 0.2) !important;
+    margin-bottom: 5px !important;
+}

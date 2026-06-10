@@ -1,10 +1,9 @@
 ---
 title: Welcome to the Eternal Library
 ---
-<br>
 <div class="bookmark-box">
     <h3><i class="fa-solid fa-feather-pointed"></i>Every Story holds Life</h3>
-    <p>Welcome to the Eternal Library. In these shelves, you will find lore to satisfy even the most curious of adventurers. Yet remember, not everything has been written in ink. ...and of course, there are plenty of spoilers that lurk here too. You do NOT want to join the soul who keeps being thrown in Gay Baby Jail, trust me. Before you proceed, I ask you one thing: read each tome below. Remember to check in, the ink changes them quite often.</p>
+    <p><b>WARNING!</b> By entering this archive, you will find knowledge beyond your wildest dreams. However, this knowledge is also dangerous. There will be countless references to other campaigns outside of your own knowledge, characters you may never meet, events you may never see or know about, and even the potential for spoilers! <b>ALL CONTENT IN THE WIKI HAS BEEN DESIGNED TO BE AS VAGUE AND AVOID AS MANY SPOILERS AS POSSIBLE, BUT NOT EVEYTHING IS BUILT EQUALLY! IF YOU SEE ANY SECTIONS LABELED (DM ONLY), THAT WAS LEFT IN AS A MISTAKE AND SHOULD BE AVOIDED!!!</b> Play responsibly, don't metagame.</p>
     <!-- Add ink drops -->
     <span class="ink-drop"></span>
     <span class="ink-drop"></span>
@@ -27,61 +26,60 @@ title: Welcome to the Eternal Library
     </div>
     <div class="book tall midnight">
       <div class="spine">
-        <span class="spine-text">Spoiler Warning!</span>
+        <span class="spine-text">Disclaimers</span>
       </div>
-      <div class="blurb"><b>Spoiler Warning!</b><br><b>Spoilers</b> are plentiful here on this wiki! If you're playing in one of my campaigns, I ask that you proceed with caution! While I do try to make the wiki hide important information to make it as spoiler-esh free, there will ALWAYS be some degree of spoilers no matter what. I repeat: <b><i>SPOILERS AHEAD!!!!!</i></b> </div>
+      <div class="blurb"><b>Disclaimers</b><br>If you see any images or information you'd like for me to take down, please reach out! I am more than happy to accommodate.</b></div>
     </div>
     <div class="book short rust">
-      <div class="spine">
-        <span class="spine-text">Other Creators</span>
-      </div>
-      <div class="blurb"><b>Other Creators</b><br>In this note are honorable mentions of other awesome websites made by creators that inspire me to keep up the hard work! Go check them out! <br><b>Stensin's Website:</b> https://wiki.enutheta.com <br><b>Dio's Website:</b> https://diopedia.net
-</div>
-    </div>
-    <div class="book tall plum">
-      <div class="spine">
-        <span class="spine-text">Changelog</span>
-      </div>
-      <div class="blurb"> <b>Changelog</b><br><b> 4/21/2026 - Worked on formatting & Clarity.</b></div>
-    </div>
-    <div class="book wide forest">
-      <div class="spine">
-        <span class="spine-text">Bug List/In-Progress</span>
-      </div>
-      <div class="blurb"><b>Bug List/In-Progress</b> <br>- Yes, I know the picture in The Eight Practices is off-centered. I'll fix it eventually. ...eventually. 😴 <br>- To see the icons I placed, you have to refresh your cache using your browser's shortcuts. Sorry, don't think there is any fix around this. <br>- Going to be working on each campaign page as well as clickable links that send you from the library (where all of the modules are displayed) to the actual page itself. Some pages may appear buggy for a while, and I am aware. None of the pages are finalized just yet, as I do need to tweak some. </div>
-    </div>
-    <div class="book tall walnut">
       <div class="spine">
         <span class="spine-text">Symbol Guide</span>
       </div>
       <div class="blurb"><b>Symbol Guide</b><br><i class="fa-solid fa-arrow-up-right-from-square"></i> This icon shows that clicking on the picture near it will take you somewhere else!<br><b>If the symbols displayed here don't show, refresh your cache or refresh!</b></div>
     </div>
+    <div class="book tall plum">
+      <div class="spine">
+        <span class="spine-text">Empty Tome</span>
+      </div>
+      <div class="blurb"> <b>Empty Tome</b><br>An empty tome with potential.</div>
+    </div>
+    <div class="book wide forest">
+      <div class="spine">
+        <span class="spine-text">Empty Tome</span>
+      </div>
+      <div class="blurb"><b>Empty Tome</b><br>An empty tome with potential.</div>
+    </div>
+    <div class="book tall walnut">
+      <div class="spine">
+        <span class="spine-text">Empty Tome</span>
+      </div>
+      <div class="blurb"><b>Empty Tome</b><br>An empty tome with potential.</div>
+    </div>
     <div class="book short midnight">
       <div class="spine">
-        <span class="spine-text">Disclaimers</span>
+        <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb"><b>Disclaimers</b><br>If you see any images or information you'd like for me to take down, please reach out! I am more than happy to accommodate.</div>
+      <div class="blurb"><b>Empty Tome</b><br>An empty tome full of potential.</div>
     </div>
     <div class="book tall burgundy">
       <div class="spine">
-        <span class="spine-text">Progress Guide</span>
+        <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb"><b>Progress Guide</b><br>Trailblazer has become the latest priority due to their homebrewn nature.</div>
+      <div class="blurb"><b>Empty Tome</b><br>An empty tome full of potential.</div>
     </div>
     <div class="book wide rust">
       <div class="spine">
         <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Empty Tome</b><br>An empty tome full of potential.</div>
     </div>
     <div class="book tall forest">
       <div class="spine">
         <span class="spine-text">Empty Tome</span>
       </div>
-      <div class="blurb"><b>Empty Tome</b><br>(Potential I haven't utilized yet.)</div>
+      <div class="blurb"><b>Empty Tome</b><br>An empty tome full of potential.</div>
     </div>
   </div>
-  </div>
+
 
 
 

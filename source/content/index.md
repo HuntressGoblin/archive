@@ -1,6 +1,7 @@
 ---
 title: Welcome to the Eternal Library
 ---
+<br>
 <div class="bookmark-box">
     <h3><i class="fa-solid fa-feather-pointed"></i>Every Story holds Life</h3>
     <p><b>WARNING!</b> By entering this archive, you will find knowledge beyond your wildest dreams. However, this knowledge is also dangerous. There will be countless references to other campaigns outside of your own knowledge, characters you may never meet, events you may never see or know about, and even the potential for spoilers! <b>ALL CONTENT IN THE WIKI HAS BEEN DESIGNED TO BE AS VAGUE AND AVOID AS MANY SPOILERS AS POSSIBLE, BUT NOT EVEYTHING IS BUILT EQUALLY! IF YOU SEE ANY SECTIONS LABELED (DM ONLY), THAT WAS LEFT IN AS A MISTAKE AND SHOULD BE AVOIDED!!!</b> Play responsibly, don't metagame.</p>

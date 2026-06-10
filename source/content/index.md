@@ -124,6 +124,7 @@ title: Welcome to the Eternal Library
       <div class="tome-tooltip">Take a moment now, count your blessings true. One card from the deck, will <b>Fortune</b> favor you?</div>
     </a>
   </div>
+</div>
 
 
 

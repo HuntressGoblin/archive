@@ -130,6 +130,7 @@ title: Welcome to the Eternal Library
 ---
 <br>
 <br>
+
 > [!tinynote]- Connections
 > Look for me to find links to other notes! I'm a little hidden on purpose. :)
 

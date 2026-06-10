@@ -13,6 +13,7 @@ title: Welcome to the Eternal Library
     — The Domain Master, ???
 </div>
 </div>
+<br>
 
 ---
 
@@ -78,6 +79,7 @@ title: Welcome to the Eternal Library
       </div>
       <div class="blurb"><b>Empty Tome</b><br>An empty tome full of potential.</div>
     </div>
+  </div>
   </div>
 
 

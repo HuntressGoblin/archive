@@ -1362,10 +1362,8 @@ summary { list-style: none; }
     box-shadow: inset 0 0 80px rgba(0,0,0,0.6), 0 20px 40px rgba(0,0,0,0.8), 0 30px 60px rgba(0,0,0,0.4) !important;
     padding: 0 !important;
     margin: 4em auto !important;
-    
-    /* CRITICAL FIX: Changed from hidden/hidden fallbacks to visible so hover boxes can break out */
-    overflow: visible !important; 
-    transform-style: flat !important;
+    overflow: visible !important;
+    perspective: 1000px !important;
 }
 
 /* HIDE DEFAULT TITLE */
@@ -1379,9 +1377,6 @@ summary { list-style: none; }
     padding: 0 !important;
     margin: 0 !important;
     color: #fff !important;
-    
-    /* CRITICAL FIX: Ensures internal elements don't chop off the hover box */
-    overflow: visible !important; 
 }
 
 /* PARCHMENT TITLE (H1) */
@@ -1395,7 +1390,7 @@ summary { list-style: none; }
     padding: 35px !important;
     border: 1px solid #d4c39d !important;
     clip-path: polygon(0% 2%, 4% 0%, 96% 1%, 100% 4%, 99% 96%, 95% 100%, 2% 98%, 0% 94%) !important;
-    transform: rotateZ(-0.5deg) !important;
+    transform: rotateX(2deg) rotateY(-1deg) rotateZ(-0.5deg) !important;
     box-shadow: 10px 15px 30px rgba(0,0,0,0.5) !important;
 }
 
@@ -1406,10 +1401,8 @@ summary { list-style: none; }
     margin: 20px auto !important;
     clip-path: polygon(1% 3%, 5% 0%, 15% 4%, 35% 1%, 50% 5%, 65% 2%, 85% 6%, 100% 3%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 96% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%) !important;
     filter: sepia(0.5) contrast(1.2) brightness(0.9) !important;
+    transform: translateZ(25px) rotate(2.5deg) rotateX(1deg) !important;
     box-shadow: 15px 20px 40px rgba(0,0,0,0.6) !important;
-    transform: rotate(2.5deg) scale(1.01) !important;
-    position: relative !important;
-    z-index: 1 !important;
 }
 
 /* TORN LOGS (info-box / content elements) */
@@ -1424,11 +1417,6 @@ summary { list-style: none; }
     clip-path: polygon(0% 5%, 15% 2%, 35% 5%, 50% 0%, 65% 3%, 85% 1%, 100% 5%, 98% 35%, 100% 50%, 97% 65%, 100% 85%, 95% 100%, 85% 97%, 65% 100%, 50% 96%, 35% 100%, 15% 98%, 0% 95%, 2% 85%, 0% 65%, 3% 50%, 0% 35%) !important;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.4) !important;
     transform: rotate(-1.5deg) !important;
-    position: relative !important;
-    z-index: 2 !important;
-    
-    /* CRITICAL FIX: Allows popups stemming from highlighted links inside text boxes to spill outside */
-    overflow: visible !important; 
 }
 
 /* LOG HEADERS */
@@ -1438,14 +1426,4 @@ summary { list-style: none; }
     font-variant: small-caps !important;
     border-bottom: 1px solid rgba(90, 26, 26, 0.2) !important;
     margin-bottom: 5px !important;
-}
-
-/* ENSURE POPOVER CONTAINERS FORCE THE ENTIRE BOX TO RENDER */
-.popover, 
-.quartz-popover,
-.hover-popover,
-[class*="popover"] {
-    z-index: 99999 !important;
-    overflow: visible !important; /* Forces the internal content of the popup to draw entirely */
-    contain: none !important;    /* Prevents the browser from optimizing layout by slicing edges */
 }

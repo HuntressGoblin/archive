@@ -120,11 +120,10 @@ title: Welcome to the Eternal Library
 
 <div class="istoria-tome-row">
   <div class="istoria-tome">
-      <img src="Tarotcardpic.png" alt="Soontobe">
-      <div class="tome-tooltip">Take a moment now, count your blessings true. One card from the deck, will <b>Fortune</b> favor you?</div>
+      <img src="Explorethestolenlands.png" alt="Soontobe">
+      <div class="tome-tooltip">Rise up now and steel your souls, the land will not be kind! Be brave, stay brave, keep kindness for you, the path, a <b>Kingmaker</b>, will it forge you?</div>
     </a>
   </div>
-</div>
 
 
 

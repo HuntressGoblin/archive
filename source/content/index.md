@@ -121,7 +121,7 @@ title: Welcome to the Eternal Library
 <div class="istoria-tome-row">
   <div class="istoria-tome">
       <img src="Explorethestolenlands.png" alt="Soontobe">
-      <div class="tome-tooltip">Rise up now and steel your souls, the land will not be kind! Be brave, stay brave, keep kindness for you, the path, a <b>Kingmaker</b>, will it forge you?</div>
+      <div class="tome-tooltip">Rise up now and steel your souls, the land will not be kind! Be brave, stay strong, keep kindness for you, the path, a <b>Kingmaker</b>, will it forge you?</div>
     </a>
   </div>
 

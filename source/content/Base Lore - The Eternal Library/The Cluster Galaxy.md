@@ -42,9 +42,9 @@
 
 ---
 <div class="bookmarkbody-box">
-    <h3><i class="fa-chisel fa-regular fa-book-open"></i>What does the Eternal Library look like?</h3>
+    <h3><i class="fa-chisel fa-regular fa-book-open"></i>Why don't the Cluster Galaxies Overlap?</h3>
     <p>
-        The Eternal Library contains <a class="internal-link" href="The Tomes of the Eternal Library">tomes</a> to take on the appearance of a dark, purple-esk library. Books and quills hover in the air, and there is the constant sound of pages flipping, words being written, and just the faintest hint of someone swearing in annoyance at random. However, the Eternal Library can adjust its form depending on the setting. For more fantastical versions of <a class="internal-link" href="The Cluster Galaxy">galaxies</a>, the library takes on a more "medieval and magical" form full of books. Otherwise, more sci-fi-esk settings may take the form of a radio station as the tomes themselves take the form of drives containing chronicles of story and world information. However, no matter what form it may take, the library will always be the original form contained. Anything else is a mere illusion. 
+        Despite the <a class="internal-link" href="The Tomes of the Eternal Library">tomes</a> being held within the Eternal Library, the universes are kept separate. They cannot interact with each other due to one phenomenon called <a class="internal-link" href="The Ink that Binds">Ink</a>. The Ink creates a barrier that prevents the worlds from blending together. It is a rarity if anyone makes it across, and all who do never come back to tell the tale to their original <a class="internal-link" href="The Cluster Galaxy">galaxy</a>.
     </p>
 </div>
 

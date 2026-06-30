@@ -1,7 +1,7 @@
 <br>
 <div class="bookmark-box">
     <h3><i class="fa-solid fa-feather-pointed"></i>Every Tome needs a Storyteller</h3>
-    <p>Every archive holds a new tale to tell, but without someone to guide the Ink along, there is no world. There is no components. There is no life. That is where a storyteller comes to play. To Master the Domains is to take on the mantle of a "DM."</p>
+    <p>The shelves of the Eternal Library hold many archives. Each of the books they contain holds a new tale to tell. Yet, without someone to guide the Ink along, there is no world, no components, no life. To Master the Domains is to take on the mantle of a "DM."</p>
     <!-- Add ink drops -->
     <span class="ink-drop"></span>
     <span class="ink-drop"></span>
@@ -16,9 +16,9 @@
 
 <div class="bookmarkbody-box">
     <h3><i class="fa-chisel fa-regular fa-book-open"></i>Who is Istoria?</h3>
-    <p>Istoria is, simply put, the storyteller. A woman cloaked in purple with a body made from Ink itself. A singular mask sits upon her face, something that shifts and changes as the story demands. She is the narrator, but her influence is sparse. The only title she possesses outside of the "Storyteller" or the "Lady of Ink" is simply the "Domain Master."</p>
+    <p>Istoria is a faceless woman wearing a purple cloak. Her entire form is made of Ink, creating an illusion of a being made from the void itself. She wears a blank, white mask that morphs with whatever persona she has taken. Her role is a storyteller and narrator to the Domains she masters.</p>
     <br>
-    If you wish to be more "meta" about what she is, she is simply a persona I use when I DM so I can feel more confident in my ability and less bad about nuking my players to Avernus.
+    If you wish to be more "meta" about what she is, she is simply a persona I use when I DM. It's fun for me, but isn't something that would impact the story at all. Don't look too deeply into it. 
 </div>
 </div>
 

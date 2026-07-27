@@ -10,6 +10,7 @@
   /* Deep, multi-layered drop shadow to lift the entire assembly far off the page */
   filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.4)) drop-shadow(0 10px 10px rgba(0, 0, 0, 0.2));
 }
+
 /* Main parchment body */
 .wpt-content {
   position: relative;
@@ -19,7 +20,10 @@
   border-right: 2px solid #b89765;
   padding: 3.5rem 3rem;
   text-align: center;
-  color: #3b2e21;
+  
+  /* Forced black text color and inheritance for all inner text elements */
+  color: #000000 !important;
+  
   /* Heightened inner shadows for deep roller crevices and curved paper edges */
   box-shadow: 
     inset 0 35px 25px -15px rgba(50, 30, 15, 0.5), 
@@ -29,6 +33,16 @@
     
   z-index: 2;
 }
+
+/* Force paragraph, span, list, and heading elements inside wpt-content to be black */
+.wpt-content,
+.wpt-content p,
+.wpt-content span,
+.wpt-content li,
+.wpt-content a {
+  color: #000000 !important;
+}
+
 /* Heavy, rounded wooden scroll rollers with enhanced shadows */
 .wpt-scroll-top,
 .wpt-scroll-bottom {
@@ -59,10 +73,16 @@
 .wpt-scroll-bottom {
   bottom: -1rem;
 }
+
 /* Typography polish */
-.wpt-content h1 {
+.wpt-content h1,
+.wpt-content h2,
+.wpt-content h3,
+.wpt-content h4,
+.wpt-content h5,
+.wpt-content h6 {
   margin-top: 0;
-  color: #2c2117;
+  color: #000000 !important;
   border-bottom: 2px solid rgba(158, 116, 66, 0.3);
   padding-bottom: 0.75rem;
   margin-bottom: 1.25rem;
@@ -70,12 +90,13 @@
   letter-spacing: 0.05em;
 }
 
+
 /* =========================================
    PARCHMENT NOTE (AUTO-CENTERED, WIDE, FLUSH LEFT)
 ========================================= */
 .parchmentnote {
   position: relative;
-  width: 95%;          
+  width: 95%;           
   max-width: 1350px;   
   margin-left: auto;   
   margin-right: auto;  
@@ -83,6 +104,7 @@
   margin-bottom: 4rem;
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35)) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.2));
 }
+
 .pn-content {
   position: relative;
   background-color: #f7ebcf;
@@ -92,7 +114,9 @@
   border-radius: 6px;
   
   padding: 3.5rem 2rem 3.5rem 2.5rem;
-  color: #3b2e21;
+  
+  /* Forced black text color for the note container */
+  color: #000000 !important;
   
   text-align: left;
   
@@ -100,17 +124,30 @@
     inset 0 0 60px rgba(110, 75, 40, 0.25),
     inset 0 0 15px rgba(80, 55, 30, 0.15);
 }
-.pn-content h2 {
+
+/* Force all text elements inside pn-content to be strictly black */
+.pn-content,
+.pn-content p,
+.pn-content span,
+.pn-content li,
+.pn-content a {
+  color: #000000 !important;
+}
+
+.pn-content h2,
+.pn-content h1,
+.pn-content h3,
+.pn-content h4,
+.pn-content h5,
+.pn-content h6 {
   margin-top: 0;
-  color: #2c2117;
+  color: #000000 !important;
   border-bottom: 2px solid rgba(158, 116, 66, 0.3);
   padding-bottom: 0.3rem;
   margin-bottom: 0.75rem;
   font-weight: 700;
-  /* Significantly reduced font size for a much smaller header */
   font-size: 1.15rem;
   letter-spacing: 0.03em;
-  
   text-align: left;
 }
 

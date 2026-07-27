@@ -1,188 +1,122 @@
 /* =========================================
-   INK-STAINED BOOKMARK — TAN PARCHMENT
-   FULLY SCOPED & STACKING FIXED
-   ========================================= */
-
-/* 1. MAIN CONTAINER STYLING */
-.bookmark-box, .bookmarkbody-box {
-    position: relative !important;
-    background:
-        linear-gradient(180deg, #f0d8a8 0%, #e4c99a 50%, #d9b384 100%), 
-        repeating-linear-gradient(90deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 5px);
-    border-left: none;
-    border-radius: 8px;
-    padding: 20px 24px;
-    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #000000 !important;
-    overflow: visible !important; 
-    box-shadow:
-        inset 0 4px 10px rgba(0,0,0,0.08),
-        0 4px 12px rgba(0,0,0,0.22);
+   WELCOME PARCHMENT BANNER (ULTRA DEPTH SCROLL)
+========================================= */
+.welcomeparchmenttheme {
+  position: relative;
+  width: 85%;
+  max-width: 800px;
+  margin: 5rem auto;
+  z-index: 1;
+  /* Deep, multi-layered drop shadow to lift the entire assembly far off the page */
+  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.4)) drop-shadow(0 10px 10px rgba(0, 0, 0, 0.2));
+}
+/* Main parchment body */
+.wpt-content {
+  position: relative;
+  background-color: #f7ebcf;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  border-left: 2px solid #b89765;
+  border-right: 2px solid #b89765;
+  padding: 3.5rem 3rem;
+  text-align: center;
+  color: #3b2e21;
+  /* Heightened inner shadows for deep roller crevices and curved paper edges */
+  box-shadow: 
+    inset 0 35px 25px -15px rgba(50, 30, 15, 0.5), 
+    inset 0 -35px 25px -15px rgba(50, 30, 15, 0.5),
+    inset 40px 0 40px -25px rgba(110, 75, 40, 0.2),
+    inset -40px 0 40px -25px rgba(110, 75, 40, 0.2);
     
-    /* Stacking Logic */
-    z-index: 1;
-    transition: z-index 0s;
+  z-index: 2;
+}
+/* Heavy, rounded wooden scroll rollers with enhanced shadows */
+.wpt-scroll-top,
+.wpt-scroll-bottom {
+  position: absolute;
+  left: -1.5rem;
+  right: -1.5rem;
+  height: 2rem;
+  background: linear-gradient(
+    to bottom, 
+    #735028 0%, 
+    #b0864f 25%, 
+    #e3c596 50%, 
+    #9e7442 75%, 
+    #54391c 100%
+  );
+  border-radius: 1rem;
+  /* Darker, punchier drop shadows and sharper highlights */
+  box-shadow: 
+    0 15px 25px rgba(0, 0, 0, 0.5),
+    0 5px 5px rgba(0, 0, 0, 0.3),
+    inset 0 3px 3px rgba(255, 255, 255, 0.6),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+.wpt-scroll-top {
+  top: -1rem;
+}
+.wpt-scroll-bottom {
+  bottom: -1rem;
+}
+/* Typography polish */
+.wpt-content h1 {
+  margin-top: 0;
+  color: #2c2117;
+  border-bottom: 2px solid rgba(158, 116, 66, 0.3);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
-/* THE HOVER FIX: 
-   Only boosts these specific boxes so they don't 
-   overlap neighboring bookmarks. 
-*/
-.bookmark-box:hover, .bookmarkbody-box:hover {
-    z-index: 999 !important;
+/* =========================================
+   PARCHMENT NOTE (AUTO-CENTERED, WIDE, FLUSH LEFT)
+========================================= */
+.parchmentnote {
+  position: relative;
+  width: 95%;          
+  max-width: 1350px;   
+  margin-left: auto;   
+  margin-right: auto;  
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35)) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.2));
+}
+.pn-content {
+  position: relative;
+  background-color: #f7ebcf;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  
+  border: 2px solid #b89765;
+  border-radius: 6px;
+  
+  padding: 3.5rem 2rem 3.5rem 2.5rem;
+  color: #3b2e21;
+  
+  text-align: left;
+  
+  box-shadow: 
+    inset 0 0 60px rgba(110, 75, 40, 0.25),
+    inset 0 0 15px rgba(80, 55, 30, 0.15);
+}
+.pn-content h2 {
+  margin-top: 0;
+  color: #2c2117;
+  border-bottom: 2px solid rgba(158, 116, 66, 0.3);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  /* Significantly reduced font size for a much smaller header */
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  
+  text-align: left;
 }
 
-/* Floating Animation (Only for the main box) */
-.bookmark-box {
-    animation: floatUpDown 6s ease-in-out infinite;
-}
-
-@keyframes floatUpDown {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0); }
-}
-
-/* ===============================
-   2. DECORATIVE INK EFFECTS
-   =============================== */
-
-.bookmark-box::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: 8px;
-    width: 40px;
-    height: 30px;
-    background: radial-gradient(circle at 30% 30%, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
-    border-radius: 3px 3px 0 0;
-    transform: rotate(-5deg);
-    box-shadow: inset 0 1px 3px rgba(255,255,255,0.05), 0 2px 6px rgba(0,0,0,0.25);
-    clip-path: polygon(0 0, 80% 0, 100% 40%, 100% 100%, 0 100%);
-    pointer-events: none;
-    z-index: 3;
-}
-
-.bookmark-box::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-        radial-gradient(circle at 10% 20%, rgba(0,0,0,0.08) 0 2px, transparent 2.5px),
-        radial-gradient(circle at 25% 35%, rgba(0,0,0,0.05) 0 1.5px, transparent 2px),
-        radial-gradient(circle at 50% 70%, rgba(0,0,0,0.06) 0 2px, transparent 2.5px),
-        radial-gradient(circle at 70% 15%, rgba(0,0,0,0.04) 0 1.8px, transparent 2.2px),
-        radial-gradient(circle at 85% 60%, rgba(0,0,0,0.03) 0 1.5px, transparent 2px);
-    mix-blend-mode: multiply;
-    opacity: 0.85;
-    z-index: 2;
-    animation: inkDrift 5s ease-in-out infinite alternate;
-}
-
-@keyframes inkDrift {
-    0%   { transform: translate(0,0) rotate(0deg); }
-    100% { transform: translate(1px,-1px) rotate(0.1deg); }
-}
-
-/* ===============================
-   3. SCOPED TEXT & LINK STYLES
-   =============================== */
-
-.bookmark-box *, .bookmarkbody-box * {
-    color: #000000 !important;
-    text-shadow: none !important;
-}
-
-.bookmark-box a, .bookmarkbody-box a,
-.bookmark-box .internal-link, .bookmarkbody-box .internal-link {
-    color: #000000 !important;
-    text-decoration: underline dotted !important;
-    font-style: italic !important;
-    font-weight: 500 !important;
-}
-
-.bookmark-box h1, .bookmark-box h2, .bookmark-box h3,
-.bookmarkbody-box h1, .bookmarkbody-box h2, .bookmarkbody-box h3 {
-    color: #000000 !important;
-    font-family: 'Dancing Script', 'Palatino Linotype', serif;
-    font-variant: small-caps;
-    letter-spacing: 0.03em;
-    margin: 0 0 8px 0;
-}
-
-.letterbox-signature {
-    display: block;
-    text-align: right;
-    margin-top: 25px;
-    padding-right: 15px;
-    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !important;
-    font-size: 1rem; 
-    line-height: 1.6;
-    color: #000000 !important;
-    transform: rotate(-1.5deg);
-    transform-origin: right;
-}
-
-/* ===============================
-   4. SCOPED EMBEDS & TOOLTIPS
-   Only affects things nested inside the bookmark
-   =============================== */
-
-.bookmark-box .markdown-embed, 
-.bookmarkbody-box .markdown-embed,
-.bookmark-box .internal-embed,
-.bookmarkbody-box .internal-embed {
-    background-color: #e4c99a !important; 
-    background-image: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 100%) !important;
-    border: 1px solid #d9b384 !important;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.3) !important;
-    padding: 0 !important;
-    margin: 10px 0 !important;
-}
-
-/* Remove headers/titles inside the embedded preview */
-.bookmark-box .markdown-embed-header, 
-.bookmarkbody-box .markdown-embed-header,
-.bookmark-box .markdown-embed-title,
-.bookmarkbody-box .markdown-embed-title {
-    display: none !important; 
-}
-
-/* Force internal content of embeds to be transparent/black text */
-.bookmark-box .markdown-embed *, 
-.bookmarkbody-box .markdown-embed * {
-    background-color: transparent !important;
-    color: #000000 !important;
-}
-
-/* ===============================
-   5. ANIMATED INK DROPS
-   =============================== */
-
-.bookmark-box .ink-drop {
-    position: absolute;
-    top: 0;
-    width: 4px;
-    height: 4px;
-    background: #000000 !important;
-    border-radius: 50%;
-    opacity: 0.7;
-    animation: drip 2s linear infinite;
-}
-
-.bookmark-box .ink-drop:nth-child(1) { left: 15%; animation-delay: 0s; }
-.bookmark-box .ink-drop:nth-child(2) { left: 40%; animation-delay: 1s; }
-.bookmark-box .ink-drop:nth-child(3) { left: 65%; animation-delay: 2s; }
-.bookmark-box .ink-drop:nth-child(4) { left: 80%; animation-delay: 1.5s; }
-
-@keyframes drip {
-    0% { transform: translateY(0) scaleY(1); opacity: 0.7; }
-    70% { transform: translateY(35px) scaleY(1.2); opacity: 0.5; }
-    100% { transform: translateY(70px) scaleY(1.6); opacity: 0; }
-}
+/* =========================================
+   MEDIEVAL BOOKSHELF & TOME STYLING
+========================================= */
 
 /* === Full Bookshelf Container === */
 .bookshelf {
@@ -193,36 +127,36 @@
   background: transparent;
 }
 
-/* === The Heavy Cabinet Frame === */
+/* === The Heavy Oak Cabinet Frame === */
 .shelf {
   position: relative;
   display: flex;
   align-items: flex-end; 
-  gap: 0; 
+  gap: 2px; 
   height: 295px; 
-  padding: 0; 
+  padding: 0 10px; 
   width: fit-content; 
   min-width: 300px;
   max-width: 1000px;
   margin: 0 auto;
 
-  /* Back Panel Walnut Wood */
+  /* Back Panel Dark Oak Wood */
   background: 
-    linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 25%), 
-    linear-gradient(90deg, rgba(0,0,0,0.3) 0%, transparent 5%, transparent 95%, rgba(0,0,0,0.3) 100%),
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 25px),
-    #2d1e15; 
+    linear-gradient(180deg, rgba(0,0,0,0.7) 0%, transparent 20%), 
+    linear-gradient(90deg, rgba(0,0,0,0.4) 0%, transparent 4%, transparent 96%, rgba(0,0,0,0.4) 100%),
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 2px, transparent 2px, transparent 35px),
+    #21150e; 
   
-  border: 24px solid #2d1e15; 
+  border: 24px solid #21150e; 
   border-bottom: 0; 
-  border-radius: 12px 12px 0 0;
+  border-radius: 10px 10px 0 0;
   
   box-shadow: 
-    0 30px 60px rgba(0,0,0,0.6), 
-    inset 0 10px 20px rgba(0,0,0,0.5);
+    0 30px 60px rgba(0,0,0,0.7), 
+    inset 0 10px 25px rgba(0,0,0,0.6);
 }
 
-/* === The Heavy Shelf Floor === */
+/* === The Heavy Plank Shelf Floor === */
 .shelf::after {
   content: "";
   position: absolute;
@@ -231,10 +165,10 @@
   right: -24px;
   height: 28px; 
   background: 
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 2px, transparent 20px),
-    linear-gradient(180deg, #3a281b 0%, #2d1e15 10%, #1a120c 90%, #050302 100%);
-  border-radius: 0 0 12px 12px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5), inset 0 2px 0 rgba(255,255,255,0.08);
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.06) 0px, rgba(0,0,0,0.06) 1px, transparent 2px, transparent 25px),
+    linear-gradient(180deg, #322116 0%, #21150e 20%, #120b08 90%, #050302 100%);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.05);
 }
 
 /* Ceiling shadow overlay */
@@ -242,18 +176,18 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 50px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+  height: 45px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, transparent 100%);
   pointer-events: none;
   z-index: 10;
 }
 
-/* === Realistic Books === */
+/* === Medieval Leather-Bound Books === */
 .book {
   position: relative;
   flex: 0 0 auto;
-  width: 50px; 
-  height: 210px; 
+  width: 52px; 
+  height: 215px; 
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.2, 1, 0.3, 1);
   z-index: 2;
@@ -267,48 +201,48 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 4px 4px 1px 1px;
+  border-radius: 3px 3px 2px 2px;
   
+  /* Rich leather tones and smooth curvature shading */
   background: 
     linear-gradient(90deg, 
-      rgba(0,0,0,0.3) 0%, 
-      rgba(255,255,255,0.12) 20%, 
-      rgba(255,255,255,0.08) 50%, 
-      rgba(0,0,0,0.15) 80%, 
-      rgba(0,0,0,0.5) 100%),
-    var(--book-color, #222);
+      rgba(0,0,0,0.5) 0%, 
+      rgba(255,255,255,0.08) 15%, 
+      rgba(255,255,255,0.03) 45%, 
+      rgba(0,0,0,0.2) 80%, 
+      rgba(0,0,0,0.6) 100%),
+    var(--book-color, #382214);
   
   box-shadow:
-    inset -1px 0 3px rgba(0,0,0,0.5),
-    -4px 0 12px rgba(0,0,0,0.5);
+    inset -2px 0 6px rgba(0,0,0,0.6),
+    -3px 0 10px rgba(0,0,0,0.5);
 }
 
-/* THE BANDS */
+/* Reduced spine ribs */
 .book .spine::before {
   content: "";
   position: absolute;
-  top: 10%; bottom: 10%; left: 0; width: 100%;
+  top: 0; bottom: 0; left: 0; width: 100%;
   background: repeating-linear-gradient(180deg, 
     transparent 0%, 
-    transparent 18%, 
-    rgba(0,0,0,0.2) 19%, 
-    rgba(255,255,255,0.08) 20%, 
-    transparent 21%);
+    transparent 30%, 
+    rgba(0,0,0,0.4) 31%, 
+    rgba(255,255,255,0.04) 32%, 
+    transparent 33%);
   pointer-events: none;
 }
 
-/* THE ACCENTS */
+/* Minimalist border accents */
 .book .spine::after {
   content: "";
   position: absolute;
-  top: 8px; bottom: 8px; left: 3px; right: 3px;
-  border-top: 1px solid rgba(212, 175, 55, 0.4);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.4);
-  opacity: 0.7;
+  top: 12px; bottom: 12px; left: 2px; right: 2px;
+  border-top: 2px solid rgba(184, 150, 93, 0.35);
+  border-bottom: 2px solid rgba(184, 150, 93, 0.35);
   pointer-events: none;
 }
 
-/* === Spine Text (Aged Gold/Soft Yellow) === */
+/* === Stamped / Embossed Spine Text (Moved Up) === */
 .spine-text {
   writing-mode: vertical-rl; 
   transform: translateX(-50%) rotate(180deg); 
@@ -317,81 +251,64 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   position: absolute;
-  top: 15%;
+  top: 12%; 
   left: 50%;
   pointer-events: none;
-  /* Updated: Softened Yellow/Gold */
-  color: #e0c05a !important; 
-  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  color: #c7b27a !important; 
+  text-shadow: 0 1px 1px rgba(0,0,0,0.8);
 }
 
-/* Hover Physics */
+/* Simple, grounded hover motion */
 .book:hover {
-  transform: translateY(-15px) scale(1.05) rotateZ(0deg);
+  transform: translateY(-12px) scale(1.03) rotateZ(0deg);
   z-index: 30;
 }
 
 .book:hover .spine {
   box-shadow: 
-    0 25px 50px rgba(0,0,0,0.7),
-    inset 0 0 10px rgba(255,255,255,0.1);
+    0 20px 40px rgba(0,0,0,0.7),
+    inset -2px 0 8px rgba(0,0,0,0.7);
 }
 
-/* Variation Classes */
-.book.tall  { height: 270px; width: 55px; }
-.book.short { height: 180px; width: 45px; }
-.book.wide  { width: 85px; }
+/* Book Size Variations */
+.book.tall  { height: 260px; width: 58px; }
+.book.short { height: 175px; width: 46px; }
+.book.wide  { width: 80px; }
 
-/* === Dark & Moody Color Palette === */
-.burgundy { --book-color: #3d0a0a; --tilt: -0.6deg; }
-.plum     { --book-color: #2e1031; --tilt: 0.8deg; }
-.midnight { --book-color: #0f172a; --tilt: -0.4deg; }
-.rust     { --book-color: #5e2c04; --tilt: 0.5deg; }
-.forest   { --book-color: #0d1a11; --tilt: -0.3deg; }
+/* === Slightly Brighter Medieval Leather Palettes === */
+.leather-brown { --book-color: #4a2916; --tilt: -0.4deg; }
+.leather-wine  { --book-color: #4a1515; --tilt: 0.6deg; }
+.leather-green { --book-color: #173022; --tilt: -0.2deg; }
+.leather-dark  { --book-color: #242424; --tilt: 0.4deg; }
+.leather-tan   { --book-color: #634327; --tilt: -0.5deg; }
 
-/* === Parchment Blurb Card === */
+/* === Floating Parchment Blurb Note === */
 .book .blurb {
   position: absolute;
   bottom: 50%; 
   left: 115%; 
   transform: translateY(50%);
-  width: 220px;
+  width: 240px;
   padding: 20px;
-  
-  /* Parchment Background */
-  background: #f4e4bc;
-  background-image: 
-    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.3), transparent),
-    repeating-linear-gradient(45deg, rgba(0,0,0,0.02) 0px, rgba(0,0,0,0.02) 1px, transparent 1px, transparent 10px);
-  
-  /* Forced Black Text */
-  color: #000000 !important;
-  
-  border-radius: 2px;
+  background-color: #f7ebcf;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  color: #3b2e21 !important;
+  border-radius: 4px;
+  border: 2px solid #b89765;
   box-shadow: 
     5px 15px 30px rgba(0,0,0,0.5), 
-    inset 0 0 50px rgba(139, 69, 19, 0.15);
-  
+    inset 0 0 50px rgba(110, 75, 40, 0.2),
+    inset 0 0 15px rgba(80, 55, 30, 0.1);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
-  border: 1px solid #d2b48c;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   z-index: 100;
   font-family: "Georgia", serif;
-}
-
-/* Subtle corner texture for the blurb */
-.book .blurb::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, transparent 15%);
-  pointer-events: none;
 }
 
 .book:hover .blurb {
@@ -400,154 +317,189 @@
 }
 
 /* =========================================
-   PARCHMENT DROPDOWN — TAN BOOKMARK THEME
-   ========================================= */
+   ISTORIATOMEROWS1 — MEDIEVAL TOME STYLING
+========================================= */
+.istoriatomerows1-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+.istoriatomerows1 {
+  position: relative;
+  width: 170px;
+  aspect-ratio: 2 / 3;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+  /* Deep Medieval Leather Base */
+  background: 
+    linear-gradient(90deg, 
+      rgba(0,0,0,0.6) 0%, 
+      rgba(255,255,255,0.06) 15%, 
+      rgba(255,255,255,0.02) 45%, 
+      rgba(0,0,0,0.25) 80%, 
+      rgba(0,0,0,0.7) 100%),
+    #2b170c;
+  border: 2px solid #b89765;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.5),
+    inset 0 0 15px rgba(0, 0, 0, 0.4);
 
-@keyframes parchment-waver {
-    0% {
-        box-shadow: 
-            0 4px 10px rgba(0,0,0,0.1),
-            inset 0 0 30px rgba(139, 90, 43, 0.1);
-    }
-    50% {
-        box-shadow: 
-            0 6px 15px rgba(0,0,0,0.2),
-            inset 0 0 50px rgba(139, 90, 43, 0.2);
-    }
-    100% {
-        box-shadow: 
-            0 4px 10px rgba(0,0,0,0.1),
-            inset 0 0 30px rgba(139, 90, 43, 0.1);
-    }
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  z-index: 1;
+}
+.istoriatomerows1:hover {
+  transform: translateY(-10px) scale(1.04);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.7),
+    inset 0 15px rgba(0, 0, 0, 0.4);
+
+  z-index: 10;
+}
+/* === IMAGE CENTERING (QUARTZ SAFE) === */
+.istoriatomerows1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  display: block;
+  margin: 0;
+  max-width: none; 
+  overflow: hidden; 
+}
+/* === BOTTOM-RIGHT HANGING RIBBON (ROYAL PURPLE) === */
+.istoriatomerows1::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  right: 12px;
+  width: 20px;
+  height: 24px;
+  background: linear-gradient(135deg, #6b21a8 0%, #3b0764 100%);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  z-index: 3;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+/* === PARCHMENT TOOLTIP === */
+.istoriatomerows1 .tome-tooltip {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 220px;
+  padding: 0.9rem 1rem;
+  border-radius: 4px;
+  /* Matches your parchment note theme */
+  background-color: #f7ebcf;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  border: 2px solid #b89765;
+  box-shadow: 
+    5px 15px 30px rgba(0,0,0,0.5), 
+    inset 0 0 50px rgba(110, 75, 40, 0.2),
+    inset 0 0 15px rgba(80, 55, 30, 0.1);
+  color: #3b2e21;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.4;
+  font-family: "Georgia", serif;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 9999; 
+}
+.istoriatomerows1:hover .tome-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
-.parchmentdropdown-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 24px 0;
-    color: #000000 !important; /* Forced Black Text */
-    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+/* =========================================
+   MEDIEVAL PARCHMENT PORTRAIT STYLING
+========================================= */
+.parchment-portrait-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: transparent;
 }
+.parchment-portrait {
+  position: relative;
+  width: 320px; /* Adjust size as needed */
+  aspect-ratio: 3 / 4; /* Classic portrait ratio */
+  padding: 16px 16px 28px 16px; /* Extra padding at the bottom for an authentic feel */
+  box-sizing: border-box;
 
-summary::-webkit-details-marker { display: none; }
-summary::marker { display: none; }
+  /* Aged Parchment Background & Texture */
+  background-color: #f7ebcf;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
 
-/* Trigger (Matches bookmark-box colors) */
-.parchmentdropdown-trigger {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 24px;
-    border-radius: 8px;
-    cursor: pointer;
+  /* Worn Bronze/Gold Border */
+  border: 3px solid #b89765;
+  border-radius: 6px;
 
-    /* Matching your bookmark's specific tan gradient */
-    background: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 50%, #d9b384 100%);
-    
-    /* Using bookmark box-shadow style */
-    border: 1px solid #b58d5a;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.22);
-    
-    animation: parchment-waver 6s infinite ease-in-out;
+  /* Deep shadows and inner vignette */
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.6), 
+    inset 0 0 40px rgba(110, 75, 40, 0.25),
+    inset 0 0 15px rgba(80, 55, 30, 0.15);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.selected-text {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+/* Optional gentle lift on hover */
+.parchment-portrait:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 45px rgba(0, 0, 0, 0.7), 
+    inset 0 0 40px rgba(110, 75, 40, 0.25),
+    inset 0 0 15px rgba(80, 55, 30, 0.15);
 }
-
-.dropdown-arrow {
-    color: #000000;
-    transition: transform 0.4s ease;
+/* === INNER PICTURE FRAME & MATTING === */
+.portrait-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #111; /* Dark inner matting */
+  border-radius: 3px;
+  overflow: hidden;
+  
+  /* Inner shadow to sink the picture into the parchment */
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8);
+  border: 1px solid #735934;
 }
-
-details[open] .dropdown-arrow {
-    transform: rotate(180deg);
+/* === IMAGE STYLING === */
+.portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
-
-/* Menu (Matches bookmarkbody-box style) */
-.parchmentdropdown-menu {
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 0;
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-
-    /* Tan gradient background */
-    background: linear-gradient(180deg, #f0d8a8 0%, #e4c99a 100%);
-    border: 1px solid #b58d5a;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+/* === OPTIONAL CORNER CORNETTS / ACCENTS === */
+.parchment-portrait::before,
+.parchment-portrait::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: #735934;
+  border-style: solid;
+  pointer-events: none;
+  z-index: 2;
 }
-
-/* Option wrapper */
-.parchment-option-wrapper {
-    border-radius: 6px;
-    background: rgba(0, 0, 0, 0.03);
-    transition: background 0.25s ease;
+.parchment-portrait::before {
+  top: 8px;
+  left: 8px;
+  border-width: 2px 0 0 2px;
 }
-
-.parchment-option-wrapper:hover {
-    background: rgba(0, 0, 0, 0.07);
-}
-
-.parchmentdropdown-item {
-    display: flex;
-    align-items: center;
-    padding: 14px;
-    cursor: pointer;
-    color: #000000 !important;
-}
-
-/* Custom checkbox (Ink Well Style) */
-.parchmentdropdown-item input[type="checkbox"] {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    border: 1.5px solid #000000;
-    margin-right: 14px;
-    background: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    position: relative;
-}
-
-.parchmentdropdown-item input[type="checkbox"]:checked {
-    background: #000000; /* Solid ink fill */
-}
-
-.parchmentdropdown-item input[type="checkbox"]:checked::after {
-    content: "✒";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
-    color: #f0d8a8;
-}
-
-/* Description (The "Ink" text) */
-.parchment-description {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 15px;
-    font-size: 0.95rem;
-    color: #000000 !important;
-    opacity: 0;
-    transition: all 0.4s ease;
-}
-
-.parchment-option-wrapper:has(input:checked) .parchment-description {
-    max-height: 300px;
-    opacity: 1;
-    padding: 5px 15px 15px 48px;
-    border-left: 1px solid rgba(0,0,0,0.2);
-    margin-left: 10px;
+.parchment-portrait::after {
+  top: 8px;
+  right: 8px;
+  border-width: 2px 2px 0 0;
 }

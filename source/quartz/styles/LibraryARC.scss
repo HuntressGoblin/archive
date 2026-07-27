@@ -466,11 +466,12 @@
   padding: 40px;
   background: transparent;
 }
+
 .parchment-portrait {
   position: relative;
-  width: 320px; /* Adjust size as needed */
-  aspect-ratio: 3 / 4; /* Classic portrait ratio */
-  padding: 16px 16px 28px 16px; /* Extra padding at the bottom for an authentic feel */
+  width: 320px;
+  aspect-ratio: 3 / 4;
+  padding: 16px 16px 28px 16px;
   box-sizing: border-box;
 
   /* Aged Parchment Background & Texture */
@@ -489,6 +490,7 @@
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 /* Optional gentle lift on hover */
 .parchment-portrait:hover {
   transform: translateY(-5px);
@@ -497,12 +499,13 @@
     inset 0 0 40px rgba(110, 75, 40, 0.25),
     inset 0 0 15px rgba(80, 55, 30, 0.15);
 }
+
 /* === INNER PICTURE FRAME & MATTING === */
 .portrait-frame {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #111; /* Dark inner matting */
+  background: #111;
   border-radius: 3px;
   overflow: hidden;
   
@@ -510,14 +513,18 @@
   box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8);
   border: 1px solid #735934;
 }
-/* === IMAGE STYLING === */
-.portrait-frame img {
+
+/* === IMAGE STYLING (QUARTZ COMPATIBLE) === */
+.portrait-frame img,
+.portrait-frame p img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
+  margin: 0;
 }
+
 /* === OPTIONAL CORNER CORNETTS / ACCENTS === */
 .parchment-portrait::before,
 .parchment-portrait::after {
@@ -530,11 +537,13 @@
   pointer-events: none;
   z-index: 2;
 }
+
 .parchment-portrait::before {
   top: 8px;
   left: 8px;
   border-width: 2px 0 0 2px;
 }
+
 .parchment-portrait::after {
   top: 8px;
   right: 8px;

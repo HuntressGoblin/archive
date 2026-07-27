@@ -218,7 +218,7 @@ title: Welcome to the Eternal Library
 <div class="parchment-portrait-container">
   <div class="parchment-portrait">
     <div class="portrait-frame">
-      <img src="HeyIstoria.png" alt="IstoriaPic">
+      <img src="HeyIstoria1.png" alt="IstoriaPic">
     </div>
   </div>
 </div>

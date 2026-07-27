@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "source/content/index.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -186,7 +186,7 @@
   },
   "active": "de0d0534409a8d22",
   "lastOpenFiles": [
-    "source/content/Z - Pictures/Heyistoria.png",
+    "source/content/Z - Pictures/Heyistoria1.png",
     "source/content/index.md",
     "source/content/Z - Pictures/Pictureofprettycrystals.png",
     "source/content/Z - Pictures/Finalepic.png",

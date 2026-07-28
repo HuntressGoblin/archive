@@ -215,7 +215,7 @@ title: Welcome to the Eternal Library
 
 
 <div class="galaxy-image-frame">
-<img src="HeyIstoria1.png" class="galaxy-image-frame">
+<img src="Galaxyswirl.png" class="galaxy-image-frame">
 <div class="orbit orbit1"><div class="planet p1"></div></div>
 <div class="orbit orbit2"><div class="planet p2"></div></div>
 <div class="orbit orbit3"><div class="planet p3"></div></div>

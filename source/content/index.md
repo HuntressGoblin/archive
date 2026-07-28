@@ -225,13 +225,6 @@ title: Welcome to the Eternal Library
 
 
 
-<div class="parchment-portrait-container">
-  <div class="parchment-portrait">
-    <div class="portrait-frame">
-      ![[HeyIstoria1.png]]
-    </div>
-  </div>
-</div>
 
 
 

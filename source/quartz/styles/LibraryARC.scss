@@ -531,6 +531,16 @@
 }
 
 /* === IMAGE STYLING (QUARTZ COMPATIBLE) === */
+
+/* Quartz often wraps markdown images in a paragraph tag. 
+   This forces that paragraph to fill the frame. */
+.portrait-frame p {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .portrait-frame img,
 .portrait-frame p img {
   width: 100%;

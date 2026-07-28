@@ -475,7 +475,7 @@
 /* =========================================
    MEDIEVAL PARCHMENT PORTRAIT STYLING
 ========================================= */
-.parchmentportraitcontainer {
+.parchment-portrait-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,11 +483,11 @@
   background: transparent;
 }
 
-.parchmentportrait {
+.parchment-portrait {
   position: relative;
   width: 320px;
   aspect-ratio: 3 / 4;
-  padding: 16px 16px 28px 16px;
+  padding: 16px;
   box-sizing: border-box;
 
   /* Aged Parchment Background & Texture */
@@ -501,67 +501,24 @@
   /* Deep shadows and inner vignette */
   box-shadow: 
     0 15px 35px rgba(0, 0, 0, 0.6), 
-    inset 0 0 40px rgba(110, 75, 40, 0.25),
-    inset 0 0 15px rgba(80, 55, 30, 0.15);
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    inset 0 0 40px rgba(110, 75, 40, 0.25);
 }
 
-/* Optional gentle lift on hover */
-.parchmentportrait:hover {
-  transform: translateY(-5px);
-  box-shadow: 
-    0 20px 45px rgba(0, 0, 0, 0.7), 
-    inset 0 0 40px rgba(110, 75, 40, 0.25),
-    inset 0 0 15px rgba(80, 55, 30, 0.15);
-}
-
-/* === INNER PICTURE FRAME & MATTING === */
-.portraitframe {
+/* === INNER PICTURE FRAME & IMAGE === */
+.portrait-frame {
   position: relative;
   width: 100%;
   height: 100%;
   background: #111;
   border-radius: 3px;
   overflow: hidden;
-  
-  /* Inner shadow to sink the picture into the parchment */
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8);
   border: 1px solid #735934;
 }
 
-/* === IMAGE STYLING (QUARTZ COMPATIBLE) === */
-.portraitframe img,
-.portraitframe p img {
+.portrait-frame img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
-  margin: 0;
-}
-
-/* === OPTIONAL CORNER CORNETTS / ACCENTS === */
-.parchmentportrait::before,
-.parchmentportrait::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-color: #735934;
-  border-style: solid;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.parchmentportrait::before {
-  top: 8px;
-  left: 8px;
-  border-width: 2px 0 0 2px;
-}
-
-.parchmentportrait::after {
-  top: 8px;
-  right: 8px;
-  border-width: 2px 2px 0 0;
 }

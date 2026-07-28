@@ -118,25 +118,6 @@ title: Welcome to the Eternal Library
 
 
 
-<div class="galaxy-image-frame">
-<img src="Heyistoria.png" class="galaxy-image-frame">
-<div class="orbit orbit1"><div class="planet p1"></div></div>
-<div class="orbit orbit2"><div class="planet p2"></div></div>
-<div class="orbit orbit3"><div class="planet p3"></div></div>
-<div class="orbit orbit4"><div class="planet p4"></div></div>
-<div class="orbit orbit5"><div class="planet p5"></div></div>
-</div>
-
-
-<div class="parchment-portrait-container">
-  <div class="parchment-portrait">
-    <div class="portrait-frame">
-      <img src="Heyistoria.png" alt="IstoriaPic">
-    </div>
-  </div>
-</div>
-
-
 <div class="istoriatomerows1-row">
   <div class="istoriatomerows1">
       <img src="THEEYES.png" alt="DivinityPic">
@@ -228,6 +209,13 @@ title: Welcome to the Eternal Library
 
 
 
+<div class="parchment-portrait-container">
+  <div class="parchment-portrait">
+    <div class="portrait-frame">
+      <img src="Heyistoria.png" alt="IstoriaPic">
+    </div>
+  </div>
+</div>
 
 
 

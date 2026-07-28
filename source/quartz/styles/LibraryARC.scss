@@ -151,6 +151,22 @@
   text-align: left;
 }
 
+/* === HIDE QUARTZ HEADER ANCHOR ICONS / LINK BUTTONS COMPLETELY === */
+.pn-content h1 a.internal,
+.pn-content h2 a.internal,
+.pn-content h3 a.internal,
+.pn-content h4 a.internal,
+.pn-content h5 a.internal,
+.pn-content h6 a.internal,
+.pn-content h1 .anchor,
+.pn-content h2 .anchor,
+.pn-content h3 .anchor,
+.pn-content h4 .anchor,
+.pn-content h5 .anchor,
+.pn-content h6 .anchor {
+  display: none !important;
+}
+
 /* =========================================
    MEDIEVAL BOOKSHELF & TOME STYLING
 ========================================= */

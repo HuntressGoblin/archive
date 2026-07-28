@@ -195,7 +195,51 @@ title: Welcome to the Eternal Library
   </div>
 </div>
 
-
+<details class="parchmentdropdown-container" id="parchmentDropdown">
+    <summary class="parchmentdropdown-trigger">
+        <span class="selected-text"><i class="fa-solid fa-clock"></i>What is the timeline of each series?</span>
+        <span class="dropdown-arrow">▼</span>
+    </summary>
+    <div class="parchmentdropdown-menu">
+        <div class="parchment-option-wrapper">
+            <label class="parchmentdropdown-item">
+                <input type="checkbox" value="artimis" onchange="toggleDescription(this)">
+                Artimis (DND5e, A.G)
+            </label>
+            <div class="parchment-description">
+                Spellplague (1385 DR) — End of Spellplague (1394-1395 DR) &gt; Aura (1490 DR) &gt; Heroics (1492 DR) &gt; Divinity = Crystalline Rebirth (1492 DR - Spring of 1493) = Elements (1492 DR) &gt; Artistry (1492 DR) &gt; Tyranny (Spring of 1493 DR) &gt; Hellfire (1494 DR) &gt; Trailblazer ("1150"-1494 DR) &gt; Candlelight (???)
+            </div>
+        </div>
+        <div class="parchment-option-wrapper">
+            <label class="parchmentdropdown-item">
+                <input type="checkbox" value="apolion" onchange="toggleDescription(this)">
+                Apolion (PF2E)
+            </label>
+            <div class="parchment-description">
+                Ephemera (7108 IC) &gt; ??? 
+            </div>
+        </div>
+        <div class="parchment-option-wrapper">
+            <label class="parchmentdropdown-item">
+                <input type="checkbox" value="aethena" onchange="toggleDescription(this)">
+                Aethena (SF2E)
+            </label>
+            <div class="parchment-description">
+                Entropy (325 AG) &gt; ???
+            </div>
+        </div>
+    </div>
+</details><script>
+function toggleDescription(checkbox) {
+    const wrapper = checkbox.closest('.parchment-option-wrapper');
+    const desc = wrapper.querySelector('.parchment-description');
+    if (checkbox.checked) {
+        desc.style.display = 'block';
+    } else {
+        desc.style.display = 'none';
+    }
+}
+</script>
 
 
 ---

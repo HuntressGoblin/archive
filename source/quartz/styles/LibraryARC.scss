@@ -482,7 +482,6 @@
   padding: 40px;
   background: transparent;
 }
-
 .parchment-portrait {
   position: relative;
   width: 320px;
@@ -506,7 +505,6 @@
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 /* Optional gentle lift on hover */
 .parchment-portrait:hover {
   transform: translateY(-5px);
@@ -515,7 +513,6 @@
     inset 0 0 40px rgba(110, 75, 40, 0.25),
     inset 0 0 15px rgba(80, 55, 30, 0.15);
 }
-
 /* === INNER PICTURE FRAME & MATTING === */
 .portrait-frame {
   position: relative;
@@ -529,7 +526,6 @@
   box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8);
   border: 1px solid #735934;
 }
-
 /* === IMAGE STYLING (QUARTZ COMPATIBLE) === */
 .portrait-frame img,
 .portrait-frame p img {
@@ -540,7 +536,6 @@
   display: block;
   margin: 0;
 }
-
 /* === OPTIONAL CORNER CORNETTS / ACCENTS === */
 .parchment-portrait::before,
 .parchment-portrait::after {
@@ -553,15 +548,166 @@
   pointer-events: none;
   z-index: 2;
 }
-
 .parchment-portrait::before {
   top: 8px;
   left: 8px;
   border-width: 2px 0 0 2px;
 }
-
 .parchment-portrait::after {
   top: 8px;
   right: 8px;
   border-width: 2px 2px 0 0;
+}
+
+/* =========================================
+   PARCHMENT DROPDOWN — MATCHED TEXTURE THEME
+   ========================================= */
+@keyframes parchment-waver {
+    0% {
+        box-shadow: 
+            0 15px 35px rgba(0, 0, 0, 0.35),
+            inset 0 0 40px rgba(110, 75, 40, 0.25),
+            inset 0 0 15px rgba(80, 55, 30, 0.15);
+    }
+    50% {
+        box-shadow: 
+            0 20px 45px rgba(0, 0, 0, 0.45),
+            inset 0 0 50px rgba(110, 75, 40, 0.35),
+            inset 0 0 20px rgba(80, 55, 30, 0.25);
+    }
+    100% {
+        box-shadow: 
+            0 15px 35px rgba(0, 0, 0, 0.35),
+            inset 0 0 40px rgba(110, 75, 40, 0.25),
+            inset 0 0 15px rgba(80, 55, 30, 0.15);
+    }
+}
+.parchmentdropdown-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 24px 0;
+    color: #000000 !important;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+
+    /* Base Parchment Texture & Color */
+    background-color: #f7ebcf;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+    
+    border: 2px solid #b89765;
+    border-radius: 6px;
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.35),
+        inset 0 0 40px rgba(110, 75, 40, 0.25),
+        inset 0 0 15px rgba(80, 55, 30, 0.15);
+}
+summary::-webkit-details-marker { display: none; }
+summary::marker { display: none; }
+/* Trigger Header */
+.parchmentdropdown-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    cursor: pointer;
+
+    background: transparent;
+    border-bottom: 2px solid rgba(158, 116, 66, 0.3);
+    animation: parchment-waver 6s infinite ease-in-out;
+}
+.selected-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #000000 !important;
+}
+.dropdown-arrow {
+    color: #735934;
+    transition: transform 0.4s ease;
+}
+details[open] .dropdown-arrow {
+    transform: rotate(180deg);
+}
+details[open] .parchmentdropdown-trigger {
+    border-bottom: 2px solid rgba(158, 116, 66, 0.5);
+    background-color: rgba(184, 151, 101, 0.1);
+}
+/* Menu Dropdown Panel */
+.parchmentdropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+
+    /* Matches the exact parchment theme texture */
+    background-color: #f7ebcf;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+    
+    border: 2px solid #b89765;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+/* Option wrapper */
+.parchment-option-wrapper {
+    border-radius: 4px;
+    background: rgba(110, 75, 40, 0.05);
+    transition: background 0.25s ease;
+}
+.parchment-option-wrapper:hover {
+    background: rgba(110, 75, 40, 0.1);
+}
+.parchmentdropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    cursor: pointer;
+    color: #000000 !important;
+    font-weight: 700;
+}
+/* Custom checkbox (Ink Well Style) */
+.parchmentdropdown-item input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1.5px solid #735934;
+    margin-right: 14px;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    position: relative;
+}
+.parchmentdropdown-item input[type="checkbox"]:checked {
+    background: #735934; /* Solid ink fill */
+}
+.parchmentdropdown-item input[type="checkbox"]:checked::after {
+    content: "✒";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #f7ebcf;
+}
+/* Description (The "Ink" text) */
+.parchment-description {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    color: #000000 !important;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.parchment-option-wrapper:has(input:checked) .parchment-description {
+    max-height: 300px;
+    opacity: 1;
+    padding: 5px 15px 15px 48px;
+    border-left: 2px solid #b89765;
+    margin-left: 10px;
 }

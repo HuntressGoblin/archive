@@ -151,6 +151,24 @@
   text-align: left;
 }
 
+/* === STOP QUARTZ HEADER ANCHOR LINKS FROM CHANGING COLOR/BEHAVIOR ON HOVER === */
+.pn-content h1 a,
+.pn-content h2 a,
+.pn-content h3 a,
+.pn-content h4 a,
+.pn-content h5 a,
+.pn-content h6 a,
+.pn-content h1 .internal,
+.pn-content h2 .internal,
+.pn-content h3 .internal,
+.pn-content h4 .internal,
+.pn-content h5 .internal,
+.pn-content h6 .internal {
+  color: #000000 !important;
+  text-decoration: none !important;
+  pointer-events: none; /* Disables the header anchor hover states completely */
+}
+
 /* =========================================
    MEDIEVAL BOOKSHELF & TOME STYLING
 ========================================= */

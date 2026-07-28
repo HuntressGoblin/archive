@@ -225,6 +225,16 @@ title: Welcome to the Eternal Library
 
 
 
+<div class="parchment-portrait-container">
+  <div class="parchment-portrait">
+    <div class="portrait-frame">
+      ![[HeyIstoria1.png]]
+    </div>
+  </div>
+</div>
+
+
+
 <div class="parchmentnote">
   <div class="pn-content">
     <h2><i class="fa-solid fa-magnifying-glass"></i>Looking for Other Websites? Check out the Following:<i class="fa-solid fa-globe-www"></i></h2>

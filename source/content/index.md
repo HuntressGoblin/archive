@@ -212,25 +212,18 @@ title: Welcome to the Eternal Library
     <p>Hope to see you soon! <i class="fa-solid fa-face-grin-wink"></i></p>
   </div>
 </div>
-
-
-
-<div class="parchment-portrait-container">
-  <div class="parchment-portrait">
-    <div class="portrait-frame">
+<div class="parchmentportraitcontainer">
+  <div class="parchmentportrait">
+    <div class="portraitframe">
       <img src="HeyIstoria1.png" alt="IstoriaPic">
     </div>
   </div>
 </div>
 
 
-<div class="parchment-portrait-container">
-  <div class="parchment-portrait">
-    <div class="portrait-frame">
-      ![[Heyistoria1.png]]
-    </div>
-  </div>
-</div>
+
+
+
 
 
 

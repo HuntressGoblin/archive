@@ -163,37 +163,9 @@ title: Welcome to the Eternal Library
   </div>
 </div>
 
-<div class="istoriatomerows1-row">
-  <div class="istoriatomerows1">
-      <img src="Reddragonwithdice.png" alt="DunMash25Pic">
-      <div class="tome-tooltip">Tome of the Dungeon Mash (2025)</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Thumbnailimage1.png" alt="TrailblazerPic">
-      <div class="tome-tooltip">Tome of Trailblazers</div>
-  </div>
-  <div class="istoriatomerows1">
-    <a href="https://archive.goblindnd.com/Pf2e---Archive-of-Apolion/Tome-of-Ephemera/Cycle-of-Ephemera" class="tome-link" style="display: block; width: 100%; height: 100%; text-decoration: none;">
-      <img src="Seasonofghoststhumbnail.png" alt="EphemeraPic">
-      <div class="tome-tooltip">Tome of Ephemera</div>
-    </a>
-  </div>
-</div>
 
-<div class="istoriatomerows1-row">
-  <div class="istoriatomerows1">
-      <img src="Abbalon.png" alt="EntropyPic">
-      <div class="tome-tooltip">Tome of Entropy</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Placeholder.png" alt="Plchld">
-      <div class="tome-tooltip">???</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Placeholder.png" alt="Plchld">
-      <div class="tome-tooltip">???</div>
-  </div>
-</div>
+
+
 
 <details class="parchmentdropdown-container" id="parchmentDropdown">
     <summary class="parchmentdropdown-trigger">
@@ -216,7 +188,7 @@ title: Welcome to the Eternal Library
                 Apolion (PF2E)
             </label>
             <div class="parchment-description">
-                Ephemera (7108 IC) &gt; ??? 
+                Ephemera (7108 IC) &gt; Kingmaker (4710 AR) 
             </div>
         </div>
         <div class="parchment-option-wrapper">
@@ -228,6 +200,14 @@ title: Welcome to the Eternal Library
                 Entropy (325 AG) &gt; ???
             </div>
         </div>
+        <div class="parchment-option-wrapper">
+            <label class="parchmentdropdown-item">
+                <input type="checkbox" value="apolion" onchange="toggleDescription(this)">
+                Chronis (DND5e)
+            </label>
+            <div class="parchment-description">
+                ??? (TBD) 
+            </div>
     </div>
 </details><script>
 function toggleDescription(checkbox) {
@@ -239,10 +219,7 @@ function toggleDescription(checkbox) {
         desc.style.display = 'none';
     }
 }
-</script>
 
-
----
 
 <div class="parchmentnote">
   <div class="pn-content">
@@ -262,14 +239,6 @@ function toggleDescription(checkbox) {
 </div>
 
 
-
-<div class="parchmentnote">
-  <div class="pn-content">
-    <h2><i class="fa-solid fa-magnifying-glass"></i>Looking for Other Websites? Check out the Following:<i class="fa-solid fa-globe-www"></i></h2>
-    <p><i class="fa-solid fa-earth-americas"></i>Enutheta (Check it out, the guy who runs it is super cute!): wiki.enutheta.com</p>
-    <p><i class="fa-solid fa-hat-witch"></i>Dio-ctionary: [Link pending]
-  </div>
-</div>
 
 
 ---

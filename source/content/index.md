@@ -219,8 +219,9 @@ function toggleDescription(checkbox) {
         desc.style.display = 'none';
     }
 }
+</div>
 
-
+<br>
 <div class="parchmentnote">
   <div class="pn-content">
     <h2><i class="fa-solid fa-hand-wave"></i>Thanks for Checking Out the Eternal Library!<i class="fa-solid fa-hand-wave"></i></h2>
@@ -229,7 +230,7 @@ function toggleDescription(checkbox) {
 </div>
 
 
-
+<br>
 <div class="parchment-portrait-container">
   <div class="parchment-portrait">
     <div class="portrait-frame">

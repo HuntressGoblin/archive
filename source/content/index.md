@@ -118,108 +118,17 @@ title: Welcome to the Eternal Library
 
 
 
-<div class="istoriatomerows1-row">
-  <div class="istoriatomerows1">
-      <img src="THEEYES.png" alt="DivinityPic">
-      <div class="tome-tooltip">Tome of Divinity</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Finalepic.png" alt="ElementsPic">
-      <div class="tome-tooltip">Tome of Elements</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Pictureofprettycrystals.png" alt="CRPic">
-      <div class="tome-tooltip">Tome of Crystalline Rebirth</div>
-  </div>
-</div>
-
-<div class="istoriatomerows1-row">
-  <div class="istoriatomerows1">
-      <img src="Theroscover.png" alt="HeroicsPic">
-      <div class="tome-tooltip">Tome of Heroics</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Theradiantcitadelfix.png" alt="AuraPic">
-      <div class="tome-tooltip">Tome of Auras</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Baldursgatedescentintoavernus.png" alt="HellfirePic">
-      <div class="tome-tooltip">Tome of Hellfire</div>
-  </div>
-</div>
-
-<div class="istoriatomerows1-row">
-  <div class="istoriatomerows1">
-      <img src="Rarghwebreathefire.png" alt="TyrannyPic">
-      <div class="tome-tooltip">Tome of Tyranny</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Titlepagestuff.png" alt="CandlelightPic">
-      <div class="tome-tooltip">Tome of Candlelight</div>
-  </div>
-  <div class="istoriatomerows1">
-      <img src="Thisisdefthecover.png" alt="ArtistryPic">
-      <div class="tome-tooltip">Tome of Artistry</div>
-  </div>
-</div>
 
 
 
 
 
-<details class="parchmentdropdown-container" id="parchmentDropdown">
-    <summary class="parchmentdropdown-trigger">
-        <span class="selected-text"><i class="fa-solid fa-clock"></i>What is the timeline of each series?</span>
-        <span class="dropdown-arrow">▼</span>
-    </summary>
-    <div class="parchmentdropdown-menu">
-        <div class="parchment-option-wrapper">
-            <label class="parchmentdropdown-item">
-                <input type="checkbox" value="artimis" onchange="toggleDescription(this)">
-                Artimis (DND5e, A.G)
-            </label>
-            <div class="parchment-description">
-                Spellplague (1385 DR) — End of Spellplague (1394-1395 DR) &gt; Aura (1490 DR) &gt; Heroics (1492 DR) &gt; Divinity = Crystalline Rebirth (1492 DR - Spring of 1493) = Elements (1492 DR) &gt; Artistry (1492 DR) &gt; Tyranny (Spring of 1493 DR) &gt; Hellfire (1494 DR) &gt; Trailblazer ("1150"-1494 DR) &gt; Candlelight (???)
-            </div>
-        </div>
-        <div class="parchment-option-wrapper">
-            <label class="parchmentdropdown-item">
-                <input type="checkbox" value="apolion" onchange="toggleDescription(this)">
-                Apolion (PF2E)
-            </label>
-            <div class="parchment-description">
-                Ephemera (7108 IC) &gt; Kingmaker (4710 AR) 
-            </div>
-        </div>
-        <div class="parchment-option-wrapper">
-            <label class="parchmentdropdown-item">
-                <input type="checkbox" value="aethena" onchange="toggleDescription(this)">
-                Aethena (SF2E)
-            </label>
-            <div class="parchment-description">
-                Entropy (325 AG) &gt; ???
-            </div>
-        </div>
-        <div class="parchment-option-wrapper">
-            <label class="parchmentdropdown-item">
-                <input type="checkbox" value="apolion" onchange="toggleDescription(this)">
-                Chronis (DND5e)
-            </label>
-            <div class="parchment-description">
-                ??? (TBD) 
-            </div>
-    </div>
-</details><script>
-function toggleDescription(checkbox) {
-    const wrapper = checkbox.closest('.parchment-option-wrapper');
-    const desc = wrapper.querySelector('.parchment-description');
-    if (checkbox.checked) {
-        desc.style.display = 'block';
-    } else {
-        desc.style.display = 'none';
-    }
-}
-</div>
+
+
+
+
+
+
 
 <br>
 <div class="parchmentnote">

@@ -134,7 +134,7 @@ title: Welcome to the Eternal Library
 <div class="parchmentnote">
   <div class="pn-content">
     <h2><i class="fa-solid fa-hand-wave"></i>Thanks for Checking Out the Eternal Library!<i class="fa-solid fa-hand-wave"></i></h2>
-    <p>Hope to see you soon! <i class="fa-solid fa-face-grin-wink"></i></p>
+    <p>Hope to see you very soon! <i class="fa-solid fa-face-grin-wink"></i></p>
   </div>
 </div>
 

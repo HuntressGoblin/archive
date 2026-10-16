@@ -117,7 +117,20 @@ title: Welcome to the Eternal Library
 
 
 <br>
-
+<div class="istoriatomerows1-row">
+  <div class="istoriatomerows1">
+      <img src="THEEYES.png" alt="DivinityPic">
+      <div class="tome-tooltip">Tome of Divinity</div>
+  </div>
+  <div class="istoriatomerows1">
+      <img src="Finalepic.png" alt="ElementsPic">
+      <div class="tome-tooltip">Tome of Elements</div>
+  </div>
+  <div class="istoriatomerows1">
+      <img src="Pictureofprettycrystals.png" alt="CRPic">
+      <div class="tome-tooltip">Tome of Crystalline Rebirth</div>
+  </div>
+</div>
 
 
 
